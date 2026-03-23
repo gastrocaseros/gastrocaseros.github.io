@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gastrocaseros.github.io/sitemap.xml

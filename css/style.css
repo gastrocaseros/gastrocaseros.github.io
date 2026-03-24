@@ -218,3 +218,16 @@ footer { padding: 60px 80px; text-align: center; border-top: 1px solid var(--bor
   .prep-header, .prep-body { padding: 24px; }
   .location-details { padding: 30px; }
 }
+
+/* Micro Mobile (Galaxy S8+, iPhone SE) */
+@media (max-width: 480px) {
+  .nav-name { display: none; }
+  .nav-cta { padding: 10px 20px; font-size: 0.9rem; }
+  .hero h1 { font-size: 2.4rem; }
+  section { padding: 50px 15px; }
+  
+  .quiz-section { margin: 10px 0; border-radius: 20px; padding: 30px 15px; }
+  .quiz-list li { font-size: 1rem; padding: 14px; }
+  .quiz-action { padding: 25px 15px; border-radius: 16px; }
+  .floating-wa { bottom: 20px; right: 20px; width: 56px; height: 56px; }
+}

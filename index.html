@@ -52,11 +52,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   
   <link rel="stylesheet" href="css/style.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDGFHLL04L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HDGFHLL04L');
+
+    // Eventos personalizados para rastrear clicks a WhatsApp
+    function trackWA(label) {
+      gtag('event', 'whatsapp_click', {
+        'event_category': 'Contacto',
+        'event_label': label
+      });
+    }
+  </script>
 </head>
 <body>
 
   <!-- FLOATING WA -->
-  <a href="https://wa.me/5491124573240" class="floating-wa" target="_blank" aria-label="WhatsApp para Turnos" title="Enviar mensaje">
+  <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('flotante')" class="floating-wa" target="_blank" aria-label="WhatsApp para Turnos" title="Enviar mensaje">
     <img src="img/icon-whatsapp.svg" alt="WhatsApp">
   </a>
 
@@ -69,7 +85,7 @@
         <span>Dra. Erika Pest</span>
       </div>
     </a>
-    <a href="https://wa.me/5491124573240" class="nav-cta" aria-label="Pedir turno por WhatsApp">Pedir Turno</a>
+    <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('nav')" class="nav-cta" aria-label="Pedir turno por WhatsApp">Pedir Turno</a>
   </nav>
 
   <!-- HERO -->
@@ -79,7 +95,7 @@
       <h1>Tu salud digestiva, en manos <em>expertas</em></h1>
       <p class="hero-p">Consultas especializadas y diagnósticos de vanguardia. Somos referentes en pruebas no invasivas en Caseros, Provincia de Buenos Aires.</p>
       <div class="hero-btns">
-        <a href="https://wa.me/5491124573240" class="btn-main btn-filled" aria-label="Escribir a WhatsApp">Escribinos por WhatsApp</a>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('hero')" class="btn-main btn-filled" aria-label="Escribir a WhatsApp">Escribinos por WhatsApp</a>
         <a href="#servicios" class="btn-main btn-outline" aria-label="Ver servicios del consultorio">Ver Especialidades</a>
       </div>
     </div>
@@ -142,18 +158,21 @@
         <h3>Consulta Médica</h3>
         <p>Diagnóstico y tratamiento de enfermedades del aparato digestivo: reflujo, gastritis, colon irritable, celiaquía y patologías hepáticas.</p>
         <div class="service-meta">Jueves 9:00 – 12:00 hs</div>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno%20para%20una%20consulta%20de%20gastroenterolog%C3%ADa" onclick="trackWA('servicio_consulta')" class="service-link" aria-label="Consultar por este servicio">Consultar →</a>
       </div>
       <div class="service-card">
         <div class="service-icon-box"><img src="img/icon-sibo.svg" alt="Test SIBO" loading="lazy"></div>
         <h3>Test SIBO / Intolerancias</h3>
         <p>A través del aire espirado detectamos sobrecrecimiento bacteriano e intolerancia a lactosa o fructosa de forma no invasiva.</p>
         <div class="service-meta">Sin agujas · Sin dolor</div>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20consultar%20sobre%20el%20test%20de%20SIBO%20o%20intolerancias" onclick="trackWA('servicio_sibo')" class="service-link" aria-label="Consultar por test SIBO">Consultar →</a>
       </div>
       <div class="service-card">
         <div class="service-icon-box"><img src="img/icon-pylori.svg" alt="H. Pylori" loading="lazy"></div>
         <h3>Helicobacter Pylori</h3>
         <p>Detección precisa mediante test de urea en aire espirado (UBT). Método seguro y rápido que evita la endoscopía inicial.</p>
         <div class="service-meta">Resultado Inmediato</div>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20consultar%20sobre%20el%20test%20de%20Helicobacter%20Pylori" onclick="trackWA('servicio_pylori')" class="service-link" aria-label="Consultar por test H. Pylori">Consultar →</a>
       </div>
     </div>
   </section>
@@ -218,7 +237,7 @@
             <p>Solo mensajes de texto<br><a href="https://wa.me/5491124573240" style="color: var(--navy); font-weight: 600; text-decoration: none;" aria-label="Mensaje de WhatsApp">11 2457-3240</a></p>
           </div>
         </div>
-        <a href="https://wa.me/5491124573240" class="btn-main btn-filled" style="margin-top: 20px;" aria-label="Escribir a WhatsApp">Escribinos por WhatsApp</a>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('ubicacion')" class="btn-main btn-filled" style="margin-top: 20px;" aria-label="Escribir a WhatsApp">Escribinos por WhatsApp</a>
       </div>
       <div class="map-frame">
         <iframe

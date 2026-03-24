@@ -100,6 +100,8 @@ section { padding: 100px 80px; }
 .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--navy); margin-bottom: 16px; }
 .service-card p { font-size: 1rem; color: var(--text-muted); margin-bottom: 24px; }
 .service-meta { display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 700; color: var(--navy); background: var(--cream); padding: 8px 16px; border-radius: 100px; }
+.service-link { display: inline-block; margin-top: 20px; font-size: 0.9rem; font-weight: 700; color: var(--green); text-decoration: none; letter-spacing: 0.03em; transition: color 0.2s ease; }
+.service-link:hover { color: var(--navy); }
 
 /* Tests Detail Section (Post 2, 3, 6) */
 .tests-section { background: var(--navy); color: white; border-radius: 60px; margin: 40px; }

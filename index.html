@@ -74,6 +74,7 @@
   </script>
 </head>
 <body>
+  <div class="scroll-progress" id="scroll-bar"></div>
 
   <!-- FLOATING WA -->
   <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('flotante')" class="floating-wa" target="_blank" aria-label="WhatsApp para Turnos" title="Enviar mensaje">
@@ -380,6 +381,11 @@
       const checkSpan = element.querySelector('.quiz-check');
       element.setAttribute("aria-checked", isSelected);
       
+      // Pop animation trigger
+      checkSpan.classList.remove('animate');
+      void checkSpan.offsetWidth; // Trigger reflow
+      checkSpan.classList.add('animate');
+      
       if (isSelected) {
         checkSpan.textContent = "☑";
         checkSpan.style.color = "white";
@@ -404,6 +410,14 @@
 
     // SCROLL REVEAL (Efecto WOW suave)
     document.addEventListener("DOMContentLoaded", function() {
+      // Progress Bar
+      window.addEventListener('scroll', () => {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById('scroll-bar').style.width = scrolled + "%";
+      });
+
       const revealElements = document.querySelectorAll('.service-card, .test-modern-card, .faq-item, .prep-card');
       revealElements.forEach(el => el.classList.add('reveal'));
       

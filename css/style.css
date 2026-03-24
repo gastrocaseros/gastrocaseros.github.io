@@ -29,32 +29,32 @@ body {
   overflow-x: hidden;
 }
 
-/* Navigation */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: rgba(248, 245, 240, 0.85);
+  background: rgba(248, 245, 240, 0.95);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   border-bottom: 1px solid rgba(26, 46, 68, 0.08);
   padding: 12px 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 32px;
   transition: all 0.3s ease;
 }
-.nav-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.nav-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; flex-shrink: 0; }
 .nav-logo { width: 100px; height: 50px; object-fit: contain; }
 .nav-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--navy); font-weight: 700; line-height: 1.1; }
 .nav-name span { display: block; font-size: 0.8rem; font-family: 'Outfit', sans-serif; font-weight: 600; color: var(--green); letter-spacing: 0.05em; text-transform: uppercase; margin-top: 2px; }
-.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links { display: flex; gap: 32px; align-items: center; flex: 1; justify-content: center; }
 .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
 .nav-links a:hover { color: var(--green); }
-.nav-actions { display: flex; align-items: center; gap: 16px; margin-left: auto; }
-.nav-cta { background: var(--navy); color: white; padding: 14px 28px; border-radius: 100px; text-decoration: none; font-size: 0.95rem; font-weight: 700; transition: all 0.3s ease; flex-shrink: 0; z-index: 1001; }
+.nav-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.nav-cta { background: var(--navy); color: white; padding: 14px 28px; border-radius: 100px; text-decoration: none; font-size: 0.95rem; font-weight: 700; transition: all 0.3s ease; flex-shrink: 0; }
 .nav-cta:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); background: var(--navy-light); }
-.hamburger-btn { display: none; background: none; border: none; cursor: pointer; padding: 4px; z-index: 1001; }
+.hamburger-btn { display: none; background: var(--cream); border: 1.5px solid var(--border); border-radius: 50%; width: 44px; height: 44px; cursor: pointer; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s; }
+.hamburger-btn:active { background: var(--green-ultra-light); }
 
 /* Hero */
 .hero {

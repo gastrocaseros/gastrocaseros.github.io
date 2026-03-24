@@ -19,7 +19,7 @@
 /* Base */
 .scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: linear-gradient(90deg, var(--green-light), var(--green)); z-index: 2000; width: 0%; transition: width 0.1s ease-out; box-shadow: 0 0 10px rgba(74, 125, 74, 0.5); }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body {
   font-family: 'Outfit', sans-serif;
   background: var(--cream);
@@ -51,8 +51,10 @@ nav {
 .nav-links { display: flex; gap: 32px; align-items: center; }
 .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
 .nav-links a:hover { color: var(--green); }
-.nav-cta { background: var(--navy); color: white; padding: 14px 28px; border-radius: 100px; text-decoration: none; font-size: 0.95rem; font-weight: 700; transition: all 0.3s ease; flex-shrink: 0; }
+.nav-actions { display: flex; align-items: center; gap: 16px; margin-left: auto; }
+.nav-cta { background: var(--navy); color: white; padding: 14px 28px; border-radius: 100px; text-decoration: none; font-size: 0.95rem; font-weight: 700; transition: all 0.3s ease; flex-shrink: 0; z-index: 1001; }
 .nav-cta:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); background: var(--navy-light); }
+.hamburger-btn { display: none; background: none; border: none; cursor: pointer; padding: 4px; z-index: 1001; }
 
 /* Hero */
 .hero {
@@ -208,7 +210,14 @@ footer { padding: 60px 80px; text-align: center; border-top: 1px solid var(--bor
   .hero-btns { flex-direction: column; width: 100%; align-items: stretch; justify-content: center; }
   .btn-main { justify-content: center; width: 100%; }
   nav { padding: 12px 20px; }
-  .nav-links { display: none; }
+  
+  /* Paty Mobile Menu */
+  .nav-links { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(20px); padding: 30px; border-bottom: 2px solid var(--green); transform: translateY(-10px); opacity: 0; pointer-events: none; transition: transform 0.25s ease-out, opacity 0.25s ease-out; z-index: 990; gap: 24px; text-align: center; box-shadow: var(--shadow-md); }
+  .nav-links.active { transform: translateY(0); opacity: 1; pointer-events: all; }
+  .nav-links a { font-size: 1.15rem; width: 100%; padding: 10px; color: var(--navy); }
+  .hamburger-btn { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: var(--cream); border-radius: 50%; border: 1px solid var(--border); transition: background 0.2s; }
+  .hamburger-btn:active { background: var(--green-ultra-light); }
+  
   section { padding: 60px 20px; }
   .symptoms-section, .tests-section { margin: 20px; }
   .services-container { grid-template-columns: 1fr; }

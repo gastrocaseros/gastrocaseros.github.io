@@ -91,14 +91,23 @@
       </div>
     </a>
     
-    <div class="nav-links">
-      <a href="#autodiagnostico">Test Rápido</a>
-      <a href="#servicios">Especialidades</a>
-      <a href="#preparacion">Preparación</a>
-      <a href="#faq">Preguntas</a>
+    <div class="nav-links" id="nav-menu">
+      <a href="#autodiagnostico" onclick="closeMenu()">Test Rápido</a>
+      <a href="#servicios" onclick="closeMenu()">Especialidades</a>
+      <a href="#preparacion" onclick="closeMenu()">Preparación</a>
+      <a href="#faq" onclick="closeMenu()">Preguntas</a>
     </div>
 
-    <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('nav')" class="nav-cta" aria-label="Pedir turno por WhatsApp">Pedir Turno</a>
+    <div class="nav-actions">
+      <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('nav')" class="nav-cta" aria-label="Pedir turno por WhatsApp">Pedir Turno</a>
+      <button class="hamburger-btn" aria-label="Abrir menú" onclick="toggleMenu()">
+        <svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--navy)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -408,6 +417,14 @@
         selectedSymptoms = selectedSymptoms.filter((s) => s !== sympName);
       }
       updateWaLink();
+    }
+
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+    
+    function closeMenu() {
+      document.getElementById('nav-menu').classList.remove('active');
     }
 
     function updateWaLink() {

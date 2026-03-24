@@ -110,45 +110,6 @@
     </div>
   </section>
 
-  <!-- SYMPTOMS (Post 5) -->
-  <section id="cuando-consultar" class="symptoms-section">
-    <div class="section-header">
-      <span class="section-tag">Prevención y Salud</span>
-      <h2 class="section-title">¿Cuándo deberías consultar?</h2>
-      <p class="section-desc">Muchos síntomas se vuelven "normales" con el tiempo, pero son señales de que tu sistema digestivo necesita atención profesional. Una consulta a tiempo previene complicaciones mayores y mejora radicalmente tu calidad de vida.</p>
-    </div>
-    
-    <div class="symptoms-grid">
-      <div class="symptom-card" role="listitem">
-        <div class="symptom-icon" aria-hidden="true">🔴</div>
-        <div class="symptom-text">Dolor o ardor en la boca del estómago</div>
-      </div>
-      <div class="symptom-card" role="listitem">
-        <div class="symptom-icon" aria-hidden="true">🔴</div>
-        <div class="symptom-text">Distensión o hinchazón frecuente</div>
-      </div>
-      <div class="symptom-card" role="listitem">
-        <div class="symptom-icon" aria-hidden="true">🔴</div>
-        <div class="symptom-text">Diarrea o constipación crónica</div>
-      </div>
-      <div class="symptom-card" role="listitem">
-        <div class="symptom-icon" aria-hidden="true">🔴</div>
-        <div class="symptom-text">Reflujo ácido que no mejora</div>
-      </div>
-      <div class="symptom-card" role="listitem">
-        <div class="symptom-icon" aria-hidden="true">🔴</div>
-        <div class="symptom-text">Pérdida de peso sin causa aparente</div>
-      </div>
-      <div class="symptom-card" role="listitem">
-        <div class="symptom-icon" aria-hidden="true">🔴</div>
-        <div class="symptom-text">Heces con sangre o cambios bruscos</div>
-      </div>
-    </div>
-
-    <!-- SVG ILLUSTRATION -->
-    <img src="img/illustration-prevention.svg" alt="Diagrama de diagnóstico precoz y bienestar digestivo" class="symptom-illustration" loading="lazy">
-  </section>
-
   <!-- AUTO TEST (Lead Generation Hub) -->
   <section id="autodiagnostico" class="quiz-section">
     <div class="quiz-container">
@@ -157,12 +118,12 @@
         <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: white; margin-bottom: 16px;">¿Necesitás un Test de Aire Espirado?</h2>
         <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); margin-bottom: 30px;">Cientos de pacientes toleran estas molestias creyendo que son "normales". Respondé mentalmente:</p>
         
-        <ul class="quiz-list" id="symp-list">
-          <li onclick="toggleSymptom(this, 'Inflamación excesiva post-comidas')"><span class="quiz-check">☐</span> Me inflamo como un globo a las pocas horas de almorzar o cenar.</li>
-          <li onclick="toggleSymptom(this, 'Alternancia estreñimiento/diarrea')"><span class="quiz-check">☐</span> Alterno rachas de constipación (estreñimiento) con episodios de diarrea.</li>
-          <li onclick="toggleSymptom(this, 'Fatiga crónica / Neblina mental')"><span class="quiz-check">☐</span> Siento cansancio crónico extremo, malhumor o "neblina mental" todo el día.</li>
-          <li onclick="toggleSymptom(this, 'Acidez o ardor constante')"><span class="quiz-check">☐</span> Tengo ardor punzante constante (acidez) que no se va del todo con nada.</li>
-          <li onclick="toggleSymptom(this, 'Saciedad precoz')"><span class="quiz-check">☐</span> Siento que me lleno demasiado rápido comiendo porciones muy pequeñas.</li>
+        <ul class="quiz-list" id="symp-list" role="group" aria-label="Síntomas">
+          <li role="checkbox" aria-checked="false" tabindex="0" onclick="toggleSymptom(this, 'Inflamación excesiva post-comidas')"><span class="quiz-check">☐</span> Me inflamo como un globo a las pocas horas de almorzar o cenar.</li>
+          <li role="checkbox" aria-checked="false" tabindex="0" onclick="toggleSymptom(this, 'Alternancia estreñimiento/diarrea')"><span class="quiz-check">☐</span> Alterno rachas de constipación (estreñimiento) con episodios de diarrea.</li>
+          <li role="checkbox" aria-checked="false" tabindex="0" onclick="toggleSymptom(this, 'Fatiga crónica / Neblina mental')"><span class="quiz-check">☐</span> Siento cansancio crónico extremo, malhumor o "neblina mental" todo el día.</li>
+          <li role="checkbox" aria-checked="false" tabindex="0" onclick="toggleSymptom(this, 'Acidez o ardor constante')"><span class="quiz-check">☐</span> Tengo ardor punzante constante (acidez) que no se va del todo con nada.</li>
+          <li role="checkbox" aria-checked="false" tabindex="0" onclick="toggleSymptom(this, 'Saciedad precoz')"><span class="quiz-check">☐</span> Siento que me lleno demasiado rápido comiendo porciones muy pequeñas.</li>
         </ul>
 
         <div class="quiz-action">
@@ -248,10 +209,10 @@
 
     <div class="prep-grid">
       <!-- SIBO Prep -->
-      <div class="prep-card">
+      <div class="prep-card reveal">
         <div class="prep-header sibo-header">
           <h3>Test de SIBO</h3>
-          <span>Sobrecimiento Bacteriano / Intolerancias</span>
+          <span>Sobrecrecimiento Bacteriano / Intolerancias</span>
         </div>
         <div class="prep-body">
           <ul class="prep-list">
@@ -266,10 +227,10 @@
       </div>
 
       <!-- H Pylori Prep -->
-      <div class="prep-card">
+      <div class="prep-card reveal">
         <div class="prep-header pylori-header">
           <h3>Test H. Pylori</h3>
-          <span>Urea en Aire Espirado (UBT)</span>
+          <span>Test de Urea en Aire Espirado (UBT - 13C)</span>
         </div>
         <div class="prep-body">
           <ul class="prep-list">
@@ -317,7 +278,7 @@
       <details class="faq-item">
         <summary class="faq-question">¿Cuánto tiempo demoran los estudios en el consultorio?</summary>
         <div class="faq-answer">
-          El test de confirmación o erradicación de <em>Helicobacter Pylori</em> es rápido y dura aproximadamente 30 minutos. Por el contrario, los tests para SIBO o intolerancias (lactosa, fructosa) requieren medir la curva completa del metabolismo de gases, por lo que deberás permanecer en nuestra sala de espera <strong>entre 2 y 3 horas</strong> dependiendo del protocolo médico indicado.
+          El test de confirmación o erradicación de <em>Helicobacter Pylori</em> es rápido y dura aproximadamente 30 minutos. Por el contrario, los tests para SIBO o intolerancias (lactosa, fructosa) requieren medir las curvas de fermentación bacteriana (Hidrógeno y Metano), por lo que deberás permanecer en nuestra sala de espera <strong>entre 2 y 3 horas</strong> dependiendo del protocolo médico indicado.
         </div>
       </details>
       
@@ -391,6 +352,7 @@
     function toggleSymptom(element, sympName) {
       const isSelected = element.classList.toggle("selected");
       const checkSpan = element.querySelector('.quiz-check');
+      element.setAttribute("aria-checked", isSelected);
       
       if (isSelected) {
         checkSpan.textContent = "☑";
@@ -413,6 +375,23 @@
         waBtn.href = baseWaUrl + encodeURIComponent(text);
       }
     }
+
+    // SCROLL REVEAL (Efecto WOW suave)
+    document.addEventListener("DOMContentLoaded", function() {
+      const revealElements = document.querySelectorAll('.service-card, .test-modern-card, .faq-item, .prep-card');
+      revealElements.forEach(el => el.classList.add('reveal'));
+      
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -50px 0px", threshold: 0.1 });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+    });
   </script>
 </body>
 </html>

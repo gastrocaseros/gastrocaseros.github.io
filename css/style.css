@@ -187,6 +187,10 @@ footer { padding: 60px 80px; text-align: center; border-top: 1px solid var(--bor
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
 @keyframes rotateBg { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
+/* Wow Reveal Effects */
+.reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
 /* Responsive */
 @media (max-width: 1024px) {
   .hero, .location-wrapper, .tests-grid, .symptoms-grid { grid-template-columns: 1fr; }

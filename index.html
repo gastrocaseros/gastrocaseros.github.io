@@ -157,17 +157,17 @@
         <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: white; margin-bottom: 16px;">¿Necesitás un Test de Aire Espirado?</h2>
         <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); margin-bottom: 30px;">Cientos de pacientes toleran estas molestias creyendo que son "normales". Respondé mentalmente:</p>
         
-        <ul class="quiz-list">
-          <li><span class="quiz-check">☐</span> Me inflamo como un globo a las pocas horas de almorzar o cenar.</li>
-          <li><span class="quiz-check">☐</span> Alterno rachas de constipación (estreñimiento) con episodios de diarrea.</li>
-          <li><span class="quiz-check">☐</span> Siento cansancio crónico extremo, malhumor o "neblina mental" todo el día.</li>
-          <li><span class="quiz-check">☐</span> Tengo ardor punzante constante (acidez) que no se va del todo con nada.</li>
-          <li><span class="quiz-check">☐</span> Siento que me lleno demasiado rápido comiendo porciones muy pequeñas (saciedad precoz).</li>
+        <ul class="quiz-list" id="symp-list">
+          <li onclick="toggleSymptom(this, 'Inflamación excesiva post-comidas')"><span class="quiz-check">☐</span> Me inflamo como un globo a las pocas horas de almorzar o cenar.</li>
+          <li onclick="toggleSymptom(this, 'Alternancia estreñimiento/diarrea')"><span class="quiz-check">☐</span> Alterno rachas de constipación (estreñimiento) con episodios de diarrea.</li>
+          <li onclick="toggleSymptom(this, 'Fatiga crónica / Neblina mental')"><span class="quiz-check">☐</span> Siento cansancio crónico extremo, malhumor o "neblina mental" todo el día.</li>
+          <li onclick="toggleSymptom(this, 'Acidez o ardor constante')"><span class="quiz-check">☐</span> Tengo ardor punzante constante (acidez) que no se va del todo con nada.</li>
+          <li onclick="toggleSymptom(this, 'Saciedad precoz')"><span class="quiz-check">☐</span> Siento que me lleno demasiado rápido comiendo porciones muy pequeñas.</li>
         </ul>
 
         <div class="quiz-action">
           <p style="font-size: 1.15rem; font-weight: 700; color: var(--green-light); margin-bottom: 20px;">👉 Si marcaste DOS (2) o más situaciones, es muy probable que requieras una prueba diagnóstica.</p>
-          <a href="https://wa.me/5491124573240?text=Hola%2C%20hice%20el%20test%20en%20la%20p%C3%A1gina%20y%20tuve%20varios%20s%C3%ADntomas.%20Quisiera%20agendar%20una%20consulta." onclick="trackWA('mini_test')" class="btn-main" style="background: white; color: var(--green); font-weight: 800; padding: 18px 40px; font-size: 1.15rem;" aria-label="Solicitar consulta por múltiples síntomas">Contactar a la Dra. Pest →</a>
+          <a id="quiz-wa-btn" href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20agendar%20por%20s%C3%ADntomas%20estomacales" onclick="trackWA('mini_test')" class="btn-main" style="background: white; color: var(--green); font-weight: 800; padding: 18px 40px; font-size: 1.15rem;" aria-label="Solicitar consulta por múltiples síntomas">Contactar a la Dra. Pest →</a>
         </div>
       </div>
     </div>
@@ -382,5 +382,37 @@
     <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 10px;">&copy; 2026 GastroCaseros. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Interacción Quiz (Lead Gen) -->
+  <script>
+    let selectedSymptoms = [];
+    const baseWaUrl = "https://wa.me/5491124573240?text=";
+    const waBtn = document.getElementById("quiz-wa-btn");
+
+    function toggleSymptom(element, sympName) {
+      const isSelected = element.classList.toggle("selected");
+      const checkSpan = element.querySelector('.quiz-check');
+      
+      if (isSelected) {
+        checkSpan.textContent = "☑";
+        checkSpan.style.color = "white";
+        selectedSymptoms.push(sympName);
+      } else {
+        checkSpan.textContent = "☐";
+        checkSpan.style.color = ""; // Vuelve al color base CSS
+        selectedSymptoms = selectedSymptoms.filter((s) => s !== sympName);
+      }
+      updateWaLink();
+    }
+
+    function updateWaLink() {
+      let text = "Hola, vi las molestias en la página web y me gustaría consultar por un turno.";
+      if (selectedSymptoms.length > 0) {
+        text = "Hola, hice el autotest en su página y marqué " + selectedSymptoms.length + " síntomas frecuentes:\n- " + selectedSymptoms.join("\n- ") + "\n\nQuisiera consultar para un turno médico.";
+      }
+      if (waBtn) {
+        waBtn.href = baseWaUrl + encodeURIComponent(text);
+      }
+    }
+  </script>
 </body>
 </html>

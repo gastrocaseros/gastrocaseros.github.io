@@ -47,7 +47,10 @@ nav {
 .nav-logo { width: 100px; height: 50px; object-fit: contain; }
 .nav-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--navy); font-weight: 700; line-height: 1.1; }
 .nav-name span { display: block; font-size: 0.8rem; font-family: 'Outfit', sans-serif; font-weight: 600; color: var(--green); letter-spacing: 0.05em; text-transform: uppercase; margin-top: 2px; }
-.nav-cta { background: var(--navy); color: white; padding: 14px 28px; border-radius: 100px; text-decoration: none; font-size: 0.95rem; font-weight: 700; transition: all 0.3s ease; }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+.nav-links a:hover { color: var(--green); }
+.nav-cta { background: var(--navy); color: white; padding: 14px 28px; border-radius: 100px; text-decoration: none; font-size: 0.95rem; font-weight: 700; transition: all 0.3s ease; flex-shrink: 0; }
 .nav-cta:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); background: var(--navy-light); }
 
 /* Hero */
@@ -113,12 +116,7 @@ section { padding: 100px 80px; }
 .quiz-check { font-size: 1.8rem; line-height: 0.9; color: var(--green-ultra-light); opacity: 0.9; }
 .quiz-action { background: var(--navy); padding: 50px; border-radius: 32px; text-align: center; border: 2px solid var(--navy-light); }
 
-@media (max-width: 1024px) {
-  .quiz-section { margin: 20px; }
-  .quiz-container { padding: 40px 20px; }
-  .quiz-list li { font-size: 1.1rem; padding: 16px 20px; }
-  .quiz-action { padding: 30px 20px; }
-}
+
 
 /* Tests Detail Section (Post 2, 3, 6) */
 .tests-section { background: var(--navy); color: white; border-radius: 60px; margin: 40px; }
@@ -149,10 +147,7 @@ section { padding: 100px 80px; }
 .prep-help { display: inline-block; margin-top: 24px; font-weight: 800; font-size: 1rem; color: var(--green); text-decoration: none; transition: color 0.2s; border-bottom: 2px dashed var(--green); padding-bottom: 4px; }
 .prep-help:hover { color: var(--navy); border-color: var(--navy); }
 
-@media (max-width: 1024px) {
-  .prep-grid { grid-template-columns: 1fr; }
-  .prep-header, .prep-body { padding: 30px; }
-}
+
 
 /* FAQ Section */
 .faq-section { background: var(--cream); }
@@ -194,9 +189,22 @@ footer { padding: 60px 80px; text-align: center; border-top: 1px solid var(--bor
 /* Responsive */
 @media (max-width: 1024px) {
   .hero, .location-wrapper, .tests-grid, .symptoms-grid { grid-template-columns: 1fr; }
-  .hero-visual, .hero-content { padding: 40px; text-align: center; align-items: center; }
+  .hero-visual { display: none; }
+  .hero-content { padding: 40px 20px; text-align: center; }
   .hero-p { margin-left: auto; margin-right: auto; }
+  .hero-btns { justify-content: center; }
   nav { padding: 12px 20px; }
-  section { padding: 60px 30px; }
+  .nav-links { display: none; }
+  section { padding: 60px 20px; }
   .symptoms-section, .tests-section { margin: 20px; }
+  
+  /* Quiz & Prep Responsive */
+  .quiz-section { margin: 20px 10px; padding: 40px 20px; border-radius: 24px; }
+  .quiz-list li { padding: 16px; font-size: 1.05rem; flex-direction: column; gap: 8px; align-items: flex-start; }
+  .quiz-check { font-size: 1.6rem; align-self: flex-start; }
+  .quiz-action { padding: 30px 20px; border-radius: 20px; border-width: 1px; }
+
+  .prep-grid { grid-template-columns: 1fr; gap: 24px; }
+  .prep-header, .prep-body { padding: 24px; }
+  .location-details { padding: 30px; }
 }

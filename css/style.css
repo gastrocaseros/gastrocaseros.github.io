@@ -115,6 +115,28 @@ section { padding: 100px 80px; }
 .test-bullet p { font-size: 0.95rem; opacity: 0.8; }
 .test-highlight { background: var(--green-light); color: var(--navy); font-weight: 700; font-size: 0.8rem; padding: 4px 12px; border-radius: 50px; display: inline-block; margin-top: 20px; text-transform: uppercase; }
 
+/* Preparation Section */
+.prep-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.prep-card { background: var(--cream); border-radius: 32px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-md); transition: transform 0.3s ease; }
+.prep-card:hover { transform: translateY(-5px); }
+.prep-header { padding: 30px 40px; color: white; }
+.sibo-header { background: radial-gradient(circle at 100% 0%, var(--green), var(--navy-light)); }
+.pylori-header { background: radial-gradient(circle at 100% 0%, var(--navy-light), var(--navy)); }
+.prep-header h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 4px; }
+.prep-header span { font-size: 0.9rem; opacity: 0.8; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.prep-body { padding: 40px; }
+.prep-list { list-style: none; }
+.prep-list li { margin-bottom: 16px; padding-left: 32px; position: relative; font-size: 0.95rem; color: var(--text); }
+.prep-list li::before { content: '⏱'; position: absolute; left: 0; top: 0; font-size: 1.2rem; }
+.prep-list li strong { color: var(--navy); display: block; margin-bottom: 2px; }
+.prep-help { display: inline-block; margin-top: 24px; font-weight: 700; font-size: 0.9rem; color: var(--green); text-decoration: none; transition: color 0.2s; border-bottom: 1px dashed var(--green); padding-bottom: 2px; }
+.prep-help:hover { color: var(--navy); border-color: var(--navy); }
+
+@media (max-width: 1024px) {
+  .prep-grid { grid-template-columns: 1fr; }
+  .prep-header, .prep-body { padding: 30px; }
+}
+
 /* FAQ Section */
 .faq-section { background: var(--cream); }
 .faq-container { max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }

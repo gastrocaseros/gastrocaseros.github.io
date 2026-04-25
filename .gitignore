@@ -1,18 +1,5 @@
-# Dependencias Node.js
 node_modules/
-
-# Carpeta de build (generada automáticamente por npm run build)
-dist/
-
-# Logs
-npm-debug.log*
-*.log
-
-# Sistema operativo
+ig_posts/exports/*.png
+ig_posts/previews/*.png
 .DS_Store
-Thumbs.db
-
-# Archivos temporales de editores
-*.swp
-*.swo
-.vscode/settings.json
+dist/

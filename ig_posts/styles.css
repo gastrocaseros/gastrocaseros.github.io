@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --navy: #112233;
+    --green: #4a7d4a;
+    --cream: #f4f1eb;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+.post-container {
+    width: 1080px;
+    height: 1080px;
+    background-color: var(--cream);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+
+/* Abstract Elements */
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: var(--navy);
+}
+
+.bottom-accent {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 15px;
+    background-color: var(--green);
+}
+
+.top-accent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-color: var(--navy);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    opacity: 0.1;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    color: var(--navy);
+    line-height: 1.1;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 32px;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 28px;
+    color: var(--navy);
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.footer-info {
+    margin-top: auto;
+    border-top: 1px solid rgba(17, 34, 51, 0.1);
+    padding-top: 40px;
+}
+
+.footer-info span,
+.footer-info a {
+    display: block;
+    font-size: 24px;
+    color: var(--navy);
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* Specific for Post 2 (Dra) */
+.dra-card {
+    background-color: var(--navy);
+    padding: 60px;
+    color: var(--cream);
+    margin-top: 40px;
+}
+
+.dra-card h1 {
+    color: var(--cream);
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.dra-card p {
+    color: rgba(244, 241, 235, 0.8);
+    font-size: 30px;
+}
+
+/* Specific for Post 3 (Turnos) */
+.cta-circle {
+    width: 500px;
+    height: 500px;
+    background-color: var(--green);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(74, 125, 74, 0.2);
+}
+
+.cta-circle h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--cream);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.phone-number {
+    font-size: 55px;
+    color: var(--cream);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.checklist {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.checklist li {
+    font-size: 26px;
+    color: var(--navy);
+    margin-bottom: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 700;
+}
+
+.highlight-box {
+    background-color: rgba(74, 125, 74, 0.1);
+    padding: 30px;
+    border-left: 5px solid var(--green);
+    margin: 30px 0;
+    font-size: 24px;
+    color: var(--navy);
+}

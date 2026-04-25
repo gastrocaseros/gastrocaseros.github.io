@@ -3,179 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GastroCaseros - Mockup Validator</title>
+    <title>GastroCaseros IG Validator v3.1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --ig-bg: #ffffff;
-            --phone-border: #1a1a1a;
+            --navy: #112233;
+            --green: #4a7d4a;
+            --cream: #f4f1eb;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: #f0f2f5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             display: flex;
             height: 100vh;
+            background-color: #fafafa;
+            overflow: hidden;
         }
-
-        /* ===== Sidebar Navigation ===== */
+        
+        /* Sidebar Navigation */
         .sidebar-nav {
-            width: 300px;
-            min-width: 300px;
-            background: #112233;
-            color: white;
-            padding: 30px;
+            width: 320px;
+            min-width: 320px;
+            background: white;
+            border-right: 1px solid #dbdbdb;
+            padding: 20px;
             overflow-y: auto;
-            box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+            box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+            z-index: 10;
         }
-        .sidebar-nav h2 { font-size: 20px; margin-bottom: 30px; color: #4a7d4a; }
+        .sidebar-nav h2 { font-size: 18px; color: var(--navy); margin-bottom: 20px; border-bottom: 2px solid var(--green); padding-bottom: 10px; }
         .nav-group { margin-bottom: 25px; }
-        .nav-group h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.4); margin-bottom: 8px; }
+        .nav-group h3 { font-size: 12px; text-transform: uppercase; color: #8e8e8e; margin-bottom: 10px; }
         .nav-item {
-            padding: 12px 15px;
-            margin: 4px 0;
+            padding: 10px 12px;
+            margin-bottom: 4px;
+            border-radius: 6px;
             cursor: pointer;
-            border-radius: 8px;
-            transition: background 0.3s;
-            font-size: 14px;
+            font-size: 13px;
+            color: #262626;
+            transition: all 0.2s;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .nav-item:hover { background: rgba(255,255,255,0.1); }
-        .nav-item.active { background: #4a7d4a; }
-        .nav-item span { font-size: 11px; opacity: 0.6; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-item:hover { background-color: #efefef; }
+        .nav-item.active { background-color: var(--navy); color: white; font-weight: 600; }
+        .nav-item span { font-size: 10px; opacity: 0.6; }
 
-        /* ===== Phone Container ===== */
+        /* Main Preview Area */
         .main-view {
-            flex: 1;
+            flex-grow: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
-        }
-        .phone-frame {
-            width: 375px;
-            height: 750px;
-            background: var(--phone-border);
-            border-radius: 50px;
-            padding: 12px;
-            box-shadow: 0 40px 80px rgba(0,0,0,0.25);
+            background: #f0f2f5;
+            height: 100vh;
             position: relative;
         }
-        /* Notch */
-        .phone-frame::before {
-            content: '';
-            position: absolute;
-            top: 12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 120px;
-            height: 28px;
-            background: var(--phone-border);
-            border-radius: 0 0 18px 18px;
-            z-index: 10;
+
+        /* iPhone Frame Responsivo */
+        .phone-frame {
+            height: 92vh;
+            max-height: 850px;
+            aspect-ratio: 380 / 800;
+            background: #111;
+            border-radius: 50px;
+            padding: 12px;
+            box-shadow: 0 50px 100px rgba(0,0,0,0.3);
+            position: relative;
+            border: 4px solid #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
         }
         .phone-screen {
             width: 100%;
             height: 100%;
             background: white;
-            border-radius: 40px;
+            border-radius: 38px;
             overflow: hidden;
             position: relative;
             display: flex;
             flex-direction: column;
         }
 
-        /* ===== IG Feed Mode ===== */
-        .ig-header {
-            padding: 12px 15px;
+        /* IG Layout */
+        .ig-stories-container {
             display: flex;
-            align-items: center;
+            padding: 12px;
             border-bottom: 1px solid #efefef;
+            overflow-x: auto;
+            gap: 12px;
             background: white;
             flex-shrink: 0;
         }
-        .avatar { width: 32px; height: 32px; border-radius: 50%; background: #fff; border: 1px solid #ddd; margin-right: 10px; overflow: hidden; padding: 2px; box-sizing: border-box; }
-        .avatar img { width: 100%; height: 100%; object-fit: contain; }
+        .story-circle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .story-ring {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            padding: 2.5px;
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .story-circle img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 2px solid white;
+            object-fit: contain;
+            background: white;
+        }
 
-        .ig-post-img { width: 100%; aspect-ratio: 1/1; background: #fafafa; flex-shrink: 0; overflow: hidden; }
+        /* Feed Elements */
+        #feedContent { width: 100%; flex-grow: 1; overflow-y: auto; }
+        .ig-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            gap: 10px;
+        }
+        .avatar { width: 32px; height: 32px; border-radius: 50%; overflow: hidden; border: 1px solid #dbdbdb; }
+        .avatar img { width: 100%; height: 100%; object-fit: contain; background: white; }
+        
+        .ig-post-img { width: 100%; aspect-ratio: 1/1; background: #fafafa; overflow: hidden; }
         .ig-post-img img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .ig-actions { display: flex; padding: 10px 12px; gap: 12px; font-size: 22px; color: #262626; }
+        .ig-likes { padding: 0 12px; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+        .ig-caption { padding: 0 12px 15px; font-size: 13px; line-height: 1.4; color: #262626; }
+        .ig-caption b { margin-right: 5px; }
 
-        .ig-actions { padding: 10px 14px 4px; font-size: 22px; display: flex; gap: 16px; flex-shrink: 0; }
-        .ig-actions i { cursor: pointer; }
-        .ig-likes { padding: 2px 14px 6px; font-size: 13px; font-weight: 600; flex-shrink: 0; }
-        .ig-caption { padding: 4px 14px 14px; font-size: 13px; line-height: 1.5; overflow-y: auto; flex: 1; }
-        .ig-caption b { margin-right: 4px; }
-
-        /* ===== Story Mode ===== */
-        .story-mode .ig-header,
-        .story-mode .ig-actions,
-        .story-mode .ig-likes,
-        .story-mode .ig-caption { display: none; }
-        .story-mode .ig-post-img { display: none; }
-        .story-mode .phone-screen { background: #000; }
-
-        /* Story iframe wrapper */
+        /* Story View Mode */
+        .story-mode #feedContent, 
+        .story-mode .ig-stories-container { display: none; }
+        
         .story-iframe-wrapper {
             display: none;
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            border-radius: 40px;
-            position: relative;
-        }
-        .story-mode .story-iframe-wrapper { display: block; }
-        .story-iframe-wrapper iframe {
-            width: 1080px;
-            height: 1920px;
-            border: none;
+            background: #000;
             position: absolute;
             top: 0;
-            left: 50%;
-            margin-left: -540px;
-            transform: scale(0.378);
-            transform-origin: top center;
-        }
-        /* Story progress bar */
-        .story-progress {
-            display: none;
-            position: absolute;
-            top: 40px;
-            left: 15px;
-            right: 15px;
-            height: 3px;
-            background: rgba(255,255,255,0.3);
-            border-radius: 3px;
-            z-index: 20;
-        }
-        .story-progress-fill {
-            height: 100%;
-            width: 60%;
-            background: white;
-            border-radius: 3px;
-        }
-        .story-mode .story-progress { display: block; }
-        /* Story header overlay */
-        .story-overlay-header {
-            display: none;
-            position: absolute;
-            top: 50px;
-            left: 15px;
-            z-index: 20;
+            left: 0;
+            z-index: 500;
+            overflow: hidden;
+            justify-content: center;
             align-items: center;
-            gap: 8px;
         }
-        .story-overlay-header img {
-            width: 28px; height: 28px;
-            border-radius: 50%;
-            border: 2px solid white;
-            background: white;
-            object-fit: contain;
+        .story-mode .story-iframe-wrapper { display: flex; }
+        #storyFrame { 
+            width: 1080px; 
+            height: 1920px; 
+            border: none; 
+            transform-origin: center center;
+            flex-shrink: 0;
         }
-        .story-overlay-header span { color: white; font-size: 13px; font-weight: 600; }
-        .story-overlay-header small { color: rgba(255,255,255,0.7); font-size: 12px; }
+
+        /* Story Overlays */
+        .story-progress {
+            position: absolute;
+            top: 45px;
+            left: 10px;
+            right: 10px;
+            height: 2px;
+            background: rgba(255,255,255,0.3);
+            display: none;
+            z-index: 1000;
+        }
+        .story-progress-fill { width: 40%; height: 100%; background: white; }
+        .story-overlay-header {
+            position: absolute;
+            top: 55px;
+            left: 15px;
+            display: none;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+        }
+        .story-overlay-header img { width: 28px; height: 28px; border-radius: 50%; border: 1px solid white; background: white; object-fit: contain; }
+        .story-overlay-header span { color: white; font-size: 13px; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
+        
+        .story-mode .story-progress,
         .story-mode .story-overlay-header { display: flex; }
+
     </style>
 </head>
 <body>
@@ -184,66 +204,75 @@
     <h2>GastroCaseros Validator</h2>
 
     <div class="nav-group">
-        <h3>Fila 1</h3>
+        <h3>Posts del Feed</h3>
         <div class="nav-item active" onclick="showPost(1)">1. Apertura <span>Feed</span></div>
         <div class="nav-item" onclick="showPost(2)">2. Especialista <span>Feed</span></div>
         <div class="nav-item" onclick="showPost(3)">3. Turnos <span>Feed</span></div>
-    </div>
-
-    <div class="nav-group">
-        <h3>Fila 2</h3>
         <div class="nav-item" onclick="showPost(4)">4. Prep. Test <span>Feed</span></div>
         <div class="nav-item" onclick="showPost(5)">5. ¿Qué es SIBO? <span>Feed</span></div>
         <div class="nav-item" onclick="showPost(6)">6. H. Pylori <span>Feed</span></div>
-    </div>
-
-    <div class="nav-group">
-        <h3>Fila 3</h3>
-        <div class="nav-item" onclick="showPost(7)">7. Mitos <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost(7)">7. Mitos vs Verdad <span>Feed</span></div>
         <div class="nav-item" onclick="showPost(8)">8. Tecnología <span>Feed</span></div>
         <div class="nav-item" onclick="showPost(9)">9. Lactosa vs SIBO <span>Feed</span></div>
-    </div>
-
-    <div class="nav-group">
-        <h3>Fila 4</h3>
         <div class="nav-item" onclick="showPost(10)">10. FAQ <span>Feed</span></div>
     </div>
 
     <div class="nav-group">
         <h3>Historias</h3>
-        <div class="nav-item" onclick="showStory(1)">S1. Apertura <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(1)">S1. Bienvenida <span>Story</span></div>
         <div class="nav-item" onclick="showStory(2)">S2. Turnos <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(3)">S3. SIBO: ¿Qué es? <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(4)">S4. SIBO: Síntomas <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(5)">S5. SIBO: Evidencia <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(6)">S6. IMO: ¿Qué es? <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(7)">S7. IMO: Síntomas <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(8)">S8. IMO: Diagnóstico <span>Story</span></div>
     </div>
 </div>
 
 <div class="main-view">
-    <div class="phone-frame" id="phoneFrame">
+    <div class="phone-frame">
         <div class="phone-screen" id="phoneScreen">
-            <!-- IG Feed Elements -->
-            <div class="ig-header">
-                <div class="avatar"><img src="../logo.png"></div>
-                <div style="font-size: 14px; font-weight: 600;">gastrocaseros</div>
-            </div>
-            <div class="ig-post-img">
-                <img id="currentImg" src="previews/post1_apertura_final_1776985268190.png">
-            </div>
-            <div class="ig-actions">
-                <i class="far fa-heart"></i>
-                <i class="far fa-comment"></i>
-                <i class="far fa-paper-plane"></i>
-                <i class="far fa-bookmark" style="margin-left: auto;"></i>
-            </div>
-            <div class="ig-likes" id="currentLikes">Le gusta a dra.erikapest y 88 personas más</div>
-            <div class="ig-caption" id="currentCaption">
-                <b>gastrocaseros</b> ¡Bienvenidos a GastroCaseros! 🏥✨
+            
+            <!-- IG Header Stories -->
+            <div class="ig-stories-container">
+                <div class="story-circle" onclick="showStory(1)"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory(2)"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory(3)"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory(4)"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory(5)"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory(6)"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory(7)"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory(8)"><div class="story-ring"><img src="../logo.png"></div></div>
             </div>
 
-            <!-- Story iframe (hidden by default, shown in story-mode) -->
-            <div class="story-iframe-wrapper">
+            <!-- Feed View -->
+            <div id="feedContent">
+                <div class="ig-header">
+                    <div class="avatar"><img src="../logo.png"></div>
+                    <div style="font-size: 14px; font-weight: 600;">gastrocaseros</div>
+                </div>
+                <div class="ig-post-img">
+                    <img id="currentImg" src="previews/post1.png">
+                </div>
+                <div class="ig-actions">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i>
+                    <i class="far fa-paper-plane"></i>
+                    <i class="far fa-bookmark" style="margin-left: auto;"></i>
+                </div>
+                <div class="ig-likes" id="currentLikes">Le gusta a dra.erikapest y 88 personas más</div>
+                <div class="ig-caption" id="currentCaption">
+                    <b>gastrocaseros</b> ¡Bienvenidos a GastroCaseros! 🏥✨
+                </div>
+            </div>
+
+            <!-- Story View -->
+            <div class="story-iframe-wrapper" id="storyWrapper">
                 <iframe id="storyFrame" src=""></iframe>
             </div>
 
-            <!-- Story overlays -->
+            <!-- Overlays -->
             <div class="story-progress"><div class="story-progress-fill"></div></div>
             <div class="story-overlay-header">
                 <img src="../logo.png">
@@ -270,7 +299,13 @@
 
     const stories = {
         1: { src: "story1.html" },
-        2: { src: "story2.html" }
+        2: { src: "story2.html" },
+        3: { src: "story3_1.html" },
+        4: { src: "story3_2.html" },
+        5: { src: "story3_3.html" },
+        6: { src: "story4_1.html" },
+        7: { src: "story4_2.html" },
+        8: { src: "story4_3.html" }
     };
 
     function showPost(id) {
@@ -278,21 +313,34 @@
         document.getElementById('storyFrame').src = '';
         document.getElementById('currentImg').src = posts[id].img;
         document.getElementById('currentCaption').innerHTML = "<b>gastrocaseros</b> " + posts[id].caption;
-        document.getElementById('currentLikes').innerText = "Le gusta a dra.erikapest y " + posts[id].likes + " personas más";
-        setActive(id, 'posts');
+        document.getElementById('currentLikes').innerText = "Le gusta a dra.erikapest y " + (posts[id].likes - 1) + " personas más";
+        
+        updateActiveNav(id, 'feed');
     }
 
     function showStory(id) {
         document.body.classList.add('story-mode');
-        document.getElementById('storyFrame').src = stories[id].src;
-        setActive(id, 'stories');
+        const frame = document.getElementById('storyFrame');
+        const wrapper = document.getElementById('storyWrapper');
+        
+        frame.src = stories[id].src;
+
+        // Delay para asegurar que el wrapper tenga sus dimensiones finales antes de calcular escala
+        setTimeout(() => {
+            const scaleW = wrapper.offsetWidth / 1080;
+            const scaleH = wrapper.offsetHeight / 1920;
+            const finalScale = Math.min(scaleW, scaleH);
+            frame.style.transform = `scale(${finalScale})`;
+        }, 50);
+
+        updateActiveNav(id, 'story');
     }
 
-    function setActive(id, type) {
-        document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+    function updateActiveNav(id, type) {
+        document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
         const items = document.querySelectorAll('.nav-item');
-        if (type === 'posts') items[id - 1].classList.add('active');
-        else items[10 + (id - 1)].classList.add('active');
+        const index = type === 'feed' ? id - 1 : 10 + (id - 1);
+        if (items[index]) items[index].classList.add('active');
     }
 </script>
 

@@ -13,7 +13,9 @@ const path = require('path');
     { name: 'post5', type: 'feed' }, { name: 'post6', type: 'feed' },
     { name: 'post7', type: 'feed' }, { name: 'post8', type: 'feed' },
     { name: 'post9', type: 'feed' }, { name: 'post10', type: 'feed' },
-    { name: 'story1', type: 'story' }, { name: 'story2', type: 'story' }
+    { name: 'story1', type: 'story' }, { name: 'story2', type: 'story' },
+    { name: 'story3_1', type: 'story' }, { name: 'story3_2', type: 'story' }, { name: 'story3_3', type: 'story' },
+    { name: 'story4_1', type: 'story' }, { name: 'story4_2', type: 'story' }, { name: 'story4_3', type: 'story' }
   ];
 
   const exportDir = path.join(__dirname, 'exports');

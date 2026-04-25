@@ -1,6 +1,9 @@
 {
   "name": "gastrocaseros-landing",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18"
+  },
   "description": "Consultorio Gastroenterológico Caseros - Landing Page",
   "private": true,
   "scripts": {
@@ -8,11 +11,9 @@
     "serve": "npx serve dist"
   },
   "devDependencies": {
-    "html-minifier-terser": "^7.2.0",
     "clean-css-cli": "^5.6.3",
+    "html-minifier-terser": "^7.2.0",
+    "puppeteer": "^24.42.0",
     "serve": "^14.2.3"
   },
-  "engines": {
-    "node": ">=18"
-  }
 }

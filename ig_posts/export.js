@@ -17,7 +17,9 @@ const path = require('path');
   ];
 
   const exportDir = path.join(__dirname, 'exports');
+  const previewDir = path.join(__dirname, 'previews');
   if (!fs.existsSync(exportDir)) fs.mkdirSync(exportDir);
+  if (!fs.existsSync(previewDir)) fs.mkdirSync(previewDir);
 
   for (const file of files) {
     const isStory = file.type === 'story';
@@ -32,11 +34,22 @@ const path = require('path');
     const filePath = `file://${path.join(__dirname, file.name + '.html')}`;
     try {
         await page.goto(filePath, { waitUntil: 'networkidle0' });
+        
+        // Guardar versión de alta calidad
         await page.screenshot({
           path: path.join(exportDir, `${file.name}.png`),
           fullPage: false
         });
-        console.log(`✅ ${file.name}.png generado con éxito.`);
+
+        // Guardar versión para el mockup (si no es story, ya que las stories se ven vía iframe)
+        if (!isStory) {
+            await page.screenshot({
+                path: path.join(previewDir, `${file.name}.png`),
+                fullPage: false
+            });
+        }
+
+        console.log(`✅ ${file.name}.png generado.`);
     } catch (err) {
         console.error(`❌ Error en ${file.name}:`, err.message);
     }

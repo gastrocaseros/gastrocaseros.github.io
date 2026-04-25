@@ -25,22 +25,46 @@ body {
 .post-container {
     width: 1080px;
     height: 1080px;
-    background-color: var(--cream);
+    background: var(--cream);
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 80px;
+    padding: 100px 100px 100px 220px; /* Espacio para el sidebar ancho */
 }
 
-/* Abstract Elements */
 .sidebar {
     position: absolute;
     left: 0;
     top: 0;
-    width: 60px;
+    width: 160px; /* Más ancho para el logo */
     height: 100%;
-    background-color: var(--navy);
+    background: linear-gradient(180deg, var(--navy) 0%, #0a1520 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.brand-logo {
+    width: 120px;
+    height: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 50%; /* Logo circular en el sidebar */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.sidebar-name {
+    margin-top: auto;
+    margin-bottom: 60px;
+    color: rgba(255,255,255,0.2);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 300;
 }
 
 .bottom-accent {
@@ -66,11 +90,12 @@ body {
 /* Typography */
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 90px;
+    font-size: 85px;
     color: var(--navy);
     line-height: 1.1;
     margin-bottom: 40px;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: -1.5px;
 }
 
 .subtitle {
@@ -107,10 +132,14 @@ p {
 
 /* Specific for Post 2 (Dra) */
 .dra-card {
-    background-color: var(--navy);
+    background: linear-gradient(135deg, var(--navy) 0%, #1a3a5a 100%);
     padding: 60px;
     color: var(--cream);
     margin-top: 40px;
+    border-radius: 25px;
+    box-shadow: 20px 20px 40px rgba(17, 34, 51, 0.2);
+    position: relative;
+    z-index: 2;
 }
 
 .dra-card h1 {
@@ -175,10 +204,13 @@ p {
 }
 
 .highlight-box {
-    background-color: rgba(74, 125, 74, 0.1);
-    padding: 30px;
-    border-left: 5px solid var(--green);
-    margin: 30px 0;
-    font-size: 24px;
+    background: rgba(74, 125, 74, 0.08);
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    border-left: 8px solid var(--green);
+    margin: 40px 0;
+    font-size: 26px;
     color: var(--navy);
+    border-radius: 0 20px 20px 0;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.02);
 }

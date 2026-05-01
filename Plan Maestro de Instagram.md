@@ -86,10 +86,11 @@ Especialista UBA · +20 años 👩‍⚕️
 ```
 
 ### 3.2 Highlights (Historias Destacadas)
-Fondo `#4a7d4a` (Verde Marca) con emoji blanco:
-1. 📅 **Turnos:** Horarios, dirección, link WhatsApp.
-2. 🩺 **Servicios:** Los 3 servicios principales.
-3. 💨 **Test de Aire:** Qué es, preparación.
+Fondo `#4a7d4a` (Verde Marca) con emoji blanco. Aquí es donde vas a guardar las historias (videos MP4) que fuimos generando:
+
+1. 💨 **SIBO / IMO:** (Acá vas a destacar los videos de la `story3` sobre SIBO y la `story4` sobre IMO).
+2. 📅 **Turnos:** (Acá vas a destacar la `story5` de ubicación y cualquier historia que hable de WhatsApp).
+3. 🩺 **Servicios:** Los servicios principales.
 4. 👩‍⚕️ **La Dra.:** Especialista UBA, +20 años exp.
 5. ❓ **Preguntas:** FAQ de pacientes.
 
@@ -168,49 +169,42 @@ Fondo `#4a7d4a` (Verde Marca) con emoji blanco:
 
 ---
 
-## 7. Los 10 Posts de Lanzamiento
+## 7. Serie de Lanzamiento y Editorial Definitiva
 
-*(Todos en formato Carrusel 1080x1350 o Post Simple según complejidad)*
+*(Todos los posts se generan automáticamente con `export.js` y siguen un estilo gráfico clínico y corporativo unificado).*
 
-**POST 1 — Presentación (Cat E)**
-- **Slide 1 (Navy):** ¡Abrimos en Caseros! Consultorio Gastroenterológico.
-- **Caption:** Atención especializada. Médica UBA +20 años de exp. Servicios de gastroenterología y test de aire espirado. Jueves 9-12hs.
+### 🟢 Bloque 1: Bases Institucionales (Ya publicados)
+**POST 1 — Institucional:** Apertura y Bienvenida.
+**POST 2 — Institucional:** Presentación de la Dra. Erika Pest.
+**POST 3 — Institucional:** Información y agendamiento de Turnos.
 
-**POST 2 — Test Aire Espirado (Cat B)**
-- **Slide 1 (Crema):** ¿Qué es el test de aire espirado?
-- **Caption:** Estudio no invasivo (sin agujas) para SIBO, H. Pylori e intolerancias. Resultado inmediato.
+### 🔬 Bloque 2: Serie Diagnóstica (Nuevos - Enfoque Médico)
+**POST 4 — Definición Clínica del SIBO**
+- **Visual:** Título científico grande. Cuadro de "Evidencia Clínica" citando guías médicas.
+- **Caption:** Explicación biológica (migración bacteriana, disbiosis, fermentación) y rol del test de aire.
 
-**POST 3 — Helicobacter Pylori (Cat A)**
-- **Slide 1 (Navy):** La bacteria que afecta tu digestión (H. Pylori).
-- **Caption:** Puede causar gastritis/úlceras. Se detecta con test UBT en aire espirado.
+**POST 5 — IMO (Sobrecrecimiento Metanogénico Intestinal)**
+- **Visual:** Contraste con el SIBO. Foco en Metano vs Hidrógeno.
+- **Caption:** Por qué causa constipación severa y por qué ya no se le dice "SIBO de metano".
 
-**POST 4 — ¿Cuándo consultar? (Cat C)**
-- **Slide 1 (Crema):** Señales para ir al gastroenterólogo.
-- **Caption:** Hinchazón, acidez crónica, dolor. No esperes a que empeore.
+**POST 6 — El Gold Standard Diagnóstico**
+- **Visual:** Iconografía tecnológica médica.
+- **Caption:** La ciencia detrás del Test de Aire Espirado (cómo se miden los gases a nivel fisiológico).
 
-**POST 5 — SIBO (Cat A)**
-- **Slide 1 (Navy):** ¿Te hinchás comiendo sano? Puede ser SIBO.
-- **Caption:** Sobrecrecimiento bacteriano. Síntomas y diagnóstico con test de aire.
+**POST 7 — Intolerancia vs. Alergia Alimentaria**
+- **Visual:** Cuadro comparativo clínico.
+- **Caption:** La diferencia inmunológica y por qué el test de aire es clave para detectar malabsorción de fructosa/lactosa.
 
-**POST 6 — La Especialista (Cat E)**
-- **Slide 1 (Crema):** ¿Quién te atiende?
-- **Caption:** Dra. Erika Pest. Especialista UBA en Gastroenterología, Endoscopía y Clínica Médica. +20 años.
+---
 
-**POST 7 — Mito del Yogur (Cat D)**
-- **Slide 1 (Navy):** Mito: "El yogur cura la digestión".
-- **Caption:** Los probióticos son buenos, pero en SIBO o intolerancia pueden empeorar los síntomas.
+## 8. Banco de Ideas (Revisión / Descarte)
 
-**POST 8 — Pedir Turno (Cat E)**
-- **Slide 1 (Crema):** ¿Cómo pedir turno?
-- **Caption:** WhatsApp directo. Sin llamadas, respuestas rápidas. Jueves 9 a 12 hs.
-
-**POST 9 — Preparación Test (Cat B)**
-- **Slide 1 (Navy):** Antes del Test de Aire.
-- **Caption:** Ayuno, no antibióticos, qué comer el día previo.
-
-**POST 10 — IMO (Cat A)**
-- **Slide 1 (Crema):** Constipación crónica = ¿IMO?
-- **Caption:** Arqueas que producen metano. Test CH4. Diferencia con SIBO.
+Estos posts del borrador original fueron apartados por la Dra. por tener un tono demasiado "genérico" o "pop". Quedan aquí por si se desea rescatar la temática en el futuro con un nuevo enfoque clínico:
+- **Ex-Post 4:** Señales para ir al gastroenterólogo (Hinchazón, acidez).
+- **Ex-Post 5:** ¿Te hinchás comiendo sano? (Abordaje inicial de SIBO).
+- **Ex-Post 7:** Mito del Yogur (Probióticos).
+- **Ex-Post 9:** Antes del Test de Aire (Preparación del paciente).
+- **Ex-Post 10:** Constipación crónica = ¿IMO? (Abordaje comercial).
 
 ---
 

@@ -30,7 +30,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 100px 100px 100px 220px; /* Espacio para el sidebar ancho */
+    padding: 100px 100px 250px 220px; /* Más espacio abajo para el footer absoluto */
 }
 
 .sidebar {
@@ -115,18 +115,21 @@ p {
 }
 
 .footer-info {
-    margin-top: auto;
+    position: absolute;
+    bottom: 80px;
+    left: 220px;
+    width: 760px;
     border-top: 1px solid rgba(17, 34, 51, 0.1);
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .footer-info span,
 .footer-info a {
     display: block;
-    font-size: 24px;
+    font-size: 30px;
     color: var(--navy);
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
 }
 

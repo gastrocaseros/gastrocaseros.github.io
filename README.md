@@ -23,6 +23,25 @@ Busca el enlace `wa.me/5491124573240` en `index.html` y reemplaza el número (us
 ### 4. Cambiar un Icono
 Simplemente reemplaza el archivo correspondiente en la carpeta `img/`. Usa formato SVG para mayor nitidez.
 
+---
+
+## 📸 Estrategia de Instagram (Design-as-Code)
+El contenido de Instagram se genera a partir de plantillas HTML/CSS ubicadas en `/ig_posts`. Esto garantiza que los colores y la marca sean siempre perfectos.
+
+### 🖼️ Cómo generar los posts y las historias
+Asegúrate de tener instaladas las dependencias con `npm install`.
+
+1.  **Previsualizar:** Ejecuta `npm run ig:preview` y abre el navegador en el puerto indicado. Podrás ver el simulador (`mockup.html`) con todos los posts y historias.
+2.  **Generar Imágenes (PNG):** Ejecuta `npm run ig:export`. Las imágenes para el feed se guardarán en `ig_posts/exports/`.
+3.  **Generar Videos (MP4):** Ejecuta `npm run ig:video`. Los videos animados para historias se guardarán en `ig_posts/exports_video/`.
+
+### 📚 Documentación Estratégica
+Consulta la carpeta `docs/instagram/` para ver:
+- `01_Estrategia_y_Marca.md`: Identidad visual y Highlights.
+- `07_Status_Publicaciones.md`: Qué se ha publicado y qué falta.
+- `08_Archivo_de_Captions.md`: Los textos y hashtags listos para copiar y pegar.
+
+
 ## 📈 SEO y Rendimiento
 El sitio utiliza `loading="lazy"` para que las imágenes carguen solo cuando son visibles, ahorrando datos al paciente.
 

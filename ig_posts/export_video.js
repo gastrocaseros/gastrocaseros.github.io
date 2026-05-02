@@ -9,9 +9,10 @@ const path = require('path');
   const page = await browser.newPage();
   
   const stories = [
-    'story1', 'story2',
-    'story3_1', 'story3_2',
-    'story4_1', 'story4_2', 'story4_3'
+    'story1', 'story2', 'story3',
+    'story4_1', 'story4_2',
+    'story5_1', 'story5_2', 'story5_3',
+    'story6'
   ];
 
   const exportDir = path.join(__dirname, 'exports_video');

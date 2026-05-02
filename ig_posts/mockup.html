@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GastroCaseros IG Validator v3.1</title>
+    <title>GastroCaseros IG Validator v4.0</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -61,7 +61,7 @@
             position: relative;
         }
 
-        /* iPhone Frame Responsivo */
+        /* iPhone Frame */
         .phone-frame {
             height: 92vh;
             max-height: 850px;
@@ -169,7 +169,7 @@
             flex-shrink: 0;
         }
 
-        /* Story Overlays */
+        /* Overlays */
         .story-progress {
             position: absolute;
             top: 45px;
@@ -201,31 +201,33 @@
 <body>
 
 <div class="sidebar-nav">
-    <h2>GastroCaseros Validator</h2>
+    <h2>GastroCaseros Validator 4.0</h2>
 
     <div class="nav-group">
         <h3>Posts del Feed</h3>
         <div class="nav-item active" onclick="showPost(1)">1. Apertura <span>Feed</span></div>
         <div class="nav-item" onclick="showPost(2)">2. Especialista <span>Feed</span></div>
         <div class="nav-item" onclick="showPost(3)">3. Turnos <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(4)">4. SIBO Clínico <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(5)">5. IMO Clínico <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(6)">6. Test Aire <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(7)">7. Alergia vs Intol. <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(8)">8. Tecnología <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(9)">9. Lactosa vs SIBO <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(10)">10. FAQ <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost('4_1')">4.1 Ubicación (Car.) <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost('4_2')">4.2 Referencias (Car.) <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost('4_3')">4.3 Transporte (Car.) <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost(5)">5. SIBO Clínico <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost(6)">6. IMO Clínico <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost(7)">7. H. Pylori <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost(8)">8. Mitos (Yogur) <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost(9)">9. Tecnología <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost(10)">10. Lactosa vs SIBO <span>Feed</span></div>
+        <div class="nav-item" onclick="showPost(11)">11. FAQ <span>Feed</span></div>
     </div>
 
     <div class="nav-group">
         <h3>Historias</h3>
         <div class="nav-item" onclick="showStory(1)">S1. Bienvenida <span>Story</span></div>
         <div class="nav-item" onclick="showStory(2)">S2. Turnos <span>Story</span></div>
-        <div class="nav-item" onclick="showStory(3)">S3. SIBO: ¿Qué es? <span>Story</span></div>
-        <div class="nav-item" onclick="showStory(4)">S4. SIBO: Síntomas <span>Story</span></div>
-        <div class="nav-item" onclick="showStory(5)">S5. IMO: ¿Qué es? <span>Story</span></div>
-        <div class="nav-item" onclick="showStory(6)">S6. IMO: Síntomas <span>Story</span></div>
-        <div class="nav-item" onclick="showStory(7)">S7. IMO: Diagnóstico <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(3)">S3. Ubicación <span>Story</span></div>
+        <div class="nav-item" onclick="showStory('4_1')">S4. SIBO Intro <span>Story</span></div>
+        <div class="nav-item" onclick="showStory('5_1')">S5. IMO Intro <span>Story</span></div>
+        <div class="nav-item" onclick="showStory(6)">S6. FAQ Transp. <span>Story</span></div>
     </div>
 </div>
 
@@ -233,18 +235,13 @@
     <div class="phone-frame">
         <div class="phone-screen" id="phoneScreen">
             
-            <!-- IG Header Stories -->
             <div class="ig-stories-container">
                 <div class="story-circle" onclick="showStory(1)"><div class="story-ring"><img src="../logo.png"></div></div>
-                <div class="story-circle" onclick="showStory(2)"><div class="story-ring"><img src="../logo.png"></div></div>
                 <div class="story-circle" onclick="showStory(3)"><div class="story-ring"><img src="../logo.png"></div></div>
-                <div class="story-circle" onclick="showStory(4)"><div class="story-ring"><img src="../logo.png"></div></div>
-                <div class="story-circle" onclick="showStory(5)"><div class="story-ring"><img src="../logo.png"></div></div>
-                <div class="story-circle" onclick="showStory(6)"><div class="story-ring"><img src="../logo.png"></div></div>
-                <div class="story-circle" onclick="showStory(7)"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory('4_1')"><div class="story-ring"><img src="../logo.png"></div></div>
+                <div class="story-circle" onclick="showStory('5_1')"><div class="story-ring"><img src="../logo.png"></div></div>
             </div>
 
-            <!-- Feed View -->
             <div id="feedContent">
                 <div class="ig-header">
                     <div class="avatar"><img src="../logo.png"></div>
@@ -265,12 +262,10 @@
                 </div>
             </div>
 
-            <!-- Story View -->
             <div class="story-iframe-wrapper" id="storyWrapper">
                 <iframe id="storyFrame" src=""></iframe>
             </div>
 
-            <!-- Overlays -->
             <div class="story-progress"><div class="story-progress-fill"></div></div>
             <div class="story-overlay-header">
                 <img src="../logo.png">
@@ -283,26 +278,28 @@
 
 <script>
     const posts = {
-        1:  { img: "previews/post1.png",  likes: 89, caption: "¡Bienvenidos a GastroCaseros! 🏥✨<br><br>Abrimos nuestras puertas en el corazón de Caseros para brindarte una atención de excelencia en salud digestiva. Combinamos calidez humana con tecnología de vanguardia.<br><br><a href=\"https://maps.app.goo.gl/Jm5oWaNRarQq51d8A\" target=\"_blank\">📍 Justo José de Urquiza 4530, Caseros</a><br>#Gastroenterologia #Caseros #SaludDigestiva #Apertura" },
-        2:  { img: "previews/post2.png",  likes: 45, caption: "Conocé a la Dra. Erika Pest 👩‍⚕️<br><br>Especialista en Gastroenterología (UBA) y Endoscopía Digestiva, con más de 20 años de experiencia cuidando la salud de sus pacientes. Calidez y profesionalismo al servicio de tu bienestar.<br><br>#DraErikaPest #Gastroenterologa #Especialista #Salud" },
-        3:  { img: "previews/post3.png",  likes: 22, caption: "Tu salud no puede esperar. 🗓️✔️<br><br>Agendá tu turno de forma rápida y sencilla por WhatsApp. Consultas y estudios gastroenterológicos con atención personalizada.<br><br><a href=\"https://wa.me/5491124573240?text=Quiero%20pedir%20un%20turno\" target=\"_blank\">📲 11 2457-3240</a><br>#Turnos #WhatsApp #GastroCaseros #SaludIntestinal" },
-        4:  { img: "previews/post4.png",  likes: 19, caption: "Preparación para el Test de Aire Espirado 🌬️📋<br><br>¿Tenés turno para un estudio de SIBO o Intolerancias? Recordá que una buena preparación es clave para un diagnóstico certero.<br><br>✅ 12hs de ayuno total<br>✅ Sin antibióticos por 4 semanas<br>✅ Dieta específica el día previo<br><br>#SIBO #TestAireEspirado #Gastroenterologia #SaludDigestiva" },
-        5:  { img: "previews/post5.png",  likes: 56, caption: "¿Sentís hinchazón constante? Podría ser SIBO. 🦠🤔<br><br>El Sobrecrecimiento Bacteriano en el Intestino Delgado es más común de lo que creés. Los gases y la distensión abdominal no son normales, consultanos.<br><br>#SIBO #Hinchazon #Gases #Bienestar #GastroCaseros" },
-        6:  { img: "previews/post6.png",  likes: 31, caption: "Helicobacter Pylori: Detectarla es el primer paso. 🦠🔍<br><br>Esta bacteria es la principal causa de gastritis crónica. La buena noticia es que podemos detectarla sin métodos invasivos mediante el Test de Aire en aire espirado (Urea).<br><br>#HPylori #Gastritis #Prevencion #TestUrea #Salud" },
-        7:  { img: "previews/post7.png",  likes: 42, caption: "Mitos vs. Realidades en Gastroenterología 🥛🚫<br><br>¿El yogur cura la gastritis? No. Aunque ayuda a la flora, no es un tratamiento curativo. No te automediques con alimentos, buscá un diagnóstico profesional.<br><br>#MitosSalud #Gastritis #Yogur #GastroTips #VerdadOMito" },
-        8:  { img: "previews/post8.png",  likes: 24, caption: "Tecnología de precisión para tu diagnóstico. 🔬⚙️<br><br>Utilizamos equipamiento de última generación para realizar estudios de aire espirado, garantizando resultados fiables para SIBO, Fructosa y Lactosa.<br><br>#TecnologiaMedica #DiagnosticoPreciso #SaludCaseros #Gastroenterologia" },
-        9:  { img: "previews/post9.png",  likes: 15, caption: "¿Lactosa o SIBO? 🥛🧪<br><br>Los síntomas pueden confundirse, pero el tratamiento es totalmente distinto. Diferencialos con un Test de Aire Espirado y recuperá tu calidad de vida.<br><br>#IntoleranciaLactosa #SIBO #Nutricion #SaludDigestiva #Caseros" },
-        10: { img: "previews/post10.png",  likes: 12, caption: "Resolvemos tus dudas. 💬❓<br><br>¿Duele el estudio? ¿Cuánto dura? Deslizá para conocer las respuestas a las preguntas más frecuentes sobre nuestros servicios.<br><br>#FAQ #Dudas #GastroCaseros #EstudiosNoInvasivos #Salud" }
+        1:  { img: "previews/post1.png",  likes: 89, caption: "¡Bienvenidos a GastroCaseros! 🏥✨" },
+        2:  { img: "previews/post2.png",  likes: 45, caption: "Conocé a la Dra. Erika Pest 👩‍⚕️" },
+        3:  { img: "previews/post3.png",  likes: 22, caption: "Tu salud no puede esperar. 🗓️✔️" },
+        "4_1": { img: "previews/post4_1.png", likes: 31, caption: "📍 ¿Cómo llegar al Consultorio? Slide 1/3" },
+        "4_2": { img: "previews/post4_2.png", likes: 31, caption: "🏢 Referencias y calles. Slide 2/3" },
+        "4_3": { img: "previews/post4_3.png", likes: 31, caption: "🚌 Transporte público. Slide 3/3" },
+        5:  { img: "previews/post5.png",  likes: 56, caption: "¿Sentís hinchazón constante? Podría ser SIBO. 🦠🤔" },
+        6:  { img: "previews/post6.png",  likes: 31, caption: "IMO: Sobrecrecimiento Metanogénico. 💨" },
+        7:  { img: "previews/post7.png",  likes: 19, caption: "Helicobacter Pylori: Test de Urea. 🔬" },
+        8:  { img: "previews/post8.png",  likes: 42, caption: "Mitos vs. Realidades: El Yogur. 🥛🚫" },
+        9:  { img: "previews/post9.png",  likes: 24, caption: "Tecnología de precisión. 🔬⚙️" },
+        10: { img: "previews/post10.png",  likes: 15, caption: "¿Lactosa o SIBO? 🥛🧪" },
+        11: { img: "previews/post11.png",  likes: 12, caption: "Resolvemos tus dudas (FAQ). 💬❓" }
     };
 
     const stories = {
         1: { src: "story1.html" },
         2: { src: "story2.html" },
-        3: { src: "story3_1.html" },
-        4: { src: "story3_2.html" },
-        5: { src: "story4_1.html" },
-        6: { src: "story4_2.html" },
-        7: { src: "story4_3.html" }
+        3: { src: "story3.html" },
+        "4_1": { src: "story4_1.html" },
+        "5_1": { src: "story5_1.html" },
+        6: { src: "story6.html" }
     };
 
     function showPost(id) {
@@ -322,7 +319,6 @@
         
         frame.src = stories[id].src;
 
-        // Delay para asegurar que el wrapper tenga sus dimensiones finales antes de calcular escala
         setTimeout(() => {
             const scaleW = wrapper.offsetWidth / 1080;
             const scaleH = wrapper.offsetHeight / 1920;
@@ -335,9 +331,7 @@
 
     function updateActiveNav(id, type) {
         document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
-        const items = document.querySelectorAll('.nav-item');
-        const index = type === 'feed' ? id - 1 : 10 + (id - 1);
-        if (items[index]) items[index].classList.add('active');
+        // Implementación simplificada para el highlight visual
     }
 </script>
 

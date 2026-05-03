@@ -7,8 +7,11 @@ Este archivo contiene los textos (captions) y hashtags oficiales sincronizados c
 ## 🟢 BLOQUE 1: Institucional (Bases)
 
 ### Post 1 — Apertura y Bienvenida (`post1.html`)
+**Imagen a subir:** `post1.png`
+**Texto Alternativo (Accesibilidad):** Placa de bienvenida de GastroCaseros: Salud Digestiva integral en el centro de Caseros.
 **Caption:**
 ¡Bienvenidos a GastroCaseros! 🏥✨
+
 
 Abrimos nuestras puertas en el corazón de Caseros para brindarte una atención de excelencia en salud digestiva. Combinamos calidez humana con tecnología de vanguardia para asegurar el mejor diagnóstico y tratamiento.
 
@@ -23,8 +26,11 @@ Abrimos nuestras puertas en el corazón de Caseros para brindarte una atención 
 ---
 
 ### Post 2 — Presentación de la Profesional (`post2.html`)
+**Imagen a subir:** `post2.png`
+**Texto Alternativo (Accesibilidad):** Presentación de la Dra. Erika Pest, especialista en Gastroenterología y Endoscopía Digestiva.
 **Caption:**
 Conocé a la Dra. Erika Pest 👩‍⚕️
+
 
 Especialista en Gastroenterología (UBA) y Endoscopía Digestiva, con más de 20 años de experiencia clínica y hospitalaria cuidando la salud de sus pacientes. En GastroCaseros, su vocación es brindar calidez y profesionalismo al servicio de tu bienestar integral.
 
@@ -39,8 +45,11 @@ Especialista en Gastroenterología (UBA) y Endoscopía Digestiva, con más de 20
 ---
 
 ### Post 3 — Cómo sacar Turno (`post3.html`)
+**Imagen a subir:** `post3.png`
+**Texto Alternativo (Accesibilidad):** Información de contacto: Turnos por WhatsApp al 11 2457-3240.
 **Caption:**
 Tu salud no puede esperar. 🗓️✔️
+
 
 Agendá tu turno de forma rápida, sencilla y sin demoras telefónicas a través de nuestro WhatsApp. Realizamos consultas clínicas y estudios gastroenterológicos con atención hiper personalizada.
 
@@ -57,18 +66,14 @@ Agendá tu turno de forma rápida, sencilla y sin demoras telefónicas a través
 
 ### Post 4 — Guía de Acceso: ¿Cómo llegar? (`post4_1.html`, `post4_2.html`, `post4_3.html`)
 **Formato:** Carrusel de 3 slides.
-
-**Estructura del Carrusel:**
-- **Slide 1:** Portada con dirección principal (Urquiza 4530).
-- **Slide 2:** Referencias locales y calles (Estación, Estadio, UNTREF, Municipalidad).
-- **Slide 3:** Guía de transporte público desde zonas clave (Liniers, Ramos, etc.).
-
+**Imágenes a subir:** `post4_1.png`, `post4_2.png`, `post4_3.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de 3 imágenes mostrando la dirección exacta en Caseros, referencias locales y líneas de transporte público.
 **Caption:**
 📍 ¿Cómo llegar al Consultorio Gastroenterológico Caseros? Encontrarnos es muy fácil.
 
 Estamos en el corazón de Caseros, en un punto estratégico con múltiples accesos y referencias conocidas. 
 
-🏢 **Puntos de referencia:**
+🏢 **Puntos de referencia para encontrarnos:**
 → Estación Caseros (Tren San Martín).
 → Estadio Ciudad de Caseros (C.A. Estudiantes).
 → UNTREF Sede Caseros.
@@ -76,10 +81,15 @@ Estamos en el corazón de Caseros, en un punto estratégico con múltiples acces
 
 Estamos en **Justo José de Urquiza 4530**, entre Av. San Martín y Lisandro de la Torre (y entre David Magdalena y Cavassa).
 
-🚌 **Colectivos que te dejan cerca:**
-53, 105, 123, 181, 237 B, 343.
+🚌 **Guía rápida de transporte según tu zona:**
+• **Desde Liniers:** 108 + 181 o 21 + 53.
+• **Desde Ramos Mejía:** 181 (Directo).
+• **Desde San Martín:** 343 (Directo).
+• **Desde Microcentro:** Tren San Martín.
 
-Deslizá para ver la guía detallada de transporte según tu zona 👉
+Líneas que paran muy cerca: 53, 105, 123, 181, 237 B y 343.
+
+Deslizá para ver el mapa detallado 👉
 
 **Hashtags:**
 #Caseros #ComoLlegar #GastroCaseros #ZonaOeste #SaludDigestiva #TresDeFebrero

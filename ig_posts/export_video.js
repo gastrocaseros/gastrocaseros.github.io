@@ -5,14 +5,15 @@ const path = require('path');
 
 (async () => {
   console.log('🎥 Iniciando exportación de historias animadas en MP4...');
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
-  
+
   const stories = [
-    'story1', 'story2', 'story3',
-    'story4_1', 'story4_2',
-    'story5_1', 'story5_2', 'story5_3',
-    'story6'
+    'story1', 'story2', 'story3', 'story4',
+    'story5_1', 'story5_2',
+    'story6_1', 'story6_2', 'story6_3'
   ];
 
   const exportDir = path.join(__dirname, 'exports_video');

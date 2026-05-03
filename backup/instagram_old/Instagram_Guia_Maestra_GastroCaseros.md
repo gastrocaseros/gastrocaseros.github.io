@@ -60,7 +60,7 @@ Instrucción de diseño: Usar **Canva** (iniciar con `gastrocaseros@gmail.com`).
 
 ### Post 1: ¡Abrimos en Caseros!
 - **Diseño:** Fondo Crema (`#f4f1eb`). Título Navy arriba. Logo a la izquierda, texto "Consultorio Gastroenterológico Caseros" a la derecha con fondo Verde Marca.
-- **Caption:** 🏥 ¡Abrimos el Consultorio Gastroenterológico Caseros! Atención especializada en gastroenterología y endoscopía digestiva. Médica especialista UBA con más de 20 años de experiencia. 📍 Urquiza 4530, Caseros. 📅 Jueves de 9 a 12 hs. 💬 Turnos por WhatsApp (link en bio).
+- **Caption:** 🏥 ¡Abrimos el Consultorio Gastroenterológico Caseros! Atención especializada en gastroenterología y endoscopía digestiva. Médica especialista UBA con más de 20 años de experiencia. 📍 Justo José de Urquiza 4530, Caseros. 📅 Jueves de 9 a 12 hs. 💬 Turnos por WhatsApp (link en bio).
 
 ### Post 2: Test de Aire Espirado
 - **Diseño:** Fondo Blanco. Título Navy: "¿Qué es el test de aire espirado?". Ícono de pulmones en Verde. 3 bloques: "✓ Sin agujas", "✓ Sin dolor", "✓ Resultado inmediato".

@@ -1,52 +1,55 @@
 # 03. Guías Operativas — GastroCaseros
 
-## 1. Publicación de Historias (Celular)
-Las historias animadas (MP4) deben subirse desde el celular para habilitar herramientas interactivas.
+Este documento detalla el procedimiento exacto para mantener la calidad y consistencia del contenido en Instagram.
+
+---
+
+## 1. Procedimiento de Publicación de Posts (Feed - PC)
+Se recomienda publicar desde la computadora para mayor comodidad con los textos largos y archivos PNG.
 
 ### Paso a Paso:
-1. **Transferencia:** Subir el video de `ig_posts/exports_video/` a Google Drive y descargarlo en el móvil.
-2. **Interactividad:**
-   - **Sticker de Link:** Agregar enlace a `wa.me/5491124573240` con el texto "Agendar Turno".
-   - **Música:** Agregar track instrumental suave (Lofi/Relajante).
-   - **SEO Local:** Agregar Sticker de Ubicación "Caseros". Achicarlo con los dedos y ocultarlo fuera de la pantalla (el algoritmo lo registra igual).
-3. **Destacar:** Una vez publicado, tocar el corazón "Destacar" y guardar en la categoría correspondiente (Turnos, SIBO, etc.).
+1. **Preparación:** Asegurate de haber corrido `npm run ig:export`. Los archivos finales están en `ig_posts/exports/`.
+2. **Acceso:** Entrá a [instagram.com](https://instagram.com) e iniciá sesión.
+3. **Crear:** Clic en **+ Crear** -> **Publicación**.
+4. **Carga:** Seleccioná el archivo (ej: `post4_1.png`). 
+   - *Si es un carrusel:* Seleccioná los 3 archivos en orden (`post4_1`, `post4_2`, `post4_3`).
+5. **Formato:** Verificá que esté en **1:1 (Cuadrado)**. Clic en **Siguiente**.
+6. **Filtros:** **NO aplicar filtros**. La paleta de colores ya está calibrada en el código. Clic en **Siguiente**.
+7. **Detalles Finales:**
+   - **Caption:** Copiá el texto desde el [Archivo de Captions](08_Archivo_de_Captions.md).
+   - **Ubicación:** Buscá y seleccioná "Caseros, Buenos Aires".
+   - **Accesibilidad:** En "Configuración avanzada" o "Accesibilidad", pegá el **Alt Text** (Texto Alternativo) sugerido en la documentación.
+8. **Compartir:** Clic en **Compartir**.
 
 ---
 
-## 2. Publicación de Posts (PC)
-Uso recomendado para placas fijas (PNG) mediante el navegador.
+## 2. Publicación de Historias (Historias - Celular)
+Las historias animadas (MP4) deben subirse desde el móvil para usar stickers interactivos.
 
 ### Paso a Paso:
-1. Entrar a [instagram.com](https://instagram.com) -> **Crear** -> **Publicación**.
-2. Seleccionar archivo de `ig_posts/previews/` (proporción 1:1).
-3. **Ajustes:**
-   - **Ubicación:** "Caseros, Buenos Aires".
-   - **Texto Alternativo:** Desplegar "Accesibilidad" y describir brevemente la imagen (ej: "Placa informativa sobre SIBO").
-4. **Caption:** Copiar el texto preparado, asegurando el gancho en la primera línea y el CTA al final.
+1. **Transferencia:** Subí el video de `ig_posts/exports/` (o `exports_video/`) a Google Drive o WhatsApp Web y descargalo en tu celular.
+2. **Subida:** Abrí Instagram -> Tu Historia -> Seleccioná el video.
+3. **Elementos Interactivos:**
+   - **Sticker de Ubicación:** Agregá "Caseros". Podés achicarlo y esconderlo si molesta visualmente.
+   - **Sticker de Enlace:** Para turnos, usá el link `wa.me/5491124573240` con el texto personalizado "Agendar Turno".
+4. **Música:** Podés agregar una pista instrumental suave (Lofi/Ambient) a volumen bajo (10-15%).
+5. **Publicar:** Compartir en tu historia.
 
 ---
 
-## 3. Flujo de Producción (HTML + Puppeteer)
-En lugar de herramientas externas como Canva, utilizamos maquetación local para control absoluto del diseño.
+## 3. Flujo de Trabajo "Design-as-Code"
+Para crear contenido nuevo, seguimos este ciclo:
 
-1. **Maquetar:** Crear o editar el archivo HTML en `ig_posts/` (ej: `post6.html`).
-2. **Previsualizar:** Abrir `ig_posts/mockup.html` en el navegador para ver cómo queda en el marco de Instagram.
-3. **Exportar:**
-   - Para **Posts (PNG):** Ejecutar `node ig_posts/export.js`. Los archivos quedan en `ig_posts/previews/`.
-   - Para **Historias (MP4):** Ejecutar `node ig_posts/export_video.js`. Los archivos quedan en `ig_posts/exports_video/`.
-4. **Verificar:** Revisar legibilidad (30px para footer) y colores en las carpetas de exportación.
-
+1. **Maquetación:** Se edita el HTML/CSS en la carpeta `ig_posts/`.
+2. **Validación:** Se abre `ig_posts/mockup.html` para verificar que el texto sea legible y el diseño sea premium.
+3. **Exportación:** 
+   - `npm run ig:export`: Genera imágenes fijas (PNG).
+   - `npm run ig:video`: Genera videos animados (MP4).
+4. **Sincronización:** Se actualiza el `08_Archivo_de_Captions.md` con el texto que acompañará a la imagen.
 
 ---
 
-## 4. Gestión de la Comunidad (Community Management)
-**Regla Crítica:** Nunca dar diagnósticos ni indicaciones médicas por redes sociales.
-
-### Plantilla de Respuesta por DM:
-> "Hola [Nombre], gracias por escribirnos 👋. Para consultas específicas, estudios o turnos, te recomendamos comunicarte directamente por WhatsApp para una atención personalizada: https://wa.me/5491124573240. ¡Saludos!"
-
-### Gestión de Comentarios:
-- **Positivos:** Responder con agradecimiento y emoji.
-- **Dudas Médicas:** Derivar siempre a WhatsApp o consulta presencial.
-- **Spam:** Eliminar y bloquear inmediatamente.
-- **Tiempo de Respuesta:** Idealmente menos de 24 hs (especialmente los miércoles).
+## 4. Reglas de Oro de la Marca
+- **Consistencia:** Todos los posts deben llevar la "bajada" estándar: *"Atención personalizada. Estudios de aire espirado y consultorio de gastroenterología."*
+- **Colores:** Nunca usar colores que no sean Navy (#112233), Verde (#4a7d4a) o Crema (#f4f1eb).
+- **Trato:** Responder comentarios con calidez pero siempre derivando consultas médicas privadas a WhatsApp.

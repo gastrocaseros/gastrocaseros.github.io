@@ -4,23 +4,25 @@ const path = require('path');
 
 (async () => {
   console.log('🚀 Iniciando exportación de posts...');
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   const page = await browser.newPage();
+
   
   const files = [
     { name: 'post1', type: 'feed' }, { name: 'post2', type: 'feed' },
     { name: 'post3', type: 'feed' }, 
     { name: 'post4_1', type: 'feed' }, { name: 'post4_2', type: 'feed' }, { name: 'post4_3', type: 'feed' },
     { name: 'post5', type: 'feed' },
- { name: 'post6', type: 'feed' },
+    { name: 'post6', type: 'feed' },
     { name: 'post7', type: 'feed' }, { name: 'post8', type: 'feed' },
     { name: 'post9', type: 'feed' }, { name: 'post10', type: 'feed' },
     { name: 'post11', type: 'feed' },
     { name: 'story1', type: 'story' }, { name: 'story2', type: 'story' },
-    { name: 'story3', type: 'story' }, 
-    { name: 'story4_1', type: 'story' }, { name: 'story4_2', type: 'story' },
-    { name: 'story5_1', type: 'story' }, { name: 'story5_2', type: 'story' }, { name: 'story5_3', type: 'story' },
-    { name: 'story6', type: 'story' }
+    { name: 'story3', type: 'story' }, { name: 'story4', type: 'story' }, 
+    { name: 'story5_1', type: 'story' }, { name: 'story5_2', type: 'story' },
+    { name: 'story6_1', type: 'story' }, { name: 'story6_2', type: 'story' }, { name: 'story6_3', type: 'story' }
   ];
 
   const exportDir = path.join(__dirname, 'exports');

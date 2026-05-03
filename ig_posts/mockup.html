@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
             --green: #4a7d4a;
             --cream: #f4f1eb;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
@@ -19,7 +21,7 @@
             background-color: #fafafa;
             overflow: hidden;
         }
-        
+
         /* Sidebar Navigation */
         .sidebar-nav {
             width: 320px;
@@ -28,12 +30,29 @@
             border-right: 1px solid #dbdbdb;
             padding: 20px;
             overflow-y: auto;
-            box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
             z-index: 10;
         }
-        .sidebar-nav h2 { font-size: 18px; color: var(--navy); margin-bottom: 20px; border-bottom: 2px solid var(--green); padding-bottom: 10px; }
-        .nav-group { margin-bottom: 25px; }
-        .nav-group h3 { font-size: 12px; text-transform: uppercase; color: #8e8e8e; margin-bottom: 10px; }
+
+        .sidebar-nav h2 {
+            font-size: 18px;
+            color: var(--navy);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--green);
+            padding-bottom: 10px;
+        }
+
+        .nav-group {
+            margin-bottom: 25px;
+        }
+
+        .nav-group h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #8e8e8e;
+            margin-bottom: 10px;
+        }
+
         .nav-item {
             padding: 10px 12px;
             margin-bottom: 4px;
@@ -46,9 +65,21 @@
             justify-content: space-between;
             align-items: center;
         }
-        .nav-item:hover { background-color: #efefef; }
-        .nav-item.active { background-color: var(--navy); color: white; font-weight: 600; }
-        .nav-item span { font-size: 10px; opacity: 0.6; }
+
+        .nav-item:hover {
+            background-color: #efefef;
+        }
+
+        .nav-item.active {
+            background-color: var(--navy);
+            color: white;
+            font-weight: 600;
+        }
+
+        .nav-item span {
+            font-size: 10px;
+            opacity: 0.6;
+        }
 
         /* Main Preview Area */
         .main-view {
@@ -69,7 +100,7 @@
             background: #111;
             border-radius: 50px;
             padding: 12px;
-            box-shadow: 0 50px 100px rgba(0,0,0,0.3);
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.3);
             position: relative;
             border: 4px solid #444;
             display: flex;
@@ -77,6 +108,7 @@
             align-items: center;
             flex-shrink: 0;
         }
+
         .phone-screen {
             width: 100%;
             height: 100%;
@@ -98,6 +130,7 @@
             background: white;
             flex-shrink: 0;
         }
+
         .story-circle {
             display: flex;
             flex-direction: column;
@@ -105,16 +138,18 @@
             cursor: pointer;
             flex-shrink: 0;
         }
+
         .story-ring {
             width: 60px;
             height: 60px;
             border-radius: 50%;
             padding: 2.5px;
-            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .story-circle img {
             width: 55px;
             height: 55px;
@@ -125,28 +160,81 @@
         }
 
         /* Feed Elements */
-        #feedContent { width: 100%; flex-grow: 1; overflow-y: auto; }
+        #feedContent {
+            width: 100%;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
         .ig-header {
             display: flex;
             align-items: center;
             padding: 10px 12px;
             gap: 10px;
         }
-        .avatar { width: 32px; height: 32px; border-radius: 50%; overflow: hidden; border: 1px solid #dbdbdb; }
-        .avatar img { width: 100%; height: 100%; object-fit: contain; background: white; }
-        
-        .ig-post-img { width: 100%; aspect-ratio: 1/1; background: #fafafa; overflow: hidden; }
-        .ig-post-img img { width: 100%; height: 100%; object-fit: cover; }
-        
-        .ig-actions { display: flex; padding: 10px 12px; gap: 12px; font-size: 22px; color: #262626; }
-        .ig-likes { padding: 0 12px; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
-        .ig-caption { padding: 0 12px 15px; font-size: 13px; line-height: 1.4; color: #262626; }
-        .ig-caption b { margin-right: 5px; }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1px solid #dbdbdb;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: white;
+        }
+
+        .ig-post-img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: #fafafa;
+            overflow: hidden;
+        }
+
+        .ig-post-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ig-actions {
+            display: flex;
+            padding: 10px 12px;
+            gap: 12px;
+            font-size: 22px;
+            color: #262626;
+        }
+
+        .ig-likes {
+            padding: 0 12px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .ig-caption {
+            padding: 0 12px 15px;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #262626;
+            white-space: pre-line;
+        }
+
+
+        .ig-caption b {
+            margin-right: 5px;
+        }
 
         /* Story View Mode */
-        .story-mode #feedContent, 
-        .story-mode .ig-stories-container { display: none; }
-        
+        .story-mode #feedContent,
+        .story-mode .ig-stories-container {
+            display: none;
+        }
+
         .story-iframe-wrapper {
             display: none;
             width: 100%;
@@ -160,11 +248,15 @@
             justify-content: center;
             align-items: center;
         }
-        .story-mode .story-iframe-wrapper { display: flex; }
-        #storyFrame { 
-            width: 1080px; 
-            height: 1920px; 
-            border: none; 
+
+        .story-mode .story-iframe-wrapper {
+            display: flex;
+        }
+
+        #storyFrame {
+            width: 1080px;
+            height: 1920px;
+            border: none;
             transform-origin: center center;
             flex-shrink: 0;
         }
@@ -176,11 +268,17 @@
             left: 10px;
             right: 10px;
             height: 2px;
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
             display: none;
             z-index: 1000;
         }
-        .story-progress-fill { width: 40%; height: 100%; background: white; }
+
+        .story-progress-fill {
+            width: 40%;
+            height: 100%;
+            background: white;
+        }
+
         .story-overlay-header {
             position: absolute;
             top: 55px;
@@ -190,150 +288,244 @@
             gap: 10px;
             z-index: 1000;
         }
-        .story-overlay-header img { width: 28px; height: 28px; border-radius: 50%; border: 1px solid white; background: white; object-fit: contain; }
-        .story-overlay-header span { color: white; font-size: 13px; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
-        
-        .story-mode .story-progress,
-        .story-mode .story-overlay-header { display: flex; }
 
+        .story-overlay-header img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1px solid white;
+            background: white;
+            object-fit: contain;
+        }
+
+        .story-overlay-header span {
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .story-mode .story-progress,
+        .story-mode .story-overlay-header {
+            display: flex;
+        }
     </style>
 </head>
+
 <body>
 
-<div class="sidebar-nav">
-    <h2>GastroCaseros Validator 4.0</h2>
+    <div class="sidebar-nav">
+        <h2>GastroCaseros Validator 4.0</h2>
 
-    <div class="nav-group">
-        <h3>Posts del Feed</h3>
-        <div class="nav-item active" onclick="showPost(1)">1. Apertura <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(2)">2. Especialista <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(3)">3. Turnos <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost('4_1')">4.1 Ubicación (Car.) <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost('4_2')">4.2 Referencias (Car.) <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost('4_3')">4.3 Transporte (Car.) <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(5)">5. SIBO Clínico <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(6)">6. IMO Clínico <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(7)">7. H. Pylori <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(8)">8. Mitos (Yogur) <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(9)">9. Tecnología <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(10)">10. Lactosa vs SIBO <span>Feed</span></div>
-        <div class="nav-item" onclick="showPost(11)">11. FAQ <span>Feed</span></div>
+        <div class="nav-group">
+            <h3>Posts del Feed</h3>
+            <div class="nav-item active" onclick="showPost(1)">1. Apertura <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(2)">2. Especialista <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(3)">3. Turnos <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost('4_1')">4.1 Ubicación (Car.) <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost('4_2')">4.2 Referencias (Car.) <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost('4_3')">4.3 Transporte (Car.) <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(5)">5. SIBO Clínico <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(6)">6. IMO Clínico <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(7)">7. H. Pylori <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(8)">8. Mitos (Yogur) <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(9)">9. Tecnología <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(10)">10. Lactosa vs SIBO <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost(11)">11. FAQ <span>Feed</span></div>
+        </div>
+
+        <div class="nav-group">
+            <h3>Historias</h3>
+            <div class="nav-item" onclick="showStory(1)">S1. Bienvenida <span>Story</span></div>
+            <div class="nav-item" onclick="showStory(2)">S2. Turnos <span>Story</span></div>
+            <div class="nav-item" onclick="showStory(3)">S3. Ubicación <span>Story</span></div>
+            <div class="nav-item" onclick="showStory(4)">S4. FAQ Transp. <span>Story</span></div>
+            <div class="nav-item" onclick="showStory('5_1')">S5. SIBO (P1) <span>Story</span></div>
+            <div class="nav-item" onclick="showStory('5_2')">S5. SIBO (P2) <span>Story</span></div>
+            <div class="nav-item" onclick="showStory('6_1')">S6. IMO (P1) <span>Story</span></div>
+            <div class="nav-item" onclick="showStory('6_2')">S6. IMO (P2) <span>Story</span></div>
+            <div class="nav-item" onclick="showStory('6_3')">S6. IMO (P3) <span>Story</span></div>
+        </div>
+
     </div>
 
-    <div class="nav-group">
-        <h3>Historias</h3>
-        <div class="nav-item" onclick="showStory(1)">S1. Bienvenida <span>Story</span></div>
-        <div class="nav-item" onclick="showStory(2)">S2. Turnos <span>Story</span></div>
-        <div class="nav-item" onclick="showStory(3)">S3. Ubicación <span>Story</span></div>
-        <div class="nav-item" onclick="showStory('4_1')">S4. SIBO Intro <span>Story</span></div>
-        <div class="nav-item" onclick="showStory('5_1')">S5. IMO Intro <span>Story</span></div>
-        <div class="nav-item" onclick="showStory(6)">S6. FAQ Transp. <span>Story</span></div>
-    </div>
-</div>
+    <div class="main-view">
+        <div class="phone-frame">
+            <div class="phone-screen" id="phoneScreen">
 
-<div class="main-view">
-    <div class="phone-frame">
-        <div class="phone-screen" id="phoneScreen">
-            
-            <div class="ig-stories-container">
-                <div class="story-circle" onclick="showStory(1)"><div class="story-ring"><img src="../logo.png"></div></div>
-                <div class="story-circle" onclick="showStory(3)"><div class="story-ring"><img src="../logo.png"></div></div>
-                <div class="story-circle" onclick="showStory('4_1')"><div class="story-ring"><img src="../logo.png"></div></div>
-                <div class="story-circle" onclick="showStory('5_1')"><div class="story-ring"><img src="../logo.png"></div></div>
-            </div>
+                <div class="ig-stories-container">
+                    <div class="story-circle" onclick="showStory(1)">
+                        <div class="story-ring"><img src="logo.png"></div>
+                    </div>
+                    <div class="story-circle" onclick="showStory(2)">
+                        <div class="story-ring"><img src="logo.png"></div>
+                    </div>
+                    <div class="story-circle" onclick="showStory(3)">
+                        <div class="story-ring"><img src="logo.png"></div>
+                    </div>
+                    <div class="story-circle" onclick="showStory(4)">
+                        <div class="story-ring"><img src="logo.png"></div>
+                    </div>
+                    <div class="story-circle" onclick="showStory('5_1')">
+                        <div class="story-ring"><img src="logo.png"></div>
+                    </div>
+                    <div class="story-circle" onclick="showStory('6_1')">
+                        <div class="story-ring"><img src="logo.png"></div>
+                    </div>
+                </div>
 
-            <div id="feedContent">
-                <div class="ig-header">
-                    <div class="avatar"><img src="../logo.png"></div>
-                    <div style="font-size: 14px; font-weight: 600;">gastrocaseros</div>
+                <div id="feedContent">
+                    <div class="ig-header">
+                        <div class="avatar"><img src="logo.png"></div>
+                        <div style="font-size: 14px; font-weight: 600;">gastrocaseros</div>
+                    </div>
+                    <div class="ig-post-img">
+                        <img id="currentImg" src="previews/post1.png">
+                    </div>
+                    <div class="ig-actions">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                        <i class="far fa-bookmark" style="margin-left: auto;"></i>
+                    </div>
+                    <div class="ig-likes" id="currentLikes">Le gusta a dra.erikapest y 88 personas más</div>
+                    <div class="ig-caption" id="currentCaption">
+                        <b>gastrocaseros</b> ¡Bienvenidos a GastroCaseros! 🏥✨
+                    </div>
                 </div>
-                <div class="ig-post-img">
-                    <img id="currentImg" src="previews/post1.png">
-                </div>
-                <div class="ig-actions">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-comment"></i>
-                    <i class="far fa-paper-plane"></i>
-                    <i class="far fa-bookmark" style="margin-left: auto;"></i>
-                </div>
-                <div class="ig-likes" id="currentLikes">Le gusta a dra.erikapest y 88 personas más</div>
-                <div class="ig-caption" id="currentCaption">
-                    <b>gastrocaseros</b> ¡Bienvenidos a GastroCaseros! 🏥✨
-                </div>
-            </div>
 
-            <div class="story-iframe-wrapper" id="storyWrapper">
-                <iframe id="storyFrame" src=""></iframe>
-            </div>
+                <div class="story-iframe-wrapper" id="storyWrapper">
+                    <iframe id="storyFrame" src=""></iframe>
+                </div>
 
-            <div class="story-progress"><div class="story-progress-fill"></div></div>
-            <div class="story-overlay-header">
-                <img src="../logo.png">
-                <span>gastrocaseros</span>
-                <small>2h</small>
+                <div class="story-progress">
+                    <div class="story-progress-fill"></div>
+                </div>
+                <div class="story-overlay-header">
+                    <img src="logo.png">
+                    <span>gastrocaseros</span>
+                    <small>2h</small>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
+    <script>
     const posts = {
-        1:  { img: "previews/post1.png",  likes: 89, caption: "¡Bienvenidos a GastroCaseros! 🏥✨" },
-        2:  { img: "previews/post2.png",  likes: 45, caption: "Conocé a la Dra. Erika Pest 👩‍⚕️" },
-        3:  { img: "previews/post3.png",  likes: 22, caption: "Tu salud no puede esperar. 🗓️✔️" },
-        "4_1": { img: "previews/post4_1.png", likes: 31, caption: "📍 ¿Cómo llegar al Consultorio? Slide 1/3" },
-        "4_2": { img: "previews/post4_2.png", likes: 31, caption: "🏢 Referencias y calles. Slide 2/3" },
-        "4_3": { img: "previews/post4_3.png", likes: 31, caption: "🚌 Transporte público. Slide 3/3" },
-        5:  { img: "previews/post5.png",  likes: 56, caption: "¿Sentís hinchazón constante? Podría ser SIBO. 🦠🤔" },
-        6:  { img: "previews/post6.png",  likes: 31, caption: "IMO: Sobrecrecimiento Metanogénico. 💨" },
-        7:  { img: "previews/post7.png",  likes: 19, caption: "Helicobacter Pylori: Test de Urea. 🔬" },
-        8:  { img: "previews/post8.png",  likes: 42, caption: "Mitos vs. Realidades: El Yogur. 🥛🚫" },
-        9:  { img: "previews/post9.png",  likes: 24, caption: "Tecnología de precisión. 🔬⚙️" },
-        10: { img: "previews/post10.png",  likes: 15, caption: "¿Lactosa o SIBO? 🥛🧪" },
-        11: { img: "previews/post11.png",  likes: 12, caption: "Resolvemos tus dudas (FAQ). 💬❓" }
+        1: { 
+            img: "previews/post1.png", 
+            likes: 89, 
+            caption: `¡Bienvenidos a GastroCaseros! 🏥✨\n\nAbrimos nuestras puertas en el corazón de Caseros para brindarte una atención de excelencia en salud digestiva. Combinamos calidez humana con tecnología de vanguardia.\n\n👉 Turnos y consultas: Link en nuestra biografía.` 
+        },
+        2: { 
+            img: "previews/post2.png", 
+            likes: 45, 
+            caption: `Conocé a la Dra. Erika Pest 👩‍⚕️\n\nEspecialista en Gastroenterología (UBA) y Endoscopía Digestiva, con más de 20 años de experiencia clínica y hospitalaria cuidando la salud de sus pacientes.\n\n👉 Turnos y consultas: Link en nuestra biografía.` 
+        },
+        3: { 
+            img: "previews/post3.png", 
+            likes: 22, 
+            caption: `Tu salud no puede esperar. 🗓️✔️\n\nAgendá tu turno de forma rápida, sencilla y sin demoras telefónicas a través de nuestro WhatsApp. Realizamos consultas clínicas y estudios gastroenterológicos.\n\n📲 11 2457-3240` 
+        },
+        "4_1": { 
+            img: "previews/post4_1.png", 
+            likes: 31, 
+            caption: `📍 ¿Cómo llegar al Consultorio Gastroenterológico Caseros? Encontrarnos es muy fácil.\n\nEstamos en el corazón de Caseros, en un punto estratégico con múltiples accesos.\n\n🏢 Puntos de referencia para encontrarnos:\n→ Estación Caseros (Tren San Martín).\n→ Estadio Ciudad de Caseros (C.A. Estudiantes).\n\nEstamos en Justo José de Urquiza 4530.` 
+        },
+        "4_2": { 
+            img: "previews/post4_2.png", 
+            likes: 31, 
+            caption: `🏢 Puntos de referencia para encontrarnos:\n→ Estación Caseros (Tren San Martín).\n→ Estadio Ciudad de Caseros (C.A. Estudiantes).\n→ UNTREF Sede Caseros.\n→ Sec. de Desarrollo Humano y Hábitat 3F.\n\nEstamos en Justo José de Urquiza 4530, entre Av. San Martín y Lisandro de la Torre.` 
+        },
+        "4_3": { 
+            img: "previews/post4_3.png", 
+            likes: 31, 
+            caption: `🚌 Guía rápida de transporte según tu zona:\n• Desde Liniers: 108 + 181 o 21 + 53.\n• Desde Ramos Mejía: 181 (Directo).\n• Desde San Martín: 343 (Directo).\n• Desde Microcentro: Tren San Martín.\n\nLíneas que paran muy cerca: 53, 105, 123, 181, 237 B y 343.` 
+        },
+        5: { 
+            img: "previews/post5.png", 
+            likes: 56, 
+            caption: `🦠 ¿Sentís hinchazón o gases frecuentes después de comer? Puede ser SIBO.\n\nEl SIBO es una disbiosis caracterizada por la migración de bacterias hacia el intestino delgado, provocando fermentación patológica.\n\nMediante el Test de Aire Espirado, medimos de forma no invasiva los niveles de Hidrógeno y Metano.` 
+        },
+        6: { 
+            img: "previews/post6.png", 
+            likes: 31, 
+            caption: `💨 No todo es SIBO. Si sufrís de constipación crónica persistente, conocé el IMO.\n\nA diferencia del SIBO tradicional, el IMO involucra arqueas que producen metano, gas que enlentece la motilidad intestinal.\n\nEl diagnóstico preciso es la clave. Lo realizamos en el consultorio mediante tecnología de aire espirado.` 
+        },
+        7: { 
+            img: "previews/post7.png", 
+            likes: 19, 
+            caption: `🔬 Helicobacter Pylori: Una bacteria silenciosa que afecta tu estómago.\n\nEs la principal causa de gastritis crónica y úlceras. Detectarla a tiempo es fundamental.\n\nRealizamos el Test de Aire Espirado (Urea), que permite detectarla sin necesidad de una endoscopía inicial.` 
+        },
+        8: { 
+            img: "previews/post8.png", 
+            likes: 42, 
+            caption: `🤔 ¿El yogur realmente cura la gastritis?\n\nSi bien los probióticos ayudan a la salud de la microbiota, no curan una gastritis crónica ni erradican bacterias como el H. Pylori.\n\nLa salud digestiva requiere un diagnóstico médico preciso. No te automediques.` 
+        },
+        9: { 
+            img: "previews/post9.png", 
+            likes: 24, 
+            caption: `🔬 Tecnología al servicio de tu diagnóstico.\n\nEn GastroCaseros combinamos la última tecnología en Tests de Aire Espirado con una visión clínica integral.\n\n✅ Equipamiento de alta precisión.\n✅ Diagnósticos basados en evidencia científica.\n✅ Atención personalizada por especialista UBA.` 
+        },
+        10: { 
+            img: "previews/post10.png", 
+            likes: 15, 
+            caption: `🤔 ¿Lactosa o SIBO? Los síntomas pueden confundir, pero el origen es distinto.\n\nHinchazón, gases y ruidos intestinales son comunes en ambos casos. Mientras la intolerancia a la lactosa es un déficit enzimático, el SIBO es un desbalance bacteriano.\n\nDiferenciarlos es clave para el tratamiento correcto.` 
+        },
+        11: { 
+            img: "previews/post11.png", 
+            likes: 12, 
+            caption: `❓ ¿Tenés dudas sobre tu próximo estudio? Aquí respondemos las más frecuentes.\n\n✅ ¿Duele? No, solo consiste en soplar.\n✅ ¿Cuánto dura? Entre 2 y 3 horas.\n✅ ¿Cuándo está el resultado? En 48hs hábiles de forma digital.\n\nDeslizá para leer todas las respuestas 👉` 
+        }
     };
 
-    const stories = {
-        1: { src: "story1.html" },
-        2: { src: "story2.html" },
-        3: { src: "story3.html" },
-        "4_1": { src: "story4_1.html" },
-        "5_1": { src: "story5_1.html" },
-        6: { src: "story6.html" }
-    };
 
-    function showPost(id) {
-        document.body.classList.remove('story-mode');
-        document.getElementById('storyFrame').src = '';
-        document.getElementById('currentImg').src = posts[id].img;
-        document.getElementById('currentCaption').innerHTML = "<b>gastrocaseros</b> " + posts[id].caption;
-        document.getElementById('currentLikes').innerText = "Le gusta a dra.erikapest y " + (posts[id].likes - 1) + " personas más";
-        
-        updateActiveNav(id, 'feed');
-    }
+        const stories = {
+            1: { src: "story1.html" },
+            2: { src: "story2.html" },
+            3: { src: "story3.html" },
+            4: { src: "story4.html" },
+            "5_1": { src: "story5_1.html" },
+            "5_2": { src: "story5_2.html" },
+            "6_1": { src: "story6_1.html" },
+            "6_2": { src: "story6_2.html" },
+            "6_3": { src: "story6_3.html" }
+        };
 
-    function showStory(id) {
-        document.body.classList.add('story-mode');
-        const frame = document.getElementById('storyFrame');
-        const wrapper = document.getElementById('storyWrapper');
-        
-        frame.src = stories[id].src;
 
-        setTimeout(() => {
-            const scaleW = wrapper.offsetWidth / 1080;
-            const scaleH = wrapper.offsetHeight / 1920;
-            const finalScale = Math.min(scaleW, scaleH);
-            frame.style.transform = `scale(${finalScale})`;
-        }, 50);
+        function showPost(id) {
+            document.body.classList.remove('story-mode');
+            document.getElementById('storyFrame').src = '';
+            document.getElementById('currentImg').src = posts[id].img;
+            document.getElementById('currentCaption').innerHTML = "<b>gastrocaseros</b> " + posts[id].caption;
+            document.getElementById('currentLikes').innerText = "Le gusta a dra.erikapest y " + (posts[id].likes - 1) + " personas más";
 
-        updateActiveNav(id, 'story');
-    }
+            updateActiveNav(id, 'feed');
+        }
 
-    function updateActiveNav(id, type) {
-        document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
-        // Implementación simplificada para el highlight visual
-    }
-</script>
+        function showStory(id) {
+            document.body.classList.add('story-mode');
+            const frame = document.getElementById('storyFrame');
+            const wrapper = document.getElementById('storyWrapper');
+
+            frame.src = stories[id].src;
+
+            setTimeout(() => {
+                const scaleW = wrapper.offsetWidth / 1080;
+                const scaleH = wrapper.offsetHeight / 1920;
+                const finalScale = Math.min(scaleW, scaleH);
+                frame.style.transform = `scale(${finalScale})`;
+            }, 50);
+
+            updateActiveNav(id, 'story');
+        }
+
+        function updateActiveNav(id, type) {
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            // Implementación simplificada para el highlight visual
+        }
+    </script>
 
 </body>
+
 </html>

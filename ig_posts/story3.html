@@ -1,97 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stories.css">
     <title>Historia 3 - Ubicación</title>
-    <style>
-        .map-container {
-            width: 100%;
-            height: 350px;
-            background-color: #e0ddd6;
-            border-radius: 30px;
-            margin-top: 40px;
-            position: relative;
-            overflow: hidden;
-            border: 2px solid var(--navy);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .map-pin {
-            width: 40px;
-            height: 40px;
-            background-color: var(--green);
-            border-radius: 50% 50% 50% 0;
-            transform: rotate(-45deg);
-            position: relative;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        .map-pin::after {
-            content: '';
-            width: 16px;
-            height: 16px;
-            background: white;
-            position: absolute;
-            border-radius: 50%;
-            top: 12px;
-            left: 12px;
-        }
-        .address-box {
-            background-color: var(--navy);
-            color: white;
-            padding: 25px;
-            border-radius: 20px;
-            margin-top: 30px;
-            font-size: 28px;
-            width: 100%;
-            box-sizing: border-box;
-            text-align: left;
-        }
-        .reference-list {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-            text-align: left;
-            font-size: 24px;
-            width: 100%;
-        }
-        .reference-list li {
-            margin-bottom: 10px;
-            padding-left: 30px;
-            position: relative;
-        }
-        .reference-list li::before {
-            content: '📍';
-            position: absolute;
-            left: 0;
-        }
-    </style>
 </head>
+
 <body>
     <div class="post-container story">
-        <img src="../logo.png" class="brand-logo-story" alt="Logo">
-        
+        <img src="logo.png" class="brand-logo-story" alt="Logo">
+
         <div class="subtitle" style="margin-top: 150px;">Highlight: Ubicación</div>
-        <h1>¿Cómo llegar?</h1>
-        
-        <div class="map-container">
-            <div class="map-pin"></div>
-            <div style="position: absolute; bottom: 20px; font-weight: bold; color: var(--navy); font-size: 24px;">CENTRO DE CASEROS</div>
+        <h1>¿Cómo llegar al consultorio?</h1>
+
+        <div class="map-mockup">
+            <!-- Representación visual premium de un mapa -->
+            <div
+                style="position: absolute; width: 200%; height: 200%; background-image: radial-gradient(#ccc 2px, transparent 2px); background-size: 40px 40px; opacity: 0.3;">
+            </div>
+            <div
+                style="width: 80px; height: 80px; background: var(--green); border-radius: 50% 50% 50% 0; transform: rotate(-45deg); box-shadow: 0 10px 20px rgba(0,0,0,0.2); display: flex; justify-content: center; align-items: center; border: 4px solid white;">
+                <div
+                    style="width: 30px; height: 30px; background: white; border-radius: 50%; transform: rotate(45deg);">
+                </div>
+            </div>
+            <div
+                style="position: absolute; bottom: 30px; font-weight: 800; color: var(--navy); font-size: 32px; letter-spacing: 2px;">
+                URQUIZA 4530, CASEROS</div>
         </div>
 
-        <ul class="reference-list">
-            <li>Cerca de Estación Caseros</li>
+        <ul class="reference-list-story">
+            <li>A solo 400m de la Estación Caseros</li>
             <li>A pasos de UNTREF y Estadio 3F</li>
-            <li>Cerca de la Municipalidad</li>
+            <li>En pleno centro comercial</li>
         </ul>
 
-        <div class="address-box">
-            Urquiza 4530, Caseros<br>
-            <span style="font-size: 18px; opacity: 0.8;">(Entre Av. San Martín y Lisandro de la Torre)</span>
+        <div class="story-card dark">
+            <div style="font-weight: 800; font-size: 42px; margin-bottom: 10px;">📍 Nuestra Dirección</div>
+            <div style="font-size: 36px; opacity: 0.9;">Justo José de Urquiza 4530, Caseros</div>
+            <div style="font-size: 24px; margin-top: 20px; color: var(--green-light); font-weight: 600;">(Entre David
+                Magdalena y Cavassa)</div>
         </div>
 
-        <div class="tap-indicator">Ver en Google Maps</div>
+        <div class="tap-indicator">Abrir Mapa</div>
     </div>
 </body>
+
 </html>

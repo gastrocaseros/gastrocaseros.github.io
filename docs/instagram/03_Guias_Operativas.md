@@ -29,11 +29,15 @@ Las historias animadas (MP4) deben subirse desde el móvil para usar stickers in
 ### Paso a Paso:
 1. **Transferencia:** Subí el video de `ig_posts/exports/` (o `exports_video/`) a Google Drive o WhatsApp Web y descargalo en tu celular.
 2. **Subida:** Abrí Instagram -> Tu Historia -> Seleccioná el video.
-3. **Elementos Interactivos:**
-   - **Sticker de Ubicación:** Agregá "Caseros". Podés achicarlo y esconderlo si molesta visualmente.
-   - **Sticker de Enlace:** Para turnos, usá el link `wa.me/5491124573240` con el texto personalizado "Agendar Turno".
+3. **Elementos Interactivos (Crucial):**
+   - **Alineación:** Los videos incluyen botones de guía (ej: "Colocar Sticker"). Debés colocar el sticker nativo de Instagram **justo encima** de estos botones para que la animación y el diseño coincidan.
+   - **Sticker de Ubicación:** Agregá "Consultorio Gastroenterológico Caseros" o simplemente "Caseros".
+   - **Sticker de Enlace:** Para transporte/turnos, usá el link correspondiente y personalizá el texto para que tape la guía del video.
 4. **Música:** Podés agregar una pista instrumental suave (Lofi/Ambient) a volumen bajo (10-15%).
 5. **Publicar:** Compartir en tu historia.
+
+> [!TIP]
+> Si el sticker de Instagram es muy grande, podés pellizcarlo para achicarlo hasta que calce perfecto sobre la caja verde diseñada en el video.
 
 ---
 

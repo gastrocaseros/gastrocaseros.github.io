@@ -12,7 +12,8 @@ body {
     width: 1080px;
     height: 1920px;
     min-height: 1920px;
-    padding: 520px 100px 250px;
+    padding: 450px 100px 250px;
+
     /* Más espacio abajo para el footer absoluto */
     margin: 0;
     display: flex;
@@ -47,9 +48,9 @@ body {
 }
 
 .story h1 {
-    font-size: 110px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
     line-height: 1.05;
     color: var(--navy);
 }
@@ -128,7 +129,9 @@ body {
     justify-content: center;
     box-shadow: 0 10px 30px rgba(74, 125, 74, 0.3);
     animation: floating 3s infinite ease-in-out;
+    border: 3px dashed rgba(255,255,255,0.4);
 }
+
 
 .tap-indicator::after {
     content: '\279C';
@@ -246,4 +249,24 @@ body {
 .story .cta-circle {
     animation: fadeInUp 1.2s ease-out 0.5s forwards;
     opacity: 0;
+}
+
+/* Ajustes de Legibilidad */
+.large-font h1 { font-size: 120px !important; }
+.large-font p { font-size: 46px !important; }
+.large-font .highlight-box { font-size: 46px !important; }
+/* Modo Compacto para Historias con mucho contenido (ej. Transporte) */
+.story.compact {
+    padding-top: 420px;
+}
+.story.compact .story-card {
+    padding: 30px 50px;
+    margin-top: 25px;
+}
+.story.compact .highlight-box {
+    padding: 25px 45px;
+    margin-top: 25px;
+}
+.story.compact h1 {
+    margin-bottom: 10px;
 }

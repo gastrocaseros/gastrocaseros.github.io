@@ -79,7 +79,7 @@ Estamos en el corazón de Caseros, en un punto estratégico con múltiples acces
 → UNTREF Sede Caseros.
 → Sec. de Desarrollo Humano y Hábitat 3F.
 
-Estamos en **Justo José de Urquiza 4530**, entre Av. San Martín y Lisandro de la Torre (y entre David Magdalena y Cavassa).
+Estamos en **Justo José de Urquiza 4530**, entre David Magdalena y Cavassa (entre Av. San Martín y Lisandro de la Torre).
 
 🚌 **Guía rápida de transporte según tu zona:**
 • **Desde Liniers:** 108 + 181 o 21 + 53.
@@ -89,7 +89,10 @@ Estamos en **Justo José de Urquiza 4530**, entre Av. San Martín y Lisandro de 
 
 Líneas que paran muy cerca: 53, 105, 123, 181, 237 B y 343.
 
+📍 Buscá cómo llegar en transporte público desde tu ubicación: https://www.google.com/maps/dir/?api=1&destination=Justo+Jose+de+Urquiza+4530+Caseros&travelmode=transit
+
 Deslizá para ver el mapa detallado 👉
+
 
 **Hashtags:**
 #Caseros #ComoLlegar #GastroCaseros #ZonaOeste #SaludDigestiva #TresDeFebrero

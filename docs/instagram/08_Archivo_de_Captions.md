@@ -236,3 +236,46 @@ Una consulta a tiempo previene complicaciones mayores.
 ### Historia 5 — Serie SIBO (`story5_1.html`, `story5_2.html`)
 ### Historia 6 — Serie IMO (`story6_1.html`, `story6_2.html`, `story6_3.html`)
 ### Historia 7 — Caja de Preguntas
+
+---
+
+## 🗓️ BLOQUE 5: Efemérides (Fechas Especiales)
+
+### Efeméride 05/05 — Día Internacional de la Celiaquía (`efemeride_05_05_s1.html` a `s3`)
+**Formato:** Carrusel de 3 slides.
+**Imágenes a subir:** `efemeride_05_05_s1.png`, `efemeride_05_05_s2.png`, `efemeride_05_05_s3.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de 3 imágenes sobre la concientización de la Celiaquía. Destaca que el 1% de la población es celíaca y menciona síntomas extra-intestinales como anemia y aftas recurrentes.
+**Caption:**
+El 5 de mayo es el Día Internacional de la Celiaquía. 🌍🌾
+
+¿Sabías que se estima que el 1% de la población en Argentina es celíaca? Lo más impactante es que por cada persona diagnosticada, ¡existen 8 que aún no lo saben! 😮
+
+La celiaquía es mucho más que "no poder comer harinas". Es una enfermedad sistémica y autoinmune que puede manifestarse de formas muy diversas:
+✅ Anemia persistente.
+✅ Falta de crecimiento en niños.
+✅ Aftas bucales recurrentes.
+✅ Osteopenia u osteoporosis precoz.
+
+El diagnóstico temprano es la clave para mejorar drásticamente la calidad de vida. No ignores las señales de tu cuerpo. 🩺✨
+
+**Hashtags:**
+#DiaInternacionalDelCeliaco #Celiaquia #SinTACC #SaludDigestiva #Gastroenterologia #Caseros #GastroCaseros #Concientizacion
+
+---
+
+### Efeméride 19/05 — Día Mundial de la Enfermedad Inflamatoria Intestinal (EII) (`efemeride_05_19_s1.html` a `s6`)
+**Formato:** Carrusel de 6 slides.
+**Imágenes a subir:** `efemeride_05_19_s1.png`, `efemeride_05_19_s2.png`, `efemeride_05_19_s3.png`, `efemeride_05_19_s4.png`, `efemeride_05_19_s5.png`, `efemeride_05_19_s6.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de 6 imágenes de concientización sobre la EII (Crohn y Colitis Ulcerosa). Explica qué es, causas, síntomas de alerta y diagnóstico. Diseño con acentos en color violeta.
+**Caption:**
+El 19 de mayo nos unimos para concientizar sobre la Enfermedad Inflamatoria Intestinal (EII). 🌍💜
+
+¿Qué es importante saber?
+1️⃣ No es "solo un dolor de panza".
+2️⃣ Es una condición inmunomediada, no es contagiosa ni causada por estrés (aunque el estrés pueda influir en los brotes).
+3️⃣ Con el tratamiento adecuado y seguimiento especializado, es posible alcanzar la remisión y mejorar la calidad de vida.
+
+Ayudanos a difundir. Compartir esta información puede ayudar a que alguien llegue a su diagnóstico antes. 🗣️✨
+
+**Hashtags:**
+#WorldIBDDay #EnfermedadInflamatoriaIntestinal #Crohn #ColitisUlcerosa #Gastroenterología #SaludDigestiva #IBDAwareness #HagamosVisibleLoInvisible #SaludArgentina

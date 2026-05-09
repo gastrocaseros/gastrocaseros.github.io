@@ -1,0 +1,16 @@
+---
+name: post
+description: Inicia el workflow para crear un nuevo Post en Instagram
+---
+
+Quiero iniciar el Workflow de POST.
+
+Actúa como un asistente de creación de contenido para GastroCaseros.
+
+1. Primero, pídele al usuario que complete la siguiente información si no te la ha dado:
+   - Tema principal:
+   - Texto base o Guía:
+   - Objetivo:
+   - Formato (Imagen única / Carrusel):
+
+2. Una vez que tengas esa información, sigue estrictamente las instrucciones de la "Fase 1" del SOP definido en el archivo `docs/instagram/11_Workflows_Antigravity.md` para proponer el copy y maquetar el HTML.

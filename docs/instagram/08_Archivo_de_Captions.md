@@ -230,7 +230,9 @@ Una consulta a tiempo previene complicaciones mayores.
 ## 📱 BLOQUE 4: Historias (Stories)
 
 ### Historia 3 — Ubicación (Mapa) (`story3.html`)
-### Historia 4 — Serie SIBO (`story4_1.html`, `story4_2.html`)
-### Historia 5 — Serie IMO (`story5_1.html`, `story5_2.html`, `story5_3.html`)
-### Historia 6 — FAQ Transporte (`story6.html`)
+### Historia 4 — FAQ Transporte (`story4.html`)
+**Texto Alternativo (Accesibilidad):** Placa informativa de transporte público. Detalla líneas 53, 105, 123, 181, 237 y 343. Indica cómo llegar desde Liniers, Ramos Mejía y San Martín.
+**Interacción:** Agregar sticker de enlace sobre el botón "Ver Indicaciones" hacia Google Maps.
+### Historia 5 — Serie SIBO (`story5_1.html`, `story5_2.html`)
+### Historia 6 — Serie IMO (`story6_1.html`, `story6_2.html`, `story6_3.html`)
 ### Historia 7 — Caja de Preguntas

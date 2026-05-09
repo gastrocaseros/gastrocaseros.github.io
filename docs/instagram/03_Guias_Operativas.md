@@ -23,6 +23,18 @@ Se recomienda publicar desde la computadora para mayor comodidad con los textos 
 
 ---
 
+## 1.1. Programación de Posts (Meta Business Suite)
+Ideal para efemérides o cuando querés dejar contenido listo para el futuro.
+
+1. **Acceso:** Entrá a [Meta Business Suite](https://business.facebook.com) desde tu PC.
+2. **Crear:** Clic en **Crear publicación**. Seleccioná solo la cuenta de Instagram.
+3. **Multimedia:** Subí los archivos PNG de `ig_posts/exports/`.
+4. **Texto:** Pegá el caption y hashtags desde el [Archivo de Captions](08_Archivo_de_Captions.md).
+5. **Programar:** En "Opciones de programación", elegí **Programar** y seleccioná la fecha y hora futura.
+6. **Finalizar:** Clic en **Programar publicación**.
+
+---
+
 ## 2. Publicación de Historias (Historias - Celular)
 Las historias animadas (MP4) deben subirse desde el móvil para usar stickers interactivos.
 

@@ -24,7 +24,8 @@ const path = require('path');
     { name: 'story5_1', type: 'story' }, { name: 'story5_2', type: 'story' },
     { name: 'story6_1', type: 'story' }, { name: 'story6_2', type: 'story' }, { name: 'story6_3', type: 'story' },
     { name: 'efemeride_05_05_s1', type: 'feed' }, { name: 'efemeride_05_05_s2', type: 'feed' }, { name: 'efemeride_05_05_s3', type: 'feed' },
-    { name: 'efemeride_05_19_s1', type: 'feed' }, { name: 'efemeride_05_19_s2', type: 'feed' }, { name: 'efemeride_05_19_s3', type: 'feed' }, { name: 'efemeride_05_19_s4', type: 'feed' }, { name: 'efemeride_05_19_s5', type: 'feed' }, { name: 'efemeride_05_19_s6', type: 'feed' }
+    { name: 'efemeride_05_19_s1', type: 'feed' }, { name: 'efemeride_05_19_s2', type: 'feed' }, { name: 'efemeride_05_19_s3', type: 'feed' }, { name: 'efemeride_05_19_s4', type: 'feed' }, { name: 'efemeride_05_19_s5', type: 'feed' }, { name: 'efemeride_05_19_s6', type: 'feed' },
+    { name: 'efemeride_05_25_s1', type: 'feed' }, { name: 'efemeride_05_25_s2', type: 'feed' }, { name: 'efemeride_05_25_s3', type: 'feed' }
   ];
 
   const exportDir = path.join(__dirname, 'exports');
@@ -34,6 +35,19 @@ const path = require('path');
 
   for (const file of files) {
     const isStory = file.type === 'story';
+    const sourcePath = path.join(__dirname, file.name + '.html');
+    const destPath = path.join(exportDir, `${file.name}.png`);
+
+    // Verificación de fecha para exportación incremental
+    if (fs.existsSync(destPath)) {
+        const sourceStat = fs.statSync(sourcePath);
+        const destStat = fs.statSync(destPath);
+        
+        if (destStat.mtime > sourceStat.mtime) {
+            console.log(`⏩ Saltando ${file.name}.png (ya existe y está actualizado).`);
+            continue;
+        }
+    }
     
     // Configuración de resolución (2x para calidad 4K/Retina)
     await page.setViewport({
@@ -42,13 +56,13 @@ const path = require('path');
       deviceScaleFactor: 2 
     });
 
-    const filePath = `file://${path.join(__dirname, file.name + '.html')}`;
+    const filePath = `file://${sourcePath}`;
     try {
         await page.goto(filePath, { waitUntil: 'networkidle0' });
         
         // Guardar versión de alta calidad
         await page.screenshot({
-          path: path.join(exportDir, `${file.name}.png`),
+          path: destPath,
           fullPage: false
         });
 

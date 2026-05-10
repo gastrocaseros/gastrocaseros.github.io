@@ -20,9 +20,23 @@ const path = require('path');
   if (!fs.existsSync(exportDir)) fs.mkdirSync(exportDir);
 
   for (const name of stories) {
+    const sourcePath = path.join(__dirname, name + '.html');
+    const destPath = path.join(exportDir, `${name}.mp4`);
+
+    // Verificación de fecha para exportación incremental
+    if (fs.existsSync(destPath)) {
+        const sourceStat = fs.statSync(sourcePath);
+        const destStat = fs.statSync(destPath);
+        
+        if (destStat.mtime > sourceStat.mtime) {
+            console.log(`⏩ Saltando ${name}.mp4 (ya existe y está actualizado).`);
+            continue;
+        }
+    }
+
     console.log(`⏳ Grabando ${name}.mp4... (esto demora un poquito)`);
     await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 2 });
-    const filePath = `file://${path.join(__dirname, name + '.html')}`;
+    const filePath = `file://${sourcePath}`;
     
     try {
         await page.goto(filePath, { waitUntil: 'networkidle0' });
@@ -38,9 +52,8 @@ const path = require('path');
         };
         
         const recorder = new PuppeteerScreenRecorder(page, Config);
-        const savePath = path.join(exportDir, `${name}.mp4`);
         
-        await recorder.start(savePath);
+        await recorder.start(destPath);
         
         // 2. Le damos medio segundo al grabador para estabilizarse
         await new Promise(resolve => setTimeout(resolve, 500));

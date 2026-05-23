@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GastroCaseros - IG Preview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .app-container {
+            width: 100%;
+            max-width: 935px;
+            padding: 30px 20px;
+        }
+        /* Header */
+        header {
+            display: flex;
+            margin-bottom: 44px;
+            align-items: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            margin-right: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 1px solid #dbdbdb;
+            padding: 10px;
+        }
+        .profile-info h1 {
+            font-size: 28px;
+            font-weight: 300;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .stats {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .stats li {
+            margin-right: 40px;
+            font-size: 16px;
+        }
+        .stats b { font-weight: 600; }
+        .bio {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .bio a { color: #00376b; text-decoration: none; font-weight: 600; }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            border-top: 1px solid #dbdbdb;
+            padding-top: 20px;
+        }
+        .post-item {
+            position: relative;
+            aspect-ratio: 1 / 1;
+            background-color: #efefef;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .post-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+        .post-item:hover .overlay {
+            display: flex;
+        }
+        .overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.3);
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+        
+        /* Modal Style for Captions */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            display: flex;
+            width: 900px;
+            height: 600px;
+        }
+        .modal-img { width: 600px; background-color: #000; }
+        .modal-img img { width: 100%; height: 100%; object-fit: contain; }
+        .modal-text { width: 300px; padding: 20px; font-size: 14px; overflow-y: auto; }
+        
+        .tab-menu {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid #dbdbdb;
+            margin-bottom: 20px;
+        }
+        .tab-item {
+            padding: 15px 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #8e8e8e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-top: 1px solid transparent;
+            margin-top: -1px;
+            cursor: pointer;
+        }
+        .tab-item.active {
+            color: #262626;
+            border-top: 1px solid #262626;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <header>
+        <div class="profile-pic">
+            <img src="../logo.png" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%;">
+        </div>
+        <div class="profile-info">
+            <div style="display: flex; align-items: center;">
+                <h1>gastrocaseros</h1>
+                <button style="padding: 5px 9px; font-weight: 600; border: 1px solid #dbdbdb; background: transparent; border-radius: 4px;">Enviar mensaje</button>
+            </div>
+            <ul class="stats">
+                <li><b>10</b> publicaciones</li>
+                <li><b>245</b> seguidores</li>
+                <li><b>120</b> seguidos</li>
+            </ul>
+            <div class="bio">
+                <b>GastroCaseros | Salud Digestiva</b><br>
+                🩺 Dra. Erika Pest - Gastroenteróloga (UBA)<br>
+                🌬️ Especialistas en Tests de Aire Espirado (SIBO)<br>
+                📍 Caseros, Buenos Aires<br>
+                <a href="#">wa.me/5491124573240</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="tab-menu">
+        <div class="tab-item active"><i class="fas fa-th"></i> PUBLICACIONES</div>
+        <div class="tab-item"><i class="fas fa-video"></i> REELS</div>
+        <div class="tab-item"><i class="fas fa-id-card"></i> ETIQUETADAS</div>
+    </div>
+
+    <div class="grid">
+        <!-- Row 4 (Newest) -->
+        <div class="post-item" onclick="openModal(10)">
+            <img src="previews/post10_faq_final_1777028680429.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;12</div>
+        </div>
+        
+        <!-- Row 3 -->
+        <div class="post-item" onclick="openModal(9)">
+            <img src="previews/post9_lactosa_sibo_1777028180744.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;15</div>
+        </div>
+        <div class="post-item" onclick="openModal(8)">
+            <img src="previews/post8_tecnologia_1777028167389.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;24</div>
+        </div>
+        <div class="post-item" onclick="openModal(7)">
+            <img src="previews/post7_mitos_verdades_v3_1080x1080_1777027620624.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;42</div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="post-item" onclick="openModal(6)">
+            <img src="previews/post6_hpylori_final_1777027533518.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;31</div>
+        </div>
+        <div class="post-item" onclick="openModal(5)">
+            <img src="previews/post5_sibo_final_1776985301701.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;56</div>
+        </div>
+        <div class="post-item" onclick="openModal(4)">
+            <img src="previews/post4_preparacion_final_1776985289561.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;19</div>
+        </div>
+
+        <!-- Row 1 (Oldest/Initial) -->
+        <div class="post-item" onclick="openModal(3)">
+            <img src="previews/post3_turnos_final_1776985281301.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;22</div>
+        </div>
+        <div class="post-item" onclick="openModal(2)">
+            <img src="previews/post2_especialista_final_1776985274547.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;45</div>
+        </div>
+        <div class="post-item" onclick="openModal(1)">
+            <img src="previews/post1_apertura_final_1776985268190.png">
+            <div class="overlay"><i class="fas fa-heart"></i>&nbsp;&nbsp;89</div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-img">
+            <img id="modalImg" src="">
+        </div>
+        <div class="modal-text">
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <div style="width: 32px; height: 32px; background: #fff; border-radius: 50%; margin-right: 10px; overflow: hidden;">
+                    <img src="../logo.png" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <b>gastrocaseros</b>
+            </div>
+            <p id="captionText">Cargando texto...</p>
+            <div style="color: #8e8e8e; font-size: 12px; margin-top: 20px;">HACE 2 HORAS</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const captions = {
+        1: "¡Bienvenidos a GastroCaseros! 🏥✨\n\nAbrimos nuestras puertas en el corazón de Caseros para brindarte una atención de excelencia en salud digestiva. Combinamos calidez humana con tecnología de vanguardia.\n\n📍 Justo José de Urquiza 4530, Caseros\n#Gastroenterologia #Caseros #SaludDigestiva #Apertura",
+        2: "Conocé a la Dra. Erika Pest 👩‍⚕️\n\nEspecialista en Gastroenterología (UBA) y Endoscopía Digestiva, con más de 20 años de experiencia cuidando la salud de sus pacientes. Calidez y profesionalismo al servicio de tu bienestar.\n\n#DraErikaPest #Gastroenterologa #Especialista #Salud",
+        3: "Tu salud no puede esperar. 🗓️✔️\n\nAgendá tu turno de forma rápida y sencilla por WhatsApp. Atendemos los días jueves con turnos programados para consultas y estudios.\n\n📲 11 2457-3240\n#Turnos #WhatsApp #GastroCaseros #SaludIntestinal",
+        4: "Preparación para el Test de Aire Espirado 🌬️📋\n\n¿Tenés turno para un estudio de SIBO o Intolerancias? Recordá que una buena preparación es clave para un diagnóstico certero.\n\n✅ 12hs de ayuno total\n✅ Sin antibióticos por 4 semanas\n✅ Dieta específica el día previo\n\n#SIBO #TestAireEspirado #Gastroenterologia #SaludDigestiva",
+        5: "¿Sentís hinchazón constante? Podría ser SIBO. 🦠🤔\n\nEl Sobrecrecimiento Bacteriano en el Intestino Delgado es más común de lo que creés. Los gases y la distensión abdominal no son normales, consultanos.\n\n#SIBO #Hinchazon #Gases #Bienestar #GastroCaseros",
+        6: "Helicobacter Pylori: Detectarla es el primer paso. 🦠🔍\n\nEsta bacteria es la principal causa de gastritis crónica. La buena noticia es que podemos detectarla sin métodos invasivos mediante el Test de Aire en aire espirado (Urea).\n\n#HPylori #Gastritis #Prevencion #TestUrea #Salud",
+        7: "Mitos vs. Realidades en Gastroenterología 🥛🚫\n\n¿El yogur cura la gastritis? No. Aunque ayuda a la flora, no es un tratamiento curativo. No te automediques con alimentos, buscá un diagnóstico profesional.\n\n#MitosSalud #Gastritis #Yogur #GastroTips #VerdadOMito",
+        8: "Tecnología de precisión para tu diagnóstico. 🔬⚙️\n\nUtilizamos equipamiento de última generación para realizar estudios de aire espirado, garantizando resultados fiables para SIBO, Fructosa y Lactosa.\n\n#TecnologiaMedica #DiagnosticoPreciso #SaludCaseros #Gastroenterologia",
+        9: "¿Lactosa o SIBO? 🥛🧪\n\nLos síntomas pueden confundirse, pero el tratamiento es totalmente distinto. Diferencialos con un Test de Aire Espirado y recuperá tu calidad de vida.\n\n#IntoleranciaLactosa #SIBO #Nutricion #SaludDigestiva #Caseros",
+        10: "Resolvemos tus dudas. 💬❓\n\n¿Duele el estudio? ¿Cuánto dura? Deslizá para conocer las respuestas a las preguntas más frecuentes sobre nuestros servicios.\n\n#FAQ #Dudas #GastroCaseros #EstudiosNoInvasivos #Salud"
+    };
+
+    function openModal(id) {
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('modalImg');
+        const captionText = document.getElementById('captionText');
+        
+        // Find the image source from the grid
+        const gridItems = document.querySelectorAll('.post-item img');
+        // The index is reverse since the grid is newest first
+        // 10 is index 0, 9 is index 1, ... 1 is index 9
+        const index = 10 - id;
+        modalImg.src = gridItems[index].src;
+        captionText.innerText = captions[id];
+        
+        modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

@@ -25,7 +25,7 @@ const path = require('path');
     { name: 'story6_1', type: 'story' }, { name: 'story6_2', type: 'story' }, { name: 'story6_3', type: 'story' },
     { name: 'efemeride_05_05_s1', type: 'feed' }, { name: 'efemeride_05_05_s2', type: 'feed' }, { name: 'efemeride_05_05_s3', type: 'feed' },
     { name: 'efemeride_05_19_s1', type: 'feed' }, { name: 'efemeride_05_19_s2', type: 'feed' }, { name: 'efemeride_05_19_s3', type: 'feed' }, { name: 'efemeride_05_19_s4', type: 'feed' }, { name: 'efemeride_05_19_s5', type: 'feed' }, { name: 'efemeride_05_19_s6', type: 'feed' },
-    { name: 'efemeride_05_25_s1', type: 'feed' }, { name: 'efemeride_05_25_s2', type: 'feed' }, { name: 'efemeride_05_25_s3', type: 'feed' }
+    { name: 'efemeride_05_25_s1', type: 'feed' }, { name: 'efemeride_05_25_s2', type: 'feed' }, { name: 'efemeride_05_25_s3', type: 'feed' }, { name: 'efemeride_05_25_s4', type: 'feed' }, { name: 'efemeride_05_25_s5', type: 'feed' }
   ];
 
   const exportDir = path.join(__dirname, 'exports');

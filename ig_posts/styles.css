@@ -343,4 +343,17 @@ p {
 .post-container.compact h1 { margin-bottom: 20px; }
 .post-container.compact .grid-2 { gap: 15px; margin-top: 20px; }
 .post-container.compact .grid-item { padding: 22px; }
-.post-container.compact .highlight-box { margin: 25px 0; padding: 30px; }
+
+/* Escarapela Argentina */
+.escarapela-mini {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, #74ACDF 30%, #FFFFFF 30%, #FFFFFF 60%, #74ACDF 60%);
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}

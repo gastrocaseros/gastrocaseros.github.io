@@ -279,3 +279,17 @@ Ayudanos a difundir. Compartir esta información puede ayudar a que alguien lleg
 
 **Hashtags:**
 #WorldIBDDay #EnfermedadInflamatoriaIntestinal #Crohn #ColitisUlcerosa #Gastroenterología #SaludDigestiva #IBDAwareness #HagamosVisibleLoInvisible #SaludArgentina
+
+---
+
+### Efeméride 25/05 — Día de la Patria y Salud Digestiva (`efemeride_05_25_s1.html` a `s5`)
+**Formato:** Carrusel de 5 slides.
+**Imágenes a subir:** `efemeride_05_25_s1.png`, `efemeride_05_25_s2.png`, `efemeride_05_25_s3.png`, `efemeride_05_25_s4.png`, `efemeride_05_25_s5.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de 5 imágenes con bandera argentina y platos típicos. Muestra consejos para disfrutar del locro y pastelitos con moderación, y medidas para prevenir la acidez.
+**Caption:**
+🇦🇷 ¡Viva la Patria! Feliz 25 de Mayo.
+
+Celebrar nuestra historia es también cuidar nuestro bienestar. En este día de tradición, te compartimos consejos para disfrutar de los platos típicos con consciencia.
+
+**Hashtags:**
+#25deMayo #VivaLaPatria #Gastroenterología #SaludDigestiva #TradiciónArgentina

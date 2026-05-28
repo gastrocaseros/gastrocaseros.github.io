@@ -293,3 +293,22 @@ Celebrar nuestra historia es también cuidar nuestro bienestar. En este día de 
 
 **Hashtags:**
 #25deMayo #VivaLaPatria #Gastroenterología #SaludDigestiva #TradiciónArgentina
+
+---
+
+### Efeméride 29/05 — Día Mundial de la Salud Digestiva (`efemeride_05_29_s1.html` a `s5`)
+**Formato:** Carrusel de 5 slides.
+**Imágenes a subir:** `efemeride_05_29_s1.png` a `s5.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de 5 imágenes conmemorando el Día Mundial de la Salud Digestiva. Menciona que un sistema saludable va más allá de no tener síntomas, las señales que merecen consulta médica y pequeños hábitos con gran impacto.
+**Caption:**
+Hoy se conmemora el Día Mundial de la Salud Digestiva, una iniciativa impulsada por la Organización Mundial de Gastroenterología para generar conciencia sobre la importancia de cuidar nuestro sistema digestivo y promover la prevención de enfermedades digestivas. Se celebra cada 29 de mayo en conmemoración de la creación de la organización mundial que reúne a las sociedades de gastroenterología.
+
+La salud digestiva no significa solamente “no tener síntomas”. Un sistema digestivo saludable participa en la digestión y absorción de nutrientes, influye en el bienestar general y cumple un rol importante en nuestra calidad de vida.
+
+Cuidar la salud digestiva también es cuidar la salud integral.
+
+#DiaMundialDeLaSaludDigestiva #SaludDigestiva #Gastroenterología #SaludIntestinal #Prevención #HábitosSaludables
+
+**Referencias:**
+Artículo Wikipedia: “World Gastroenterology Organisation” — https://en.wikipedia.org/wiki/World_Gastroenterology_Organisation
+Sociedad Argentina de Gastroenterología: Día Mundial de la Salud Digestiva — https://sage.org.ar/dia-mundial-de-la-salud-digestiva/

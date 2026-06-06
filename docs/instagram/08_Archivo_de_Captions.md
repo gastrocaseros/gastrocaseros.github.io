@@ -312,3 +312,39 @@ Cuidar la salud digestiva también es cuidar la salud integral.
 **Referencias:**
 Artículo Wikipedia: “World Gastroenterology Organisation” — https://en.wikipedia.org/wiki/World_Gastroenterology_Organisation
 Sociedad Argentina de Gastroenterología: Día Mundial de la Salud Digestiva — https://sage.org.ar/dia-mundial-de-la-salud-digestiva/
+
+---
+
+### Efeméride 11/06 — Día Mundial del Hígado Graso: Adiós a "NASH", bienvenido "MAFLD/MASLD" (`efemeride_06_11_s1` a `s4`)
+**Formato:** Carrusel de 4 slides.
+**Imágenes a subir:** `efemeride_06_11_s1.png` a `s4.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de 4 imágenes explicando el cambio de terminología del hígado graso, de NASH/NAFLD a MAFLD/MASLD, destacando el rol metabólico y los factores de prevención.
+**Caption:**
+El 11 de junio es el Día Mundial del Hígado Graso. ¿Sabías que ya no se habla más de NAFLD o NASH? 🩺💡
+
+La comunidad médica internacional ha actualizado los términos para enfocarse en la verdadera causa y evitar estigmas. Ahora nos referimos a esta condición como **MAFLD** (Enfermedad del Hígado Graso Asociada a Disfunción Metabólica) o **MASLD** (Enfermedad Hepática Esteatósica Asociada a Disfunción Metabólica).
+
+¿Por qué el cambio?
+1️⃣ **Foco en el metabolismo**: Los nombres antiguos definían la enfermedad por lo que "no era" (no alcohólica). Los nuevos términos destacan que el origen está íntimamente ligado a factores metabólicos como la resistencia a la insulina, hipertensión, colesterol elevado y sobrepeso.
+2️⃣ **Diagnóstico positivo**: No es un diagnóstico por descarte; ahora se confirma al identificar la acumulación de grasa en el hígado combinada con al menos un factor de riesgo metabólico.
+
+Lo que no cambia es la prevención: una alimentación equilibrada, actividad física regular y controles médicos periódicos siguen siendo tus mejores aliados para cuidar tu salud hepática. 
+
+¿Tenías conocimiento de esta actualización en la terminología médica? Te leemos en comentarios. 👇
+
+**Hashtags:**
+#GlobalFattyLiverDay #HigadoGraso #MAFLD #MASLD #Gastroenterologia #SaludHepatica #Prevencion #SaludMetabolica #Caseros #GastroCaseros
+
+---
+
+### Efeméride 20/06 — Día de la Bandera (`efemeride_06_20_s1`)
+**Formato:** Placa institucional (Imagen única).
+**Imágenes a subir:** `efemeride_06_20_s1.png`
+**Texto Alternativo (Accesibilidad):** Placa institucional celeste y blanca saludando por el Día de la Bandera Argentina.
+**Caption:**
+🇦🇷 Con orgullo y respeto, conmemoramos el Día de la Bandera en homenaje a su creador, el General Manuel Belgrano. 
+
+¡Feliz Día de la Bandera para todos! 
+
+**Hashtags:**
+#DiaDeLaBandera #ManuelBelgrano #Argentina #Patria #GastroCaseros #Caseros

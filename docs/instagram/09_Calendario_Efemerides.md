@@ -16,5 +16,5 @@ Este documento centraliza las fechas conmemorativas, tanto médicas como naciona
 
 | Fecha | Día | Tipo | Nomenclatura | Temática / Foco |
 | :--- | :--- | :--- | :--- | :--- |
-| **20 de Junio** | Día de la Bandera | Patria | `efemeride_06_20` | Saludo institucional patrio. |
-| **(A revisar)** | NASH Day (Día Internacional del Hígado Graso) | Médica | `efemeride_06_12` | Prevención de esteatosis hepática no alcohólica. |
+| **11 de Junio** | Día Mundial del Hígado Graso (MASLD/MAFLD) | Médica | `efemeride_06_11` | Concientización sobre la enfermedad de hígado graso metabólico, cambio de terminología de NASH a MASLD/MAFLD. |
+| **20 de Junio** | Día de la Bandera | Patria | `efemeride_06_20` | Saludo institucional patrio sobrio y corto (sin vinculación médica). |

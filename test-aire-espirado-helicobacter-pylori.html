@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test de Aire Espirado Helicobacter Pylori Caseros | GastroCaseros</title>
+  <meta name="description" content="Estudio de urea en aire espirado (UBT) no invasivo para Helicobacter Pylori en Caseros. Indicaciones, preparación y turnos por WhatsApp." />
+  <meta name="keywords" content="test aire espirado helicobacter pylori, test urea helicobacter, helicobacter pylori caseros, gastroenterologia caseros, prueba no invasiva pylori" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gastrocaseros.com.ar/test-aire-espirado-helicobacter-pylori.html">
+  <meta property="og:title" content="Test de Aire Espirado Helicobacter Pylori Caseros | GastroCaseros">
+  <meta property="og:description" content="Diagnóstico preciso, seguro y sin endoscopía inicial en Caseros. Conocé la preparación obligatoria.">
+  <meta property="og:image" content="logo.png">
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Test de Aire Espirado para Helicobacter Pylori",
+    "description": "Explicación del estudio no invasivo de urea en aire espirado para detectar Helicobacter Pylori, incluyendo ventajas, indicaciones y preparación médica.",
+    "publisher": {
+      "@type": "Physician",
+      "name": "Consultorio Gastroenterológico Caseros",
+      "image": "https://gastrocaseros.com.ar/logo.png"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  
+  <link rel="stylesheet" href="css/style.css?v=20260324">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDGFHLL04L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HDGFHLL04L');
+
+    function trackWA(label) {
+      gtag('event', 'whatsapp_click', {
+        'event_category': 'Contacto',
+        'event_label': label
+      });
+    }
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-bar"></div>
+
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno%20para%20el%20test%20de%20Helicobacter%20Pylori" onclick="trackWA('flotante_pylori')" class="floating-wa" target="_blank" aria-label="WhatsApp para Turnos" title="Enviar mensaje">
+    <img src="img/icon-whatsapp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- NAVIGATION -->
+  <nav class="top-nav">
+    <a href="index.html" class="nav-brand" aria-label="Inicio">
+      <img src="logo.png" alt="Logo GastroCaseros" class="nav-logo" fetchpriority="high">
+      <div class="nav-name">
+        Consultorio Gastroenterológico Caseros
+        <span>Estudios de Aire Espirado</span>
+      </div>
+    </a>
+    
+    <div class="nav-links" id="nav-menu">
+      <a href="index.html#autodiagnostico" onclick="closeMenu()">Test Rápido</a>
+      <a href="index.html#servicios" onclick="closeMenu()">Especialidades</a>
+      <a href="#como-se-realiza" onclick="closeMenu()">Procedimiento</a>
+      <a href="#preparacion" onclick="closeMenu()">Preparación</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno%20para%20el%20test%20de%20Helicobacter%20Pylori" onclick="trackWA('nav_pylori')" class="nav-cta" aria-label="Pedir turno por WhatsApp">Pedir Turno</a>
+      <button class="hamburger-btn" aria-label="Abrir menú" onclick="toggleMenu()">
+        <svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--navy)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" style="min-height: 80vh;">
+    <div class="hero-content">
+      <span class="badge-expertise">Estudios No Invasivos</span>
+      <h1>Test de Aire Espirado para <em>Helicobacter pylori</em></h1>
+      <p class="hero-p">Un estudio simple, seguro y de alta precisión para detectar una bacteria clave en la salud estomacal, evitando la endoscopía inicial.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno%20para%20el%20test%20de%20Helicobacter%20Pylori" onclick="trackWA('hero_pylori')" class="btn-main btn-filled" aria-label="Escribir a WhatsApp">Agendar Turno por WhatsApp</a>
+        <a href="#como-se-realiza" class="btn-main btn-outline" aria-label="Ver cómo se realiza el test">¿Cómo se realiza?</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo central GastroCaseros" class="logo-hero" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION EXPLICACION DE LA BACTERIA -->
+  <section id="detalles" style="background: var(--white); border-radius: 60px; margin: 40px; padding: 80px 40px;">
+    <div class="section-header">
+      <span class="section-tag">¿Qué es?</span>
+      <h2 class="section-title">La Bacteria y el Test de Urea</h2>
+      <p class="section-desc">Entendé el impacto de este diagnóstico preventivo y por qué es fundamental detectarla.</p>
+    </div>
+    <div class="tests-grid" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto; gap: 0;">
+      <div style="font-size: 1.2rem; line-height: 1.8; color: var(--text);">
+        <p style="margin-bottom: 24px;">
+          El <strong>Helicobacter pylori</strong> es una bacteria que coloniza la mucosa del estómago humano. A pesar del ambiente altamente ácido, este microorganismo logra sobrevivir y puede causar inflamación crónica. Su presencia está estrechamente vinculada con la aparición de:
+        </p>
+        <div class="prep-body" style="padding: 0 0 24px 0;">
+          <ul class="prep-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-bottom: 24px;">
+            <li style="margin-bottom: 0; padding-left: 36px; font-weight: 600; color: var(--navy);"><strong style="display:inline; font-size:1.15rem;">Gastritis crónica</strong></li>
+            <li style="margin-bottom: 0; padding-left: 36px; font-weight: 600; color: var(--navy);"><strong style="display:inline; font-size:1.15rem;">Úlceras gástricas y duodenales</strong></li>
+            <li style="margin-bottom: 0; padding-left: 36px; font-weight: 600; color: var(--navy);"><strong style="display:inline; font-size:1.15rem;">Riesgo incrementado de cáncer gástrico</strong></li>
+          </ul>
+        </div>
+        <p style="margin-bottom: 24px;">
+          El **Test de Aire Espirado (UBT - Urea Breath Test)** es el estudio estándar de oro no invasivo recomendado a nivel internacional para el diagnóstico inicial de la bacteria, así como para **confirmar la erradicación de la misma** una vez finalizado el tratamiento antibiótico.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASO A PASO -->
+  <section id="como-se-realiza" style="background: var(--cream); padding: 100px 40px;">
+    <div class="section-header">
+      <span class="section-tag">Procedimiento</span>
+      <h2 class="section-title">Paso a Paso del Estudio</h2>
+      <p class="section-desc">Sencillo, indoloro y sin requerir sedación ni pinchazos. Se realiza en unos 30 minutos.</p>
+    </div>
+    
+    <div class="services-container" style="max-width: 1100px; margin: 0 auto 50px;">
+      <div class="service-card reveal">
+        <div class="service-icon-box">
+          <span style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--green);">1</span>
+        </div>
+        <h3>Muestra Basal</h3>
+        <p>Al llegar al consultorio, te entregamos una bolsa especial en la que deberás soplar suavemente a través de una boquilla. Esto establece la medición basal de tu respiración.</p>
+      </div>
+      
+      <div class="service-card reveal">
+        <div class="service-icon-box">
+          <span style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--green);">2</span>
+        </div>
+        <h3>Toma del Sustrato</h3>
+        <p>A continuación, ingerís una solución líquida ácida (típicamente jugo cítrico) junto con una pastilla o solución que contiene urea marcada con Carbono-13 (isótopo natural y seguro).</p>
+      </div>
+      
+      <div class="service-card reveal">
+        <div class="service-icon-box">
+          <span style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--green);">3</span>
+        </div>
+        <h3>Muestra Final</h3>
+        <p>Luego de 15 a 20 minutos de espera, soplarás en una segunda bolsa recolectora. El análisis de laboratorio comparará ambas muestras para medir la reacción química.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box" style="max-width: 900px; margin: 0 auto; font-size: 1.15rem; line-height: 1.7;">
+      <strong>¿Cómo funciona químicamente?</strong><br>
+      Si la bacteria *Helicobacter pylori* habita en tu estómago, produce una enzima activa llamada **ureasa**. Esta enzima descompone la urea marcada ingerida, liberando dióxido de carbono marcado que viaja por el torrente sanguíneo hacia los pulmones y es exhalado. Si no hay infección, la urea pasa intacta y no se detecta reacción en tu respiración.
+    </div>
+  </section>
+
+  <!-- VENTAJAS E INDICACIONES -->
+  <section id="ventajas" style="background: var(--white); border-radius: 60px; margin: 40px; padding: 100px 40px;">
+    <div class="section-header">
+      <span class="section-tag">Criterios Clínicos</span>
+      <h2 class="section-title">Beneficios e Indicaciones</h2>
+      <p class="section-desc">Entendé por qué los especialistas eligen esta prueba y cuándo debés solicitarla.</p>
+    </div>
+    
+    <div class="tests-grid" style="max-width: 1100px; margin: 0 auto;">
+      <div class="test-modern-card" style="background: var(--cream); border: 1.5px solid var(--border); color: var(--text);">
+        <h3 style="color: var(--green);">Ventajas de la Prueba</h3>
+        <ul class="test-bullet-list">
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
+            <p style="color: var(--text); font-size: 1.05rem;"><strong>No requiere endoscopia:</strong> Permite un diagnóstico inicial seguro, rápido y de menor costo.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
+            <p style="color: var(--text); font-size: 1.05rem;"><strong>Totalmente indoloro:</strong> No produce dolor, náuseas ni requiere sedación anestésica.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
+            <p style="color: var(--text); font-size: 1.05rem;"><strong>Alta precisión diagnóstica:</strong> Posee más del 95% de sensibilidad y especificidad, superior a la serología (sangre).</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
+            <p style="color: var(--text); font-size: 1.05rem;"><strong>Confirmación de cura:</strong> Es el estudio de elección para verificar que la bacteria fue eliminada tras el tratamiento antibiótico.</p>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="test-modern-card" style="background: var(--navy); border: 1.5px solid var(--navy-light); color: white;">
+        <h3 style="color: var(--green-light);">¿Cuándo está indicado?</h3>
+        <p style="font-size: 1.05rem; opacity: 0.8; margin-bottom: 24px;">Es altamente probable que tu médico de cabecera te indique este test si presentás:</p>
+        <ul class="test-bullet-list">
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green-light); color: var(--navy);" aria-hidden="true">✓</div>
+            <p style="color: white; font-size: 1.05rem;">Dolor punzante o ardor persistente en la parte alta del estómago (dispepsia).</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green-light); color: var(--navy);" aria-hidden="true">✓</div>
+            <p style="color: white; font-size: 1.05rem;">Antecedentes diagnosticados o familiares de úlcera gástrica o duodenal.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green-light); color: var(--navy);" aria-hidden="true">✓</div>
+            <p style="color: white; font-size: 1.05rem;">Gastritis crónica diagnosticada clínicamente o por biopsia previa.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green-light); color: var(--navy);" aria-hidden="true">✓</div>
+            <p style="color: white; font-size: 1.05rem;">Control posterior al tratamiento erradicador (mínimo 4 semanas después de finalizar los antibióticos).</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREPARACIÓN DE ESTUDIOS -->
+  <section id="preparacion" style="background: var(--cream); padding: 100px 40px;">
+    <div class="section-header">
+      <span class="section-tag">Protocolo Médico</span>
+      <h2 class="section-title">Preparación Obligatoria</h2>
+      <p class="section-desc">La exactitud de tus resultados depende de seguir rigurosamente estas indicaciones previas al turno.</p>
+    </div>
+
+    <div class="prep-grid" style="grid-template-columns: 1fr; max-width: 850px; margin: 0 auto;">
+      <div class="prep-card reveal">
+        <div class="prep-header pylori-header">
+          <h3>Indicaciones para el Test de Helicobacter</h3>
+          <span>Método UBT - Urea Breath Test</span>
+        </div>
+        <div class="prep-body" style="background: white;">
+          <ul class="prep-list">
+            <li><strong>Ayuno Estricto:</strong> Mínimo de 8 horas de ayuno. No consumas alimentos ni bebidas. Solo se permiten sorbos pequeños de agua mineral simple si es imprescindible.</li>
+            <li><strong>4 semanas antes:</strong> Debés suspender antibióticos recetados y medicamentos de bismuto (como Bismutol). Su consumo puede dar falsos negativos.</li>
+            <li><strong>2 semanas antes:</strong> Suspender protectores gástricos (inhibidores de la bomba de protones como Omeprazol, Pantoprazol, Lansoprazol, Esomeprazol) y antiácidos comunes (como Reliveran o Mylanta).</li>
+            <li><strong>El día de la prueba:</strong> Cepillate muy bien los dientes al despertar. No fumes en las 2 horas previas a asistir al turno. Asistir con ropa cómoda al consultorio.</li>
+          </ul>
+          <a href="https://wa.me/5491124573240?text=Hola%2C%20tengo%20una%20duda%20sobre%20la%20preparaci%C3%B3n%20para%20Helicobacter" onclick="trackWA('duda_prep_pylori')" class="prep-help" aria-label="Ayuda con la preparación por WhatsApp">Tengo una duda con esta preparación →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COBERTURA & TURNOS -->
+  <section id="turnos" style="padding-top: 0; padding-bottom: 100px;">
+    <div style="background: var(--navy); color: white; border-radius: 40px; padding: 60px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px; box-shadow: var(--shadow-lg); max-width: 1100px; margin: 0 auto;">
+      <div style="max-width: 650px;">
+        <span class="section-tag" style="color: var(--green-light);">Modalidad de Turnos</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-bottom: 16px; color: white;">Agendá tu Turno de Aire Espirado</h2>
+        <p style="font-size: 1.05rem; opacity: 0.9; margin-bottom: 0;">Ofrecemos atención particular con emisión de facturación oficial y médica para solicitar reintegros a tu prepaga u obra social.<br><br>Consultanos directamente por WhatsApp para conocer aranceles e indicaciones adicionales.</p>
+      </div>
+      <div>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno%20para%20el%20test%20de%20Helicobacter%20Pylori" onclick="trackWA('solicitar_turno_pylori')" class="btn-main" style="background: white; color: var(--navy); font-weight: 700; border: 2px solid white;" aria-label="Pedir turno por WhatsApp">Solicitar Turno →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-brand">Consultorio Gastroenterológico Caseros</p>
+    <p>Medicina Especializada · Estudios de Aire Espirado</p>
+    
+    <div class="social-links">
+      <a href="https://instagram.com/" target="_blank" aria-label="Seguinos en Instagram" class="social-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+      <a href="#" aria-label="Facebook del Consultorio" class="social-btn" title="Facebook (Próximamente)">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+      </a>
+      <a href="#" aria-label="TikTok del Consultorio" class="social-btn" title="TikTok (Próximamente)">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1v5a4 4 0 0 1-4-4Z"></path></svg>
+      </a>
+    </div>
+
+    <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 24px;">&copy; 2026 GastroCaseros. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+    
+    function closeMenu() {
+      document.getElementById('nav-menu').classList.remove('active');
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      // Progress Bar
+      window.addEventListener('scroll', () => {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById('scroll-bar').style.width = scrolled + "%";
+      });
+
+      const revealElements = document.querySelectorAll('.service-card, .test-modern-card, .prep-card');
+      revealElements.forEach(el => el.classList.add('reveal'));
+      
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -50px 0px", threshold: 0.1 });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+    });
+  </script>
+</body>
+</html>

@@ -41,6 +41,16 @@ $HTML_MIN index.html \
   --use-short-doctype \
   --output dist/index.html
 
+$HTML_MIN test-aire-espirado-helicobacter-pylori.html \
+  --collapse-whitespace \
+  --remove-comments \
+  --remove-optional-tags \
+  --remove-redundant-attributes \
+  --remove-script-type-attributes \
+  --remove-tag-whitespace \
+  --use-short-doctype \
+  --output dist/test-aire-espirado-helicobacter-pylori.html
+
 ORIGINAL_HTML=$(wc -c < index.html)
 MIN_HTML=$(wc -c < dist/index.html)
 PERCENT_HTML=$(( (ORIGINAL_HTML - MIN_HTML) * 100 / ORIGINAL_HTML ))
@@ -62,7 +72,7 @@ echo "  📄 Preview (primeros 120 chars del CSS minificado):"
 cut -c1-120 dist/css/style.min.css | cat
 
 # Reemplaza la referencia al CSS en el HTML minificado
-sed -i "s|css/style.css?v=[0-9]*|css/style.min.css?v=${HASH}|g" dist/index.html
+sed -i "s|css/style.css?v=[0-9]*|css/style.min.css?v=${HASH}|g" dist/index.html dist/test-aire-espirado-helicobacter-pylori.html
 echo "  ✅ Cache-busting hash: ${HASH}"
 
 # 4. Verificar integridad del output

@@ -26,6 +26,7 @@ La numeración de historias ahora sigue el orden de publicación y los highlight
 - **Historia 4:** FAQ Transporte. Maquetado en `story4.html`. ✅
 - **Historia 5:** Serie SIBO. Videos MP4 en `story5_1.html` y `story5_2.html`. ✅
 - **Historia 6:** Serie IMO. Videos MP4 en `story6_1.html`, `story6_2.html` y `story6_3.html`. ✅
+- **Historia 7:** Serie Helicobacter Pylori. Videos MP4 en `story7_1.html`, `story7_2.html`, `story7_3.html` y `story7_4.html`. ✅
 - **Efeméride 05-05:** Día Internacional de la Celiaquía. Carrusel de 3 slides. ✅
 - **Efeméride 05-19:** Día Mundial de la EII. Carrusel de 6 slides. ✅
 

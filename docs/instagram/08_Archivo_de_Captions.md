@@ -348,3 +348,34 @@ Lo que no cambia es la prevención: una alimentación equilibrada, actividad fí
 
 **Hashtags:**
 #DiaDeLaBandera #ManuelBelgrano #Argentina #Patria #GastroCaseros #Caseros
+
+---
+
+### Publicación 08 — Test de Aire Espirado para Helicobacter Pylori (`story7_1` a `story7_4`)
+**Formato:** Reel animado / Carrusel de 4 slides.
+**Imágenes/Videos a subir:** `story7_1.mp4` a `story7_4.mp4` o `story7_1.png` a `story7_4.png`
+**Texto Alternativo (Accesibilidad):** Secuencia de 4 imágenes/videos explicando el test de aire espirado para detectar Helicobacter Pylori. Define la bacteria y sus riesgos, explica que requiere soplar en bolsas especiales antes y después del sustrato de urea marcado, resalta que no duele ni requiere endoscopía inicial, e indica síntomas y turnos.
+**Caption:**
+🦠 ¿Qué es el Test de Aire Espirado para Helicobacter pylori?
+
+Es un estudio simple, seguro y no invasivo que permite detectar la presencia de Helicobacter pylori, una bacteria que puede vivir en el estómago y asociarse con gastritis, úlceras y un mayor riesgo de cáncer gástrico.
+
+¿Cómo se realiza?
+Solo requiere soplar en unas bolsas especiales antes y después de ingerir una solución con urea marcada. Si la bacteria está presente, produce una reacción que puede detectarse en el aire espirado.
+
+✅ No requiere endoscopia
+✅ No produce dolor
+✅ Alta precisión diagnóstica
+✅ Ideal para confirmar la erradicación luego del tratamiento
+
+¿Cuándo puede estar indicado?
+• Dolor o ardor de estómago
+• Gastritis
+• Antecedentes de úlcera gástrica o duodenal
+• Control posterior al tratamiento para Helicobacter pylori (esperar mínimo 4 semanas)
+
+Tu salud empieza por la prevención. Si tenés dudas o indicación de tu médico, escribinos.
+
+**Hashtags:**
+#HelicobacterPylori #TestDeAireEspirado #Gastroenterologia #SaludDigestiva #Prevencion #Gastritis #UlceraGastrica #GastroCaseros #Caseros #TresDeFebrero
+

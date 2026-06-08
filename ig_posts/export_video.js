@@ -13,7 +13,8 @@ const path = require('path');
   const stories = [
     'story1', 'story2', 'story3', 'story4',
     'story5_1', 'story5_2',
-    'story6_1', 'story6_2', 'story6_3'
+    'story6_1', 'story6_2', 'story6_3',
+    'story7_1', 'story7_2', 'story7_3', 'story7_4'
   ];
 
   const exportDir = path.join(__dirname, 'exports_video');

@@ -28,3 +28,52 @@ Ante cualquier duda o si presentás estos síntomas de forma recurrente, no dude
 #Celiaquia #SaludArgentina #SinTACC #DiaMundialCeliaquia #MedicinaPreventiva #GlutenFree #GastroCaseros #ZonaOeste #TresDeFebrero
 
 ---
+
+## [efemeride_06_11] Día Mundial del Hígado Graso (MASLD)
+
+**Caption para IG:**
+
+🫁 **11 de junio — Día Mundial del Hígado Graso**
+
+El hígado graso metabólico (MASLD) es una de las enfermedades hepáticas más frecuentes. Y muchas personas la tienen **sin saberlo**.
+
+📌 ¿Por qué no se detecta a tiempo?
+Porque en sus primeras etapas **no da síntomas**. Ni dolor, ni señales evidentes.
+
+⚠️ Está relacionada con:
+• Obesidad y sobrepeso
+• Diabetes tipo 2
+• Sedentarismo
+• Hipertensión arterial
+
+✅ La buena noticia: **puede revertirse** con cambios en el estilo de vida.
+Alimentación equilibrada + actividad física regular + consulta médica oportuna hacen la diferencia.
+
+Si tenés factores de riesgo, consultá con tu gastroenterólogo. Una ecografía abdominal y laboratorio son suficientes para comenzar.
+
+> 📸 **Sugerencia de imagen (slide 1):** Imagen médica limpia del hígado, o composición con alimentos saludables vs. ultraprocesados, estilo ilustración médica moderna. Sin texto ni badges.
+
+**Hashtags:**
+#HígadoGraso #MASLD #MAFLD #SaludHepática #GastroenterologíaArgentina #SaludArgentina #EnfermedadHepática #PrevencionSalud #GastroCaseros #ZonaOeste #TresDeFebrero
+
+---
+
+## [efemeride_06_20] Día de la Bandera Nacional
+
+**Caption para IG:**
+
+🇦🇷 **20 de junio — Día de la Bandera Nacional**
+
+Un día para recordar y homenajear al General Manuel Belgrano, creador de nuestra enseña patria.
+
+*"Sean los que fueran nuestros destinos, la Patria es una e indivisible."*
+— Manuel Belgrano
+
+Desde GastroCaseros le deseamos un muy feliz Día de la Bandera a todos los argentinos. 🤍💙🤍
+
+> 📸 **Sugerencia de imagen (slide 1):** Foto de la bandera argentina ondeando o el Monumento a la Bandera de Rosario. Estilo sobrio y de calidad, sin texto superpuesto.
+
+**Hashtags:**
+#DíaDeLaBandera #ManuelBelgrano #20DeJunio #Argentina #PatriaArgentina #GastroCaseros
+
+---

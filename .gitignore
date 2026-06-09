@@ -16,3 +16,8 @@ Thumbs.db
 *.swp
 *.swo
 .vscode/settings.json
+
+# Instagram posts
+ig_posts/exports/*.png
+ig_posts/previews/*.png
+ig_posts/exports_video/*.mp4

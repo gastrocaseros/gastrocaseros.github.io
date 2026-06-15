@@ -66,8 +66,8 @@ Si tenés factores de riesgo, consultá con tu gastroenterólogo. Una ecografía
 
 Un día para recordar y homenajear al General Manuel Belgrano, creador de nuestra enseña patria.
 
-*"Sean los que fueran nuestros destinos, la Patria es una e indivisible."*
-— Manuel Belgrano
+*"Mucho me falta para ser un verdadero padre de la patria, me contentaría con ser un buen hijo de ella."*
+— Manuel Belgrano, carta desde Tucumán, 1816
 
 Desde GastroCaseros le deseamos un muy feliz Día de la Bandera a todos los argentinos. 🤍💙🤍
 

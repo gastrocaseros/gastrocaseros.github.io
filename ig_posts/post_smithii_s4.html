@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>IMO - Methanobrevibacter smithii - Slide 4</title>
+    <style>
+        .section-tag {
+            display: inline-block;
+            background: rgba(74, 125, 74, 0.12);
+            color: var(--green);
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 8px 24px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            border: 1.5px solid rgba(74, 125, 74, 0.3);
+        }
+        .test-description {
+            font-size: 29px;
+            color: var(--navy);
+            line-height: 1.5;
+            max-width: 720px;
+            margin-top: 10px;
+            margin-bottom: 28px;
+        }
+        .gas-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            max-width: 760px;
+            margin-top: 10px;
+        }
+        .gas-card {
+            border-radius: 22px;
+            padding: 30px 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .gas-card.h2 {
+            background: rgba(17, 34, 51, 0.06);
+            border: 2px solid rgba(17, 34, 51, 0.12);
+        }
+        .gas-card.ch4 {
+            background: rgba(74, 125, 74, 0.08);
+            border: 2px solid rgba(74, 125, 74, 0.25);
+        }
+        .gas-formula {
+            font-size: 48px;
+            font-weight: 900;
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+        }
+        .gas-card.h2 .gas-formula { color: var(--navy); }
+        .gas-card.ch4 .gas-formula { color: var(--green); }
+        .gas-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--navy);
+        }
+        .gas-detail {
+            font-size: 21px;
+            color: var(--navy);
+            opacity: 0.7;
+            line-height: 1.35;
+        }
+        .alert-box {
+            background: rgba(17,34,51,0.05);
+            border-left: 6px solid var(--navy);
+            border-radius: 0 16px 16px 0;
+            padding: 22px 28px;
+            font-size: 26px;
+            color: var(--navy);
+            line-height: 1.4;
+            max-width: 760px;
+            margin-top: 22px;
+        }
+        .alert-box strong {
+            color: var(--green);
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container compact">
+        <div class="sidebar">
+            <img src="logo.png" class="brand-logo" alt="Logo">
+            <div class="sidebar-name">GastroCaseros</div>
+        </div>
+        <div class="top-accent"></div>
+
+        <div style="margin-top: 50px;">
+            <div class="section-tag">🔬 El diagnóstico</div>
+            <h1 style="font-size: 60px; margin-bottom: 10px;">Test de Aire Espirado</h1>
+            <p class="test-description">Estudio simple y no invasivo: soplás en un dispositivo y se miden los gases que producen los microorganismos de tu intestino.</p>
+        </div>
+
+        <div class="gas-grid">
+            <div class="gas-card h2">
+                <div class="gas-formula">H₂</div>
+                <div class="gas-name">Hidrógeno</div>
+                <div class="gas-detail">Producido por bacterias durante la fermentación</div>
+            </div>
+            <div class="gas-card ch4">
+                <div class="gas-formula">CH₄</div>
+                <div class="gas-name">Metano</div>
+                <div class="gas-detail">Producido por arqueas metanogénicas</div>
+            </div>
+        </div>
+
+        <div class="alert-box">
+            ⚠️ Muchos estudios solo miden hidrógeno. Si el problema es metanogénico, el resultado puede ser <strong>falsamente normal</strong>.
+        </div>
+
+        <div class="footer-info">
+            <span>Deslizá 👉</span>
+        </div>
+        <div class="bottom-accent"></div>
+    </div>
+</body>
+</html>

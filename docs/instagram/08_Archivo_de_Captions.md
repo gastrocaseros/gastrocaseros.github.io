@@ -205,6 +205,34 @@ Deslizá para leer todas las respuestas 👉
 
 ## ⏳ BLOQUE 3: Futuros Temas
 
+### Post 12 — Methanobrevibacter smithii y el metano intestinal (`post_smithii_s1.html` a `s5`)
+**Formato:** Carrusel de 5 slides.
+**Imágenes a subir:** `post_smithii_s1.png`, `post_smithii_s2.png`, `post_smithii_s3.png`, `post_smithii_s4.png`, `post_smithii_s5.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de 5 imágenes explicando el rol de las arqueas Methanobrevibacter smithii en la producción de gas metano, su efecto sobre el tránsito intestinal y el diagnóstico mediante test de aire espirado a hidrógeno y metano.
+**Caption:**
+¿Tenés constipación que no mejora, o te sentís hinchado/a después de comer? 🌀
+
+Puede que la respuesta esté en tu microbiota intestinal — y más específicamente, en unas arqueas llamadas Methanobrevibacter smithii.
+
+Estas arqueas viven en tu colon y transforman el hidrógeno y el CO₂ que producen las bacterias en gas metano (CH₄). Y el metano no es un gas pasivo: actúa directamente sobre la musculatura intestinal, enlenteciendo el tránsito. El resultado: constipación crónica y esa distensión abdominal que no encontrás cómo explicar.
+
+La buena noticia es que esto tiene diagnóstico. 🔬
+
+El Test de Aire Espirado a Hidrógeno y Metano es un estudio simple y no invasivo: soplás en un dispositivo y medimos los gases que producen los microorganismos de tu intestino.
+
+⚠️ Muchos estudios solo miden hidrógeno. Si el problema es metanogénico, el resultado puede ser falsamente normal. Medir los dos gases juntos da una imagen completa y permite orientar el tratamiento correcto para cada persona.
+
+👉 Si tenés síntomas persistentes de constipación o hinchazón, consultá con tu gastroenterólogo/a sobre este estudio.
+
+📍 Justo José de Urquiza 4530, Caseros
+🌐 gastrocaseros.com.ar
+
+**Hashtags:**
+#Microbiota #MicrobiotaIntestinal #MethanobrevibacterSmithii #IMO #SobrecrecimientoMetanogénico #ConstipacionCronica #Constipacion #HinchazónAbdominal #TestDeAireEspirado #DiagnosticoIntestinal #SaludDigestiva #Gastroenterología #GastroCaseros #ZonaOeste #TresDeFebrero #Caseros
+
+---
+
+
 ### Post 12 — El Test de Aire: El aliado del diagnóstico
 **Caption:**
 💨 El Test de Aire Espirado: El estudio que muchos necesitan y pocos conocen.

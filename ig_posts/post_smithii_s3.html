@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>IMO - Methanobrevibacter smithii - Slide 3</title>
+    <style>
+        .section-tag {
+            display: inline-block;
+            background: rgba(74, 125, 74, 0.12);
+            color: var(--green);
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 8px 22px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+            border: 1.5px solid rgba(74, 125, 74, 0.3);
+        }
+
+        /* Reaction equation */
+        .reaction-box {
+            background: var(--navy);
+            border-radius: 24px;
+            padding: 28px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            max-width: 760px;
+            margin-top: 22px;
+            margin-bottom: 26px;
+        }
+        .molecule {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            flex: 1;
+        }
+        .mol-formula {
+            font-size: 40px;
+            font-weight: 900;
+            color: white;
+            line-height: 1;
+            font-family: 'Playfair Display', serif;
+            white-space: nowrap;
+        }
+        .mol-formula.product {
+            color: #a8d5a2;
+        }
+        .mol-label {
+            font-size: 15px;
+            color: rgba(255,255,255,0.45);
+            text-align: center;
+            line-height: 1.25;
+        }
+        .operator {
+            font-size: 30px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.35);
+            line-height: 1;
+            flex-shrink: 0;
+            padding-bottom: 22px; /* align with formula, above label */
+        }
+        .arrow-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            flex-shrink: 0;
+        }
+        .arrow-svg {
+            color: #a8d5a2;
+            font-size: 30px;
+            line-height: 1;
+        }
+        .arrow-label {
+            font-size: 14px;
+            color: rgba(255,255,255,0.35);
+            font-style: italic;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Consequences */
+        .consequence-list {
+            list-style: none;
+            margin-top: 0;
+            max-width: 760px;
+        }
+        .consequence-list li {
+            font-size: 32px;
+            color: var(--navy);
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(17,34,51,0.08);
+            line-height: 1.3;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .consequence-list li:last-child { border-bottom: none; }
+        .consequence-list li .icon { font-size: 34px; flex-shrink: 0; margin-top: 2px; }
+    </style>
+</head>
+<body>
+    <div class="post-container compact">
+        <div class="sidebar">
+            <img src="logo.png" class="brand-logo" alt="Logo">
+            <div class="sidebar-name">GastroCaseros</div>
+        </div>
+        <div class="top-accent"></div>
+
+        <div style="margin-top: 48px;">
+            <div class="section-tag">El mecanismo</div>
+            <h1 style="font-size: 58px; margin-bottom: 0; max-width: 720px; line-height: 1.1;">El metano no es un gas <span style="color: var(--green);">pasivo</span></h1>
+        </div>
+
+        <!-- Reaction equation -->
+        <div class="reaction-box">
+            <div class="molecule">
+                <div class="mol-formula">H₂</div>
+                <div class="mol-label">Hidrógeno<br>(de bacterias)</div>
+            </div>
+            <div class="operator">+</div>
+            <div class="molecule">
+                <div class="mol-formula">CO₂</div>
+                <div class="mol-label">Dióxido de<br>carbono</div>
+            </div>
+            <div class="arrow-wrap">
+                <div class="arrow-svg">⟶</div>
+                <div class="arrow-label">arqueas<br><em>M. smithii</em></div>
+            </div>
+            <div class="molecule">
+                <div class="mol-formula product">CH₄</div>
+                <div class="mol-label">Metano</div>
+            </div>
+            <div class="operator" style="color: rgba(168,213,162,0.4);">+</div>
+            <div class="molecule">
+                <div class="mol-formula product">H₂O</div>
+                <div class="mol-label">Agua</div>
+            </div>
+        </div>
+
+        <ul class="consequence-list">
+            <li>
+                <span class="icon">🐌</span>
+                <span>El metano actúa sobre la <strong>musculatura intestinal</strong>, enlenteciendo el tránsito → <strong>constipación crónica</strong></span>
+            </li>
+            <li>
+                <span class="icon">🫧</span>
+                <span>Genera <strong>distensión abdominal</strong> — esa panza inflada y tirante difícil de explicar</span>
+            </li>
+        </ul>
+
+        <div class="footer-info">
+            <span>Deslizá 👉</span>
+        </div>
+        <div class="bottom-accent"></div>
+    </div>
+</body>
+</html>

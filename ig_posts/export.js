@@ -27,7 +27,10 @@ const path = require('path');
     { name: 'efemeride_05_05_s1', type: 'feed' }, { name: 'efemeride_05_05_s2', type: 'feed' }, { name: 'efemeride_05_05_s3', type: 'feed' },
     { name: 'efemeride_05_19_s1', type: 'feed' }, { name: 'efemeride_05_19_s2', type: 'feed' }, { name: 'efemeride_05_19_s3', type: 'feed' }, { name: 'efemeride_05_19_s4', type: 'feed' }, { name: 'efemeride_05_19_s5', type: 'feed' }, { name: 'efemeride_05_19_s6', type: 'feed' },
     { name: 'efemeride_05_25_s1', type: 'feed' }, { name: 'efemeride_05_25_s2', type: 'feed' }, { name: 'efemeride_05_25_s3', type: 'feed' }, { name: 'efemeride_05_25_s4', type: 'feed' }, { name: 'efemeride_05_25_s5', type: 'feed' },
-    { name: 'efemeride_05_29_s1', type: 'feed' }, { name: 'efemeride_05_29_s2', type: 'feed' }, { name: 'efemeride_05_29_s3', type: 'feed' }, { name: 'efemeride_05_29_s4', type: 'feed' }, { name: 'efemeride_05_29_s5', type: 'feed' }
+    { name: 'efemeride_05_29_s1', type: 'feed' }, { name: 'efemeride_05_29_s2', type: 'feed' }, { name: 'efemeride_05_29_s3', type: 'feed' }, { name: 'efemeride_05_29_s4', type: 'feed' }, { name: 'efemeride_05_29_s5', type: 'feed' },
+    { name: 'efemeride_06_11_s1', type: 'feed' }, { name: 'efemeride_06_11_s2', type: 'feed' }, { name: 'efemeride_06_11_s3', type: 'feed' },
+    { name: 'efemeride_06_20_s1', type: 'feed' }, { name: 'efemeride_06_20_s2', type: 'feed' },
+    { name: 'post_smithii_s1', type: 'feed' }, { name: 'post_smithii_s2', type: 'feed' }, { name: 'post_smithii_s3', type: 'feed' }, { name: 'post_smithii_s4', type: 'feed' }, { name: 'post_smithii_s5', type: 'feed' }
   ];
 
   const exportDir = path.join(__dirname, 'exports');

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>H. Pylori - Slide 2 (¿Qué es?)</title>
+    <style>
+        .content-layout {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            margin-top: 30px;
+            align-items: center;
+        }
+        .text-col p {
+            font-size: 34px;
+            line-height: 1.45;
+            margin-bottom: 24px;
+        }
+        .text-col p:last-child {
+            margin-bottom: 0;
+        }
+        .img-col {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+        }
+        .bacteria-frame {
+            width: 300px;
+            /* height: 300px; */
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            /* border: 4px solid rgba(74, 125, 74, 0.3); */
+            background: white;
+            /* display: flex; */
+            justify-content: center;
+            /* align-items: center; */
+        }
+        .bacteria-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .bacteria-caption {
+            font-size: 22px;
+            color: var(--navy);
+            opacity: 0.5;
+            font-style: italic;
+            text-align: center;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container compact">
+        <div class="sidebar">
+            <img src="logo.png" class="brand-logo" alt="Logo">
+            <div class="sidebar-name">GastroCaseros</div>
+        </div>
+        <div class="top-accent"></div>
+
+        <div class="subtitle" style="margin-top: 40px;">¿Qué es?</div>
+        <h2 style="font-size: 58px; margin-bottom: 0;">¿Qué es el <em style="font-style: italic; color: var(--green);">H. pylori</em>?</h2>
+
+        <div class="content-layout">
+            <div class="text-col">
+                <p>Es una bacteria que infecta el estómago y <strong>causa gastritis</strong>, aunque no siempre dé síntomas.</p>
+                <p>Hoy se la reconoce como una <strong>enfermedad infecciosa</strong>, por lo que los médicos <strong>suelen recomendar tratarla</strong> con antibióticos y un protector gástrico para erradicarla.</p>
+            </div>
+            <div class="img-col">
+                <div class="bacteria-frame">
+                    <img src="uploaded_bacteria.png" alt="Esquema de Helicobacter Pylori">
+                </div>
+                <div class="bacteria-caption">Esquema de <em>H. pylori</em></div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <span>Deslizá 👉</span>
+        </div>
+        <div class="bottom-accent"></div>
+    </div>
+</body>
+</html>

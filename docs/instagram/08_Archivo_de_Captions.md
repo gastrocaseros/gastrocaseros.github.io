@@ -407,3 +407,45 @@ Tu salud empieza por la prevención. Si tenés dudas o indicación de tu médico
 **Hashtags:**
 #HelicobacterPylori #TestDeAireEspirado #Gastroenterologia #SaludDigestiva #Prevencion #Gastritis #UlceraGastrica #GastroCaseros #Caseros #TresDeFebrero
 
+---
+
+### Publicación 12 — Test de Aire Espirado para H. Pylori (Carrusel de 6 slides)
+**Formato:** Carrusel de 6 slides.
+**Imágenes a subir:** `post_hpylori_s1.png` a `post_hpylori_s6.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de 6 imágenes explicando el test de aire espirado para H. pylori. Presenta la bacteria y su relevancia clínica, el funcionamiento del test con urea marcada con carbono-13, el procedimiento de soplado en bolsas, un dato sobre el ácido cítrico, quién debería realizar el test, y las recomendaciones previas (suspender IBP y antibióticos). Incluye el personaje animado de intestino grueso en las portadas y cierres.
+**Caption:**
+TEST DE AIRE ESPIRADO PARA H. PYLORI: lo que tenés que saber 🌬️🦠
+
+¿Qué es el H. pylori?
+Es una bacteria que infecta el estómago y siempre causa gastritis, aunque no siempre dé síntomas 🤯. Hoy se la reconoce como una enfermedad infecciosa (no solo "algo que algunos tienen"), por lo que se recomienda tratarla en prácticamente todas las personas infectadas.
+
+🌬️ ¿Qué es el test de aire espirado (UBT)?
+Es uno de los métodos no invasivos más confiables para detectar si tenés H. pylori activo en el estómago, antes y después del tratamiento.
+
+⚙️ ¿Cómo funciona?
+• Tomás una solución que contiene urea marcada (con el isótopo de carbono ¹³C).
+• Si hay H. pylori en tu estómago, la bacteria produce una enzima llamada ureasa que rompe esa urea.
+• Al romperla, se libera CO₂ marcado, que pasa a la sangre y se exhala por los pulmones.
+• Se mide ese CO₂ en una muestra de aire que soplás en un dispositivo 🫁.
+
+👉 Dato random: agregar ácido cítrico a la solución mejora la sensibilidad del test, porque enlentece el vaciado gástrico y aumenta el contacto del líquido con la bacteria.
+
+🙋‍♀️ ¿Quién debería hacerse el test?
+• Personas menores de 50 años con síntomas digestivos (dispepsia) y sin "señales de alarma" (pérdida de peso, anemia, sangrado, etc.) → estrategia de "testear y tratar".
+• Quienes necesitan confirmar el diagnóstico después de un resultado positivo de serología (anticuerpos en sangre), ya que esa prueba no distingue infección activa de pasada.
+• Pacientes que terminaron el tratamiento antibiótico y quieren confirmar la erradicación (se hace 4-6 semanas después de terminar el tratamiento).
+• Personas dentro de programas poblacionales de prevención de cáncer gástrico, sobre todo en regiones de riesgo intermedio o alto.
+• Como parte del seguimiento en personas con antecedentes familiares de cáncer gástrico, anemia ferropénica sin causa clara, o ciertas enfermedades autoinmunes relacionadas.
+
+⚠️ Importante antes de hacerte el test:
+Para que el resultado sea confiable hay que:
+• Suspender inhibidores de la bomba de protones (IBP) al menos 14 días antes.
+• No haber tomado antibióticos ni bismuto en las últimas 4 semanas.
+
+📌 Para cerrar:
+El test de aire espirado es rápido, no invasivo y muy preciso 👏. Pero como siempre: la decisión de testearte y cómo interpretar el resultado la tiene que guiar tu médico/a 🩺.
+
+Fuente: Maastricht VI/Florence Consensus Report sobre manejo de H. pylori (Gut, 2022).
+
+#Hpylori #SaludDigestiva #Gastroenterologia #TestDeAliento #PrevencionCancerGastrico #Dispepsia #SaludGastrointestinal #GastroCaseros #Caseros #ZonaOeste
+

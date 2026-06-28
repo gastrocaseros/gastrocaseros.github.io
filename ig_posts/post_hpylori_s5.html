@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>H. Pylori - Slide 5 (¿Quién debe hacérselo?)</title>
+    <style>
+        .indications-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 760px;
+            margin-top: 16px;
+        }
+        .indication-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(17,34,51,0.06);
+        }
+        .indication-item:last-child { border-bottom: none; }
+        .indication-icon { font-size: 34px; line-height: 1; margin-top: 4px; flex-shrink: 0; }
+        .indication-text { font-size: 34px; line-height: 1.35; color: var(--navy); }
+        .indication-text strong { color: var(--green); }
+    </style>
+</head>
+<body>
+    <div class="post-container compact">
+        <div class="sidebar">
+            <img src="logo.png" class="brand-logo" alt="Logo">
+            <div class="sidebar-name">GastroCaseros</div>
+        </div>
+        <div class="top-accent"></div>
+
+        <div style="margin-top: 24px;">
+            <div class="subtitle" style="margin-bottom: 8px;">Indicaciones</div>
+            <h1 style="font-size: 52px; margin-bottom: 8px;">¿Quién debería hacerse el test?</h1>
+        </div>
+
+        <div class="indications-list">
+            <div class="indication-item">
+                <div class="indication-icon">✅</div>
+                <div class="indication-text">Personas <strong>menores de 50 años</strong> con síntomas digestivos (dispepsia) y sin "señales de alarma" → estrategia de "testear y tratar".</div>
+            </div>
+            <div class="indication-item">
+                <div class="indication-icon">✅</div>
+                <div class="indication-text">Quienes necesitan <strong>confirmar el diagnóstico</strong> tras un resultado positivo de serología en sangre (que no distingue infección activa de pasada).</div>
+            </div>
+            <div class="indication-item">
+                <div class="indication-icon">✅</div>
+                <div class="indication-text">Pacientes que terminaron el tratamiento y buscan <strong>confirmar la erradicación</strong> (4 a 6 semanas después).</div>
+            </div>
+            <div class="indication-item">
+                <div class="indication-icon">✅</div>
+                <div class="indication-text">Personas en programas de <strong>prevención de cáncer gástrico</strong> o con antecedentes familiares de riesgo.</div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <span>Deslizá 👉</span>
+        </div>
+        <div class="bottom-accent"></div>
+    </div>
+</body>
+</html>

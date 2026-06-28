@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>H. Pylori - Slide 3 (¿Cómo funciona?)</title>
+    <style>
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 760px;
+            margin-top: 10px;
+        }
+        .step-item {
+            background: rgba(17, 34, 51, 0.04);
+            border-left: 5px solid var(--navy);
+            border-radius: 0 16px 16px 0;
+            padding: 10px 16px;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+        .step-num {
+            background: var(--navy);
+            color: white;
+            font-weight: 700;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 18px;
+            margin-top: 2px;
+        }
+        .step-content {
+            font-size: 32px;
+            line-height: 1.35;
+            color: var(--navy);
+        }
+        .step-content strong { color: var(--green); }
+    </style>
+</head>
+<body>
+    <div class="post-container compact">
+        <div class="sidebar">
+            <img src="logo.png" class="brand-logo" alt="Logo">
+            <div class="sidebar-name">GastroCaseros</div>
+        </div>
+        <div class="top-accent"></div>
+
+        <div style="margin-top: 24px;">
+            <div class="subtitle">El diagnóstico</div>
+            <h1 style="font-size: 54px; margin-bottom: 8px;">Test de Aire Espirado (UBT)</h1>
+            <p>Es uno de los métodos no invasivos más confiables para detectar si tenés <em>H. pylori</em> activo, tanto antes como después del tratamiento. 🌬️</p>
+        </div>
+
+        <div class="subtitle" style="margin-top: 14px; margin-bottom: 10px;">⚙️ ¿Cómo funciona?</div>
+        <div class="step-list">
+            <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-content">Tomás una solución que contiene <strong>urea marcada</strong> con el isótopo ¹³C.</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-content">Si hay bacteria en el estómago, su enzima <strong>ureasa</strong> rompe esa urea.</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-content">Al romperla se libera <strong>CO₂ marcado</strong>, que pasa a la sangre y se exhala por los pulmones.</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">4</div>
+                <div class="step-content">Se mide ese CO₂ en una muestra de aire que <strong>soplás en un dispositivo</strong> 🫁.</div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <span>Deslizá 👉</span>
+        </div>
+        <div class="bottom-accent"></div>
+    </div>
+</body>
+</html>

@@ -30,7 +30,8 @@ const path = require('path');
     { name: 'efemeride_05_29_s1', type: 'feed' }, { name: 'efemeride_05_29_s2', type: 'feed' }, { name: 'efemeride_05_29_s3', type: 'feed' }, { name: 'efemeride_05_29_s4', type: 'feed' }, { name: 'efemeride_05_29_s5', type: 'feed' },
     { name: 'efemeride_06_11_s1', type: 'feed' }, { name: 'efemeride_06_11_s2', type: 'feed' }, { name: 'efemeride_06_11_s3', type: 'feed' },
     { name: 'efemeride_06_20_s1', type: 'feed' }, { name: 'efemeride_06_20_s2', type: 'feed' },
-    { name: 'post_smithii_s1', type: 'feed' }, { name: 'post_smithii_s2', type: 'feed' }, { name: 'post_smithii_s3', type: 'feed' }, { name: 'post_smithii_s4', type: 'feed' }, { name: 'post_smithii_s5', type: 'feed' }
+    { name: 'post_smithii_s1', type: 'feed' }, { name: 'post_smithii_s2', type: 'feed' }, { name: 'post_smithii_s3', type: 'feed' }, { name: 'post_smithii_s4', type: 'feed' }, { name: 'post_smithii_s5', type: 'feed' },
+    { name: 'post_hpylori_s1', type: 'feed' }, { name: 'post_hpylori_s2', type: 'feed' }, { name: 'post_hpylori_s3', type: 'feed' }, { name: 'post_hpylori_s4', type: 'feed' }, { name: 'post_hpylori_s5', type: 'feed' }, { name: 'post_hpylori_s6', type: 'feed' }
   ];
 
   const exportDir = path.join(__dirname, 'exports');

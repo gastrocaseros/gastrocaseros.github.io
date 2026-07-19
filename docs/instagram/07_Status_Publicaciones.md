@@ -31,13 +31,19 @@ La numeración de historias ahora sigue el orden de publicación y los highlight
 - **Historia 7:** Serie Helicobacter Pylori. Videos MP4 en `story7_1.html`, `story7_2.html`, `story7_3.html` y `story7_4.html`. ✅
 - **Efeméride 05-05:** Día Internacional de la Celiaquía. Carrusel de 3 slides. ✅
 - **Efeméride 05-19:** Día Mundial de la EII. Carrusel de 6 slides. ✅
+- **Efeméride 05-25:** Día de la Patria. Carrusel. ✅
+- **Efeméride 05-29:** Día Mundial de la Salud Digestiva. Carrusel. ✅
+- **Efeméride 06-11:** Día Mundial del Hígado Graso. Carrusel. ✅
+- **Efeméride 06-20:** Día de la Bandera. ✅
+- **Efeméride 07-09:** Día de la Independencia. ✅
+- **Efeméride 07-28:** Día Mundial contra la Hepatitis. Carrusel de 3 slides. Maquetado y exportado (`efemeride_07_28_s1`–`s3`). ✅ Listo para publicar (revisión médica de la Dra. recomendada).
 
 ---
 
 ## 🚀 Próximos Pasos Inmediatos
-1. **Exportar Todo:** Ejecutar `node ig_posts/export.js` y `export_video.js` para generar los archivos finales con la nueva numeración. ✅ (H. pylori exportado con éxito)
-2. **Publicación Post 4:** Subir el post de Ubicación (PNG) y la Historia 3 (MP4) para completar el Highlight de Ubicación.
-3. **Seguimiento:** Continuar con la Serie Diagnóstica y la programación de los nuevos carruseles educativos (IMO y H. pylori).
+1. **Publicar efeméride 07-28:** Subir `efemeride_07_28_s1.png` a `s3.png` desde PC (o Meta Business Suite) con caption de `08_Archivo_de_Captions.md`.
+2. **Seguimiento:** Continuar con la Serie Diagnóstica y los pendientes de SIBO/IMO.
+3. **Infra:** el workflow de creación quedó unificado en `11_Workflows_Contenido.md` + `npm run ig:new`.
 
 ---
 

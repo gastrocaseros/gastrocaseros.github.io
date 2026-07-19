@@ -477,3 +477,30 @@ Fuente: Maastricht VI/Florence Consensus Report sobre manejo de H. pylori (Gut, 
 
 #Hpylori #SaludDigestiva #Gastroenterologia #TestDeAliento #PrevencionCancerGastrico #Dispepsia #SaludGastrointestinal #GastroCaseros #Caseros #ZonaOeste
 
+---
+
+### Efeméride 28/07 — Día Mundial contra la Hepatitis (`efemeride_07_28_s1` a `s3`)
+**Formato:** Carrusel de 3 slides.
+**Imágenes a subir:** `efemeride_07_28_s1.png`, `efemeride_07_28_s2.png`, `efemeride_07_28_s3.png`
+**Texto Alternativo (Accesibilidad):** Carrusel educativo de GastroCaseros sobre el Día Mundial contra la Hepatitis. Explica que la hepatitis viral puede avanzar sin síntomas, destaca la vacunación para hepatitis B, el tratamiento curativo para hepatitis C y el valor del testeo oportuno, e invita a consultar con un hepatólogo/a por WhatsApp.
+**Caption:**
+🩺 28 de julio — Día Mundial contra la Hepatitis
+
+La hepatitis viral puede avanzar durante años sin dar síntomas. Hoy existen herramientas concretas para prevenirla, detectarla y tratarla.
+
+💉 La hepatitis B puede prevenirse con vacunación.
+💊 La hepatitis C puede curarse con tratamientos antivirales.
+🧪 El testeo permite conocer el diagnóstico y orientar el seguimiento.
+
+Si tenés factores de riesgo o dudas, consultá con tu hepatólogo/a. El diagnóstico a tiempo marca la diferencia.
+
+👉 Turnos y consultas: Link en nuestra biografía.
+📲 WhatsApp: 11 2457-3240
+📍 Justo José de Urquiza 4530, Caseros
+🌐 gastrocaseros.com.ar
+
+Fuente: OMS y OPS, campaña 2026.
+
+**Hashtags:**
+#DíaMundialContraLaHepatitis #Hepatitis #SaludHepática #Prevención #Gastroenterología #GastroCaseros #Caseros #ZonaOeste
+

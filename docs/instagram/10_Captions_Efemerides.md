@@ -77,3 +77,29 @@ Desde GastroCaseros le deseamos un muy feliz Día de la Bandera a todos los arge
 #DíaDeLaBandera #ManuelBelgrano #20DeJunio #Argentina #PatriaArgentina #GastroCaseros
 
 ---
+
+## [efemeride_07_28] Día Mundial contra la Hepatitis
+
+**Caption para IG:**
+
+🩺 **28 de julio — Día Mundial contra la Hepatitis**
+
+La hepatitis viral puede avanzar durante años sin dar síntomas. Hoy existen herramientas concretas para prevenirla, detectarla y tratarla.
+
+💉 La hepatitis B puede prevenirse con vacunación.
+💊 La hepatitis C puede curarse con tratamientos antivirales.
+🧪 El testeo permite conocer el diagnóstico y orientar el seguimiento.
+
+Si tenés factores de riesgo o dudas, consultá con tu hepatólogo/a. El diagnóstico a tiempo marca la diferencia.
+
+👉 Turnos y consultas: Link en nuestra biografía.
+📲 WhatsApp: 11 2457-3240
+📍 Justo José de Urquiza 4530, Caseros
+🌐 gastrocaseros.com.ar
+
+Fuente: OMS y OPS, campaña 2026.
+
+**Hashtags:**
+#DíaMundialContraLaHepatitis #Hepatitis #SaludHepática #Prevención #Gastroenterología #GastroCaseros #Caseros #ZonaOeste
+
+---

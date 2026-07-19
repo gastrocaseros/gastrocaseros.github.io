@@ -38,6 +38,9 @@ const path = require('path');
     { name: 'efemeride_07_09_s1', type: 'feed' }, { name: 'efemeride_07_09_s2', type: 'feed' },
     { name: 'post_turno_sabado', type: 'feed' },
     { name: 'story_turno_sabado', type: 'story' },
+    { name: 'efemeride_07_28_s1', type: 'feed' },
+    { name: 'efemeride_07_28_s2', type: 'feed' },
+    { name: 'efemeride_07_28_s3', type: 'feed' },
     // IG_NEW_EXPORT
   ];
 

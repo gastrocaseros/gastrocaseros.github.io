@@ -344,6 +344,7 @@
             <div class="nav-item" onclick="showPost(9)">9. Tecnología <span>Feed</span></div>
             <div class="nav-item" onclick="showPost(10)">10. Lactosa vs SIBO <span>Feed</span></div>
             <div class="nav-item" onclick="showPost(11)">11. FAQ <span>Feed</span></div>
+            <div class="nav-item" onclick="showPost('turno_sabado')">Turno Sábado — Test Aire <span>Feed</span></div>
         </div>
 
         <div class="nav-group">
@@ -361,6 +362,7 @@
             <div class="nav-item" onclick="showStory('7_2')">S7. H. Pylori (P2) <span>Story</span></div>
             <div class="nav-item" onclick="showStory('7_3')">S7. H. Pylori (P3) <span>Story</span></div>
             <div class="nav-item" onclick="showStory('7_4')">S7. H. Pylori (P4) <span>Story</span></div>
+            <div class="nav-item" onclick="showStory('turno_sabado')">S. Turno Sábado — Test Aire <span>Story</span></div>
         </div>
 
         <div class="nav-group">
@@ -417,6 +419,9 @@
                     </div>
                     <div class="story-circle" onclick="showStory('6_1')">
                         <div class="story-ring"><img src="logo.png"></div>
+                    </div>
+                    <div class="story-circle" onclick="showStory('turno_sabado')">
+                        <div class="story-ring"><img src="intestino_contento.png"></div>
                     </div>
                 </div>
 
@@ -598,7 +603,11 @@
         "hpylori_s6": { 
             img: "post_hpylori_s6.html", isLive: true, likes: 42, 
             caption: `⚠️ Importante antes de hacerte el test\n\nPara que el resultado sea confiable hay que:\n\n• Suspender inhibidores de la bomba de protones (IBP) al menos 14 días antes.\n• No haber tomado antibióticos ni bismuto en las últimas 4 semanas.\n\n📌 Para cerrar\n\nEl test de aire espirado es rápido, no invasivo y muy preciso 👏. Pero como siempre: la decisión de testearte y cómo interpretar el resultado la tiene que guiar tu médico/a 🩺.\n\nFuente: Maastricht VI/Florence Consensus Report sobre manejo de H. pylori (Gut, 2022).\n\n#Hpylori #SaludDigestiva #Gastroenterologia #TestDeAire #PrevencionCancerGastrico #Dispepsia #SaludGastrointestinal` 
-        }
+        },
+        "turno_sabado": {
+            img: "post_turno_sabado.html", isLive: true, likes: 0,
+            caption: `📅 ¡Turnos disponibles este sábado!\n\nRealizamos el Test de Aire Espirado — el estudio no invasivo para diagnóstico de SIBO, IMO, Intolerancia a la Lactosa, Fructosa y Helicobacter Pylori.\n\n📲 Reservá tu turno por WhatsApp: 11 2457-3240\n\n✅ Sin agujas · ✅ Resultado en 48hs · ✅ Atención personalizada\n\n📍 Justo José de Urquiza 4530, Caseros\n🌐 gastrocaseros.com.ar\n\n#TestDeAireEspirado #SIBO #IMO #HelicobacterPylori #Turnos #GastroCaseros #Caseros #ZonaOeste #TresDeFebrero`
+        },
     };
 
 
@@ -615,7 +624,8 @@
             "7_1": { src: "story7_1.html" },
             "7_2": { src: "story7_2.html" },
             "7_3": { src: "story7_3.html" },
-            "7_4": { src: "story7_4.html" }
+            "7_4": { src: "story7_4.html" },
+            "turno_sabado": { src: "story_turno_sabado.html" },
         };
 
 

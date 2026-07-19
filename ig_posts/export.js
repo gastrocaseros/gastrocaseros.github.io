@@ -33,6 +33,8 @@ const path = require('path');
     { name: 'post_smithii_s1', type: 'feed' }, { name: 'post_smithii_s2', type: 'feed' }, { name: 'post_smithii_s3', type: 'feed' }, { name: 'post_smithii_s4', type: 'feed' }, { name: 'post_smithii_s5', type: 'feed' },
     { name: 'post_hpylori_s1', type: 'feed' }, { name: 'post_hpylori_s2', type: 'feed' }, { name: 'post_hpylori_s3', type: 'feed' }, { name: 'post_hpylori_s4', type: 'feed' }, { name: 'post_hpylori_s5', type: 'feed' }, { name: 'post_hpylori_s6', type: 'feed' },
     { name: 'efemeride_07_09_s1', type: 'feed' }, { name: 'efemeride_07_09_s2', type: 'feed' },
+    { name: 'post_turno_sabado', type: 'feed' },
+    { name: 'story_turno_sabado', type: 'story' },
   ];
 
   const exportDir = path.join(__dirname, 'exports');

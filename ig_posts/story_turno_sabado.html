@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stories.css">
+    <title>Historia — Turnos Test de Aire Espirado (Sábado)</title>
+    <style>
+        .personaje-center {
+            width: 330px;
+            margin: 15px auto 10px;
+            display: block;
+            animation: float-character 3.5s ease-in-out infinite;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.12));
+        }
+
+        @keyframes float-character {
+            0%   { transform: translateY(0px); }
+            50%  { transform: translateY(-18px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .badge-sabado {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--green);
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 12px 40px;
+            border-radius: 50px;
+            margin: 10px auto 0;
+            box-shadow: 0 8px 25px rgba(74, 125, 74, 0.35);
+        }
+
+        .cta-wa-card {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a3a5a 100%);
+            border-radius: 30px;
+            padding: 30px 50px;
+            color: white;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: 15px;
+            box-shadow: 0 20px 50px rgba(17, 34, 51, 0.2);
+        }
+
+        .cta-wa-label {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.65);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 5px;
+        }
+
+        .cta-wa-estudio {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            font-weight: 700;
+            color: #a8d5a2;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .cta-wa-numero {
+            font-family: 'Outfit', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .cta-wa-sub {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container story large-font compact">
+        <img src="logo.png" class="brand-logo-story" alt="Logo">
+
+        <div class="subtitle">Agenda</div>
+        <h1 style="font-size: 92px; line-height: 1.0;">¡Sacá tu<br>turno para<br>el sábado!</h1>
+
+        <!-- Personaje flotante -->
+        <img src="intestino_contento.png" class="personaje-center" alt="Intestino feliz">
+
+        <!-- Badge del día -->
+        <div class="badge-sabado">📅 Este sábado</div>
+
+        <!-- CTA Card -->
+        <div class="cta-wa-card">
+            <div class="cta-wa-label">Estudio disponible</div>
+            <div class="cta-wa-estudio">Test de Aire Espirado</div>
+            <div class="cta-wa-sub">📲 Escribinos por WhatsApp</div>
+            <div class="cta-wa-numero">11 2457-3240</div>
+        </div>
+
+        <!-- Botón animado -->
+        <div class="tap-indicator" style="margin-top: 30px;">Escribinos ahora</div>
+
+        <div class="footer-info">
+            <a href="https://maps.app.goo.gl/Jm5oWaNRarQq51d8A" target="_blank">📍 Justo José de Urquiza 4530, Caseros</a>
+            <span>🌐 gastrocaseros.com.ar</span>
+        </div>
+    </div>
+</body>
+</html>

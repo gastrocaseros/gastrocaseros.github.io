@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Post — Turnos Test de Aire Espirado (Sábado)</title>
+    <style>
+        .personaje-wrap {
+            position: absolute;
+            bottom: 60px;
+            right: -25px;
+            width: 420px;
+            opacity: 0.97;
+            z-index: 20;
+            pointer-events: none;
+        }
+
+        .badge-dia {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--green);
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 12px 30px;
+            border-radius: 50px;
+            margin-bottom: 30px;
+        }
+
+        .cta-turno {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a3a5a 100%);
+            border-radius: 24px;
+            padding: 40px 50px;
+            color: white;
+            margin-top: 30px;
+            max-width: 680px;
+            box-shadow: 20px 20px 40px rgba(17, 34, 51, 0.18);
+            position: relative;
+            z-index: 10;
+        }
+
+        .cta-turno-label {
+            font-size: 26px;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .cta-turno-estudio {
+            font-family: 'Playfair Display', serif;
+            font-size: 58px;
+            font-weight: 700;
+            color: #a8d5a2;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .cta-turno-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--green);
+            border-radius: 2px;
+            margin-bottom: 18px;
+        }
+
+        .cta-turno-wa {
+            font-size: 32px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 8px;
+        }
+
+        .cta-turno-numero {
+            font-family: 'Outfit', sans-serif;
+            font-size: 74px;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="sidebar"><img src="logo.png" class="brand-logo" alt="Logo"><div class="sidebar-name">GastroCaseros</div></div>
+        <div class="top-accent"></div>
+
+        <div class="badge-dia">📅 Este sábado</div>
+
+        <h1 style="font-size: 65px; margin-bottom: 10px; max-width: 800px; line-height: 1.0; white-space: nowrap;">¡Turnos disponibles!</h1>
+
+        <p style="font-size: 30px; max-width: 600px; margin-top: 0; color: var(--navy); opacity: 0.75; line-height: 1.4;">
+            Realizamos estudios de SIBO, IMO, Intolerancia a la Lactosa, Fructosa y Helicobacter Pylori.
+        </p>
+
+        <div class="cta-turno">
+            <div class="cta-turno-label">Estudios disponibles de</div>
+            <div class="cta-turno-estudio">Test de Aire Espirado</div>
+            <div class="cta-turno-label" style="color: #a8d5a2;">Hidrógeno y Metano</div>
+            <div class="cta-turno-divider"></div>
+            <div class="cta-turno-wa">📲 Reservá por WhatsApp</div>
+            <div class="cta-turno-numero">11 2457-3240</div>
+        </div>
+
+        <!-- Personaje intestino contento -->
+        <img src="intestino_contento.png" class="personaje-wrap" alt="Intestino feliz">
+
+        <div class="footer-info" style="z-index: 10;">
+            <a href="https://maps.app.goo.gl/Jm5oWaNRarQq51d8A" target="_blank">📍 Justo José de Urquiza 4530, Caseros</a>
+            <span>🌐 gastrocaseros.com.ar</span>
+        </div>
+
+        <div class="bottom-accent"></div>
+    </div>
+</body>
+</html>

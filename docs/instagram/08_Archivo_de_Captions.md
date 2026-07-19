@@ -267,6 +267,34 @@ Una consulta a tiempo previene complicaciones mayores.
 
 ---
 
+### Post — Turnos Test de Aire Espirado (Sábado) (`post_turno_sabado.html`)
+**Imagen a subir:** `post_turno_sabado.png`
+**Texto Alternativo (Accesibilidad):** Placa de agenda con el personaje intestino feliz. Anuncia turnos disponibles para el sábado para el Test de Aire Espirado en GastroCaseros, Caseros. Incluye el número de WhatsApp 11 2457-3240.
+**Caption:**
+📅 ¡Turnos disponibles este sábado!
+
+Realizamos el Test de Aire Espirado — el estudio no invasivo para diagnóstico de SIBO, IMO y H. pylori.
+
+📲 Pedí tu turno por WhatsApp: 11 2457-3240
+
+✅ Sin agujas · ✅ Resultado en 48hs · ✅ Atención personalizada
+
+📍 Justo José de Urquiza 4530, Caseros
+🌐 gastrocaseros.com.ar
+
+**Hashtags:**
+#TestDeAireEspirado #SIBO #IMO #HelicobacterPylori #Turnos #GastroCaseros #Caseros #ZonaOeste #TresDeFebrero
+
+---
+
+### Historia — Turnos Test de Aire Espirado (Sábado) (`story_turno_sabado.html`)
+**Imagen a subir:** `story_turno_sabado.png`
+**Texto Alternativo (Accesibilidad):** Historia con el personaje intestino feliz flotando. Anuncia turnos disponibles para el sábado para el Test de Aire Espirado. Botón de WhatsApp 11 2457-3240.
+**Interacción:** Agregar sticker de enlace sobre el botón "Escribinos ahora" apuntando a `https://wa.me/5491124573240?text=Hola%21+Quiero+pedir+turno+para+el+s%C3%A1bado+para+el+Test+de+Aire+Espirado`.
+**Texto del sticker de enlace:** Pedí tu turno 📲
+
+---
+
 ## 🗓️ BLOQUE 5: Efemérides (Fechas Especiales)
 
 ### Efeméride 05/05 — Día Internacional de la Celiaquía (`efemeride_05_05_s1.html` a `s3`)

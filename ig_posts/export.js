@@ -4,8 +4,11 @@ const path = require('path');
 
 (async () => {
   console.log('🚀 Iniciando exportación de posts...');
+  const systemChrome = ['/usr/bin/google-chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser']
+    .find(candidate => fs.existsSync(candidate));
   const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    ...(systemChrome ? { executablePath: systemChrome } : {})
   });
   const page = await browser.newPage();
 
@@ -35,6 +38,7 @@ const path = require('path');
     { name: 'efemeride_07_09_s1', type: 'feed' }, { name: 'efemeride_07_09_s2', type: 'feed' },
     { name: 'post_turno_sabado', type: 'feed' },
     { name: 'story_turno_sabado', type: 'story' },
+    // IG_NEW_EXPORT
   ];
 
   const exportDir = path.join(__dirname, 'exports');

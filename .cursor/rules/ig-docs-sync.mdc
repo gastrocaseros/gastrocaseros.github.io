@@ -1,0 +1,13 @@
+---
+description: Cierre y sincronización obligatoria del contenido de Instagram
+globs: ig_posts/**/*.html
+alwaysApply: false
+---
+
+# Instagram: aprobación y cierre
+
+- Antes de exportar, mostrar caption/alt text, revisar el mockup y pedir aprobación explícita.
+- Después del OK, correr `npm run ig:export` o `npm run ig:video`.
+- Actualizar `docs/instagram/08_Archivo_de_Captions.md` y `07_Status_Publicaciones.md`.
+- Para efemérides, actualizar también `10_Captions_Efemerides.md` y `09_Calendario_Efemerides.md`.
+- El scaffold debe quedar registrado en mockup y exportadores por `npm run ig:new`.

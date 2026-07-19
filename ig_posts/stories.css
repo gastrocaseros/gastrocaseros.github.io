@@ -270,3 +270,87 @@ body {
 .story.compact h1 {
     margin-bottom: 10px;
 }
+
+/* Familias reutilizables para historias nuevas */
+.layout-story-info .content-zone,
+.layout-story-sticker .content-zone,
+.layout-story-cta .content-zone {
+    width: 100%;
+}
+
+.layout-story-info h1,
+.layout-story-sticker h1 {
+    font-size: 92px;
+}
+
+.layout-story-cta {
+    padding-top: 410px;
+}
+
+.layout-story-cta h1 {
+    font-size: 92px;
+    line-height: 1;
+}
+
+.story .badge-pill {
+    align-self: center;
+}
+
+.story-character {
+    display: block;
+    width: 330px;
+    margin: 15px auto 10px;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.12));
+    animation: float-character 3.5s ease-in-out infinite;
+}
+
+.story .cta-panel {
+    width: 100%;
+    max-width: none;
+    padding: 32px 50px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.story .cta-panel__title {
+    font-size: 42px;
+}
+
+.story .cta-panel__label {
+    font-size: 26px;
+}
+
+.story .cta-panel__value {
+    font-size: 56px;
+}
+
+.layout-story-cta .tap-indicator {
+    margin-top: 30px;
+}
+
+.sticker-guide {
+    min-width: 560px;
+    margin-top: 60px;
+    padding: 30px 70px;
+    border: 3px dashed rgba(255, 255, 255, 0.45);
+    border-radius: 60px;
+    background: var(--green);
+    color: var(--cream);
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes float-character {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+}

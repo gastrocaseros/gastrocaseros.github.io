@@ -9,6 +9,7 @@
   "scripts": {
     "build": "bash build-local.sh",
     "serve": "npx serve dist",
+    "ig:new": "node ig_posts/new.js",
     "ig:export": "node ig_posts/export.js",
     "ig:video": "node ig_posts/export_video.js",
     "ig:preview": "npx serve ig_posts",

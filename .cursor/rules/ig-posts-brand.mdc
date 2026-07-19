@@ -1,0 +1,14 @@
+---
+description: Marca y familias visuales de las piezas de Instagram
+globs: ig_posts/**/*.{html,css}
+alwaysApply: false
+---
+
+# Instagram: marca y layouts
+
+- Partí de `ig_posts/templates/` mediante `npm run ig:new`; no regeneres boilerplate.
+- Usá Navy `#112233`, Verde `#4a7d4a`, Verde suave `#a8c8a0` y Crema `#f4f1eb`.
+- Usá Playfair Display para títulos y Outfit para cuerpo.
+- Conservá canvas, logo, sidebar/footer y márgenes de la familia elegida.
+- Preferí clases compartidas; si un patrón aparece dos veces, promovelo al CSS común.
+- No uses Stitch para piezas diarias ni agregues colores de campaña sin aprobación.

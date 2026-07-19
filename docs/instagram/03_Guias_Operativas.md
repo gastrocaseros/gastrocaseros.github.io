@@ -57,7 +57,7 @@ Las historias animadas (MP4) deben subirse desde el móvil para usar stickers in
 Para crear contenido nuevo, seguimos este ciclo:
 
 > [!TIP]
-> **¿Querés automatizar esto?** Revisá el [SOP de Workflows de Antigravity](11_Workflows_Antigravity.md) para iniciar la creación de contenido mediante prompts directamente en el chat.
+> **¿Querés automatizar esto?** Revisá el [Workflow de Contenido](11_Workflows_Contenido.md), compatible con Cursor y Antigravity, para crear piezas desde familias reutilizables.
 
 1. **Maquetación:** Se edita el HTML/CSS en la carpeta `ig_posts/`.
 2. **Validación:** Se abre `ig_posts/mockup.html` para verificar que el texto sea legible y el diseño sea premium.

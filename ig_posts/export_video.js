@@ -5,8 +5,11 @@ const path = require('path');
 
 (async () => {
   console.log('🎥 Iniciando exportación de historias animadas en MP4...');
+  const systemChrome = ['/usr/bin/google-chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser']
+    .find(candidate => fs.existsSync(candidate));
   const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    ...(systemChrome ? { executablePath: systemChrome } : {})
   });
   const page = await browser.newPage();
 
@@ -16,6 +19,7 @@ const path = require('path');
     'story6_1', 'story6_2', 'story6_3',
     'story7_1', 'story7_2', 'story7_3', 'story7_4',
     'story_turno_sabado',
+    // IG_NEW_VIDEO
   ];
 
   const exportDir = path.join(__dirname, 'exports_video');

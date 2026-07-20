@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test de SIBO e Intolerancias en Caseros | Aire Espirado | GastroCaseros</title>
+  <meta name="description" content="Test de aire espirado para SIBO, intolerancia a la lactosa y fructosa en Caseros, Tres de Febrero. Estudio no invasivo, sin agujas. Turnos por WhatsApp." />
+  <meta name="keywords" content="test SIBO Caseros, test aire espirado SIBO, intolerancia lactosa Caseros, intolerancia fructosa, sobrecrecimiento bacteriano zona oeste, gastroenterologia Caseros" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gastrocaseros.com.ar/test-sibo-intolerancias.html">
+  <meta property="og:title" content="Test de SIBO e Intolerancias en Caseros | Aire Espirado | GastroCaseros">
+  <meta property="og:description" content="Test de aire espirado para SIBO, intolerancia a la lactosa y fructosa en Caseros, Tres de Febrero. Estudio no invasivo, sin agujas. Turnos por WhatsApp.">
+  <meta property="og:image" content="logo.png">
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Test de Aire Espirado para SIBO e Intolerancias",
+    "description": "Estudio no invasivo de aire espirado para diagnosticar SIBO e intolerancia a la lactosa, fructosa y sorbitol en Caseros, zona oeste del GBA.",
+    "publisher": {
+      "@type": "Physician",
+      "name": "Consultorio Gastroenterológico Caseros",
+      "image": "https://gastrocaseros.com.ar/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Justo José de Urquiza 4530",
+        "addressLocality": "Caseros",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "AR"
+      }
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  
+  <link rel="stylesheet" href="css/style.css?v=20260324">
+  <style>
+    .sibo-steps { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 1024px) {
+      .sibo-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDGFHLL04L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HDGFHLL04L');
+
+    function trackWA(label) {
+      gtag('event', 'whatsapp_click', {
+        'event_category': 'Contacto',
+        'event_label': label
+      });
+    }
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-bar"></div>
+
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20un%20turno%20para%20el%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('flotante_sibo')" class="floating-wa" target="_blank" aria-label="WhatsApp para Turnos" title="Enviar mensaje">
+    <img src="img/icon-whatsapp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- NAVIGATION -->
+  <nav class="top-nav">
+    <a href="index.html" class="nav-brand" aria-label="Inicio">
+      <img src="logo.png" alt="Logo GastroCaseros" class="nav-logo" fetchpriority="high">
+      <div class="nav-name">
+        Consultorio Gastroenterológico Caseros
+        <span>Estudios de Aire Espirado</span>
+      </div>
+    </a>
+    
+    <div class="nav-links" id="nav-menu">
+      <a href="index.html#autodiagnostico" onclick="closeMenu()">Test Rápido</a>
+      <a href="index.html#servicios" onclick="closeMenu()">Especialidades</a>
+      <a href="#como-se-realiza" onclick="closeMenu()">Procedimiento</a>
+      <a href="#preparacion" onclick="closeMenu()">Preparación</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20un%20turno%20para%20el%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('nav_sibo')" class="nav-cta" aria-label="Pedir turno por WhatsApp">Pedir Turno</a>
+      <button class="hamburger-btn" aria-label="Abrir menú" onclick="toggleMenu()">
+        <svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--navy)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" style="min-height: 80vh;">
+    <div class="hero-content">
+      <span class="badge-expertise">Estudios No Invasivos · Zona Oeste GBA</span>
+      <h1>Test de Aire Espirado para <em>SIBO</em>, <em>IMO</em> e Intolerancias en Caseros</h1>
+      <p class="hero-p">Diagnóstico no invasivo de sobrecrecimiento bacteriano e intolerancia a la lactosa y fructosa. Zona oeste del GBA.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20un%20turno%20para%20el%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('hero_sibo')" class="btn-main btn-filled" aria-label="Escribir a WhatsApp">Agendar Turno por WhatsApp</a>
+        <a href="#como-se-realiza" class="btn-main btn-outline" aria-label="Ver cómo se realiza el test">¿Cómo se realiza?</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo central GastroCaseros" class="logo-hero" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ ES EL TEST? -->
+  <section id="detalles" style="background: var(--white); border-radius: 60px; margin: 40px; padding: 80px 40px;">
+    <div class="section-header">
+      <span class="section-tag">¿Qué es el test?</span>
+      <h2 class="section-title">Aire Espirado: Hidrógeno y Metano</h2>
+      <p class="section-desc">Entendé cómo un soplo puede revelar lo que pasa en tu intestino delgado.</p>
+    </div>
+    <div class="tests-grid" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto; gap: 0;">
+      <div style="font-size: 1.2rem; line-height: 1.8; color: var(--text);">
+        <p style="margin-bottom: 24px;">
+          Es un estudio que mide los gases (<strong>hidrógeno y metano</strong>) que exhalás después de tomar una solución con un azúcar específico. Si las bacterias intestinales fermentan ese azúcar de forma anormal, los gases pasan a la sangre y se eliminan por la respiración, donde los medimos.
+        </p>
+        <div class="prep-body" style="padding: 0 0 24px 0;">
+          <ul class="prep-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 8px;">
+            <li style="margin-bottom: 0; padding-left: 36px; font-weight: 600; color: var(--navy);"><strong style="display:inline; font-size:1.15rem;">Sin agujas</strong></li>
+            <li style="margin-bottom: 0; padding-left: 36px; font-weight: 600; color: var(--navy);"><strong style="display:inline; font-size:1.15rem;">Sin endoscopía</strong></li>
+            <li style="margin-bottom: 0; padding-left: 36px; font-weight: 600; color: var(--navy);"><strong style="display:inline; font-size:1.15rem;">Sin sedación</strong></li>
+          </ul>
+        </div>
+        <p style="margin-bottom: 0;">
+          Es un método <strong>validado internacionalmente</strong> para el diagnóstico de SIBO, IMO e intolerancias a hidratos de carbono.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ DETECTA? -->
+  <section id="que-detecta" style="background: var(--cream); padding: 100px 40px;">
+    <div class="section-header">
+      <span class="section-tag">Diagnóstico</span>
+      <h2 class="section-title">¿Qué detecta?</h2>
+      <p class="section-desc">Con un mismo método de aire espirado evaluamos distintas causas de síntomas digestivos frecuentes.</p>
+    </div>
+    
+    <div class="tests-grid" style="max-width: 1100px; margin: 0 auto;">
+      <div class="test-modern-card" style="background: var(--white); border: 1.5px solid var(--border); color: var(--text);">
+        <h3 style="color: var(--green);">Condiciones que evaluamos</h3>
+        <ul class="test-bullet-list">
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
+            <p style="color: var(--text); font-size: 1.05rem; opacity: 1;"><strong>SIBO:</strong> Sobrecrecimiento bacteriano del intestino delgado. Exceso de bacterias que fermentan hidratos y generan gases, hinchazón y cambios en el tránsito.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
+            <p style="color: var(--text); font-size: 1.05rem; opacity: 1;"><strong>Intolerancia a la lactosa:</strong> Dificultad para digerir el azúcar de la leche, con fermentación intestinal y síntomas luego de consumir lácteos.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
+            <p style="color: var(--text); font-size: 1.05rem; opacity: 1;"><strong>Intolerancia a la fructosa:</strong> Mala absorción de fructosa presente en frutas, miel y algunos endulzantes.</p>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="test-modern-card" style="background: var(--navy); border: 1.5px solid var(--navy-light); color: white;">
+        <h3 style="color: var(--green-light);">¿Cuándo está indicado?</h3>
+        <p style="font-size: 1.05rem; opacity: 0.8; margin-bottom: 24px;">Es frecuente que tu médico lo solicite si presentás:</p>
+        <ul class="test-bullet-list">
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green-light); color: var(--navy);" aria-hidden="true">✓</div>
+            <p style="color: white; font-size: 1.05rem;">Hinchazón y gases persistentes después de comer.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green-light); color: var(--navy);" aria-hidden="true">✓</div>
+            <p style="color: white; font-size: 1.05rem;">Diarrea, constipación o alternancia de ambos.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green-light); color: var(--navy);" aria-hidden="true">✓</div>
+            <p style="color: white; font-size: 1.05rem;">Malestar con lácteos o frutas dulces.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green-light); color: var(--navy);" aria-hidden="true">✓</div>
+            <p style="color: white; font-size: 1.05rem;">Síntomas compatibles con colon irritable.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿CÓMO ES EL ESTUDIO? -->
+  <section id="como-se-realiza" style="background: var(--white); border-radius: 60px; margin: 40px; padding: 100px 40px;">
+    <div class="section-header">
+      <span class="section-tag">Procedimiento</span>
+      <h2 class="section-title">¿Cómo es el estudio?</h2>
+      <p class="section-desc">Sencillo, indoloro y sin requerir sedación ni pinchazos. Duración total de 2 a 3 horas.</p>
+    </div>
+    
+    <div class="services-container sibo-steps" style="max-width: 1100px; margin: 0 auto 50px;">
+      <div class="service-card reveal">
+        <div class="service-icon-box">
+          <span style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--green);">1</span>
+        </div>
+        <h3>Llegás en ayunas</h3>
+        <p>Concurrís al consultorio habiendo cumplido el ayuno y la preparación indicada para tu estudio.</p>
+      </div>
+      
+      <div class="service-card reveal">
+        <div class="service-icon-box">
+          <span style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--green);">2</span>
+        </div>
+        <h3>Muestra basal</h3>
+        <p>Soplás en el dispositivo para registrar la medición basal de hidrógeno y metano en tu respiración.</p>
+      </div>
+      
+      <div class="service-card reveal">
+        <div class="service-icon-box">
+          <span style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--green);">3</span>
+        </div>
+        <h3>Toma de la solución</h3>
+        <p>Ingerís la solución con el azúcar a evaluar (según el protocolo: lactulosa, lactosa o fructosa).</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon-box">
+          <span style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--green);">4</span>
+        </div>
+        <h3>Muestras sucesivas</h3>
+        <p>Repetís muestras cada 15-20 minutos. Duración total de 2 a 3 horas: podés traer un libro o auriculares para escuchar música.</p>
+      </div>
+    </div>
+
+    <div style="max-width: 900px; margin: 0 auto; background: var(--cream); border: 1.5px solid var(--border); border-left: 5px solid var(--green); border-radius: 24px; padding: 36px 40px; font-size: 1.15rem; line-height: 1.7; color: var(--text);">
+      <strong style="color: var(--navy); font-family: 'Playfair Display', serif; font-size: 1.35rem; display: block; margin-bottom: 10px;">Informe e interpretación</strong>
+      El informe firmado se entrega en <strong>PDF por WhatsApp en 24 a 48 horas hábiles</strong>.
+    </div>
+  </section>
+
+  <!-- PREPARACIÓN -->
+  <section id="preparacion" style="background: var(--cream); padding: 100px 40px;">
+    <div class="section-header">
+      <span class="section-tag">Protocolo Médico</span>
+      <h2 class="section-title">Preparación Obligatoria</h2>
+      <p class="section-desc">La exactitud de tus resultados depende de seguir rigurosamente estas indicaciones previas al turno.</p>
+    </div>
+
+    <div class="prep-grid" style="grid-template-columns: 1fr; max-width: 850px; margin: 0 auto;">
+      <div class="prep-card reveal">
+        <div class="prep-header sibo-header">
+          <h3>Test de SIBO</h3>
+          <span>Sobrecrecimiento Bacteriano / Intolerancias</span>
+        </div>
+        <div class="prep-body" style="background: white;">
+          <ul class="prep-list">
+            <li><strong>Ayuno Estricto:</strong><br>8 a 12 horas. Solo podés tomar agua mineral común.</li>
+            <li><strong>Dieta del día previo:</strong><br>Estricta y baja en residuos. Solo arroz blanco, pollo, carne o pescado a la plancha. Sin verduras, frutas, harinas ni lácteos.</li>
+            <li><strong>4 semanas antes:</strong><br>
+              - Debés haber terminado tu tratamiento de antibióticos.<br />
+              <br />
+              - Si te hicieron una videocolonoscopia, tiene que haber pasado al menos 4 semanas.
+            </li>
+            <li><strong>1 semana antes:</strong><br>Suspender laxantes, procinéticos y antiácidos.</li>
+            <li><strong>El día del test:</strong><br>No fumar, no masticar chicle ni hacer ejercicio físico intenso.</li>
+          </ul>
+          <a href="https://wa.me/5491124573240?text=Hola%2C%20tengo%20una%20duda%20sobre%20la%20dieta%20previa%20al%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('duda_prep_sibo')" class="prep-help" aria-label="Ayuda con la preparación por WhatsApp">Tengo una duda con esta preparación →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTUDIO RELACIONADO -->
+  <section style="padding: 0 40px;">
+    <div class="service-card reveal" style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
+      <div style="max-width: 700px;">
+        <span class="section-tag">Estudio relacionado</span>
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 12px;">También realizamos Helicobacter pylori</h3>
+        <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 0;">Test de urea en aire espirado (UBT): diagnóstico no invasivo de la bacteria asociada a gastritis y úlceras, sin necesidad de una endoscopía inicial.</p>
+      </div>
+      <a href="test-aire-espirado-helicobacter-pylori.html" class="service-link" style="margin-top: 0; font-size: 1.05rem;" aria-label="Ver página del test de Helicobacter Pylori">Ver detalles H. pylori →</a>
+    </div>
+  </section>
+
+  <!-- TURNOS -->
+  <section id="turnos" style="padding: 60px 40px 100px;">
+    <div style="background: var(--navy); color: white; border-radius: 40px; padding: 60px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px; box-shadow: var(--shadow-lg); max-width: 1100px; margin: 0 auto;">
+      <div style="max-width: 650px;">
+        <span class="section-tag" style="color: var(--green-light);">Modalidad de Turnos</span>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-bottom: 16px; color: white;">Agendá tu Test de SIBO, IMO o Intolerancias</h2>
+        <p style="font-size: 1.05rem; opacity: 0.9; margin-bottom: 0;">Ofrecemos atención particular con emisión de facturación oficial y médica para solicitar reintegros a tu prepaga u obra social.<br><br>Consultanos directamente por WhatsApp para conocer aranceles e indicaciones adicionales.</p>
+      </div>
+      <div>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20un%20turno%20para%20el%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('solicitar_turno_sibo')" class="btn-main" style="background: white; color: var(--navy); font-weight: 700; border: 2px solid white;" aria-label="Pedir turno por WhatsApp">Solicitar Turno →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-brand">Consultorio Gastroenterológico Caseros</p>
+    <p>Medicina Especializada · Estudios de Aire Espirado</p>
+    
+    <div class="social-links">
+      <a href="https://www.instagram.com/gastrocaseros/" target="_blank" aria-label="Seguinos en Instagram" class="social-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+    </div>
+
+    <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 24px;">&copy; 2026 GastroCaseros. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+    
+    function closeMenu() {
+      document.getElementById('nav-menu').classList.remove('active');
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      // Progress Bar
+      window.addEventListener('scroll', () => {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById('scroll-bar').style.width = scrolled + "%";
+      });
+
+      const revealElements = document.querySelectorAll('.service-card, .test-modern-card, .prep-card');
+      revealElements.forEach(el => el.classList.add('reveal'));
+      
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "0px 0px -50px 0px", threshold: 0.1 });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+    });
+  </script>
+</body>
+</html>

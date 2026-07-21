@@ -15,4 +15,4 @@ Al **agregar** un HTML de landing o subpágina de estudio en la raíz del repo, 
    - entrada en **`sitemap.xml`**;
    - **`npm run build`** exitoso (cada `*.html` de raíz debe existir en `dist/` con CSS hasheado).
 
-Convenciones rápidas: SEO local (Caseros, Tres de Febrero, zona oeste GBA); SIBO + IMO juntos cuando corresponda; JSON-LD con `#physician` / `#clinic` compartidos; WhatsApp `5491124573240` y labels `trackWA` únicos.
+Convenciones rápidas: SEO local (Caseros, Tres de Febrero, zona oeste GBA); SIBO + IMO juntos cuando corresponda; JSON-LD con `#physician` (reducido) / `#clinic` (NAP completo); `link rel="canonical"` y `og:image` absoluto; WhatsApp `5491124573240` y labels `trackWA` únicos.

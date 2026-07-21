@@ -31,10 +31,13 @@ Sitio estático: HTML en la raíz, estilos en `css/style.css`, deploy vía `npm 
 - `lang="es"`, viewport, charset.
 - **Title:** `{Servicio} en Caseros, Tres de Febrero | … | GastroCaseros`
 - **meta description** y **keywords:** término médico + geo (Caseros, Tres de Febrero, zona oeste GBA).
-- **Open Graph:** `og:url` = `https://gastrocaseros.com.ar/<archivo>`, título/descripción alineados al title.
+- **Open Graph:** `og:url` = `https://gastrocaseros.com.ar/<archivo>`, título/descripción alineados al title; **`og:image`** = `https://gastrocaseros.com.ar/logo.png` (URL absoluta).
+- **`link rel="canonical"`** con la URL canónica de la página (ver [reference.md](reference.md)).
 - **JSON-LD** `@graph`:
   - `MedicalWebPage` con `@id` y `url` de esta página (`…#webpage`).
   - `Physician` (`#physician`) y `MedicalClinic` (`#clinic`) con los **mismos `@id`** que en `index.html`.
+  - **NAP y datos locales solo en `MedicalClinic`:** dirección, geo, teléfono, `openingHoursSpecification`, `areaServed`, `availableService` (ajustar al estudio en landings).
+  - **`Physician` reducido:** name, url, image, `medicalSpecialty`, `sameAs`, `employee` (`Person` `#doctor`), `worksFor` → `#clinic` — sin duplicar NAP ni horarios.
   - `Person` doctor: `#doctor` donde corresponda.
   - `sameAs`: solo Instagram `https://www.instagram.com/gastrocaseros/` (no Facebook/TikTok).
   - Ajustar `MedicalWebPage.name` / `description` y `availableService.name` al estudio.

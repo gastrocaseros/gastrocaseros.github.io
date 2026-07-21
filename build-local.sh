@@ -96,6 +96,18 @@ for src in "${HTML_SOURCES[@]}"; do
     echo "     Revisá que $src tenga el patrón: css/style.css?v=XXXXXXXX"
     VERIFY_OK=false
   fi
+  if grep -qE 'rel="canonical" href="https://gastrocaseros.com.ar|rel="canonical"href="https://gastrocaseros.com.ar' "dist/$src"; then
+    echo "  ✅ Canonical presente en dist/$src"
+  else
+    echo "  ❌ ERROR: Falta link rel=canonical con URL absoluta en dist/$src"
+    VERIFY_OK=false
+  fi
+  if grep -qE 'property="og:image" content="https://gastrocaseros.com.ar/logo.png"|property="og:image"content="https://gastrocaseros.com.ar/logo.png"' "dist/$src"; then
+    echo "  ✅ og:image absoluto en dist/$src"
+  else
+    echo "  ❌ ERROR: og:image debe ser https://gastrocaseros.com.ar/logo.png en dist/$src"
+    VERIFY_OK=false
+  fi
 done
 
 if [ ! -f dist/css/style.min.css ]; then

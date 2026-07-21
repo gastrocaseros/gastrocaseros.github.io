@@ -1,6 +1,6 @@
 # Referencia — URLs, schema y trackWA
 
-## URLs canónicas (sitemap)
+## URLs canónicas (sitemap y `<link rel="canonical">`)
 
 | Página | URL |
 |--------|-----|
@@ -8,13 +8,15 @@
 | H. pylori (UBT) | https://gastrocaseros.com.ar/test-aire-espirado-helicobacter-pylori.html |
 | SIBO / IMO / intolerancias | https://gastrocaseros.com.ar/test-sibo-intolerancias.html |
 
+**Open Graph image (todas las páginas):** `https://gastrocaseros.com.ar/logo.png`
+
 ## IDs JSON-LD compartidos (no cambiar entre páginas)
 
-| @id | Tipo |
-|-----|------|
-| `https://gastrocaseros.com.ar/#physician` | Physician |
-| `https://gastrocaseros.com.ar/#clinic` | MedicalClinic |
-| `https://gastrocaseros.com.ar/#doctor` | Person (Dra. Erika Pest) |
+| @id | Tipo | Campos principales |
+|-----|------|-------------------|
+| `https://gastrocaseros.com.ar/#physician` | Physician | Identidad, specialty, `employee`, `worksFor` → clinic (sin NAP duplicado) |
+| `https://gastrocaseros.com.ar/#clinic` | MedicalClinic | NAP, geo, teléfono, horarios, `areaServed`, `availableService` |
+| `https://gastrocaseros.com.ar/#doctor` | Person (Dra. Erika Pest) | Referenciado desde Physician y MedicalClinic |
 
 Cada subpágina agrega `MedicalWebPage` con `@id` = `{url-página}#webpage`.
 
@@ -22,7 +24,7 @@ Cada subpágina agrega `MedicalWebPage` con `@id` = `{url-página}#webpage`.
 
 - Dirección: Justo José de Urquiza 4530, Caseros, Buenos Aires 1678, AR
 - Tel: +54 9 11 2457-3240
-- Horario: Jueves 09:00–12:00 (`openingHours`: `Th 09:00-12:00`)
+- Horario: Jueves 09:00–12:00 (`openingHoursSpecification` en `#clinic`; no usar además la propiedad texto `openingHours`)
 - Geo: -34.6089, -58.5671
 - areaServed: Caseros, Tres de Febrero, San Martín, Morón, Hurlingham, Ituzaingó
 - Instagram: https://www.instagram.com/gastrocaseros/

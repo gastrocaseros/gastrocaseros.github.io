@@ -27,7 +27,7 @@ npm run build
 npm run serve   # sirve dist/
 ```
 
-El workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) ejecuta el mismo `npm run build` en cada push a `main`.
+El workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) ejecuta el mismo `npm run build` en cada push a `main`. El script valida en `dist/` que cada HTML tenga `rel="canonical"` y `og:image` absoluto.
 
 ## Cambios frecuentes
 
@@ -60,6 +60,9 @@ Referencia de URLs, schema y labels Analytics: [`.cursor/skills/nueva-pagina-gas
 
 ## SEO y rendimiento
 
+- URL canónica por página: `<link rel="canonical" href="https://gastrocaseros.com.ar/...">`.
+- Open Graph: `og:image` con URL absoluta `https://gastrocaseros.com.ar/logo.png`.
+- Al editar HTML, actualizar `<lastmod>` de esa URL en `sitemap.xml`.
 - Imágenes con `loading="lazy"` donde corresponda.
 - HTML minificado en build **sin** minificar JS inline (menú, quiz, animaciones).
 

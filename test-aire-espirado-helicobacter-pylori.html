@@ -18,14 +18,124 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "Test de Aire Espirado para Helicobacter Pylori",
-    "description": "Explicación del estudio no invasivo de urea en aire espirado para detectar Helicobacter Pylori, incluyendo ventajas, indicaciones y preparación médica.",
-    "publisher": {
-      "@type": "Physician",
-      "name": "Consultorio Gastroenterológico Caseros",
-      "image": "https://gastrocaseros.com.ar/logo.png"
-    }
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://gastrocaseros.com.ar/test-aire-espirado-helicobacter-pylori.html#webpage",
+        "url": "https://gastrocaseros.com.ar/test-aire-espirado-helicobacter-pylori.html",
+        "name": "Test de Aire Espirado para Helicobacter Pylori",
+        "description": "Explicación del estudio no invasivo de urea en aire espirado para detectar Helicobacter Pylori, incluyendo ventajas, indicaciones y preparación médica.",
+        "isPartOf": {
+          "@id": "https://gastrocaseros.com.ar/#clinic"
+        },
+        "about": {
+          "@id": "https://gastrocaseros.com.ar/#physician"
+        },
+        "publisher": {
+          "@id": "https://gastrocaseros.com.ar/#clinic"
+        }
+      },
+      {
+        "@type": "Physician",
+        "@id": "https://gastrocaseros.com.ar/#physician",
+        "name": "Consultorio Gastroenterológico Caseros — GastroCaseros",
+        "image": "https://gastrocaseros.com.ar/logo.png",
+        "url": "https://gastrocaseros.com.ar",
+        "telephone": "+54 9 11 2457-3240",
+        "medicalSpecialty": "Gastroenterology",
+        "sameAs": [
+          "https://www.instagram.com/gastrocaseros/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Justo José de Urquiza 4530",
+          "addressLocality": "Caseros",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1678",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.6089,
+          "longitude": -58.5671
+        },
+        "openingHours": "Th 09:00-12:00",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Caseros" },
+          { "@type": "AdministrativeArea", "name": "Tres de Febrero" },
+          { "@type": "City", "name": "San Martín" },
+          { "@type": "City", "name": "Morón" },
+          { "@type": "City", "name": "Hurlingham" },
+          { "@type": "City", "name": "Ituzaingó" }
+        ],
+        "availableService": {
+          "@type": "MedicalProcedure",
+          "name": "Test de aire espirado (SIBO, intolerancias, H. pylori)"
+        },
+        "employee": {
+          "@type": "Person",
+          "@id": "https://gastrocaseros.com.ar/#doctor",
+          "name": "Dra. Erika Pest",
+          "jobTitle": "Médica Gastroenteróloga"
+        },
+        "worksFor": {
+          "@id": "https://gastrocaseros.com.ar/#clinic"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://gastrocaseros.com.ar/#clinic",
+        "name": "Consultorio Gastroenterológico Caseros — GastroCaseros",
+        "image": "https://gastrocaseros.com.ar/logo.png",
+        "url": "https://gastrocaseros.com.ar",
+        "telephone": "+54 9 11 2457-3240",
+        "medicalSpecialty": "Gastroenterology",
+        "sameAs": [
+          "https://www.instagram.com/gastrocaseros/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Justo José de Urquiza 4530",
+          "addressLocality": "Caseros",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1678",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.6089,
+          "longitude": -58.5671
+        },
+        "openingHours": "Th 09:00-12:00",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Caseros" },
+          { "@type": "AdministrativeArea", "name": "Tres de Febrero" },
+          { "@type": "City", "name": "San Martín" },
+          { "@type": "City", "name": "Morón" },
+          { "@type": "City", "name": "Hurlingham" },
+          { "@type": "City", "name": "Ituzaingó" }
+        ],
+        "availableService": {
+          "@type": "MedicalProcedure",
+          "name": "Test de aire espirado (SIBO, intolerancias, H. pylori)"
+        },
+        "employee": {
+          "@id": "https://gastrocaseros.com.ar/#doctor"
+        }
+      }
+    ]
   }
   </script>
 
@@ -265,10 +375,10 @@
     <div class="service-card reveal" style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
       <div style="max-width: 700px;">
         <span class="section-tag">Estudio relacionado</span>
-        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 12px;">También realizamos SIBO e Intolerancias</h3>
-        <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 0;">Test de aire espirado de hidrógeno y metano para sobrecrecimiento bacteriano e intolerancia a la lactosa, fructosa y sorbitol.</p>
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy); margin-bottom: 12px;">También realizamos SIBO, IMO e Intolerancias</h3>
+        <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 0;">Test de aire espirado de hidrógeno y metano para SIBO, IMO e intolerancia a la lactosa y fructosa.</p>
       </div>
-      <a href="test-sibo-intolerancias.html" class="service-link" style="margin-top: 0; font-size: 1.05rem;" aria-label="Ver página del test de SIBO e intolerancias">Ver detalles SIBO →</a>
+      <a href="test-sibo-intolerancias.html" class="service-link" style="margin-top: 0; font-size: 1.05rem;" aria-label="Ver página del test de SIBO, IMO e intolerancias">Ver detalles SIBO / IMO →</a>
     </div>
   </section>
 

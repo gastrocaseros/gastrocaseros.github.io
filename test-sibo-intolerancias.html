@@ -3,36 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Test de SIBO e Intolerancias en Caseros | Aire Espirado | GastroCaseros</title>
-  <meta name="description" content="Test de aire espirado para SIBO, intolerancia a la lactosa y fructosa en Caseros, Tres de Febrero. Estudio no invasivo, sin agujas. Turnos por WhatsApp." />
-  <meta name="keywords" content="test SIBO Caseros, test aire espirado SIBO, intolerancia lactosa Caseros, intolerancia fructosa, sobrecrecimiento bacteriano zona oeste, gastroenterologia Caseros" />
+  <title>Test de SIBO, IMO e Intolerancias en Caseros | Aire Espirado | GastroCaseros</title>
+  <meta name="description" content="Test de aire espirado para SIBO, IMO e intolerancia a la lactosa y fructosa en Caseros, Tres de Febrero. Estudio no invasivo, sin agujas. Turnos por WhatsApp." />
+  <meta name="keywords" content="test SIBO Caseros, test IMO Caseros, test aire espirado SIBO, intolerancia lactosa Caseros, intolerancia fructosa, sobrecrecimiento bacteriano zona oeste, gastroenterologia Caseros" />
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gastrocaseros.com.ar/test-sibo-intolerancias.html">
-  <meta property="og:title" content="Test de SIBO e Intolerancias en Caseros | Aire Espirado | GastroCaseros">
-  <meta property="og:description" content="Test de aire espirado para SIBO, intolerancia a la lactosa y fructosa en Caseros, Tres de Febrero. Estudio no invasivo, sin agujas. Turnos por WhatsApp.">
+  <meta property="og:title" content="Test de SIBO, IMO e Intolerancias en Caseros | Aire Espirado | GastroCaseros">
+  <meta property="og:description" content="Test de aire espirado para SIBO, IMO e intolerancia a la lactosa y fructosa en Caseros, Tres de Febrero. Estudio no invasivo, sin agujas. Turnos por WhatsApp.">
   <meta property="og:image" content="logo.png">
 
   <!-- JSON-LD Structured Data for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "Test de Aire Espirado para SIBO e Intolerancias",
-    "description": "Estudio no invasivo de aire espirado para diagnosticar SIBO e intolerancia a la lactosa, fructosa y sorbitol en Caseros, zona oeste del GBA.",
-    "publisher": {
-      "@type": "Physician",
-      "name": "Consultorio Gastroenterológico Caseros",
-      "image": "https://gastrocaseros.com.ar/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Justo José de Urquiza 4530",
-        "addressLocality": "Caseros",
-        "addressRegion": "Buenos Aires",
-        "addressCountry": "AR"
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://gastrocaseros.com.ar/test-sibo-intolerancias.html#webpage",
+        "url": "https://gastrocaseros.com.ar/test-sibo-intolerancias.html",
+        "name": "Test de Aire Espirado para SIBO, IMO e Intolerancias",
+        "description": "Estudio no invasivo de aire espirado para diagnosticar SIBO, IMO e intolerancia a la lactosa y fructosa en Caseros, zona oeste del GBA.",
+        "isPartOf": {
+          "@id": "https://gastrocaseros.com.ar/#clinic"
+        },
+        "about": {
+          "@id": "https://gastrocaseros.com.ar/#physician"
+        },
+        "publisher": {
+          "@id": "https://gastrocaseros.com.ar/#clinic"
+        }
+      },
+      {
+        "@type": "Physician",
+        "@id": "https://gastrocaseros.com.ar/#physician",
+        "name": "Consultorio Gastroenterológico Caseros — GastroCaseros",
+        "image": "https://gastrocaseros.com.ar/logo.png",
+        "url": "https://gastrocaseros.com.ar",
+        "telephone": "+54 9 11 2457-3240",
+        "medicalSpecialty": "Gastroenterology",
+        "sameAs": [
+          "https://www.instagram.com/gastrocaseros/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Justo José de Urquiza 4530",
+          "addressLocality": "Caseros",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1678",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.6089,
+          "longitude": -58.5671
+        },
+        "openingHours": "Th 09:00-12:00",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Caseros" },
+          { "@type": "AdministrativeArea", "name": "Tres de Febrero" },
+          { "@type": "City", "name": "San Martín" },
+          { "@type": "City", "name": "Morón" },
+          { "@type": "City", "name": "Hurlingham" },
+          { "@type": "City", "name": "Ituzaingó" }
+        ],
+        "availableService": {
+          "@type": "MedicalProcedure",
+          "name": "Test de aire espirado (SIBO, intolerancias, H. pylori)"
+        },
+        "employee": {
+          "@type": "Person",
+          "@id": "https://gastrocaseros.com.ar/#doctor",
+          "name": "Dra. Erika Pest",
+          "jobTitle": "Médica Gastroenteróloga"
+        },
+        "worksFor": {
+          "@id": "https://gastrocaseros.com.ar/#clinic"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://gastrocaseros.com.ar/#clinic",
+        "name": "Consultorio Gastroenterológico Caseros — GastroCaseros",
+        "image": "https://gastrocaseros.com.ar/logo.png",
+        "url": "https://gastrocaseros.com.ar",
+        "telephone": "+54 9 11 2457-3240",
+        "medicalSpecialty": "Gastroenterology",
+        "sameAs": [
+          "https://www.instagram.com/gastrocaseros/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Justo José de Urquiza 4530",
+          "addressLocality": "Caseros",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1678",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.6089,
+          "longitude": -58.5671
+        },
+        "openingHours": "Th 09:00-12:00",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Caseros" },
+          { "@type": "AdministrativeArea", "name": "Tres de Febrero" },
+          { "@type": "City", "name": "San Martín" },
+          { "@type": "City", "name": "Morón" },
+          { "@type": "City", "name": "Hurlingham" },
+          { "@type": "City", "name": "Ituzaingó" }
+        ],
+        "availableService": {
+          "@type": "MedicalProcedure",
+          "name": "Test de aire espirado (SIBO, intolerancias, H. pylori)"
+        },
+        "employee": {
+          "@id": "https://gastrocaseros.com.ar/#doctor"
+        }
       }
-    }
+    ]
   }
   </script>
 
@@ -109,7 +212,7 @@
     <div class="hero-content">
       <span class="badge-expertise">Estudios No Invasivos · Zona Oeste GBA</span>
       <h1>Test de Aire Espirado para <em>SIBO</em>, <em>IMO</em> e Intolerancias en Caseros</h1>
-      <p class="hero-p">Diagnóstico no invasivo de sobrecrecimiento bacteriano e intolerancia a la lactosa y fructosa. Zona oeste del GBA.</p>
+      <p class="hero-p">Diagnóstico no invasivo de SIBO, IMO e intolerancia a la lactosa y fructosa. Zona oeste del GBA.</p>
       <div class="hero-btns">
         <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20un%20turno%20para%20el%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('hero_sibo')" class="btn-main btn-filled" aria-label="Escribir a WhatsApp">Agendar Turno por WhatsApp</a>
         <a href="#como-se-realiza" class="btn-main btn-outline" aria-label="Ver cómo se realiza el test">¿Cómo se realiza?</a>
@@ -163,6 +266,10 @@
           <li class="test-bullet">
             <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
             <p style="color: var(--text); font-size: 1.05rem; opacity: 1;"><strong>SIBO:</strong> Sobrecrecimiento bacteriano del intestino delgado. Exceso de bacterias que fermentan hidratos y generan gases, hinchazón y cambios en el tránsito.</p>
+          </li>
+          <li class="test-bullet">
+            <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
+            <p style="color: var(--text); font-size: 1.05rem; opacity: 1;"><strong>IMO:</strong> Sobrecrecimiento de organismos productores de metano. Se asocia a gases, hinchazón y constipación por el efecto del metano sobre la motilidad intestinal.</p>
           </li>
           <li class="test-bullet">
             <div class="test-dot" style="background: var(--green); color: white;" aria-hidden="true">✓</div>
@@ -259,8 +366,8 @@
     <div class="prep-grid" style="grid-template-columns: 1fr; max-width: 850px; margin: 0 auto;">
       <div class="prep-card reveal">
         <div class="prep-header sibo-header">
-          <h3>Test de SIBO</h3>
-          <span>Sobrecrecimiento Bacteriano / Intolerancias</span>
+          <h3>Test de SIBO / IMO</h3>
+          <span>Sobrecrecimiento Bacteriano / IMO / Intolerancias</span>
         </div>
         <div class="prep-body" style="background: white;">
           <ul class="prep-list">

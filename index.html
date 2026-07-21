@@ -18,32 +18,108 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Physician",
-    "name": "Consultorio Gastroenterológico Caseros",
-    "image": "https://gastrocaseros.com.ar/logo.png",
-    "@id": "https://gastrocaseros.com.ar/",
-    "url": "https://gastrocaseros.com.ar/",
-    "telephone": "+54-11-2457-3240",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Justo José de Urquiza 4530",
-      "addressLocality": "Caseros",
-      "addressRegion": "Buenos Aires",
-      "postalCode": "1678",
-      "addressCountry": "AR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -34.6089,
-      "longitude": -58.5671
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Thursday",
-      "opens": "09:00",
-      "closes": "12:00"
-    },
-    "medicalSpecialty": "Gastroenterology"
+    "@graph": [
+      {
+        "@type": "Physician",
+        "@id": "https://gastrocaseros.com.ar/#physician",
+        "name": "Consultorio Gastroenterológico Caseros — GastroCaseros",
+        "image": "https://gastrocaseros.com.ar/logo.png",
+        "url": "https://gastrocaseros.com.ar",
+        "telephone": "+54 9 11 2457-3240",
+        "medicalSpecialty": "Gastroenterology",
+        "sameAs": [
+          "https://www.instagram.com/gastrocaseros/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Justo José de Urquiza 4530",
+          "addressLocality": "Caseros",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1678",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.6089,
+          "longitude": -58.5671
+        },
+        "openingHours": "Th 09:00-12:00",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Caseros" },
+          { "@type": "AdministrativeArea", "name": "Tres de Febrero" },
+          { "@type": "City", "name": "San Martín" },
+          { "@type": "City", "name": "Morón" },
+          { "@type": "City", "name": "Hurlingham" },
+          { "@type": "City", "name": "Ituzaingó" }
+        ],
+        "availableService": {
+          "@type": "MedicalProcedure",
+          "name": "Test de aire espirado (SIBO, intolerancias, H. pylori)"
+        },
+        "employee": {
+          "@type": "Person",
+          "@id": "https://gastrocaseros.com.ar/#doctor",
+          "name": "Dra. Erika Pest",
+          "jobTitle": "Médica Gastroenteróloga"
+        },
+        "worksFor": {
+          "@id": "https://gastrocaseros.com.ar/#clinic"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://gastrocaseros.com.ar/#clinic",
+        "name": "Consultorio Gastroenterológico Caseros — GastroCaseros",
+        "image": "https://gastrocaseros.com.ar/logo.png",
+        "url": "https://gastrocaseros.com.ar",
+        "telephone": "+54 9 11 2457-3240",
+        "medicalSpecialty": "Gastroenterology",
+        "sameAs": [
+          "https://www.instagram.com/gastrocaseros/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Justo José de Urquiza 4530",
+          "addressLocality": "Caseros",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1678",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.6089,
+          "longitude": -58.5671
+        },
+        "openingHours": "Th 09:00-12:00",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Caseros" },
+          { "@type": "AdministrativeArea", "name": "Tres de Febrero" },
+          { "@type": "City", "name": "San Martín" },
+          { "@type": "City", "name": "Morón" },
+          { "@type": "City", "name": "Hurlingham" },
+          { "@type": "City", "name": "Ituzaingó" }
+        ],
+        "availableService": {
+          "@type": "MedicalProcedure",
+          "name": "Test de aire espirado (SIBO, intolerancias, H. pylori)"
+        },
+        "employee": {
+          "@id": "https://gastrocaseros.com.ar/#doctor"
+        }
+      }
+    ]
   }
   </script>
 
@@ -254,7 +330,7 @@
       <!-- SIBO Prep -->
       <div class="prep-card reveal">
         <div class="prep-header sibo-header">
-          <h3>Test de SIBO</h3>
+          <h3>Test de SIBO / IMO</h3>
           <span>Sobrecrecimiento Bacteriano / IMO / Intolerancias</span>
         </div>
         <div class="prep-body">

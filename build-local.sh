@@ -96,10 +96,16 @@ for src in "${HTML_SOURCES[@]}"; do
     echo "     Revisá que $src tenga el patrón: css/style.css?v=XXXXXXXX"
     VERIFY_OK=false
   fi
-  if grep -qE 'rel="canonical" href="https://gastrocaseros.com.ar|rel="canonical"href="https://gastrocaseros.com.ar' "dist/$src"; then
-    echo "  ✅ Canonical presente en dist/$src"
+  # Canonical esperado (reference.md): home → /, resto → /<archivo>
+  case "$src" in
+    index.html) expected_canonical="https://gastrocaseros.com.ar/" ;;
+    *)          expected_canonical="https://gastrocaseros.com.ar/$src" ;;
+  esac
+  if grep -qE "rel=\"canonical\" href=\"${expected_canonical}\"|rel=\"canonical\"href=\"${expected_canonical}\"" "dist/$src"; then
+    echo "  ✅ Canonical correcto en dist/$src → ${expected_canonical}"
   else
-    echo "  ❌ ERROR: Falta link rel=canonical con URL absoluta en dist/$src"
+    echo "  ❌ ERROR: Canonical incorrecto o ausente en dist/$src"
+    echo "     Esperado: <link rel=\"canonical\" href=\"${expected_canonical}\">"
     VERIFY_OK=false
   fi
   if grep -qE 'property="og:image" content="https://gastrocaseros.com.ar/logo.png"|property="og:image"content="https://gastrocaseros.com.ar/logo.png"' "dist/$src"; then

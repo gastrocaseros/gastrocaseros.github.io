@@ -1,6 +1,6 @@
 ---
 description: Al crear o editar landings HTML, seguir el proceso GastroCaseros (home, sitemap, build, cross-links).
-globs: "**/*.html"
+globs: **/*.html
 alwaysApply: false
 ---
 

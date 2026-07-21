@@ -1,0 +1,18 @@
+---
+description: Al crear o editar landings HTML, seguir el proceso GastroCaseros (home, sitemap, build, cross-links).
+globs: "**/*.html"
+alwaysApply: false
+---
+
+# Landings GastroCaseros
+
+Al **agregar** un HTML de landing o subpágina de estudio en la raíz del repo, o al **clonar** una página existente (pylori / SIBO):
+
+1. Leer y seguir **`.cursor/skills/nueva-pagina-gastrocaseros/SKILL.md`** de punta a punta.
+2. No dar por terminada la tarea sin:
+   - enlaces en **`index.html`** (servicios / preparación según aplique);
+   - **cross-links** bidireccionales con las otras landings de test;
+   - entrada en **`sitemap.xml`**;
+   - **`npm run build`** exitoso (cada `*.html` de raíz debe existir en `dist/` con CSS hasheado).
+
+Convenciones rápidas: SEO local (Caseros, Tres de Febrero, zona oeste GBA); SIBO + IMO juntos cuando corresponda; JSON-LD con `#physician` / `#clinic` compartidos; WhatsApp `5491124573240` y labels `trackWA` únicos.

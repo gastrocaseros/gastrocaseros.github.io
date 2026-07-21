@@ -1,30 +1,68 @@
-# 🩺 Consultorio Gastroenterológico Caseros
+# Consultorio Gastroenterológico Caseros — GastroCaseros
 
-Este proyecto es el sitio web institucional de la **Dra. Erika Pest**. Es un sitio estático moderno, veloz y optimizado para SEO (buscadores).
+Sitio web institucional estático, optimizado para SEO y deploy en **https://gastrocaseros.com.ar** (GitHub Pages + dominio propio).
 
-## 🚀 Estructura del Proyecto
-- `index.html`: Estructura y contenido del sitio.
-- `logo.png`: Logotipo principal del consultorio.
-- `css/style.css`: Diseño y estilos visuales (Usa el sistema **Stitch**).
-- `img/`: Carpeta con iconos SVG e ilustraciones.
-- `robots.txt` / `sitemap.xml`: Archivos para que Google indexe correctamente el sitio.
+## Estructura del proyecto
 
-## 🛠️ Cómo hacer cambios comunes
+| Ruta | Descripción |
+|------|-------------|
+| `index.html` | Home: servicios, autodiagnóstico, preparación, ubicación |
+| `test-aire-espirado-helicobacter-pylori.html` | Landing test H. pylori (UBT) |
+| `test-sibo-intolerancias.html` | Landing SIBO, IMO e intolerancias |
+| `css/style.css` | Estilos (sistema visual Stitch) |
+| `img/` | Iconos SVG e ilustraciones |
+| `logo.png` | Logotipo |
+| `robots.txt` / `sitemap.xml` | Indexación |
+| `build-local.sh` | Build canónico (local y CI) |
+| `dist/` | **Salida de producción** (generada; no editar a mano) |
 
-### 1. Cambiar un texto
-Abre `index.html` y busca el texto que quieras modificar. Guarda el archivo y refresca el navegador.
+Los cambios se hacen en los archivos fuente de la raíz. Lo que ve el sitio publicado es **`dist/`** después de `npm run build`.
 
-### 2. Actualizar el horario de atención
-Busca en `index.html` la etiqueta `<h4>Atención Presencial</h4>` y cambia el texto de abajo. No olvides actualizarlo también en el área de `SERVICIOS`.
+## Build y preview local
 
-### 3. Cambiar el número de WhatsApp
-Busca el enlace `wa.me/5491124573240` en `index.html` y reemplaza el número (usa el formato internacional sin el +).
+```bash
+nvm use    # si usás .nvmrc
+npm ci
+npm run build
+npm run serve   # sirve dist/
+```
 
-### 4. Cambiar un Icono
-Simplemente reemplaza el archivo correspondiente en la carpeta `img/`. Usa formato SVG para mayor nitidez.
+El workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) ejecuta el mismo `npm run build` en cada push a `main`.
 
-## 📈 SEO y Rendimiento
-El sitio utiliza `loading="lazy"` para que las imágenes carguen solo cuando son visibles, ahorrando datos al paciente.
+## Cambios frecuentes
+
+### Textos, horarios, WhatsApp
+
+Editar el HTML correspondiente. WhatsApp: buscar `wa.me/5491124573240` (formato internacional sin `+`).
+
+### Iconos
+
+Reemplazar archivos en `img/` (preferir SVG).
+
+## Nueva página de servicio / test
+
+Proceso completo para el agente y el equipo:
+
+**[`.cursor/skills/nueva-pagina-gastrocaseros/SKILL.md`](.cursor/skills/nueva-pagina-gastrocaseros/SKILL.md)**
+
+Checklist resumido:
+
+1. Definir slug (`test-<tema>.html`) y clonar plantilla (pylori o SIBO).
+2. Adaptar `<head>` (title, description, OG, JSON-LD `MedicalWebPage` + entidades compartidas).
+3. Completar secciones del body (hero, procedimiento, preparación, turnos).
+4. Enlazar desde `index.html` (servicios / preparación).
+5. Cross-links con las otras landings de test.
+6. Agregar URL en `sitemap.xml` (`lastmod`, priority 0.8).
+7. SEO local: Caseros, Tres de Febrero, zona oeste del GBA; tono institucional.
+8. `npm run build` y revisar en `npm run serve` (nav móvil, WhatsApp, enlaces).
+
+Referencia de URLs, schema y labels Analytics: [`.cursor/skills/nueva-pagina-gastrocaseros/reference.md`](.cursor/skills/nueva-pagina-gastrocaseros/reference.md).
+
+## SEO y rendimiento
+
+- Imágenes con `loading="lazy"` donde corresponda.
+- HTML minificado en build **sin** minificar JS inline (menú, quiz, animaciones).
 
 ---
-© 2026 GastroCaseros · Mantenimiento por Antigravity
+
+© 2026 GastroCaseros

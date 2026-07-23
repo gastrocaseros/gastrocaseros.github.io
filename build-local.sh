@@ -31,8 +31,12 @@ mkdir -p dist/css dist/img
 
 cp -r img/* dist/img/ 2>/dev/null   || echo "  ↳ /img vacía o inexistente (ok)"
 cp logo.png    dist/              2>/dev/null   || echo "  ↳ logo.png no encontrado (ok)"
+cp favicon-32.png dist/           2>/dev/null   || echo "  ↳ favicon-32.png no encontrado (ok)"
+cp apple-touch-icon.png dist/     2>/dev/null   || echo "  ↳ apple-touch-icon.png no encontrado (ok)"
+cp og-image.jpg dist/             2>/dev/null   || echo "  ↳ og-image.jpg no encontrado (ok)"
 cp robots.txt  dist/              2>/dev/null   || echo "  ↳ robots.txt no encontrado (ok)"
 cp sitemap.xml dist/              2>/dev/null   || echo "  ↳ sitemap.xml no encontrado (ok)"
+cp CNAME dist/                    2>/dev/null   || true
 # SVGs en raíz (si existen)
 for svg in *.svg; do [ -f "$svg" ] && cp "$svg" dist/; done 2>/dev/null || true
 
@@ -108,13 +112,27 @@ for src in "${HTML_SOURCES[@]}"; do
     echo "     Esperado: <link rel=\"canonical\" href=\"${expected_canonical}\">"
     VERIFY_OK=false
   fi
-  if grep -qE 'property="og:image" content="https://gastrocaseros.com.ar/logo.png"|property="og:image"content="https://gastrocaseros.com.ar/logo.png"' "dist/$src"; then
+  if grep -qE 'property="og:image" content="https://gastrocaseros.com.ar/og-image.jpg"|property="og:image"content="https://gastrocaseros.com.ar/og-image.jpg"' "dist/$src"; then
     echo "  ✅ og:image absoluto en dist/$src"
   else
-    echo "  ❌ ERROR: og:image debe ser https://gastrocaseros.com.ar/logo.png en dist/$src"
+    echo "  ❌ ERROR: og:image debe ser https://gastrocaseros.com.ar/og-image.jpg en dist/$src"
     VERIFY_OK=false
   fi
 done
+
+if [ ! -f dist/og-image.jpg ] || [ ! -f dist/favicon-32.png ] || [ ! -f dist/apple-touch-icon.png ]; then
+  echo "  ❌ ERROR: Faltan assets SEO (og-image.jpg / favicon-32.png / apple-touch-icon.png) en dist/"
+  VERIFY_OK=false
+else
+  echo "  ✅ Assets SEO presentes en dist/"
+fi
+
+if [ ! -f dist/404.html ]; then
+  echo "  ❌ ERROR: Falta dist/404.html"
+  VERIFY_OK=false
+else
+  echo "  ✅ 404.html presente en dist/"
+fi
 
 if [ ! -f dist/css/style.min.css ]; then
   echo "  ❌ ERROR: Falta dist/css/style.min.css"

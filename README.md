@@ -12,6 +12,8 @@ Sitio web institucional estático, optimizado para SEO y deploy en **https://gas
 | `css/style.css` | Estilos (sistema visual Stitch) |
 | `img/` | Iconos SVG e ilustraciones |
 | `logo.png` | Logotipo |
+| `og-image.jpg` | Imagen Open Graph (1200×630) |
+| `favicon-32.png` / `apple-touch-icon.png` | Favicons |
 | `robots.txt` / `sitemap.xml` | Indexación |
 | `build-local.sh` | Build canónico (local y CI) |
 | `dist/` | **Salida de producción** (generada; no editar a mano) |
@@ -61,7 +63,7 @@ Referencia de URLs, schema y labels Analytics: [`.cursor/skills/nueva-pagina-gas
 ## SEO y rendimiento
 
 - URL canónica por página: `<link rel="canonical" href="https://gastrocaseros.com.ar/...">`.
-- Open Graph: `og:image` con URL absoluta `https://gastrocaseros.com.ar/logo.png`.
+- Open Graph: `og:image` con URL absoluta `https://gastrocaseros.com.ar/og-image.jpg`.
 - Al editar HTML, actualizar `<lastmod>` de esa URL en `sitemap.xml`.
 - Imágenes con `loading="lazy"` donde corresponda.
 - HTML minificado en build **sin** minificar JS inline (menú, quiz, animaciones).

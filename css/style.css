@@ -85,7 +85,7 @@ nav {
 .hero-visual { background: var(--navy); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
 .hero-visual::before { content: ''; position: absolute; width: 140%; height: 140%; background: radial-gradient(circle, var(--navy-light) 0%, var(--navy) 70%); animation: rotateBg 20s linear infinite; }
 .logo-container { position: relative; z-index: 10; background: white; padding: 40px; border-radius: 32px; box-shadow: var(--shadow-lg); animation: float 6s ease-in-out infinite; }
-.logo-hero { width: 300px; height: auto; }
+.logo-hero { width: 300px; height: 300px; object-fit: contain; }
 
 /* Sections Shared */
 section { padding: 100px 80px; }

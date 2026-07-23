@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página no encontrada | GastroCaseros</title>
+  <meta name="description" content="La página que buscás no existe. Volvé al consultorio gastroenterológico GastroCaseros en Caseros, Tres de Febrero." />
+  <meta name="robots" content="noindex">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="GastroCaseros">
+  <meta property="og:url" content="https://gastrocaseros.com.ar/404.html">
+  <meta property="og:title" content="Página no encontrada | GastroCaseros">
+  <meta property="og:description" content="La página que buscás no existe. Volvé al inicio de GastroCaseros.">
+  <meta property="og:image" content="https://gastrocaseros.com.ar/og-image.jpg">
+  <link rel="canonical" href="https://gastrocaseros.com.ar/404.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css?v=20260723">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 60px;
+      background:
+        radial-gradient(ellipse at top, rgba(168, 200, 160, 0.25), transparent 55%),
+        linear-gradient(180deg, var(--cream) 0%, #e8efe8 100%);
+    }
+    .error-page .logo-hero { width: 160px; height: auto; margin-bottom: 28px; }
+    .error-code {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(4rem, 12vw, 7rem);
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .error-page h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .error-page p {
+      max-width: 420px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+    .error-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 8px;
+    }
+    .error-links a {
+      color: var(--navy);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(17, 34, 51, 0.25);
+      padding-bottom: 2px;
+    }
+    .error-links a:hover { border-bottom-color: var(--green); color: var(--green); }
+    .error-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDGFHLL04L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HDGFHLL04L');
+    function trackWA(label) {
+      gtag('event', 'whatsapp_click', {
+        'event_category': 'Contacto',
+        'event_label': label
+      });
+    }
+  </script>
+</head>
+<body>
+  <main class="error-page">
+    <img src="logo.png" alt="Logo GastroCaseros" class="logo-hero" width="160" height="160">
+    <p class="error-code" aria-hidden="true">404</p>
+    <h1>No encontramos esta página</h1>
+    <p>El enlace puede estar desactualizado o la dirección tiene un error. Volvé al inicio o pedí un turno por WhatsApp.</p>
+    <div class="error-actions">
+      <a href="index.html" class="btn-main btn-filled">Ir al inicio</a>
+      <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('404')" class="btn-main btn-outline" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+    <div class="error-links" aria-label="Enlaces útiles">
+      <a href="test-aire-espirado-helicobacter-pylori.html">Test H. Pylori</a>
+      <a href="test-sibo-intolerancias.html">Test SIBO e IMO</a>
+      <a href="index.html#ubicacion">Ubicación</a>
+    </div>
+  </main>
+</body>
+</html>

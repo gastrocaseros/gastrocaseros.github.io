@@ -8,7 +8,7 @@
 | H. pylori (UBT) | https://gastrocaseros.com.ar/test-aire-espirado-helicobacter-pylori.html |
 | SIBO / IMO / intolerancias | https://gastrocaseros.com.ar/test-sibo-intolerancias.html |
 
-**Open Graph image (todas las páginas):** `https://gastrocaseros.com.ar/logo.png`
+**Open Graph image (todas las páginas):** `https://gastrocaseros.com.ar/og-image.jpg`
 
 ## IDs JSON-LD compartidos (no cambiar entre páginas)
 

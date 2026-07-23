@@ -31,7 +31,7 @@ Sitio estático: HTML en la raíz, estilos en `css/style.css`, deploy vía `npm 
 - `lang="es"`, viewport, charset.
 - **Title:** `{Servicio} en Caseros, Tres de Febrero | … | GastroCaseros`
 - **meta description** y **keywords:** término médico + geo (Caseros, Tres de Febrero, zona oeste GBA).
-- **Open Graph:** `og:url` = `https://gastrocaseros.com.ar/<archivo>`, título/descripción alineados al title; **`og:image`** = `https://gastrocaseros.com.ar/logo.png` (URL absoluta).
+- **Open Graph:** `og:url` = `https://gastrocaseros.com.ar/<archivo>`, título/descripción alineados al title; **`og:image`** = `https://gastrocaseros.com.ar/og-image.jpg` (URL absoluta); incluir `og:locale` (`es_AR`) y `og:site_name` (`GastroCaseros`).
 - **`link rel="canonical"`** con la URL canónica de la página (ver [reference.md](reference.md)).
 - **JSON-LD** `@graph`:
   - `MedicalWebPage` con `@id` y `url` de esta página (`…#webpage`).
@@ -43,7 +43,7 @@ Sitio estático: HTML en la raíz, estilos en `css/style.css`, deploy vía `npm 
   - Ajustar `MedicalWebPage.name` / `description` y `availableService.name` al estudio.
 - **CSS:** `link rel="stylesheet" href="css/style.css?v=YYYYMMDD"`.
 - **Analytics:** gtag `G-HDGFHLL04L` + función `trackWA(label)` (copiar de subpágina existente).
-- Favicon/apple-touch: `logo.png`.
+- Favicon: `favicon-32.png`; apple-touch: `apple-touch-icon.png`.
 
 Detalle de entidades y URLs: ver [reference.md](reference.md).
 

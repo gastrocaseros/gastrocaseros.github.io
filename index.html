@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consultorio Gastroenterológico Caseros, Tres de Febrero | SIBO, IMO y H. Pylori</title>
-  <meta name="description" content="Especialistas en gastroenterología (UBA) en Caseros, Tres de Febrero. SIBO, IMO, H. Pylori e intolerancias digestivas. Atendemos pacientes de la zona oeste del GBA. Turnos por WhatsApp." />
+  <title>Gastroenterología en Caseros, Tres de Febrero | SIBO, IMO y H. Pylori</title>
+  <meta name="description" content="Gastroenterología (UBA) en Caseros, Tres de Febrero. SIBO, IMO, H. Pylori e intolerancias. Zona oeste GBA. Turnos por WhatsApp." />
   <meta name="keywords" content="gastroenterología Caseros, SIBO Caseros, IMO Caseros, Helicobacter Pylori Caseros, test aire espirado, clinica gastro" />
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="GastroCaseros">
   <meta property="og:url" content="https://gastrocaseros.com.ar/">
-  <meta property="og:title" content="Consultorio Gastroenterológico Caseros, Tres de Febrero | SIBO, IMO y H. Pylori">
-  <meta property="og:description" content="Atención experta en salud digestiva y diagnósticos no invasivos en Caseros, Tres de Febrero. Zona oeste del GBA.">
-  <meta property="og:image" content="https://gastrocaseros.com.ar/logo.png">
+  <meta property="og:title" content="Gastroenterología en Caseros, Tres de Febrero | SIBO, IMO y H. Pylori">
+  <meta property="og:description" content="Salud digestiva y diagnósticos no invasivos en Caseros, Tres de Febrero. Zona oeste del GBA.">
+  <meta property="og:image" content="https://gastrocaseros.com.ar/og-image.jpg">
   <link rel="canonical" href="https://gastrocaseros.com.ar/">
 
   <!-- JSON-LD Structured Data (Professional SEO) -->
@@ -85,6 +87,44 @@
         "employee": {
           "@id": "https://gastrocaseros.com.ar/#doctor"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://gastrocaseros.com.ar/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué consiste el test de aire espirado y duele?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es un método diagnóstico 100% no invasivo e indoloro. Consiste en beber un líquido de preparación (sustrato) y soplar suavemente en bolsas recolectoras o tubos a intervalos regulares de tiempo. No requiere endoscopía, no usamos agujas y no se aplica ningún tipo de sedación."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo demoran los estudios en el consultorio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El test de confirmación o erradicación de Helicobacter Pylori es rápido y dura aproximadamente 30 minutos. Por el contrario, los tests para SIBO, IMO o intolerancias (lactosa, fructosa) requieren medir las curvas de fermentación bacteriana (Hidrógeno y Metano), por lo que deberás permanecer en nuestra sala de espera entre 2 y 3 horas dependiendo del protocolo médico indicado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Requieren una preparación o ayuno previo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, el protocolo preparatorio es fundamental para evitar diagnósticos erróneos o falsos positivos. Todo estudio requiere un ayuno estricto (generalmente 8 a 12 horas). Para el test de SIBO o IMO se suma una dieta limpia el día previo (típicamente arroz blanco y carnes magras) y la suspensión de probióticos/antibióticos semanas antes. Invariablemente te enviaremos el instructivo exacto en PDF junto con la confirmación de tu turno."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo y cómo se me entregan los resultados médicos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los resultados concluyentes no se entregan en el momento, ya que la muestra requiere un procesamiento de laboratorio y las curvas de gases resultantes deben ser evaluadas minuciosa y personalmente por el equipo médico especializado. Recibirás tu informe oficial debidamente firmado en formato PDF (vía WhatsApp) en un plazo habitual de 48 a 72 horas hábiles."
+            }
+          }
+        ]
       }
     ]
   }
@@ -95,10 +135,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   
   <!-- Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
-  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   
-  <link rel="stylesheet" href="css/style.css?v=20260324">
+  <link rel="stylesheet" href="css/style.css?v=20260723">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDGFHLL04L"></script>
   <script>
@@ -127,7 +167,7 @@
   <!-- NAVIGATION -->
   <nav class="top-nav">
     <a href="#inicio" class="nav-brand" aria-label="Inicio">
-      <img src="logo.png" alt="Logo GastroCaseros" class="nav-logo" fetchpriority="high">
+      <img src="logo.png" alt="Logo GastroCaseros" class="nav-logo" width="100" height="50" fetchpriority="high">
       <div class="nav-name">
         Consultorio Gastroenterológico Caseros
         <span>Estudios de Aire Espirado</span>
@@ -165,7 +205,7 @@
     </div>
     <div class="hero-visual">
       <div class="logo-container">
-        <img src="logo.png" alt="Logo central GastroCaseros" class="logo-hero" fetchpriority="high">
+        <img src="logo.png" alt="Logo central GastroCaseros" class="logo-hero" width="300" height="300" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -427,8 +467,8 @@
       </div>
       <div class="map-frame">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5!2d-58.5671!3d-34.6089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJusto%20Jos%C3%A9%20de%20Urquiza%204530%2C%20Caseros!5e0!3m2!1ses!2sar!4v1"
-          style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy" title="Ubicación Google Maps"></iframe>
+          src="https://www.google.com/maps?q=Justo+Jos%C3%A9+de+Urquiza+4530,+Caseros,+Buenos+Aires&hl=es&z=16&output=embed"
+          style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Google Maps — Justo José de Urquiza 4530, Caseros"></iframe>
       </div>
     </div>
   </section>

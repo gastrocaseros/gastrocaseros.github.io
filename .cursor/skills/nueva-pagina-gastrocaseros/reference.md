@@ -14,8 +14,8 @@
 
 | @id | Tipo | Campos principales |
 |-----|------|-------------------|
-| `https://gastrocaseros.com.ar/#physician` | Physician | Identidad, specialty, `employee`, `worksFor` → clinic (sin NAP duplicado) |
-| `https://gastrocaseros.com.ar/#clinic` | MedicalClinic | NAP, geo, teléfono, horarios, `areaServed`, `availableService` |
+| `https://gastrocaseros.com.ar/#physician` | Physician | Identidad, specialty, `telephone` + `address` (mismo NAP; Rich Results), `employee`, `worksFor` → clinic. Sin `priceRange` ni horarios |
+| `https://gastrocaseros.com.ar/#clinic` | MedicalClinic | NAP, geo, teléfono, horarios, `areaServed`, `availableService` (sin `priceRange`) |
 | `https://gastrocaseros.com.ar/#doctor` | Person (Dra. Erika Pest) | Referenciado desde Physician y MedicalClinic |
 
 Cada subpágina agrega `MedicalWebPage` con `@id` = `{url-página}#webpage`.

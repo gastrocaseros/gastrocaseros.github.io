@@ -37,7 +37,7 @@ Sitio estático: HTML en la raíz, estilos en `css/style.css`, deploy vía `npm 
   - `MedicalWebPage` con `@id` y `url` de esta página (`…#webpage`).
   - `Physician` (`#physician`) y `MedicalClinic` (`#clinic`) con los **mismos `@id`** que en `index.html`.
   - **NAP y datos locales solo en `MedicalClinic`:** dirección, geo, teléfono, `openingHoursSpecification`, `areaServed`, `availableService` (ajustar al estudio en landings).
-  - **`Physician` reducido:** name, url, image, `medicalSpecialty`, `sameAs`, `employee` (`Person` `#doctor`), `worksFor` → `#clinic` — sin duplicar NAP ni horarios.
+  - **`Physician`:** name, url, image, `telephone`, `address` (mismo NAP que `#clinic`, requerido por Rich Results / LocalBusiness), `medicalSpecialty`, `sameAs`, `employee` (`Person` `#doctor`), `worksFor` → `#clinic`. Sin `priceRange` ni horarios duplicados (horarios solo en `#clinic`).
   - `Person` doctor: `#doctor` donde corresponda.
   - `sameAs`: solo Instagram `https://www.instagram.com/gastrocaseros/` (no Facebook/TikTok).
   - Ajustar `MedicalWebPage.name` / `description` y `availableService.name` al estudio.

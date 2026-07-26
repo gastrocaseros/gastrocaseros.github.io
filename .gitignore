@@ -21,3 +21,9 @@ Thumbs.db
 ig_posts/exports/*.png
 ig_posts/previews/*.png
 ig_posts/exports_video/*.mp4
+
+# Carteles recepción (generados: npm run print:export / print:qrs)
+print/recepcion/exports/
+print/recepcion/assets/qr-*.png
+print/recepcion/assets/qr-*.svg
+print/recepcion/resolved-urls.json

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carteles QR recepción — GastroCaseros</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 32px;
+      font-family: system-ui, sans-serif;
+      background: #e8e4dc;
+      color: #112233;
+    }
+    h1 { font-size: 1.4rem; margin: 0 0 8px; }
+    p { margin: 0 0 24px; max-width: 52rem; line-height: 1.45; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    figure {
+      margin: 0;
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: 0 8px 24px rgba(17, 34, 51, 0.08);
+    }
+    iframe {
+      width: 384px;
+      height: 576px;
+      border: 0;
+      max-width: 100%;
+      transform-origin: top left;
+    }
+    figcaption {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+    a { color: #4a7d4a; }
+    .priority { color: #4a7d4a; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>Carteles QR recepción (4″ × 6″)</h1>
+  <p>
+    Vista previa de los 4 carteles. Branch <code>instagram</code> — no mergear a <code>main</code>.
+    Prioridad sugerida para los 2 marcos actuales:
+    <span class="priority">Instagram + Reseña Google</span>.
+  </p>
+  <div class="grid">
+    <figure>
+      <iframe src="instagram.html" title="Instagram"></iframe>
+      <figcaption><strong>1. Instagram</strong> — <a href="instagram.html">abrir</a></figcaption>
+    </figure>
+    <figure>
+      <iframe src="google-resena.html" title="Google"></iframe>
+      <figcaption><strong>2. Reseña Google</strong> — <a href="google-resena.html">abrir</a></figcaption>
+    </figure>
+    <figure>
+      <iframe src="whatsapp.html" title="WhatsApp"></iframe>
+      <figcaption><strong>3. WhatsApp</strong> — <a href="whatsapp.html">abrir</a></figcaption>
+    </figure>
+    <figure>
+      <iframe src="wifi.html" title="WiFi"></iframe>
+      <figcaption><strong>4. WiFi</strong> (placeholder) — <a href="wifi.html">abrir</a></figcaption>
+    </figure>
+  </div>
+</body>
+</html>

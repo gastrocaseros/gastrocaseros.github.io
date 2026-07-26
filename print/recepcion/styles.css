@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap');
+
+:root {
+  --navy: #112233;
+  --green: #4a7d4a;
+  --green-soft: #a8c8a0;
+  --cream: #f4f1eb;
+  --white: #ffffff;
+  --ig-start: #f58529;
+  --ig-mid: #dd2a7b;
+  --ig-end: #515bd4;
+  --wa: #25D366;
+  --wa-dark: #128C7E;
+  --google-blue: #1a73e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@page {
+  size: 4in 6in;
+  margin: 0;
+}
+
+html, body {
+  width: 4in;
+  height: 6in;
+  margin: 0;
+  padding: 0;
+  background: #888;
+  font-family: 'Outfit', sans-serif;
+  color: var(--navy);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 4in;
+  height: 6in;
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0.28in 0.3in 0.26in;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.12in;
+  background: linear-gradient(180deg, var(--navy) 0%, #0a1520 100%);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.12in;
+  margin-left: 0.08in;
+}
+
+.brand img {
+  width: 0.48in;
+  height: 0.48in;
+  object-fit: contain;
+  background: var(--white);
+  border-radius: 50%;
+  padding: 0.04in;
+  box-shadow: 0 0.04in 0.1in rgba(17, 34, 51, 0.12);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.02in;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.2in;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--navy);
+}
+
+.brand-tag {
+  font-size: 0.1in;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.headline {
+  margin: 0.22in 0 0.08in 0.08in;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.34in;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+.subhead {
+  margin: 0 0 0.18in 0.08in;
+  font-size: 0.145in;
+  font-weight: 400;
+  line-height: 1.35;
+  color: rgba(17, 34, 51, 0.78);
+  max-width: 3.2in;
+}
+
+.qr-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.08in;
+}
+
+.qr-frame {
+  background: var(--white);
+  border-radius: 0.16in;
+  padding: 0.14in;
+  box-shadow: 0 0.06in 0.16in rgba(17, 34, 51, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.08in;
+}
+
+.qr-frame img.qr {
+  width: 2.15in;
+  height: 2.15in;
+  display: block;
+}
+
+.qr-frame .qr-slot {
+  position: relative;
+  width: 2.15in;
+  height: 2.15in;
+}
+
+.qr-frame .qr-slot img.qr {
+  width: 100%;
+  height: 100%;
+}
+
+/* Instagram: el QR ya trae degradé + logo; marco limpio */
+.qr-frame.ig {
+  padding: 0.12in;
+  background: var(--white);
+  border: 0.04in solid transparent;
+  border-radius: 0.22in;
+  background-image:
+    linear-gradient(var(--white), var(--white)),
+    linear-gradient(135deg, var(--ig-start), var(--ig-mid), var(--ig-end));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.qr-frame.ig img.qr {
+  width: 2.15in;
+  height: 2.15in;
+  border-radius: 0.08in;
+}
+
+.qr-frame.ig .handle {
+  background: linear-gradient(90deg, var(--ig-start), var(--ig-mid), var(--ig-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+/* WhatsApp */
+.qr-frame.wa {
+  border: 0.035in solid var(--wa);
+  padding: 0.12in;
+}
+
+.qr-frame.wa .handle-row {
+  display: flex;
+  align-items: center;
+  gap: 0.08in;
+  justify-content: center;
+}
+
+.qr-frame.wa .handle-row img {
+  width: 0.2in;
+  height: 0.2in;
+  display: block;
+}
+
+.qr-frame.wa .handle {
+  color: var(--wa-dark);
+}
+
+/* Google */
+.qr-frame.google {
+  border: 0.035in solid rgba(26, 115, 232, 0.45);
+  padding: 0.12in;
+}
+
+.qr-frame.google .handle {
+  color: var(--google-blue);
+}
+
+.handle {
+  font-size: 0.14in;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.01em;
+}
+
+.handle-row {
+  display: flex;
+  align-items: center;
+  gap: 0.08in;
+}
+
+.meta {
+  margin: 0.12in 0 0 0.08in;
+  text-align: center;
+}
+
+.meta-line {
+  font-size: 0.13in;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.meta-soft {
+  margin-top: 0.04in;
+  font-size: 0.115in;
+  font-weight: 400;
+  color: rgba(17, 34, 51, 0.65);
+}
+
+.wifi-creds {
+  margin: 0.1in 0 0 0.08in;
+  text-align: center;
+}
+
+.wifi-creds .label {
+  font-size: 0.1in;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.wifi-creds .value {
+  font-size: 0.16in;
+  font-weight: 600;
+  color: var(--navy);
+  margin-top: 0.02in;
+}
+
+.wifi-creds .value + .label {
+  margin-top: 0.1in;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 0.14in;
+  margin-left: 0.08in;
+  border-top: 1px solid rgba(17, 34, 51, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.1in;
+}
+
+.footer-web {
+  font-size: 0.12in;
+  font-weight: 500;
+  color: var(--navy);
+  letter-spacing: 0.01em;
+}
+
+.footer-note {
+  font-size: 0.095in;
+  color: rgba(17, 34, 51, 0.5);
+  font-weight: 400;
+}
+
+.placeholder-banner {
+  position: absolute;
+  top: 0.12in;
+  right: 0.12in;
+  background: #c45c26;
+  color: white;
+  font-size: 0.08in;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.04in 0.08in;
+  border-radius: 0.04in;
+}
+
+@media print {
+  html, body {
+    width: 4in;
+    height: 6in;
+    background: none;
+    min-height: 0;
+  }
+
+  body {
+    display: block;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+
+  .placeholder-banner {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "website": "https://gastrocaseros.com.ar",
+  "websiteDisplay": "gastrocaseros.com.ar",
+  "instagram": {
+    "url": "https://www.instagram.com/gastrocaseros/",
+    "handle": "@gastrocaseros"
+  },
+  "googleReview": {
+    "placeId": "ChIJRYXM4Qy5vJUR8iwNYIjcRM0",
+    "placeIdAddress": "ChIJo42WgiG4vJURTJHet0-SB0Q",
+    "url": "https://search.google.com/local/writereview?placeid=ChIJRYXM4Qy5vJUR8iwNYIjcRM0",
+    "note": "placeId = ficha GastroCaseros (negocio). placeIdAddress = dirección Urquiza 4530. Para reseñas usamos el del negocio."
+  },
+  "whatsapp": {
+    "url": "https://wa.me/5491124573240",
+    "display": "11 2457-3240",
+    "prefillMessage": "Hola, quiero solicitar un turno."
+  },
+  "wifi": {
+    "ssid": "GastroCaseros-Invitados",
+    "password": "CAMBIAR-CLAVE",
+    "security": "WPA",
+    "placeholder": true,
+    "note": "Reemplazá ssid y password con la red real del consultorio, luego regenerá el QR."
+  }
+}

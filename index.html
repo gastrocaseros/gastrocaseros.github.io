@@ -3,47 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consultorio Gastroenterológico Caseros | SIBO y H. Pylori</title>
-  <meta name="description" content="Especialistas en gastroenterología (UBA) en Caseros. SIBO, H. Pylori e intolerancias digestivas. Turnos por WhatsApp." />
-  <meta name="keywords" content="gastroenterología Caseros, SIBO Caseros, Helicobacter Pylori Caseros, test aire espirado, clinica gastro" />
+  <title>Gastroenterología en Caseros, Tres de Febrero | SIBO, IMO y H. Pylori</title>
+  <meta name="description" content="Gastroenterología (UBA) en Caseros, Tres de Febrero. SIBO, IMO, H. Pylori e intolerancias. Zona oeste GBA. Turnos por WhatsApp." />
+  <meta name="keywords" content="gastroenterología Caseros, SIBO Caseros, IMO Caseros, Helicobacter Pylori Caseros, test aire espirado, clinica gastro" />
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="GastroCaseros">
   <meta property="og:url" content="https://gastrocaseros.com.ar/">
-  <meta property="og:title" content="Consultorio Gastroenterológico Caseros | SIBO y H. Pylori">
-  <meta property="og:description" content="Atención experta en salud digestiva y diagnósticos no invasivos en Caseros.">
-  <meta property="og:image" content="logo.png">
+  <meta property="og:title" content="Gastroenterología en Caseros, Tres de Febrero | SIBO, IMO y H. Pylori">
+  <meta property="og:description" content="Salud digestiva y diagnósticos no invasivos en Caseros, Tres de Febrero. Zona oeste del GBA.">
+  <meta property="og:image" content="https://gastrocaseros.com.ar/og-image.jpg">
+  <link rel="canonical" href="https://gastrocaseros.com.ar/">
 
   <!-- JSON-LD Structured Data (Professional SEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Physician",
-    "name": "Consultorio Gastroenterológico Caseros",
-    "image": "https://gastrocaseros.com.ar/logo.png",
-    "@id": "https://gastrocaseros.com.ar/",
-    "url": "https://gastrocaseros.com.ar/",
-    "telephone": "+54-11-2457-3240",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Justo José de Urquiza 4530",
-      "addressLocality": "Caseros",
-      "addressRegion": "Buenos Aires",
-      "postalCode": "1678",
-      "addressCountry": "AR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -34.6089,
-      "longitude": -58.5671
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Thursday",
-      "opens": "09:00",
-      "closes": "12:00"
-    },
-    "medicalSpecialty": "Gastroenterology"
+    "@graph": [
+      {
+        "@type": "Physician",
+        "@id": "https://gastrocaseros.com.ar/#physician",
+        "name": "Consultorio Gastroenterológico Caseros — GastroCaseros",
+        "image": "https://gastrocaseros.com.ar/logo.png",
+        "url": "https://gastrocaseros.com.ar",
+        "telephone": "+54 9 11 2457-3240",
+        "medicalSpecialty": "Gastroenterology",
+        "sameAs": [
+          "https://www.instagram.com/gastrocaseros/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Justo José de Urquiza 4530",
+          "addressLocality": "Caseros",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1678",
+          "addressCountry": "AR"
+        },
+        "employee": {
+          "@type": "Person",
+          "@id": "https://gastrocaseros.com.ar/#doctor",
+          "name": "Dra. Erika Pest",
+          "jobTitle": "Médica Gastroenteróloga"
+        },
+        "worksFor": {
+          "@id": "https://gastrocaseros.com.ar/#clinic"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://gastrocaseros.com.ar/#clinic",
+        "name": "Consultorio Gastroenterológico Caseros — GastroCaseros",
+        "image": "https://gastrocaseros.com.ar/logo.png",
+        "url": "https://gastrocaseros.com.ar",
+        "telephone": "+54 9 11 2457-3240",
+        "medicalSpecialty": "Gastroenterology",
+        "sameAs": [
+          "https://www.instagram.com/gastrocaseros/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Justo José de Urquiza 4530",
+          "addressLocality": "Caseros",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1678",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.6089,
+          "longitude": -58.5671
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Caseros" },
+          { "@type": "AdministrativeArea", "name": "Tres de Febrero" },
+          { "@type": "City", "name": "San Martín" },
+          { "@type": "City", "name": "Morón" },
+          { "@type": "City", "name": "Hurlingham" },
+          { "@type": "City", "name": "Ituzaingó" }
+        ],
+        "availableService": {
+          "@type": "MedicalProcedure",
+          "name": "Test de aire espirado (SIBO, intolerancias, H. pylori)"
+        },
+        "employee": {
+          "@id": "https://gastrocaseros.com.ar/#doctor"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://gastrocaseros.com.ar/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿En qué consiste el test de aire espirado y duele?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es un método diagnóstico 100% no invasivo e indoloro. Consiste en beber un líquido de preparación (sustrato) y soplar suavemente en bolsas recolectoras o tubos a intervalos regulares de tiempo. No requiere endoscopía, no usamos agujas y no se aplica ningún tipo de sedación."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo demoran los estudios en el consultorio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El test de confirmación o erradicación de Helicobacter Pylori es rápido y dura aproximadamente 30 minutos. Por el contrario, los tests para SIBO, IMO o intolerancias (lactosa, fructosa) requieren medir las curvas de fermentación bacteriana (Hidrógeno y Metano), por lo que deberás permanecer en nuestra sala de espera entre 2 y 3 horas dependiendo del protocolo médico indicado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Requieren una preparación o ayuno previo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, el protocolo preparatorio es fundamental para evitar diagnósticos erróneos o falsos positivos. Todo estudio requiere un ayuno estricto (generalmente 8 a 12 horas). Para el test de SIBO o IMO se suma una dieta limpia el día previo (típicamente arroz blanco y carnes magras) y la suspensión de probióticos/antibióticos semanas antes. Invariablemente te enviaremos el instructivo exacto en PDF junto con la confirmación de tu turno."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo y cómo se me entregan los resultados médicos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los resultados concluyentes no se entregan en el momento, ya que la muestra requiere un procesamiento de laboratorio y las curvas de gases resultantes deben ser evaluadas minuciosa y personalmente por el equipo médico especializado. Recibirás tu informe oficial debidamente firmado en formato PDF (vía WhatsApp) en un plazo habitual de 48 a 72 horas hábiles."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -52,10 +144,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   
   <!-- Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
-  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   
-  <link rel="stylesheet" href="css/style.css?v=20260324">
+  <link rel="stylesheet" href="css/style.css?v=20260723">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDGFHLL04L"></script>
   <script>
@@ -84,7 +176,7 @@
   <!-- NAVIGATION -->
   <nav class="top-nav">
     <a href="#inicio" class="nav-brand" aria-label="Inicio">
-      <img src="logo.png" alt="Logo GastroCaseros" class="nav-logo" fetchpriority="high">
+      <img src="logo.png" alt="Logo GastroCaseros" class="nav-logo" width="100" height="50" fetchpriority="high">
       <div class="nav-name">
         Consultorio Gastroenterológico Caseros
         <span>Estudios de Aire Espirado</span>
@@ -114,7 +206,7 @@
   <section class="hero" id="inicio">
     <div class="hero-content">
       <h1>Tu salud digestiva, en manos <em>expertas</em></h1>
-      <p class="hero-p">Consultas especializadas y diagnósticos de vanguardia. Somos referentes en pruebas no invasivas en Caseros, Provincia de Buenos Aires.</p>
+      <p class="hero-p">Consultas especializadas y diagnósticos de vanguardia. Somos referentes en pruebas no invasivas en Caseros, Tres de Febrero — atendemos pacientes de toda la zona oeste del GBA.</p>
       <div class="hero-btns">
         <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('hero')" class="btn-main btn-filled" aria-label="Escribir a WhatsApp">Escribinos por WhatsApp</a>
         <a href="#servicios" class="btn-main btn-outline" aria-label="Ver servicios del consultorio">Ver Especialidades</a>
@@ -122,7 +214,7 @@
     </div>
     <div class="hero-visual">
       <div class="logo-container">
-        <img src="logo.png" alt="Logo central GastroCaseros" class="logo-hero" fetchpriority="high">
+        <img src="logo.png" alt="Logo central GastroCaseros" class="logo-hero" width="300" height="300" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -144,7 +236,7 @@
         </ul>
 
         <div class="quiz-action">
-          <p style="font-size: 1.15rem; font-weight: 700; color: var(--green-light); margin-bottom: 20px;">👉 Si marcaste DOS (2) o más situaciones, es muy probable que requieras una prueba diagnóstica.</p>
+          <p style="font-size: 1.15rem; font-weight: 700; color: var(--green-light); margin-bottom: 20px;">👉 Si marcaste DOS (2) o más situaciones, podés agendar una consulta para revisar tus síntomas con una especialista.</p>
           <a id="quiz-wa-btn" href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20agendar%20por%20s%C3%ADntomas%20estomacales" onclick="trackWA('mini_test')" class="btn-main" style="background: white; color: var(--green); font-weight: 800; padding: 18px 40px; font-size: 1.15rem;" aria-label="Solicitar consulta por múltiples síntomas">Agendar Consulta →</a>
         </div>
       </div>
@@ -178,10 +270,13 @@
             <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
           </svg>
         </div>
-        <h3>Test SIBO / Intolerancias</h3>
-        <p>A través del aire espirado detectamos sobrecrecimiento bacteriano e intolerancia a lactosa o fructosa de forma no invasiva.</p>
+        <h3>Test SIBO / IMO / Intolerancias</h3>
+        <p>A través del aire espirado detectamos sobrecrecimiento bacteriano, IMO e intolerancia a lactosa o fructosa de forma no invasiva.</p>
         <div class="service-meta">Sin agujas · Sin dolor</div>
-        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20consultar%20sobre%20el%20test%20de%20SIBO%20o%20intolerancias" onclick="trackWA('servicio_sibo')" class="service-link" aria-label="Consultar por test SIBO">Consultar →</a>
+        <div style="display: flex; gap: 15px; justify-content: space-between; align-items: center; width: 100%; margin-top: 10px;">
+          <a href="test-sibo-intolerancias.html" class="service-link" style="color: var(--navy); margin-top: 0;" aria-label="Más información sobre el test de SIBO, IMO e intolerancias">Más Info →</a>
+          <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20consultar%20sobre%20el%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('servicio_sibo')" class="service-link" style="margin-top: 0;" aria-label="Consultar por test SIBO e IMO">Turnos WA →</a>
+        </div>
       </div>
       <div class="service-card reveal">
         <div class="service-icon-box">
@@ -214,14 +309,15 @@
     
     <div class="tests-grid">
       <div class="test-modern-card">
-        <h3>SIBO y Microbiota</h3>
-        <p>¿Gases y distensión después de comer? El SIBO ocurre cuando hay demasiadas bacterias (H₂ y CH₄) en el intestino delgado. Síntomas clave:</p>
+        <h3>SIBO, IMO y Microbiota</h3>
+        <p>¿Gases y distensión después de comer? El SIBO y el IMO ocurren por sobrecrecimiento bacteriano o de microorganismos productores de metano (H₂ y CH₄) en el intestino delgado. Síntomas clave:</p>
         <ul class="test-bullet-list">
           <li class="test-bullet"><div class="test-dot" aria-hidden="true">✓</div><p>Gases y distensión abdominal inmediata</p></li>
           <li class="test-bullet"><div class="test-dot" aria-hidden="true">✓</div><p>Diarrea o constipación alternante</p></li>
           <li class="test-bullet"><div class="test-dot" aria-hidden="true">✓</div><p>Fatiga y sensación de saciedad precoz</p></li>
         </ul>
         <span class="test-highlight">Diagnóstico H₂ y CH₄</span>
+        <a href="test-sibo-intolerancias.html" class="service-link" style="color: var(--green-light); display: block; margin-top: 20px; font-weight: 700;" aria-label="Ver detalles y preparación de SIBO, IMO e intolerancias">Ver Preparación y Detalles →</a>
       </div>
       
       <div class="test-modern-card">
@@ -250,8 +346,8 @@
       <!-- SIBO Prep -->
       <div class="prep-card reveal">
         <div class="prep-header sibo-header">
-          <h3>Test de SIBO</h3>
-          <span>Sobrecrecimiento Bacteriano / Intolerancias</span>
+          <h3>Test de SIBO / IMO</h3>
+          <span>Sobrecrecimiento Bacteriano / IMO / Intolerancias</span>
         </div>
         <div class="prep-body">
           <ul class="prep-list">
@@ -265,7 +361,9 @@
             <li><strong>1 semana antes:</strong><br>Suspender laxantes, procinéticos y antiácidos.</li>
             <li><strong>El día del test:</strong><br>No fumar, no masticar chicle ni hacer ejercicio físico intenso.</li>
           </ul>
-          <a href="https://wa.me/5491124573240?text=Hola%2C%20tengo%20una%20duda%20sobre%20la%20dieta%20previa%20al%20test%20de%20SIBO" onclick="trackWA('prep_sibo')" class="prep-help" aria-label="Ayuda con la preparación SIBO">Tengo una duda con esta preparación →</a>
+          <a href="test-sibo-intolerancias.html" class="prep-help" aria-label="Ver detalles y preparación de SIBO, IMO e intolerancias">Ver Preparación y Detalles →</a>
+          <br />
+          <a href="https://wa.me/5491124573240?text=Hola%2C%20tengo%20una%20duda%20sobre%20la%20dieta%20previa%20al%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('prep_sibo')" class="prep-help" aria-label="Ayuda con la preparación SIBO e IMO">Tengo una duda con esta preparación →</a>
         </div>
       </div>
 
@@ -318,21 +416,21 @@
       <details class="faq-item">
         <summary class="faq-question">¿En qué consiste el test de aire espirado y duele?</summary>
         <div class="faq-answer">
-          Es un método diagnóstico <strong>100% no invasivo e indoloro</strong>. Consiste en beber un líquido de preparación (sustrato) y soplar suevamente en bolsas recolectoras o tubos a intervalos regulares de tiempo. No requiere endoscopía, no usamos agujas y no se aplica ningún tipo de sedación.
+          Es un método diagnóstico <strong>100% no invasivo e indoloro</strong>. Consiste en beber un líquido de preparación (sustrato) y soplar suavemente en bolsas recolectoras o tubos a intervalos regulares de tiempo. No requiere endoscopía, no usamos agujas y no se aplica ningún tipo de sedación.
         </div>
       </details>
       
       <details class="faq-item">
         <summary class="faq-question">¿Cuánto tiempo demoran los estudios en el consultorio?</summary>
         <div class="faq-answer">
-          El test de confirmación o erradicación de <em>Helicobacter Pylori</em> es rápido y dura aproximadamente 30 minutos. Por el contrario, los tests para SIBO o intolerancias (lactosa, fructosa) requieren medir las curvas de fermentación bacteriana (Hidrógeno y Metano), por lo que deberás permanecer en nuestra sala de espera <strong>entre 2 y 3 horas</strong> dependiendo del protocolo médico indicado.
+          El test de confirmación o erradicación de <em>Helicobacter Pylori</em> es rápido y dura aproximadamente 30 minutos. Por el contrario, los tests para SIBO, IMO o intolerancias (lactosa, fructosa) requieren medir las curvas de fermentación bacteriana (Hidrógeno y Metano), por lo que deberás permanecer en nuestra sala de espera <strong>entre 2 y 3 horas</strong> dependiendo del protocolo médico indicado.
         </div>
       </details>
       
       <details class="faq-item">
         <summary class="faq-question">¿Requieren una preparación o ayuno previo?</summary>
         <div class="faq-answer">
-          <strong>Sí, el protocolo preparatorio es fundamental para evitar diagnósticos erróneos o falsos positivos.</strong> Todo estudio requiere un ayuno estricto (generalmente 8 a 12 horas). Para el test de SIBO se suma una dieta "limpia" el día previo (típicamente arroz blanco y carnes magras) y la suspensión de probióticos/antibióticos semanas antes. Invariablemente te enviaremos el instructivo exacto en PDF junto con la confirmación de tu turno.
+          <strong>Sí, el protocolo preparatorio es fundamental para evitar diagnósticos erróneos o falsos positivos.</strong> Todo estudio requiere un ayuno estricto (generalmente 8 a 12 horas). Para el test de SIBO o IMO se suma una dieta "limpia" el día previo (típicamente arroz blanco y carnes magras) y la suspensión de probióticos/antibióticos semanas antes. Invariablemente te enviaremos el instructivo exacto en PDF junto con la confirmación de tu turno.
         </div>
       </details>
       
@@ -374,11 +472,12 @@
         </div>
         <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('ubicacion')" class="btn-main btn-filled" style="margin-top: 20px;" aria-label="Escribir a WhatsApp">Escribinos por WhatsApp</a>
         <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 16px;">* Solicitamos amablemente cancelar o reprogramar con mínimo 24hs de anticipación si no podés asistir a tu turno. Ayudanos a cuidar el tiempo de todos.</p>
+        <p style="margin-top: 16px; color: var(--text-muted);">Recibimos pacientes de Caseros, San Martín, Morón, Hurlingham, Ituzaingó y alrededores.</p>
       </div>
       <div class="map-frame">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5!2d-58.5671!3d-34.6089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJusto%20Jos%C3%A9%20de%20Urquiza%204530%2C%20Caseros!5e0!3m2!1ses!2sar!4v1"
-          style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy" title="Ubicación Google Maps"></iframe>
+          src="https://www.google.com/maps?q=Justo+Jos%C3%A9+de+Urquiza+4530,+Caseros,+Buenos+Aires&hl=es&z=16&output=embed"
+          style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Google Maps — Justo José de Urquiza 4530, Caseros"></iframe>
       </div>
     </div>
   </section>
@@ -391,12 +490,6 @@
     <div class="social-links">
       <a href="https://www.instagram.com/gastrocaseros/" target="_blank" aria-label="Seguinos en Instagram" class="social-btn">
         <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-      </a>
-      <a href="#" aria-label="Facebook del Consultorio" class="social-btn" title="Facebook (Próximamente)">
-        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-      </a>
-      <a href="#" aria-label="TikTok del Consultorio" class="social-btn" title="TikTok (Próximamente)">
-        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1v5a4 4 0 0 1-4-4Z"></path></svg>
       </a>
     </div>
 

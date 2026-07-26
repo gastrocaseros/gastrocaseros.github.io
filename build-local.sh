@@ -8,6 +8,16 @@ set -e  # Para inmediatamente si cualquier comando falla
 HTML_MIN="./node_modules/.bin/html-minifier-terser"
 CSS_MIN="./node_modules/.bin/cleancss"
 
+HTML_MIN_FLAGS=(
+  --collapse-whitespace
+  --remove-comments
+  --remove-optional-tags
+  --remove-redundant-attributes
+  --remove-script-type-attributes
+  --remove-tag-whitespace
+  --use-short-doctype
+)
+
 echo ""
 echo "============================================"
 echo "  GastroCaseros — Build $(date '+%Y-%m-%d %H:%M')"
@@ -21,8 +31,12 @@ mkdir -p dist/css dist/img
 
 cp -r img/* dist/img/ 2>/dev/null   || echo "  ↳ /img vacía o inexistente (ok)"
 cp logo.png    dist/              2>/dev/null   || echo "  ↳ logo.png no encontrado (ok)"
+cp favicon-32.png dist/           2>/dev/null   || echo "  ↳ favicon-32.png no encontrado (ok)"
+cp apple-touch-icon.png dist/     2>/dev/null   || echo "  ↳ apple-touch-icon.png no encontrado (ok)"
+cp og-image.jpg dist/             2>/dev/null   || echo "  ↳ og-image.jpg no encontrado (ok)"
 cp robots.txt  dist/              2>/dev/null   || echo "  ↳ robots.txt no encontrado (ok)"
 cp sitemap.xml dist/              2>/dev/null   || echo "  ↳ sitemap.xml no encontrado (ok)"
+cp CNAME dist/                    2>/dev/null   || true
 # SVGs en raíz (si existen)
 for svg in *.svg; do [ -f "$svg" ] && cp "$svg" dist/; done 2>/dev/null || true
 
@@ -31,30 +45,23 @@ echo "  ✅ Archivos estáticos copiados"
 # 2. Minificar HTML (SIN minify-js para proteger funciones inline como toggleMenu)
 echo ""
 echo "🗜️  [2/4] Minificando HTML..."
-$HTML_MIN index.html \
-  --collapse-whitespace \
-  --remove-comments \
-  --remove-optional-tags \
-  --remove-redundant-attributes \
-  --remove-script-type-attributes \
-  --remove-tag-whitespace \
-  --use-short-doctype \
-  --output dist/index.html
+HTML_SOURCES=()
+for src in *.html; do
+  [ -f "$src" ] || continue
+  HTML_SOURCES+=("$src")
+  $HTML_MIN "$src" "${HTML_MIN_FLAGS[@]}" --output "dist/$src"
+  echo "  ✅ dist/$src"
+done
 
-$HTML_MIN test-aire-espirado-helicobacter-pylori.html \
-  --collapse-whitespace \
-  --remove-comments \
-  --remove-optional-tags \
-  --remove-redundant-attributes \
-  --remove-script-type-attributes \
-  --remove-tag-whitespace \
-  --use-short-doctype \
-  --output dist/test-aire-espirado-helicobacter-pylori.html
+if [ ${#HTML_SOURCES[@]} -eq 0 ]; then
+  echo "  ❌ ERROR: No hay archivos *.html en la raíz del proyecto."
+  exit 1
+fi
 
 ORIGINAL_HTML=$(wc -c < index.html)
 MIN_HTML=$(wc -c < dist/index.html)
 PERCENT_HTML=$(( (ORIGINAL_HTML - MIN_HTML) * 100 / ORIGINAL_HTML ))
-echo "  ✅ HTML: ${ORIGINAL_HTML} bytes → ${MIN_HTML} bytes (−${PERCENT_HTML}% comprimido)"
+echo "  ✅ index.html: ${ORIGINAL_HTML} bytes → ${MIN_HTML} bytes (−${PERCENT_HTML}% comprimido)"
 echo "  📄 Preview (primeros 120 chars del HTML minificado):"
 cut -c1-120 dist/index.html | cat
 
@@ -71,28 +78,72 @@ echo "  ✅ CSS: ${ORIGINAL_CSS} bytes → ${MIN_CSS} bytes (−${PERCENT_CSS}% 
 echo "  📄 Preview (primeros 120 chars del CSS minificado):"
 cut -c1-120 dist/css/style.min.css | cat
 
-# Reemplaza la referencia al CSS en el HTML minificado
-sed -i "s|css/style.css?v=[0-9]*|css/style.min.css?v=${HASH}|g" dist/index.html dist/test-aire-espirado-helicobacter-pylori.html
+# Reemplaza la referencia al CSS en todo el HTML minificado
+sed -i "s|css/style.css?v=[0-9]*|css/style.min.css?v=${HASH}|g" dist/*.html
 echo "  ✅ Cache-busting hash: ${HASH}"
 
 # 4. Verificar integridad del output
 echo ""
 echo "🔍 [4/4] Verificando integridad..."
 
-if grep -q "style.min.css?v=${HASH}" dist/index.html; then
-  echo "  ✅ Link CSS correcto en dist/index.html"
+VERIFY_OK=true
+for src in "${HTML_SOURCES[@]}"; do
+  if [ ! -f "dist/$src" ]; then
+    echo "  ❌ ERROR: Falta dist/$src"
+    VERIFY_OK=false
+    continue
+  fi
+  if grep -q "style.min.css?v=${HASH}" "dist/$src"; then
+    echo "  ✅ Link CSS correcto en dist/$src"
+  else
+    echo "  ❌ ERROR: El link del CSS no fue actualizado en dist/$src"
+    echo "     Revisá que $src tenga el patrón: css/style.css?v=XXXXXXXX"
+    VERIFY_OK=false
+  fi
+  # Canonical esperado (reference.md): home → /, resto → /<archivo>
+  case "$src" in
+    index.html) expected_canonical="https://gastrocaseros.com.ar/" ;;
+    *)          expected_canonical="https://gastrocaseros.com.ar/$src" ;;
+  esac
+  if grep -qE "rel=\"canonical\" href=\"${expected_canonical}\"|rel=\"canonical\"href=\"${expected_canonical}\"" "dist/$src"; then
+    echo "  ✅ Canonical correcto en dist/$src → ${expected_canonical}"
+  else
+    echo "  ❌ ERROR: Canonical incorrecto o ausente en dist/$src"
+    echo "     Esperado: <link rel=\"canonical\" href=\"${expected_canonical}\">"
+    VERIFY_OK=false
+  fi
+  if grep -qE 'property="og:image" content="https://gastrocaseros.com.ar/og-image.jpg"|property="og:image"content="https://gastrocaseros.com.ar/og-image.jpg"' "dist/$src"; then
+    echo "  ✅ og:image absoluto en dist/$src"
+  else
+    echo "  ❌ ERROR: og:image debe ser https://gastrocaseros.com.ar/og-image.jpg en dist/$src"
+    VERIFY_OK=false
+  fi
+done
+
+if [ ! -f dist/og-image.jpg ] || [ ! -f dist/favicon-32.png ] || [ ! -f dist/apple-touch-icon.png ]; then
+  echo "  ❌ ERROR: Faltan assets SEO (og-image.jpg / favicon-32.png / apple-touch-icon.png) en dist/"
+  VERIFY_OK=false
 else
-  echo "  ❌ ERROR: El link del CSS no fue actualizado en el HTML."
-  echo "     Revisá que index.html tenga el patrón: css/style.css?v=XXXXXXXX"
+  echo "  ✅ Assets SEO presentes en dist/"
+fi
+
+if [ ! -f dist/404.html ]; then
+  echo "  ❌ ERROR: Falta dist/404.html"
+  VERIFY_OK=false
+else
+  echo "  ✅ 404.html presente en dist/"
+fi
+
+if [ ! -f dist/css/style.min.css ]; then
+  echo "  ❌ ERROR: Falta dist/css/style.min.css"
+  VERIFY_OK=false
+fi
+
+if [ "$VERIFY_OK" = false ]; then
   exit 1
 fi
 
-if [ -f dist/index.html ] && [ -f dist/css/style.min.css ]; then
-  echo "  ✅ Archivos de output presentes"
-else
-  echo "  ❌ ERROR: Faltan archivos en dist/"
-  exit 1
-fi
+echo "  ✅ Archivos de output presentes"
 
 echo ""
 echo "============================================"

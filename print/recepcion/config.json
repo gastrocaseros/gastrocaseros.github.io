@@ -17,10 +17,9 @@
     "prefillMessage": "Hola, quiero solicitar un turno."
   },
   "wifi": {
-    "ssid": "GastroCaseros-Invitados",
-    "password": "CAMBIAR-CLAVE",
+    "ssid": "Estudio26",
+    "password": "cariola1140",
     "security": "WPA",
-    "placeholder": true,
     "note": "Reemplazá ssid y password con la red real del consultorio, luego regenerá el QR."
   }
 }

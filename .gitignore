@@ -27,3 +27,4 @@ print/recepcion/exports/
 print/recepcion/assets/qr-*.png
 print/recepcion/assets/qr-*.svg
 print/recepcion/resolved-urls.json
+print/guias-pacientes/exports/

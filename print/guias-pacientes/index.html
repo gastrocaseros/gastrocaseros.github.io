@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guías para pacientes — GastroCaseros</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hub {
+      width: min(640px, 100%);
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 36px 32px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+      color: var(--navy);
+    }
+    .hub h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+    .hub p { color: var(--muted); margin-bottom: 24px; font-size: 0.95rem; }
+    .hub-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .hub-list a {
+      display: block;
+      background: white;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      text-decoration: none;
+      color: var(--navy);
+      font-weight: 700;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .hub-list a:hover { border-color: var(--green); transform: translateY(-2px); }
+    .hub-list span {
+      display: block;
+      font-weight: 500;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .hub code {
+      font-size: 0.8rem;
+      background: var(--green-ultra);
+      padding: 2px 8px;
+      border-radius: 6px;
+      color: var(--navy);
+    }
+  </style>
+</head>
+<body class="preview">
+  <div class="hub">
+    <h1>Guías para pacientes</h1>
+    <p>HTML A4 editables · Exportá a PDF con <code>npm run print:guias</code> o Imprimir en el navegador.</p>
+    <ul class="hub-list">
+      <li>
+        <a href="h2-metano.html">
+          Test aire espirado H₂ / CH₄
+          <span>SIBO, IMO, lactosa, fructosa — 3 páginas</span>
+        </a>
+      </li>
+      <li>
+        <a href="helicobacter.html">
+          Test Helicobacter pylori (UBT)
+          <span>Urea Breath Test — 2 páginas</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

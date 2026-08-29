@@ -17,7 +17,9 @@
     "print:qrs": "node print/recepcion/generate-qrs.js",
     "print:export": "node print/recepcion/export.js",
     "print:preview": "npx serve print/recepcion",
-    "print:all": "npm run print:export && npm run print:preview"
+    "print:all": "npm run print:export && npm run print:preview",
+    "print:guias": "node print/guias-pacientes/export.js",
+    "print:guias:preview": "npx serve print/guias-pacientes"
   },
   "devDependencies": {
     "clean-css-cli": "^5.6.3",

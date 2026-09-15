@@ -6,8 +6,8 @@ Instructivos imprimibles / PDF. Branch **`instagram`** (mismo criterio que `prin
 
 | Archivo | Contenido | Páginas |
 |---------|-----------|---------|
-| `h2-metano.html` | Test aire espirado H₂ / CH₄ (SIBO, IMO, intolerancias) | 3 |
-| `helicobacter.html` | Test Helicobacter pylori (UBT) | 2 |
+| `h2-metano.html` | Test aire espirado H₂ / CH₄ (SIBO, IMO, intolerancias) | 3 → `Guia_SIBO-IMO_Caseros.pdf` |
+| `helicobacter.html` | Test Helicobacter pylori (UBT) | 2 → `Guia_Hp_Caseros.pdf` |
 | `styles.css` | Plantilla compartida A4 + marca GastroCaseros | — |
 
 Fuente clínica H₂/CH₄: flyer PDF de la Dra. Erika Pest (adaptado a marca GastroCaseros).  
@@ -34,4 +34,4 @@ También podés usar **Imprimir → Guardar como PDF** desde el navegador (la ba
 
 | Versionar | Generado (gitignore) |
 |-----------|----------------------|
-| `*.html`, `styles.css`, `export.js`, `assets/logo.png`, README | `exports/*.pdf` |
+| `*.html`, `styles.css`, `export.js`, `assets/logo.png`, `assets/procedimiento-hpylori.png`, README | `exports/*.pdf` |

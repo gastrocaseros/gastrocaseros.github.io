@@ -100,9 +100,10 @@ body.preview {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 12mm 14mm 11mm;
+  padding: 12mm 14mm 22mm;
   gap: 7mm;
   min-height: 0;
+  overflow: hidden;
 }
 
 /* —— Header —— */
@@ -346,6 +347,20 @@ body.preview {
   margin-top: 0.6mm;
 }
 
+.check-list .mark-no {
+  width: 4mm;
+  height: 4mm;
+  border-radius: 50%;
+  background: #b44a4a;
+  color: white;
+  font-size: 2.4mm;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.6mm;
+}
+
 .callout {
   border-radius: 3mm;
   padding: 3mm 3.5mm;
@@ -410,6 +425,7 @@ body.preview {
 .tl-label.b48 { background: #3d6f8c; }
 .tl-label.o24 { background: #c4843a; }
 .tl-label.r12 { background: #b44a4a; }
+.tl-label.t2 { background: #7a4a8c; }
 .tl-label.navy { background: var(--navy); }
 .tl-label.g2 { background: #5a8f5a; }
 
@@ -527,13 +543,14 @@ body.preview {
 
 /* —— Footer —— */
 .doc-footer {
-  margin-top: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
   background: var(--navy);
   color: white;
-  margin-left: -14mm;
-  margin-right: -14mm;
-  margin-bottom: -11mm;
-  padding: 4.5mm 14mm;
+  padding: 4.5mm 14mm 6.5mm;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 4mm;
@@ -559,8 +576,8 @@ body.preview {
 
 .page-num {
   position: absolute;
-  bottom: 4mm;
-  right: 8mm;
+  bottom: 1.8mm;
+  right: 14mm;
   font-size: 2.4mm;
   color: rgba(255, 255, 255, 0.55);
   font-weight: 600;
@@ -587,6 +604,23 @@ body.preview {
 
 .grow {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.grow > .check-list,
+.grow > .grow-timeline,
+.grow > .menu-grid {
+  flex: 1;
+}
+
+.grow > .check-list {
+  align-content: space-evenly;
+}
+
+.grow-timeline {
+  justify-content: space-evenly;
 }
 
 .small {
@@ -595,6 +629,229 @@ body.preview {
 
 .muted {
   color: var(--muted);
+}
+
+.page-inner.compact {
+  gap: 4mm;
+  padding-bottom: 22mm;
+}
+
+.page-inner.roomy {
+  gap: 5.5mm;
+  padding-bottom: 22mm;
+}
+
+.page-inner.roomy .card {
+  padding: 4mm 4.5mm;
+}
+
+.page-inner.roomy .check-list {
+  gap: 2.8mm;
+}
+
+.page-inner.compact .card {
+  padding: 3.2mm 4mm;
+}
+
+.page-inner.compact .card-head {
+  margin-bottom: 2mm;
+}
+
+.page-inner.compact .timeline {
+  gap: 2mm;
+}
+
+.procedure-card {
+  padding-bottom: 3.5mm !important;
+}
+
+.procedure-split {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 3.5mm;
+  align-items: start;
+}
+
+.procedure-split .procedure-figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #edf6ee 0%, #f8fbf8 100%);
+  border-color: var(--green-light);
+}
+
+.procedure-split .procedure-figure img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  padding: 1.5mm;
+  background: transparent;
+}
+
+.procedure-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+}
+
+.procedure-foot {
+  margin-top: 3mm;
+  padding-top: 3mm;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5mm;
+}
+
+.procedure-foot .procedure-callout {
+  margin-top: 0;
+}
+
+.procedure-lead {
+  font-size: 2.95mm;
+  line-height: 1.38;
+  color: var(--text);
+}
+
+.procedure-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6mm;
+}
+
+.phase {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: 2.5mm;
+  padding: 1.8mm 2.2mm;
+}
+
+.phase-label {
+  display: block;
+  font-size: 2.45mm;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.6mm;
+}
+
+.phase p {
+  font-size: 2.7mm;
+  line-height: 1.32;
+  color: var(--text);
+}
+
+.procedure-steps-compact {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6mm;
+}
+
+.procedure-steps-compact li {
+  display: grid;
+  grid-template-columns: 5mm 1fr;
+  gap: 2mm;
+  align-items: start;
+  font-size: 2.85mm;
+  line-height: 1.35;
+}
+
+.procedure-steps-compact .num {
+  width: 4.8mm;
+  height: 4.8mm;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-size: 2.5mm;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2mm;
+}
+
+.procedure-callout {
+  margin-top: 0.5mm;
+  padding: 2.5mm 3mm;
+  font-size: 2.75mm;
+  line-height: 1.35;
+}
+
+.procedure-callout strong {
+  font-size: 2.85mm;
+  margin-bottom: 0.8mm;
+}
+
+.procedure-benefits {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2mm;
+  margin-top: 0;
+  padding: 2mm 2.5mm;
+  background: var(--green-ultra);
+  border: 1px solid var(--green-light);
+  border-radius: 2.5mm;
+}
+
+.procedure-benefits.cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2mm 3mm;
+  padding: 2.5mm 3mm;
+}
+
+.procedure-benefits li {
+  display: grid;
+  grid-template-columns: 4mm 1fr;
+  gap: 2mm;
+  align-items: center;
+  font-size: 2.7mm;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.procedure-benefits .mark {
+  width: 3.6mm;
+  height: 3.6mm;
+  font-size: 2.2mm;
+  margin-top: 0;
+}
+
+/* Fallback full-width figure (otras guías) */
+.procedure-figure {
+  margin-top: 1.5mm;
+  border-radius: 3mm;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: white;
+}
+
+.procedure-figure:not(.procedure-split .procedure-figure) img {
+  width: 100%;
+  max-height: 50mm;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  background: var(--green-ultra);
+}
+
+.procedure-figure figcaption {
+  font-size: 2.65mm;
+  color: var(--muted);
+  padding: 2mm 3.5mm;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  background: var(--green-ultra);
+  line-height: 1.35;
 }
 
 /* —— Print —— */

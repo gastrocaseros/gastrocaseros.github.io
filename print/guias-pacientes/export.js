@@ -16,14 +16,14 @@ const force = process.argv.includes('--force');
 
 const guides = [
   {
-    name: 'guia-h2-metano',
+    name: 'Guia_SIBO-IMO_Caseros',
     html: 'h2-metano.html',
     sources: ['h2-metano.html', 'styles.css', 'assets/logo.png'],
   },
   {
-    name: 'guia-helicobacter',
+    name: 'Guia_Hp_Caseros',
     html: 'helicobacter.html',
-    sources: ['helicobacter.html', 'styles.css', 'assets/logo.png'],
+    sources: ['helicobacter.html', 'styles.css', 'assets/logo.png', 'assets/procedimiento-hpylori.png'],
   },
 ];
 
@@ -38,9 +38,9 @@ function needsExport(guide, destPath) {
 }
 
 async function exportGuide(browser, guide) {
-  const destPath = path.join(exportDir, `${guide.name}.pdf`);
+  const destPath = path.resolve(exportDir, `${guide.name}.pdf`);
   if (!needsExport(guide, destPath)) {
-    console.log(`skip  ${guide.name}.pdf (up to date)`);
+    console.log(`skip  ${destPath} (up to date)`);
     return;
   }
 
@@ -62,7 +62,7 @@ async function exportGuide(browser, guide) {
   });
 
   await page.close();
-  console.log(`ok    ${guide.name}.pdf`);
+  console.log(`ok    ${destPath}`);
 }
 
 async function main() {

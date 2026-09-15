@@ -636,6 +636,122 @@ body.preview {
   padding-bottom: 22mm;
 }
 
+.page-inner.dense {
+  gap: 3.2mm;
+  padding-bottom: 22mm;
+}
+
+.page-inner.dense.dense-tight {
+  gap: 2.4mm;
+}
+
+.page-inner.dense .card {
+  padding: 2.8mm 3.5mm;
+}
+
+.page-inner.dense.dense-tight .card {
+  padding: 2.4mm 3.2mm;
+}
+
+.page-inner.dense.dense-tight .diet-col {
+  padding: 2.4mm;
+}
+
+.page-inner.dense.dense-tight .diet-col ul {
+  gap: 1mm;
+}
+
+.page-inner.dense.dense-tight .diet-col li {
+  font-size: 2.7mm;
+}
+
+.page-inner.dense.dense-tight .callout.info {
+  padding: 2mm 2.8mm;
+  font-size: 2.75mm;
+}
+
+.page-inner.dense .card-head {
+  margin-bottom: 1.6mm;
+}
+
+.page-inner.dense .timeline {
+  gap: 1.6mm;
+}
+
+.page-inner.dense .diet-col {
+  padding: 2.8mm;
+}
+
+.page-inner.dense .diet-col li {
+  font-size: 2.8mm;
+}
+
+.page-inner.dense .menu-grid {
+  margin-top: 1.5mm;
+  gap: 2mm;
+}
+
+.page-inner.dense .menu-card {
+  padding: 2mm;
+}
+
+.page-inner.dense .menu-card li {
+  font-size: 2.5mm;
+}
+
+.page-inner.dense .menu-card .note {
+  margin-top: 1.2mm;
+  font-size: 2.3mm;
+}
+
+.page-inner.dense .menu-compact .card-head h2 {
+  font-size: 3.8mm;
+}
+
+.page-inner.dense .day-list {
+  gap: 1.2mm 3mm;
+}
+
+.page-inner.dense .day-list li {
+  font-size: 2.85mm;
+}
+
+.page-inner.dense .bottom-pair {
+  gap: 2.5mm;
+  align-items: stretch;
+}
+
+.page-inner.dense .bottom-pair .card p,
+.page-inner.dense .bottom-pair .callout {
+  font-size: 2.85mm;
+}
+
+.page-inner.dense .callout {
+  padding: 2.5mm 3mm;
+}
+
+.page-inner.dense .alert-bar {
+  padding: 2.5mm 3.5mm;
+  font-size: 2.95mm;
+}
+
+.page-inner.dense .chips {
+  margin-top: 2mm;
+  gap: 1.6mm;
+}
+
+.page-inner.dense .steps {
+  gap: 1.6mm;
+}
+
+.page-inner.dense .check-list {
+  gap: 1.4mm;
+}
+
+.page-inner.dense .check-list.cols-2 {
+  gap: 1.6mm 3.5mm;
+}
+
 .page-inner.roomy {
   gap: 5.5mm;
   padding-bottom: 22mm;

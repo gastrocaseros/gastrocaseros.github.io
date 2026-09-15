@@ -6,7 +6,7 @@ Instructivos imprimibles / PDF. Branch **`instagram`** (mismo criterio que `prin
 
 | Archivo | Contenido | Páginas |
 |---------|-----------|---------|
-| `h2-metano.html` | Test aire espirado H₂ / CH₄ (SIBO, IMO, intolerancias) | 3 → `Guia_SIBO-IMO_Caseros.pdf` |
+| `h2-metano.html` | Test aire espirado H₂ / CH₄ (SIBO, IMO, intolerancias) | 2 → `Guia_SIBO-IMO_Caseros.pdf` |
 | `helicobacter.html` | Test Helicobacter pylori (UBT) | 2 → `Guia_Hp_Caseros.pdf` |
 | `styles.css` | Plantilla compartida A4 + marca GastroCaseros | — |
 

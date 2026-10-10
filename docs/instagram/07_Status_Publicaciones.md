@@ -19,6 +19,7 @@ Se ha consolidado el sistema de diseño y la numeración de archivos está 100% 
 - **Post 11:** Preguntas Frecuentes. Maquetado en `post11.html`. ✅
 - **Carrusel IMO (M. smithii):** Carrusel de 5 slides. Maquetado en `post_smithii_s1.html` a `post_smithii_s5.html`. ✅
 - **Carrusel H. Pylori (Test de Aire Espirado):** Carrusel de 6 slides. Maquetado en `post_hpylori_s1.html` a `post_hpylori_s6.html`. ✅
+- **Post Turnos Sábado:** Promo de agenda en `post_turno_sabado.html`. Actualizado a "Hoy sábado" y reexportado el 10/10/2026. ✅ Listo para publicar.
 
 ### 3. Historias e Infraestructura Técnica
 La numeración de historias ahora sigue el orden de publicación y los highlights:

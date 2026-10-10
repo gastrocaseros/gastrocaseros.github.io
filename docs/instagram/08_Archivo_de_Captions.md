@@ -269,21 +269,21 @@ Una consulta a tiempo previene complicaciones mayores.
 
 ### Post — Turnos Test de Aire Espirado (Sábado) (`post_turno_sabado.html`)
 **Imagen a subir:** `post_turno_sabado.png`
-**Texto Alternativo (Accesibilidad):** Placa de agenda con el personaje intestino feliz. Anuncia turnos disponibles para el sábado para el Test de Aire Espirado en GastroCaseros, Caseros. Incluye el número de WhatsApp 11 2457-3240.
+**Versión actual:** 10/10/2026 — badge "Hoy sábado" (usar el día de atención).
+**Texto Alternativo (Accesibilidad):** Placa de agenda con el personaje intestino feliz. Anuncia que hoy sábado hay turnos para el Test de Aire Espirado (hidrógeno y metano) en GastroCaseros, Caseros. Incluye el WhatsApp 11 2457-3240.
 **Caption:**
-📅 ¡Turnos disponibles este sábado!
+📅 ¡Hoy sábado estamos atendiendo!
 
-Realizamos el Test de Aire Espirado — el estudio no invasivo para diagnóstico de SIBO, IMO y H. pylori.
+Realizamos Test de Aire Espirado: estudios no invasivos para SIBO, IMO, intolerancia a la lactosa y a la fructosa, y Helicobacter pylori.
 
-📲 Pedí tu turno por WhatsApp: 11 2457-3240
+✅ Sin agujas · ✅ Informe firmado en PDF por WhatsApp · ✅ Atención personalizada
 
-✅ Sin agujas · ✅ Resultado en 48hs · ✅ Atención personalizada
-
+📲 Consultá disponibilidad y preparación previa: 11 2457-3240
 📍 Justo José de Urquiza 4530, Caseros
 🌐 gastrocaseros.com.ar
 
 **Hashtags:**
-#TestDeAireEspirado #SIBO #IMO #HelicobacterPylori #Turnos #GastroCaseros #Caseros #ZonaOeste #TresDeFebrero
+#TestDeAireEspirado #SIBO #IMO #HelicobacterPylori #IntoleranciaALaLactosa #GastroCaseros #Caseros #TresDeFebrero
 
 ---
 

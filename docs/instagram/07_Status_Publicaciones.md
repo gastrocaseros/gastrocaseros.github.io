@@ -20,6 +20,7 @@ Se ha consolidado el sistema de diseño y la numeración de archivos está 100% 
 - **Carrusel IMO (M. smithii):** Carrusel de 5 slides. Maquetado en `post_smithii_s1.html` a `post_smithii_s5.html`. ✅
 - **Carrusel H. Pylori (Test de Aire Espirado):** Carrusel de 6 slides. Maquetado en `post_hpylori_s1.html` a `post_hpylori_s6.html`. ✅
 - **Post Turnos Sábado:** Promo de agenda en `post_turno_sabado.html`. Actualizado a "Hoy sábado" y reexportado el 10/10/2026. ✅ Listo para publicar.
+- **Post Turnos Sábado 17/10:** Promo de agenda en `post_turno_sabado_10_17.html`. Exportado el 14/10/2026. ✅ Listo para publicar.
 
 ### 3. Historias e Infraestructura Técnica
 La numeración de historias ahora sigue el orden de publicación y los highlights:
@@ -38,13 +39,15 @@ La numeración de historias ahora sigue el orden de publicación y los highlight
 - **Efeméride 06-20:** Día de la Bandera. ✅
 - **Efeméride 07-09:** Día de la Independencia. ✅
 - **Efeméride 07-28:** Día Mundial contra la Hepatitis. Carrusel de 3 slides. Maquetado y exportado (`efemeride_07_28_s1`–`s3`). ✅ Listo para publicar (revisión médica de la Dra. recomendada).
+- **Efeméride 10-30:** Día del Gastroenterólogo. Carrusel de 2 slides (`efemeride_10_30_s1`, `efemeride_10_30_s3`). Exportado el 30/10/2026. ✅ Listo para publicar (revisión médica de la Dra. recomendada).
 
 ---
 
 ## 🚀 Próximos Pasos Inmediatos
-1. **Publicar efeméride 07-28:** Subir `efemeride_07_28_s1.png` a `s3.png` desde PC (o Meta Business Suite) con caption de `08_Archivo_de_Captions.md`.
-2. **Seguimiento:** Continuar con la Serie Diagnóstica y los pendientes de SIBO/IMO.
-3. **Infra:** el workflow de creación quedó unificado en `11_Workflows_Contenido.md` + `npm run ig:new`.
+1. **Publicar efeméride 10-30:** Subir `efemeride_10_30_s1.png` y `efemeride_10_30_s3.png` desde PC (o Meta Business Suite) con caption de `08_Archivo_de_Captions.md` / `10_Captions_Efemerides.md`.
+2. **Publicar efeméride 07-28** (si sigue pendiente): Subir `efemeride_07_28_s1.png` a `s3.png` con caption de `08_Archivo_de_Captions.md`.
+3. **Seguimiento:** Continuar con la Serie Diagnóstica y los pendientes de SIBO/IMO.
+4. **Infra:** el workflow de creación quedó unificado en `11_Workflows_Contenido.md` + `npm run ig:new`.
 
 ---
 

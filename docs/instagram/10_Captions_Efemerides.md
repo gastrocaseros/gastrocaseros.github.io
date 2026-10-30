@@ -103,3 +103,28 @@ Fuente: OMS y OPS, campaña 2026.
 #DíaMundialContraLaHepatitis #Hepatitis #SaludHepática #Prevención #Gastroenterología #GastroCaseros #Caseros #ZonaOeste
 
 ---
+
+## [efemeride_10_30] Día del Gastroenterólogo
+
+**Caption para IG:**
+
+🩺 **30 de octubre — Día del Gastroenterólogo**
+
+En Argentina se conmemora en homenaje al Dr. Luis Marcelo Zelarayán.
+Hoy celebramos a quienes cuidan la salud del aparato digestivo: prevenir, diagnosticar y tratar.
+
+Si algo en tu digestión no anda bien, no lo normalices.
+Consultá con tu gastroenterólogo/a.
+
+👉 Turnos y consultas: Link en nuestra biografía.
+📲 WhatsApp: 11 2457-3240
+📍 Justo José de Urquiza 4530, Caseros
+🌐 gastrocaseros.com.ar
+
+Fuente: La Gaceta / centros de gastroenterología de Argentina (homenaje a Zelarayán).
+Revisión final: Dra. Erika Pest.
+
+**Hashtags:**
+#DíaDelGastroenterólogo #Gastroenterología #SaludDigestiva #Caseros #GastroCaseros #ZonaOeste #Prevención
+
+---

@@ -287,6 +287,28 @@ Realizamos Test de Aire Espirado: estudios no invasivos para SIBO, IMO, intolera
 
 ---
 
+### Post — Turnos Test de Aire Espirado (Sábado 17/10) (`post_turno_sabado_10_17.html`)
+**Imagen a subir:** `post_turno_sabado_10_17.png`
+**Publicación:** Meta Business Suite (Facebook + Instagram). El link de WhatsApp es clickeable solo en Facebook.
+**Texto Alternativo (Accesibilidad):** Placa de agenda con el personaje intestino feliz. Anuncia turnos disponibles para el sábado 17/10 para el Test de Aire Espirado (hidrógeno y metano) en GastroCaseros, Caseros. Incluye el WhatsApp 11 2457-3240.
+**Caption:**
+📅 ¡Turnos disponibles este sábado 17/10!
+
+Realizamos Test de Aire Espirado: estudios no invasivos para SIBO, IMO, intolerancia a la lactosa y a la fructosa, y Helicobacter pylori.
+
+✅ Sin agujas · ✅ Informe firmado en PDF por WhatsApp · ✅ Atención personalizada
+
+📲 Reservá tu turno por WhatsApp al 11 2457-3240. Ahí también te pasamos la preparación previa.
+👉 https://wa.me/5491124573240
+
+📍 Justo José de Urquiza 4530, Caseros
+🌐 gastrocaseros.com.ar
+
+**Hashtags:**
+#TestDeAireEspirado #SIBO #IMO #HelicobacterPylori #IntoleranciaALaLactosa #GastroCaseros #Caseros #TresDeFebrero
+
+---
+
 ### Historia — Turnos Test de Aire Espirado (Sábado) (`story_turno_sabado.html`)
 **Imagen a subir:** `story_turno_sabado.png`
 **Texto Alternativo (Accesibilidad):** Historia con el personaje intestino feliz flotando. Anuncia turnos disponibles para el sábado para el Test de Aire Espirado. Botón de WhatsApp 11 2457-3240.
@@ -503,4 +525,30 @@ Fuente: OMS y OPS, campaña 2026.
 
 **Hashtags:**
 #DíaMundialContraLaHepatitis #Hepatitis #SaludHepática #Prevención #Gastroenterología #GastroCaseros #Caseros #ZonaOeste
+
+---
+
+### Efeméride 30/10 — Día del Gastroenterólogo (`efemeride_10_30_s1` y `s3`)
+**Formato:** Carrusel de 2 slides.
+**Imágenes a subir:** `efemeride_10_30_s1.png`, `efemeride_10_30_s3.png`
+**Texto Alternativo (Accesibilidad):** Carrusel de GastroCaseros por el Día del Gastroenterólogo (30 de octubre). Slide 1: homenaje al Dr. Luis Marcelo Zelarayán con el personaje Colonito médico. Slide 2: CTA para consultar por síntomas digestivos, WhatsApp 11 2457-3240 y dirección en Caseros.
+**Caption:**
+🩺 30 de octubre — Día del Gastroenterólogo
+
+En Argentina se conmemora en homenaje al Dr. Luis Marcelo Zelarayán.
+Hoy celebramos a quienes cuidan la salud del aparato digestivo: prevenir, diagnosticar y tratar.
+
+Si algo en tu digestión no anda bien, no lo normalices.
+Consultá con tu gastroenterólogo/a.
+
+👉 Turnos y consultas: Link en nuestra biografía.
+📲 WhatsApp: 11 2457-3240
+📍 Justo José de Urquiza 4530, Caseros
+🌐 gastrocaseros.com.ar
+
+Fuente: La Gaceta / centros de gastroenterología de Argentina (homenaje a Zelarayán).
+Revisión final: Dra. Erika Pest.
+
+**Hashtags:**
+#DíaDelGastroenterólogo #Gastroenterología #SaludDigestiva #Caseros #GastroCaseros #ZonaOeste #Prevención
 

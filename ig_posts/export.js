@@ -41,6 +41,10 @@ const path = require('path');
     { name: 'efemeride_07_28_s1', type: 'feed' },
     { name: 'efemeride_07_28_s2', type: 'feed' },
     { name: 'efemeride_07_28_s3', type: 'feed' },
+    { name: 'efemeride_09_19_s1', type: 'feed' },
+    { name: 'post_turno_sabado_10_17', type: 'feed' },
+    { name: 'efemeride_10_30_s1', type: 'feed' },
+    { name: 'efemeride_10_30_s3', type: 'feed' },
     // IG_NEW_EXPORT
   ];
 

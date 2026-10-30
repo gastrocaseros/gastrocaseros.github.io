@@ -44,6 +44,7 @@ Este documento centraliza las fechas conmemorativas, tanto médicas como naciona
 | Fecha | Día | Tipo | Nomenclatura | Temática / Foco |
 | :--- | :--- | :--- | :--- | :--- |
 | **16 de Octubre** | Día Mundial de la Alimentación | Médica | `efemeride_10_16` | Microbiota gástrica/intestinal, alimentación basada en plantas, fibra y alimentos fermentados para nutrir bacterias beneficiosas. |
+| **30 de Octubre** | Día del Gastroenterólogo | Médica / Institucional | `efemeride_10_30` | Homenaje al Dr. Luis Marcelo Zelarayán; reconocimiento a la especialidad y CTA de consulta. Carrusel 2 slides (`s1`, `s3`). |
 
 ## Noviembre
 

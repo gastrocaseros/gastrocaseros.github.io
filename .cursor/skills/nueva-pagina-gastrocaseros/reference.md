@@ -25,8 +25,9 @@ Cada subpágina agrega `MedicalWebPage` con `@id` = `{url-página}#webpage`.
 - Dirección: Justo José de Urquiza 4530, Caseros, Buenos Aires 1678, AR
 - Tel: +54 9 11 2457-3240
 - Horario: Martes y jueves 08:00–12:00 (`openingHoursSpecification` en `#clinic` con `dayOfWeek: ["Tuesday","Thursday"]`; no usar además la propiedad texto `openingHours`)
-- Geo: -34.6089, -58.5671
-- `hasMap` (en `#clinic`): `https://www.google.com/maps/search/?api=1&query=Consultorio+Gastroenterologico+Caseros+Justo+Jose+de+Urquiza+4530+Caseros`
+- Geo: -34.6061872, -58.559472 (alineado a ficha GBP/Maps)
+- `hasMap` (en `#clinic`): URL place de Google Maps  
+  `https://www.google.com/maps/place/Consultorio+Gastroenterol%C3%B3gico+Caseros+%E2%80%94+GastroCaseros/@-34.6061872,-58.559472,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb90ce1cc8545:0xcd44dc88600d2cf2!8m2!3d-34.6061872!4d-58.559472!16s%2Fg%2F11nb2_1_pk`
 - areaServed: Caseros, Tres de Febrero, San Martín, Morón, Hurlingham, Ituzaingó
 - Instagram: https://www.instagram.com/gastrocaseros/
 

@@ -52,13 +52,12 @@ Frase canónica:
 4. Pedir 3–5 reseñas reales a pacientes recientes (QR recepción).  
 5. IG: 1 post/carrusel con frase canónica + link sitio (rama `instagram`).
 
-### Este mes (sitio `main` — implementación en otro plan)
-6. Title/meta/H1 home → Héroe H2/CH4.  
-7. FAQ + `FAQPage` en landing SIBO (y pylori).  
-8. Bloque E-E-A-T: bio Dra. Pest, matrícula, hospitales, link Instagram.  
+### Este mes (sitio `main`)
+6. ~~Title/meta/H1 home → Héroe H2/CH4~~ (hecho).  
+7. ~~FAQ + FAQPage en landings~~ (hecho).  
+8. ~~Sitemap sin privacidad; `availableService` home como array (SIBO/IMO + H. pylori + consulta)~~ (hecho).  
 9. Schema `hasMap` + enlace visible a ficha Google.  
-10. Sacar `privacidad.html` del sitemap o quitar noindex (resolver inconsistencia).  
-11. `availableService` home: dejar de agrupar “SIBO, intolerancias, H. pylori” en un solo nombre genérico.
+10. **E-E-A-T (bio, matrícula, hospitales): diferido** — acordar con la Dra. Pest antes de publicar.
 
 ### Trimestre
 12. Re-sondeo Duck.ai / ChatGPT / Claude / Gemini / Google AI con mismas queries.  

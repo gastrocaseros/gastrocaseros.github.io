@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gastroenterología en Caseros, Tres de Febrero | SIBO, IMO y H. Pylori</title>
-  <meta name="description" content="Gastroenterología (UBA) en Caseros, Tres de Febrero. SIBO, IMO, H. Pylori e intolerancias. Zona oeste GBA. Turnos por WhatsApp." />
-  <meta name="keywords" content="gastroenterología Caseros, SIBO Caseros, IMO Caseros, Helicobacter Pylori Caseros, test aire espirado, clinica gastro" />
+  <title>Test SIBO e IMO en Caseros, Tres de Febrero | Aire espirado H₂/CH₄ | GastroCaseros</title>
+  <meta name="description" content="Test de aire espirado de hidrógeno y metano (SIBO e IMO) en Caseros, Tres de Febrero. Zona oeste GBA. También H. pylori UBT y consulta. Turnos por WhatsApp." />
+  <meta name="keywords" content="IMO Caseros, test SIBO Caseros, test SIBO zona oeste, aire espirado hidrógeno metano, gastroenterología Caseros, Helicobacter Pylori Caseros" />
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
   <meta property="og:site_name" content="GastroCaseros">
   <meta property="og:url" content="https://gastrocaseros.com.ar/">
-  <meta property="og:title" content="Gastroenterología en Caseros, Tres de Febrero | SIBO, IMO y H. Pylori">
-  <meta property="og:description" content="Salud digestiva y diagnósticos no invasivos en Caseros, Tres de Febrero. Zona oeste del GBA.">
+  <meta property="og:title" content="Test SIBO e IMO en Caseros | Aire espirado H₂/CH₄ | GastroCaseros">
+  <meta property="og:description" content="Test de aire espirado de hidrógeno y metano (SIBO/IMO) en Caseros, Tres de Febrero. Zona oeste del GBA.">
   <meta property="og:image" content="https://gastrocaseros.com.ar/og-image.jpg">
   <link rel="canonical" href="https://gastrocaseros.com.ar/">
 
@@ -72,13 +72,14 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": -34.6089,
-          "longitude": -58.5671
+          "latitude": -34.6061872,
+          "longitude": -58.559472
         },
+        "hasMap": "https://www.google.com/maps/place/Consultorio+Gastroenterol%C3%B3gico+Caseros+%E2%80%94+GastroCaseros/@-34.6061872,-58.559472,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb90ce1cc8545:0xcd44dc88600d2cf2!8m2!3d-34.6061872!4d-58.559472!16s%2Fg%2F11nb2_1_pk",
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Thursday",
-          "opens": "09:00",
+          "dayOfWeek": ["Tuesday", "Thursday"],
+          "opens": "08:00",
           "closes": "12:00"
         },
         "areaServed": [
@@ -89,10 +90,20 @@
           { "@type": "City", "name": "Hurlingham" },
           { "@type": "City", "name": "Ituzaingó" }
         ],
-        "availableService": {
-          "@type": "MedicalProcedure",
-          "name": "Test de aire espirado (SIBO, intolerancias, H. pylori)"
-        },
+        "availableService": [
+          {
+            "@type": "MedicalProcedure",
+            "name": "Test de aire espirado de hidrógeno y metano (SIBO/IMO)"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Test de urea en aire espirado (Helicobacter pylori)"
+          },
+          {
+            "@type": "MedicalProcedure",
+            "name": "Consulta de gastroenterología"
+          }
+        ],
         "employee": {
           "@id": "https://gastrocaseros.com.ar/#doctor"
         }
@@ -147,7 +158,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   
-  <link rel="stylesheet" href="css/style.css?v=20260723">
+  <link rel="stylesheet" href="css/style.css?v=20261112">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDGFHLL04L"></script>
   <script>
@@ -205,11 +216,12 @@
   <!-- HERO -->
   <section class="hero" id="inicio">
     <div class="hero-content">
-      <h1>Tu salud digestiva, en manos <em>expertas</em></h1>
-      <p class="hero-p">Consultas especializadas y diagnósticos de vanguardia. Somos referentes en pruebas no invasivas en Caseros, Tres de Febrero — atendemos pacientes de toda la zona oeste del GBA.</p>
+      <span class="badge-expertise">Caseros · Tres de Febrero · Zona oeste GBA</span>
+      <h1>Test de aire espirado de <em>hidrógeno y metano</em> (SIBO e IMO) en Caseros</h1>
+      <p class="hero-p">Estudio no invasivo en el consultorio GastroCaseros. También H. pylori (UBT) y consulta gastroenterológica. Turnos por WhatsApp.</p>
       <div class="hero-btns">
-        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno" onclick="trackWA('hero')" class="btn-main btn-filled" aria-label="Escribir a WhatsApp">Escribinos por WhatsApp</a>
-        <a href="#servicios" class="btn-main btn-outline" aria-label="Ver servicios del consultorio">Ver Especialidades</a>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20consultar%20por%20el%20test%20de%20SIBO%20o%20IMO" onclick="trackWA('hero')" class="btn-main btn-filled" aria-label="Escribir a WhatsApp">Escribinos por WhatsApp</a>
+        <a href="test-sibo-intolerancias.html" class="btn-main btn-outline" aria-label="Ver test SIBO e IMO">Ver test SIBO / IMO</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -247,23 +259,10 @@
   <section id="servicios">
     <div class="section-header">
       <span class="section-tag">Nuestra Clínica</span>
-      <h2 class="section-title">Especialidades y Servicios</h2>
-      <p class="section-desc">Combinamos experiencia clínica profunda con tecnología diagnóstica indolora para brindarte respuestas claras.</p>
+      <h2 class="section-title">Estudios y consulta en Caseros</h2>
+      <p class="section-desc">Priorizamos el test de aire espirado de hidrógeno y metano (SIBO/IMO). También H. pylori (UBT) y consulta gastroenterológica.</p>
     </div>
     <div class="services-container">
-      <div class="service-card reveal">
-        <div class="service-icon-box">
-          <svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--green)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            <line x1="9" y1="10" x2="15" y2="10"></line>
-            <line x1="12" y1="7" x2="12" y2="13"></line>
-          </svg>
-        </div>
-        <h3>Consulta Médica</h3>
-        <p>Diagnóstico y tratamiento de enfermedades del aparato digestivo: reflujo, gastritis, colon irritable, celiaquía y patologías hepáticas.</p>
-        <div class="service-meta">Jueves 9:00 – 12:00 hs</div>
-        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno%20para%20una%20consulta%20de%20gastroenterolog%C3%ADa" onclick="trackWA('servicio_consulta')" class="service-link" aria-label="Consultar por este servicio">Consultar →</a>
-      </div>
       <div class="service-card reveal">
         <div class="service-icon-box">
           <svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--green)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -271,8 +270,8 @@
           </svg>
         </div>
         <h3>Test SIBO / IMO / Intolerancias</h3>
-        <p>A través del aire espirado detectamos sobrecrecimiento bacteriano, IMO e intolerancia a lactosa o fructosa de forma no invasiva.</p>
-        <div class="service-meta">Sin agujas · Sin dolor</div>
+        <p>Aire espirado con medición de hidrógeno y metano: SIBO, IMO e intolerancia a lactosa o fructosa, de forma no invasiva.</p>
+        <div class="service-meta">H₂ y CH₄ · Sin agujas</div>
         <div style="display: flex; gap: 15px; justify-content: space-between; align-items: center; width: 100%; margin-top: 10px;">
           <a href="test-sibo-intolerancias.html" class="service-link" style="color: var(--navy); margin-top: 0;" aria-label="Más información sobre el test de SIBO, IMO e intolerancias">Más Info →</a>
           <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20consultar%20sobre%20el%20test%20de%20SIBO%2C%20IMO%20o%20intolerancias" onclick="trackWA('servicio_sibo')" class="service-link" style="margin-top: 0;" aria-label="Consultar por test SIBO e IMO">Turnos WA →</a>
@@ -290,11 +289,24 @@
         </div>
         <h3>Helicobacter Pylori</h3>
         <p>Detección precisa mediante test de urea en aire espirado (UBT). Método seguro y rápido que evita realizar una endoscopía.</p>
-        <div class="service-meta">Resultado Preciso sin demoras</div>
+        <div class="service-meta">Resultado preciso sin demoras</div>
         <div style="display: flex; gap: 15px; justify-content: space-between; align-items: center; width: 100%; margin-top: 10px;">
           <a href="test-aire-espirado-helicobacter-pylori.html" class="service-link" style="color: var(--navy); margin-top: 0;" aria-label="Más información sobre el test de Helicobacter Pylori">Más Info →</a>
           <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20consultar%20sobre%20el%20test%20de%20Helicobacter%20Pylori" onclick="trackWA('servicio_pylori')" class="service-link" style="margin-top: 0;" aria-label="Consultar por test H. Pylori">Turnos WA →</a>
         </div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon-box">
+          <svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--green)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            <line x1="9" y1="10" x2="15" y2="10"></line>
+            <line x1="12" y1="7" x2="12" y2="13"></line>
+          </svg>
+        </div>
+        <h3>Consulta Médica</h3>
+        <p>Diagnóstico y tratamiento de enfermedades del aparato digestivo: reflujo, gastritis, colon irritable, celiaquía y patologías hepáticas.</p>
+        <div class="service-meta">Martes y jueves 8:00 – 12:00 hs</div>
+        <a href="https://wa.me/5491124573240?text=Hola%2C%20quisiera%20pedir%20un%20turno%20para%20una%20consulta%20de%20gastroenterolog%C3%ADa" onclick="trackWA('servicio_consulta')" class="service-link" aria-label="Consultar por este servicio">Consultar →</a>
       </div>
     </div>
   </section>
@@ -454,13 +466,14 @@
           <div>
             <h4>Dirección</h4>
             <p>Justo José de Urquiza 4530, Caseros<br>Tres de Febrero, Buenos Aires.</p>
+            <p style="margin-top: 8px;"><a href="https://www.google.com/maps/place/Consultorio+Gastroenterol%C3%B3gico+Caseros+%E2%80%94+GastroCaseros/@-34.6061872,-58.559472,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb90ce1cc8545:0xcd44dc88600d2cf2!8m2!3d-34.6061872!4d-58.559472!16s%2Fg%2F11nb2_1_pk" target="_blank" rel="noopener noreferrer" style="color: var(--green); font-weight: 600; text-decoration: none;" aria-label="Abrir ficha en Google Maps">Ver en Google Maps →</a></p>
           </div>
         </div>
         <div class="location-item">
           <div class="symptom-icon" aria-hidden="true">📅</div>
           <div>
             <h4>Atención Presencial</h4>
-            <p>Jueves de 9:00 a 12:00 hs (Con turno previo)</p>
+            <p>Martes y jueves de 8:00 a 12:00 hs (Con turno previo)</p>
           </div>
         </div>
         <div class="location-item">
@@ -476,7 +489,7 @@
       </div>
       <div class="map-frame">
         <iframe
-          src="https://www.google.com/maps?q=Justo+Jos%C3%A9+de+Urquiza+4530,+Caseros,+Buenos+Aires&hl=es&z=16&output=embed"
+          src="https://www.google.com/maps?q=-34.6061872,-58.559472&hl=es&z=16&output=embed"
           style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Google Maps — Justo José de Urquiza 4530, Caseros"></iframe>
       </div>
     </div>

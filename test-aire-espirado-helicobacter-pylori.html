@@ -106,13 +106,14 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": -34.6089,
-          "longitude": -58.5671
+          "latitude": -34.6061872,
+          "longitude": -58.559472
         },
+        "hasMap": "https://www.google.com/maps/place/Consultorio+Gastroenterol%C3%B3gico+Caseros+%E2%80%94+GastroCaseros/@-34.6061872,-58.559472,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb90ce1cc8545:0xcd44dc88600d2cf2!8m2!3d-34.6061872!4d-58.559472!16s%2Fg%2F11nb2_1_pk",
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Thursday",
-          "opens": "09:00",
+          "dayOfWeek": ["Tuesday", "Thursday"],
+          "opens": "08:00",
           "closes": "12:00"
         },
         "areaServed": [
@@ -130,6 +131,44 @@
         "employee": {
           "@id": "https://gastrocaseros.com.ar/#doctor"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://gastrocaseros.com.ar/test-aire-espirado-helicobacter-pylori.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Dónde hago el test de Helicobacter pylori por aire espirado en Caseros?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En GastroCaseros, Justo José de Urquiza 4530, Caseros, Tres de Febrero. Realizamos el test de urea en aire espirado (UBT). Turnos por WhatsApp al +54 9 11 2457-3240."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura el test de H. pylori?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El estudio dura aproximadamente 30 minutos. Es no invasivo: se toma una muestra basal, se ingiere el sustrato con urea y se vuelve a soplar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué preparación necesita el test de urea en aire espirado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ayuno de 8 horas. Suspender antibióticos y bismuto, e inhibidores de bomba de protones/antiácidos según el instructivo (en general 2 semanas). Te enviamos las indicaciones al confirmar el turno."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El test reemplaza una endoscopía?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El UBT es un método no invasivo útil para detectar infección activa por H. pylori y controlar la erradicación. La necesidad de endoscopía la define el médico según el cuadro clínico."
+            }
+          }
+        ]
       }
     ]
   }
@@ -143,7 +182,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   
-  <link rel="stylesheet" href="css/style.css?v=20260723">
+  <link rel="stylesheet" href="css/style.css?v=20261112">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDGFHLL04L"></script>
   <script>
@@ -183,6 +222,7 @@
       <a href="index.html#servicios" onclick="closeMenu()">Especialidades</a>
       <a href="#como-se-realiza" onclick="closeMenu()">Procedimiento</a>
       <a href="#preparacion" onclick="closeMenu()">Preparación</a>
+      <a href="#faq" onclick="closeMenu()">Preguntas</a>
     </div>
 
     <div class="nav-actions">
@@ -366,8 +406,43 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section id="faq" class="faq-section">
+    <div class="section-header">
+      <span class="section-tag">Dudas frecuentes</span>
+      <h2 class="section-title">Preguntas sobre el test H. pylori</h2>
+      <p class="section-desc">Indicaciones claras para el test de urea en aire espirado (UBT) en Caseros.</p>
+    </div>
+    <div class="faq-container">
+      <details class="faq-item">
+        <summary class="faq-question">¿Dónde hago el test de Helicobacter pylori por aire espirado en Caseros?</summary>
+        <div class="faq-answer">
+          En <strong>GastroCaseros</strong>, Justo José de Urquiza 4530, Caseros (Tres de Febrero). Turnos por WhatsApp al <strong>11 2457-3240</strong>.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">¿Cuánto dura el test de H. pylori?</summary>
+        <div class="faq-answer">
+          Aproximadamente <strong>30 minutos</strong>. Es no invasivo: muestra basal, sustrato con urea y nueva muestra de aire espirado.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">¿Qué preparación necesita el test de urea en aire espirado?</summary>
+        <div class="faq-answer">
+          <strong>Ayuno de 8 horas</strong> y suspensión de antibióticos, bismuto e inhibidores de bomba de protones/antiácidos según el instructivo (en general 2 semanas). Te lo enviamos al confirmar el turno.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">¿El test reemplaza una endoscopía?</summary>
+        <div class="faq-answer">
+          El UBT detecta infección activa por <em>H. pylori</em> y sirve para controlar la erradicación. Si hace falta endoscopía lo define el médico según tu cuadro.
+        </div>
+      </details>
+    </div>
+  </section>
+
   <!-- ESTUDIO RELACIONADO -->
-  <section style="padding: 0 40px 40px;">
+  <section style="padding: 40px 40px 40px;">
     <div class="service-card reveal" style="max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;">
       <div style="max-width: 700px;">
         <span class="section-tag">Estudio relacionado</span>
@@ -424,7 +499,7 @@
         document.getElementById('scroll-bar').style.width = scrolled + "%";
       });
 
-      const revealElements = document.querySelectorAll('.service-card, .test-modern-card, .prep-card');
+      const revealElements = document.querySelectorAll('.service-card, .test-modern-card, .prep-card, .faq-item');
       revealElements.forEach(el => el.classList.add('reveal'));
       
       const revealObserver = new IntersectionObserver((entries, observer) => {

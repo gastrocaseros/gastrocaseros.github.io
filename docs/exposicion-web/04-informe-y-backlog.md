@@ -56,8 +56,9 @@ Frase canónica:
 6. ~~Title/meta/H1 home → Héroe H2/CH4~~ (hecho).  
 7. ~~FAQ + FAQPage en landings~~ (hecho).  
 8. ~~Sitemap sin privacidad; `availableService` home como array (SIBO/IMO + H. pylori + consulta)~~ (hecho).  
-9. Schema `hasMap` + enlace visible a ficha Google.  
-10. **E-E-A-T (bio, matrícula, hospitales): diferido** — acordar con la Dra. Pest antes de publicar.
+9. ~~Schema `hasMap` + enlace visible a Google Maps~~ (hecho).  
+10. **E-E-A-T (bio, matrícula, hospitales): diferido** — acordar con la Dra. Pest antes de publicar.  
+11. Alinear rama `instagram` (merge `main` → `instagram` + bio/frase canónica).
 
 ### Trimestre
 12. Re-sondeo Duck.ai / ChatGPT / Claude / Gemini / Google AI con mismas queries.  

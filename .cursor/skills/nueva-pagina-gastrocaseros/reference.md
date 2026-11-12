@@ -26,6 +26,7 @@ Cada subpágina agrega `MedicalWebPage` con `@id` = `{url-página}#webpage`.
 - Tel: +54 9 11 2457-3240
 - Horario: Martes y jueves 08:00–12:00 (`openingHoursSpecification` en `#clinic` con `dayOfWeek: ["Tuesday","Thursday"]`; no usar además la propiedad texto `openingHours`)
 - Geo: -34.6089, -58.5671
+- `hasMap` (en `#clinic`): `https://www.google.com/maps/search/?api=1&query=Consultorio+Gastroenterologico+Caseros+Justo+Jose+de+Urquiza+4530+Caseros`
 - areaServed: Caseros, Tres de Febrero, San Martín, Morón, Hurlingham, Ituzaingó
 - Instagram: https://www.instagram.com/gastrocaseros/
 

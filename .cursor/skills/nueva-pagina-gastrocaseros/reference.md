@@ -24,7 +24,7 @@ Cada subpágina agrega `MedicalWebPage` con `@id` = `{url-página}#webpage`.
 
 - Dirección: Justo José de Urquiza 4530, Caseros, Buenos Aires 1678, AR
 - Tel: +54 9 11 2457-3240
-- Horario: Jueves 09:00–12:00 (`openingHoursSpecification` en `#clinic`; no usar además la propiedad texto `openingHours`)
+- Horario: Martes y jueves 08:00–12:00 (`openingHoursSpecification` en `#clinic` con `dayOfWeek: ["Tuesday","Thursday"]`; no usar además la propiedad texto `openingHours`)
 - Geo: -34.6089, -58.5671
 - areaServed: Caseros, Tres de Febrero, San Martín, Morón, Hurlingham, Ituzaingó
 - Instagram: https://www.instagram.com/gastrocaseros/

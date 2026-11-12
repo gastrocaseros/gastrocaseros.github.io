@@ -1,9 +1,9 @@
 # 01. Estrategia y Marca — GastroCaseros
 
 ## 1. Misión y Visión
-**Misión:** Humanizar la atención gastroenterológica y educar a la comunidad de Caseros y alrededores sobre la importancia de la salud digestiva. Posicionamos al consultorio como el referente local en diagnósticos no invasivos (SIBO, H. Pylori) mediante un enfoque de **"Autoridad Médica y Serie Diagnóstica"**.
+**Misión:** Humanizar la atención gastroenterológica y educar a la comunidad de Caseros y alrededores sobre la importancia de la salud digestiva. Posicionamos al consultorio como el referente local en diagnósticos no invasivos (test de aire espirado de hidrógeno y metano para SIBO/IMO, H. pylori) mediante un enfoque de **"Autoridad Médica y Serie Diagnóstica"**.
 
-**Visión:** Convertir el perfil de Instagram en el canal principal de captación de pacientes y en un centro de recursos educativos que simplifique la comprensión de patologías complejas como el SIBO y las intolerancias.
+**Visión:** Convertir el perfil de Instagram en el canal principal de captación de pacientes y en un centro de recursos educativos que simplifique la comprensión de patologías complejas como el SIBO, el IMO y las intolerancias.
 
 ---
 
@@ -33,22 +33,27 @@ Para mantener coherencia absoluta con [gastrocaseros.com.ar](https://gastrocaser
 ## 3. Optimización del Perfil
 ### 3.1 Nombre y Usuario
 - **Usuario:** `@gastrocaseros`
-- **Nombre de Perfil:** `Consultorio Gastro Caseros`
-> *Nota: El nombre del perfil es indexado por el buscador. Aunque el usuario es simple, el nombre completo ayuda al SEO local.*
+- **Nombre de Perfil:** `GastroCaseros · SIBO IMO Caseros`
+> *Nota: El nombre del perfil es indexado por el buscador. Prioriza SIBO/IMO + geo (alineado al Héroe del sitio).*
 
 ### 3.2 Bio Oficial (Actualizada)
-La bio debe ser directa y con palabras clave buscables:
+La bio debe ser directa y con palabras clave buscables (alineada a la frase canónica del sitio):
 ```text
-Gastroenterología · Caseros 🏥
-SIBO · H. Pylori · Test de Aire Espirado
+Aire espirado H₂/CH₄ · Caseros
+SIBO / IMO · H. pylori · Zona oeste
 Especialista UBA · +20 años 👩‍⚕️
-📅 Turnos por Whatsapp 👇
+📅 Turnos por WhatsApp 👇
+```
+
+**Frase canónica** (usar en captions, highlights y piezas Héroe; misma del sitio):
+```text
+Test de aire espirado de hidrógeno y metano (SIBO / IMO) en Caseros, Tres de Febrero | GastroCaseros
 ```
 > **Nota de Configuración:** La dirección física se muestra automáticamente si está activa en "Opciones de contacto" -> "Dirección comercial". Para ocultarla, se debe desactivar en la edición del perfil de Instagram.
 
 ### 3.3 Link y Botones
 - **Botón de WhatsApp:** Configurado directamente al `+5491124573240`.
-- **Botón de Acción:** Se recomienda añadir el link `https://gastrocaseros.com.ar` en el campo "Sitio Web".
+- **Sitio web (link en bio):** `https://gastrocaseros.com.ar` (home Héroe SIBO/IMO). Landing detalle: `https://gastrocaseros.com.ar/test-sibo-intolerancias.html`.
 
 ---
 

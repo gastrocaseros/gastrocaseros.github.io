@@ -13,7 +13,7 @@ GSC / GBP / GA4: **acceso OK + datos cargados** (ver `05`–`08`).
 | Local Pack / Maps | **3** | Ficha existe + website; horario inconsistente; reseñas/servicios TBD |
 | Google Generative AI (GSC) | **3–4** | **729 impresiones / 3 meses**; home 413 + SIBO 355 ([`07`](07-gsc-generative-ai.md)) |
 | IAs (Duck.ai live) | **1** | Prefiere AeroTest/Airtest; luego CEPEM; **niega evidencia de GastroCaseros** |
-| Instagram (docs `instagram`) | **3** | Bio alineada SIBO/H.pylori; falta sync frase H2/CH4 canónica |
+| Instagram (docs `instagram`) | **4** | Bio + frase H₂/CH₄ canónica alineadas (merge `main`→`instagram` 2026-11-12); falta publicar post canónico |
 
 ## 2. Mapa competitivo (zona oeste + amenaza citabilidad)
 
@@ -50,7 +50,7 @@ Frase canónica:
 2. Entrar GSC/GBP/GA4; completar tabla de cuentas; export 90d.  
 3. GBP: agregar servicios “Test aire espirado hidrógeno y metano (SIBO/IMO)” y UBT.  
 4. Pedir 3–5 reseñas reales a pacientes recientes (QR recepción).  
-5. IG: 1 post/carrusel con frase canónica + link sitio (rama `instagram`).
+5. IG: 1 post/carrusel con frase canónica + link sitio — **caption listo** en `docs/instagram/08_Archivo_de_Captions.md` (pendiente publicar + actualizar bio en la app).
 
 ### Este mes (sitio `main`)
 6. ~~Title/meta/H1 home → Héroe H2/CH4~~ (hecho).  
@@ -58,7 +58,7 @@ Frase canónica:
 8. ~~Sitemap sin privacidad; `availableService` home como array (SIBO/IMO + H. pylori + consulta)~~ (hecho).  
 9. ~~Schema `hasMap` + enlace visible a Google Maps~~ (hecho).  
 10. **E-E-A-T (bio, matrícula, hospitales): diferido** — acordar con la Dra. Pest antes de publicar.  
-11. Alinear rama `instagram` (merge `main` → `instagram` + bio/frase canónica).
+11. ~~Alinear rama `instagram` (merge `main` → `instagram` + bio/frase canónica)~~ (hecho).
 
 ### Trimestre
 12. Re-sondeo Duck.ai / ChatGPT / Claude / Gemini / Google AI con mismas queries.  

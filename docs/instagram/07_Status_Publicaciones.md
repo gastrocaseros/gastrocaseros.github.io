@@ -44,10 +44,11 @@ La numeración de historias ahora sigue el orden de publicación y los highlight
 ---
 
 ## 🚀 Próximos Pasos Inmediatos
-1. **Publicar efeméride 10-30:** Subir `efemeride_10_30_s1.png` y `efemeride_10_30_s3.png` desde PC (o Meta Business Suite) con caption de `08_Archivo_de_Captions.md` / `10_Captions_Efemerides.md`.
-2. **Publicar efeméride 07-28** (si sigue pendiente): Subir `efemeride_07_28_s1.png` a `s3.png` con caption de `08_Archivo_de_Captions.md`.
-3. **Seguimiento:** Continuar con la Serie Diagnóstica y los pendientes de SIBO/IMO.
-4. **Infra:** el workflow de creación quedó unificado en `11_Workflows_Contenido.md` + `npm run ig:new`.
+1. **Perfil IG (manual en la app):** actualizar **Nombre** y **Bio** según `01_Estrategia_y_Marca.md` (H₂/CH₄ · SIBO/IMO · Caseros). Link sitio: `https://gastrocaseros.com.ar`.
+2. **Post frase canónica:** publicar pieza Héroe con caption de `08_Archivo_de_Captions.md` → sección “Frase canónica H₂/CH₄”.
+3. **Publicar efeméride 10-30** (si sigue pendiente): Subir `efemeride_10_30_s1.png` y `efemeride_10_30_s3.png` con caption de `08` / `10_Captions_Efemerides.md`.
+4. **Publicar efeméride 07-28** (si sigue pendiente): Subir `efemeride_07_28_s1.png` a `s3.png` con caption de `08_Archivo_de_Captions.md`.
+5. **Infra:** workflow unificado en `11_Workflows_Contenido.md` + `npm run ig:new`.
 
 ---
 

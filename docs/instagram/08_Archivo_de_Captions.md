@@ -552,3 +552,24 @@ Revisión final: Dra. Erika Pest.
 **Hashtags:**
 #DíaDelGastroenterólogo #Gastroenterología #SaludDigestiva #Caseros #GastroCaseros #ZonaOeste #Prevención
 
+---
+
+## 🟢 BLOQUE: Alineación SEO / frase canónica (nov 2026)
+
+### Post — Test H₂/CH₄ SIBO/IMO Caseros (frase canónica)
+**Objetivo:** Reforzar en IG la misma frase Héroe del sitio (`index` + landing SIBO).
+**Imagen:** Carrusel o placa única (navy/crema). Título dominante con H₂/CH₄ + Caseros. Sin maquetado HTML aún — priorizar caption + bio.
+**Texto Alternativo (Accesibilidad):** Test de aire espirado de hidrógeno y metano (SIBO / IMO) en Caseros, Tres de Febrero — GastroCaseros.
+**Caption:**
+Test de aire espirado de hidrógeno y metano (SIBO / IMO) en Caseros, Tres de Febrero | GastroCaseros
+
+Medimos **hidrógeno (H₂) y metano (CH₄)** en el aire espirado.
+Así evaluamos SIBO, IMO e intolerancias (lactosa / fructosa), sin endoscopía.
+
+📍 Justo José de Urquiza 4530, Caseros · Tres de Febrero · zona oeste
+🌐 Detalle y turnos: gastrocaseros.com.ar/test-sibo-intolerancias.html
+👉 También en el link de nuestra biografía.
+
+**Hashtags:**
+#SIBO #IMO #TestDeAireEspirado #HidrogenoYMetano #Caseros #TresDeFebrero #ZonaOeste #GastroCaseros #SaludDigestiva #Gastroenterologia
+

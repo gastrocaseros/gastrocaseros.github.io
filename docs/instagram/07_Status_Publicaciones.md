@@ -44,11 +44,12 @@ La numeración de historias ahora sigue el orden de publicación y los highlight
 ---
 
 ## 🚀 Próximos Pasos Inmediatos
-1. **Perfil IG (manual en la app):** actualizar **Nombre** y **Bio** según `01_Estrategia_y_Marca.md` (H₂/CH₄ · SIBO/IMO · Caseros). Link sitio: `https://gastrocaseros.com.ar`.
-2. **Post frase canónica:** publicar pieza Héroe con caption de `08_Archivo_de_Captions.md` → sección “Frase canónica H₂/CH₄”.
-3. **Publicar efeméride 10-30** (si sigue pendiente): Subir `efemeride_10_30_s1.png` y `efemeride_10_30_s3.png` con caption de `08` / `10_Captions_Efemerides.md`.
-4. **Publicar efeméride 07-28** (si sigue pendiente): Subir `efemeride_07_28_s1.png` a `s3.png` con caption de `08_Archivo_de_Captions.md`.
-5. **Infra:** workflow unificado en `11_Workflows_Contenido.md` + `npm run ig:new`.
+1. **Perfil IG:** bio H₂/CH₄ ✅ (nov 2026). **Nombre** `GastroCaseros · SIBO IMO Caseros` — pendiente desde celular (no editable fácil en web).
+2. **14/11:** efeméride Diabetes (`efemeride_11_14`) si se publica.
+3. **Ventana ~17–21/11 (sin efeméride):** priorizar **Carrusel SIBO profundo** (abajo). Ahí va la frase canónica — no como post SEO suelto.
+4. **28/11:** efeméride Cáncer gástrico / H. pylori (`efemeride_11_28`).
+5. **Cola exportada (si sigue pendiente):** efemérides 10-30 y 07-28.
+6. **Infra:** `11_Workflows_Contenido.md` + `npm run ig:new`.
 
 ---
 
@@ -58,13 +59,16 @@ La numeración de historias ahora sigue el orden de publicación y los highlight
 
 La cobertura actual de SIBO se limita a posts breves (`post5.html` definición, `post10.html` Lactosa vs SIBO). Se necesita una **serie educativa profunda** equivalente a la que se hizo para IMO (M. smithii) y H. Pylori.
 
-**Carrusel SIBO Profundo (5–6 slides):** `post_sibo_s1.html` a `post_sibo_s5.html`
+**Carrusel SIBO Profundo (5–6 slides):** `post_sibo_s1.html` a `post_sibo_s6.html`  
+**Cuándo:** semana del **17–21 nov 2026** (hueco entre Diabetes 14/11 y Cáncer gástrico 28/11).  
+**Dónde vive la frase canónica:** en **S4 + caption + S6**, no en un post aparte.
+
 - **S1 — Hook/Portada:** "¿Qué está pasando realmente en tu intestino delgado?" — Gancho fuerte con imagen del personaje con síntomas (hinchazón, gases, dolor).
 - **S2 — ¿Qué es el SIBO?:** Definición clínica: migración bacteriana al intestino delgado, fermentación patológica de carbohidratos. Diferencia con microbiota normal del colon.
 - **S3 — Síntomas y confusión diagnóstica:** Hinchazón post-prandial, gases, diarrea o constipación, fatiga. Por qué se confunde con SII (Síndrome de Intestino Irritable) y cómo diferenciarlo.
-- **S4 — El Test de Aire Espirado para SIBO:** Explicación del procedimiento: ayuno previo, ingesta de sustrato (lactulosa o glucosa), medición seriada de H₂ y CH₄ durante 2–3 horas. Por qué importa medir ambos gases.
+- **S4 — El Test de Aire Espirado (H₂ + CH₄):** Procedimiento + por qué medir ambos gases (SIBO e IMO). Incluir en slide o subtítulo la frase canónica del sitio.
 - **S5 — Tratamiento y abordaje:** Rol de los antibióticos específicos (Rifaximina), dieta de eliminación (low-FODMAP) como complemento, importancia del seguimiento post-tratamiento.
-- **S6 — CTA:** "¿Reconocés estos síntomas? Consultá con tu gastroenterólogo/a." + Datos del consultorio.
+- **S6 — CTA geo:** frase canónica + Caseros / Tres de Febrero / zona oeste + link bio / WhatsApp.
 
 **Historias SIBO (ampliación):** Completar la serie de historias con slides adicionales para el Highlight de SIBO.
 

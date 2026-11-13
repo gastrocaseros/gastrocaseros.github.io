@@ -554,21 +554,27 @@ Revisión final: Dra. Erika Pest.
 
 ---
 
-## 🟢 BLOQUE: Alineación SEO / frase canónica (nov 2026)
+## 🟢 BLOQUE: Frase canónica (uso, no post suelto)
 
-### Post — Test H₂/CH₄ SIBO/IMO Caseros (frase canónica)
-**Objetivo:** Reforzar en IG la misma frase Héroe del sitio (`index` + landing SIBO).
-**Imagen:** Carrusel o placa única (navy/crema). Título dominante con H₂/CH₄ + Caseros. Sin maquetado HTML aún — priorizar caption + bio.
-**Texto Alternativo (Accesibilidad):** Test de aire espirado de hidrógeno y metano (SIBO / IMO) en Caseros, Tres de Febrero — GastroCaseros.
-**Caption:**
+**No publicar** una placa SEO aislada con la frase canónica.  
+**Dónde va:** caption + S4/S6 del **Carrusel SIBO profundo** (`07_Status_Publicaciones.md`), ventana **17–21 nov 2026**.  
+**Ya cubierto en perfil:** bio H₂/CH₄ (nov 2026).
+
+**Frase (misma del sitio):**
+```text
 Test de aire espirado de hidrógeno y metano (SIBO / IMO) en Caseros, Tres de Febrero | GastroCaseros
+```
 
-Medimos **hidrógeno (H₂) y metano (CH₄)** en el aire espirado.
-Así evaluamos SIBO, IMO e intolerancias (lactosa / fructosa), sin endoscopía.
+**Caption borrador (para el carrusel SIBO, no para un post aparte):**
+¿Hinchazón, gases o cambios en el tránsito que no cierran con “intestino irritable”?
 
-📍 Justo José de Urquiza 4530, Caseros · Tres de Febrero · zona oeste
-🌐 Detalle y turnos: gastrocaseros.com.ar/test-sibo-intolerancias.html
-👉 También en el link de nuestra biografía.
+El estudio de referencia es el **test de aire espirado de hidrógeno y metano (SIBO / IMO)** — medimos H₂ y CH₄ en Caseros, Tres de Febrero.
+
+En este carrusel: qué es el SIBO, cómo se confunde con otras causas, cómo es el test y qué sigue después.
+
+📍 Justo José de Urquiza 4530, Caseros · zona oeste
+🌐 gastrocaseros.com.ar/test-sibo-intolerancias.html
+👉 Turnos: link en la biografía.
 
 **Hashtags:**
 #SIBO #IMO #TestDeAireEspirado #HidrogenoYMetano #Caseros #TresDeFebrero #ZonaOeste #GastroCaseros #SaludDigestiva #Gastroenterologia

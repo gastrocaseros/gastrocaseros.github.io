@@ -56,12 +56,13 @@ Estado al **2026-11-13**. Estrategia de canales: [`10-estrategia-canales-tests.m
 11. ~~Merge `main`→`instagram` + bio H₂/CH₄~~ (nombre perfil: pendiente celular).
 
 ### Pendiente corto plazo
-5. **Carrusel SIBO profundo** (frase canónica en S4/S6 + caption) — ventana **17–21 nov**.  
+5a. **Carrusel H. pylori conversión** (control erradicación / prep → WA) — plan en `docs/instagram/12_…`. Prioridad plata.  
+5b. Carrusel SIBO profundo — después o en hueco que no pise pylori + efeméride 28/11.  
 10. **E-E-A-T** (matrícula/bio/hospitales en web): diferido — OK Dra. Pest.  
 16. **Atribución recepción:** “¿Cómo nos conoció?” (Google / Maps / IG / recomendación).  
 17. GA4: marcar `whatsapp_click` como **key event**.  
-18. IG Insights 90d (alcance, visitas perfil, link taps, DMs) — una captura para cerrar debate engagement.  
-19. Reordenar highlights: Turnos → **SIBO/IMO** → pylori → Ubicación → …
+18. IG Insights 90d — checklist [`11-checklist-insights-ig.md`](11-checklist-insights-ig.md).  
+19. Reordenar highlights: Turnos → **H. pylori** → SIBO/IMO → Ubicación → …
 
 ### Trimestre
 12. Re-sondeo Duck.ai / ChatGPT / Claude / Gemini / Google AI.  

@@ -44,12 +44,13 @@ La numeración de historias ahora sigue el orden de publicación y los highlight
 ---
 
 ## 🚀 Próximos Pasos Inmediatos
-1. **Perfil IG:** bio H₂/CH₄ ✅ (nov 2026). **Nombre** `GastroCaseros · SIBO IMO Caseros` — pendiente desde celular (no editable fácil en web).
-2. **14/11:** efeméride Diabetes (`efemeride_11_14`) si se publica.
-3. **Ventana ~17–21/11 (sin efeméride):** priorizar **Carrusel SIBO profundo** (abajo). Ahí va la frase canónica — no como post SEO suelto.
-4. **28/11:** efeméride Cáncer gástrico / H. pylori (`efemeride_11_28`).
-5. **Cola exportada (si sigue pendiente):** efemérides 10-30 y 07-28.
-6. **Infra:** `11_Workflows_Contenido.md` + `npm run ig:new`.
+1. **Perfil IG:** bio H₂/CH₄ ✅ (nov 2026). **Nombre** pendiente celular. Highlights: Turnos → **H. pylori** → SIBO/IMO.
+2. **Insights 90d:** checklist `docs/exposicion-web/11-checklist-insights-ig.md`.
+3. **Plata — Carrusel pylori conversión** (`12_Plan_Carrusel_Pylori_Conversion.md`): control de erradicación → turno. Confirmar antes si `post_hpylori_s1`–`s6` ya está publicado.
+4. **28/11:** efeméride Cáncer gástrico / H. pylori (`efemeride_11_28`) — refuerza el mismo producto.
+5. **SEO — Carrusel SIBO profundo:** en hueco que no pise pylori / 28/11.
+6. **Cola exportada (si sigue pendiente):** efemérides 10-30 y 07-28.
+7. **Infra:** `11_Workflows_Contenido.md` + `npm run ig:new`.
 
 ---
 

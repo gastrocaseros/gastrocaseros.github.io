@@ -1,6 +1,7 @@
 # Estrategia de canales — priorizar Tests (nov 2026)
 
-Objetivo de negocio: **más pacientes de tests** (SIBO/IMO H₂/CH₄ y H. pylori) que de consulta.  
+Objetivo de negocio: **más pacientes de tests** que de consulta.  
+Dentro de tests: **H. pylori = ticket/plata**; **SIBO/IMO = demanda orgánica (SEO)**.  
 La consulta se comunica, pero no pelea el Héroe.
 
 ## 1. Qué dicen los datos (no la sensación)
@@ -34,23 +35,22 @@ Problema actual: **mucho maquetado, poca publicación**; el feed no refuerza el 
 
 ### Highlights (orden sugerido en perfil)
 1. Turnos  
-2. **SIBO / IMO** (subir; es el producto)  
-3. H. pylori / Test aire (o dentro de Servicios)  
+2. **H. pylori** (ticket)  
+3. **SIBO / IMO** (SEO / demanda)  
 4. Ubicación  
 5. Nosotros  
 6. FAQ  
 7. Servicios (consulta = una tarjeta, no el centro)
 
 ### Contenido
-- **Sí:** Carrusel SIBO profundo (frase canónica en S4/S6) en ventana 17–21/11.  
-- **Sí:** 1 pieza Tests cada ~14 días (SIBO, IMO, prep, “por qué H₂+CH₄”).  
-- **Sí:** Efemérides médicas solo si enganchan digestivo/test (Diabetes GI, Cáncer gástrico→pylori).  
-- **No:** post SEO suelto con la frase canónica.  
-- **No:** meta de postear “seguido” si no hay revisión Dra. + pieza Héroe lista.
+- **Sí (plata):** carrusel pylori **control/prep → turno** — ver [`../instagram/12_Plan_Carrusel_Pylori_Conversion.md`](../instagram/12_Plan_Carrusel_Pylori_Conversion.md).  
+- **Sí (SEO):** carrusel SIBO profundo cuando no choque con pylori/efeméride 28/11.  
+- **Sí:** 28/11 efeméride Cáncer gástrico → CTA test pylori.  
+- **No:** repetir el carrusel educativo `post_hpylori_s*` si ya está publicado.  
+- **No:** meta de postear “seguido” sin pieza de conversión lista.
 
-### Cómo saber si IG “anda” (Insights 90 días)
-Anotar una vez: alcance, visitas al perfil, toques al enlace, mensajes.  
-Si link taps + DMs de turnos/tests ≈ 0 → confirmar que IG es soporte, no adquisición.
+### Cómo saber si IG “anda”
+Checklist: [`11-checklist-insights-ig.md`](11-checklist-insights-ig.md).
 
 ## 4. Atribución barata (recomendado)
 

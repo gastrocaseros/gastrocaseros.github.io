@@ -45,26 +45,29 @@ Frase canónica:
 
 ## 5. Backlog 0-costo
 
-### Esta semana
-1. Unificar horario jueves web ↔ Maps (09–12 vs 09–13).  
-2. Entrar GSC/GBP/GA4; completar tabla de cuentas; export 90d.  
-3. GBP: agregar servicios “Test aire espirado hidrógeno y metano (SIBO/IMO)” y UBT.  
-4. Pedir 3–5 reseñas reales a pacientes recientes (QR recepción).  
-5. IG: frase canónica **no** como post suelto — va en **Carrusel SIBO profundo** (S4/S6 + caption), ventana **17–21 nov**. Bio H₂/CH₄ ya actualizada.
+Estado al **2026-11-13**. Estrategia de canales: [`10-estrategia-canales-tests.md`](10-estrategia-canales-tests.md).
 
-### Este mes (sitio `main`)
-6. ~~Title/meta/H1 home → Héroe H2/CH4~~ (hecho).  
-7. ~~FAQ + FAQPage en landings~~ (hecho).  
-8. ~~Sitemap sin privacidad; `availableService` home como array (SIBO/IMO + H. pylori + consulta)~~ (hecho).  
-9. ~~Schema `hasMap` + enlace visible a Google Maps~~ (hecho).  
-10. **E-E-A-T (bio, matrícula, hospitales): diferido** — acordar con la Dra. Pest antes de publicar.  
-11. ~~Alinear rama `instagram` (merge `main` → `instagram` + bio/frase canónica)~~ (hecho).
+### Hecho
+1. ~~Unificar horario web ↔ Maps~~ (mar/jue 8–12).  
+2. ~~GSC/GBP/GA4 + exports~~.  
+3. ~~GBP servicios H₂/CH₄ + UBT~~.  
+4. ~~Responder reseñas GBP~~ (pedir más: ongoing en recepción).  
+6–9. ~~Héroe home, FAQ landings, sitemap/availableService, hasMap~~.  
+11. ~~Merge `main`→`instagram` + bio H₂/CH₄~~ (nombre perfil: pendiente celular).
+
+### Pendiente corto plazo
+5. **Carrusel SIBO profundo** (frase canónica en S4/S6 + caption) — ventana **17–21 nov**.  
+10. **E-E-A-T** (matrícula/bio/hospitales en web): diferido — OK Dra. Pest.  
+16. **Atribución recepción:** “¿Cómo nos conoció?” (Google / Maps / IG / recomendación).  
+17. GA4: marcar `whatsapp_click` como **key event**.  
+18. IG Insights 90d (alcance, visitas perfil, link taps, DMs) — una captura para cerrar debate engagement.  
+19. Reordenar highlights: Turnos → **SIBO/IMO** → pylori → Ubicación → …
 
 ### Trimestre
-12. Re-sondeo Duck.ai / ChatGPT / Claude / Gemini / Google AI con mismas queries.  
-13. Doctoralia u otro directorio gratis si aporta Local Pack (sin ads).  
-14. Contenido IG mensual alineado a queries GSC reales.  
-15. Evaluar 1 landing “preparación test SIBO” solo si GSC muestra volumen.
+12. Re-sondeo Duck.ai / ChatGPT / Claude / Gemini / Google AI.  
+13. Doctoralia u directorio gratis solo si aporta “gastro Caseros” sin diluir Tests.  
+14. IG: **≤2 piezas/mes** alineadas a queries GSC (`imo caseros`, SIBO zona oeste) — no subir cadencia por vanidad.  
+15. Landing “preparación test SIBO” solo si GSC muestra volumen.
 
 ## 6. Cómo medir
 
@@ -113,7 +116,8 @@ Ver [`08-ga4-engagement.md`](08-ga4-engagement.md).
 ## 11. Limitaciones restantes
 
 - ChatGPT / Claude UI no sondeados a fondo (Duck.ai + GSC Gen AI sí).  
-- No se implementaron cambios de sitio aún.
+- Sitio Héroe ya desplegado en `main`; falta E-E-A-T y atribución de canal en recepción.  
+- IG: sin Insights exportados aún — hipótesis “bajo engagement” alineada a cadencia + falta de tráfico IG→sitio en GA4.
 
 ## Archivos de esta carpeta
 

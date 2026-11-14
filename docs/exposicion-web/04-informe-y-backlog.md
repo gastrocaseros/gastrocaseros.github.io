@@ -13,7 +13,7 @@ GSC / GBP / GA4: **acceso OK + datos cargados** (ver `05`–`08`).
 | Local Pack / Maps | **3** | Ficha existe + website; horario inconsistente; reseñas/servicios TBD |
 | Google Generative AI (GSC) | **3–4** | **729 impresiones / 3 meses**; home 413 + SIBO 355 ([`07`](07-gsc-generative-ai.md)) |
 | IAs (Duck.ai live) | **1** | Prefiere AeroTest/Airtest; luego CEPEM; **niega evidencia de GastroCaseros** |
-| Instagram (docs `instagram`) | **3** | Bio alineada SIBO/H.pylori; falta sync frase H2/CH4 canónica |
+| Instagram (canal soporte) | **3–4** | Bio H₂/CH₄ OK; no es adquisición de tests — ver [`10`](10-estrategia-canales-tests.md) |
 
 ## 2. Mapa competitivo (zona oeste + amenaza citabilidad)
 
@@ -45,26 +45,30 @@ Frase canónica:
 
 ## 5. Backlog 0-costo
 
-### Esta semana
-1. Unificar horario jueves web ↔ Maps (09–12 vs 09–13).  
-2. Entrar GSC/GBP/GA4; completar tabla de cuentas; export 90d.  
-3. GBP: agregar servicios “Test aire espirado hidrógeno y metano (SIBO/IMO)” y UBT.  
-4. Pedir 3–5 reseñas reales a pacientes recientes (QR recepción).  
-5. IG: 1 post/carrusel con frase canónica + link sitio (rama `instagram`).
+Estado al **2026-11-14**. Estrategia de canales: [`10-estrategia-canales-tests.md`](10-estrategia-canales-tests.md).
 
-### Este mes (sitio `main`)
-6. ~~Title/meta/H1 home → Héroe H2/CH4~~ (hecho).  
-7. ~~FAQ + FAQPage en landings~~ (hecho).  
-8. ~~Sitemap sin privacidad; `availableService` home como array (SIBO/IMO + H. pylori + consulta)~~ (hecho).  
-9. ~~Schema `hasMap` + enlace visible a Google Maps~~ (hecho).  
-10. **E-E-A-T (bio, matrícula, hospitales): diferido** — acordar con la Dra. Pest antes de publicar.  
-11. Alinear rama `instagram` (merge `main` → `instagram` + bio/frase canónica).
+### Hecho
+1. ~~Unificar horario web ↔ Maps~~ (mar/jue 8–12).  
+2. ~~GSC/GBP/GA4 + exports~~.  
+3. ~~GBP servicios H₂/CH₄ + UBT~~.  
+4. ~~Responder reseñas GBP~~ (pedir más: ongoing en recepción).  
+6–9. ~~Héroe home, FAQ landings, sitemap/availableService, hasMap~~.  
+11. ~~Bio IG H₂/CH₄~~ (producción de contenido: rama `instagram`; nombre perfil: pendiente celular).
+
+### Pendiente corto plazo
+5. Sitio SEO: CTR SIBO/IMO (`imo caseros`) + landing pylori (title/H1/CTA WA).  
+10. **E-E-A-T** (matrícula/bio/hospitales en web): diferido — OK Dra. Pest.  
+16. **Atribución recepción:** “¿Cómo nos conoció?” (Google / Maps / IG / recomendación).  
+17. GA4: marcar `whatsapp_click` como **key event**.  
+18. IG Insights 90d — checklist [`11-checklist-insights-ig.md`](11-checklist-insights-ig.md).  
+19. Highlights IG: Turnos → H. pylori → SIBO/IMO → Ubicación… (en app; detalle en rama `instagram`).  
+20. GBP: fotos nuevas + seguir pidiendo reseñas; NAP/servicios = web.
 
 ### Trimestre
-12. Re-sondeo Duck.ai / ChatGPT / Claude / Gemini / Google AI con mismas queries.  
-13. Doctoralia u otro directorio gratis si aporta Local Pack (sin ads).  
-14. Contenido IG mensual alineado a queries GSC reales.  
-15. Evaluar 1 landing “preparación test SIBO” solo si GSC muestra volumen.
+12. Re-sondeo Duck.ai / ChatGPT / Claude / Gemini / Google AI.  
+13. Doctoralia u directorio gratis solo si aporta “gastro Caseros” sin diluir Tests.  
+14. IG: **≤2 piezas/mes** alineadas a queries GSC — canal soporte, no cadencia por vanidad.  
+15. Landing “preparación test SIBO” solo si GSC muestra volumen.
 
 ## 6. Cómo medir
 
@@ -113,9 +117,11 @@ Ver [`08-ga4-engagement.md`](08-ga4-engagement.md).
 ## 11. Limitaciones restantes
 
 - ChatGPT / Claude UI no sondeados a fondo (Duck.ai + GSC Gen AI sí).  
-- No se implementaron cambios de sitio aún.
+- Sitio Héroe ya en `main`; falta E-E-A-T, CTR landings y atribución de canal en recepción.  
+- IG: Insights 90d pendientes — hipótesis “bajo engagement” alineada a cadencia + poco tráfico IG→sitio en GA4.
 
 ## Archivos de esta carpeta
 
-- `00`–`08` fases e updates  
+- `00`–`09` fases e updates  
+- `10` estrategia de canales (Tests) · `11` checklist Insights IG  
 - `gsc-exports/` + `gsc-exports/genai/`

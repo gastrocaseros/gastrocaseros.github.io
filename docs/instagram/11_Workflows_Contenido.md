@@ -56,6 +56,22 @@ No exportar ni archivar el caption antes de la aprobación.
 
 Aplicar únicamente los ajustes solicitados. Priorizar cambios de copy o una familia existente. No rediseñar la pieza durante esta fase.
 
+### Preview sin export final
+
+Durante el ida y vuelta visual:
+
+1. Editar el HTML / asset.
+2. Regenerar **solo** `ig_posts/previews/<nombre>.png` de las slides tocadas (Puppeteer local). Ver snippet en `.cursor/skills/ig-content/reference.md`.
+3. No correr `npm run ig:export` hasta el OK.
+
+Si se elimina o renumera una slide: actualizar `ig_posts/export.js` y `ig_posts/mockup.html` en el mismo cambio. Las descartadas van a `ig_posts/_archivados/`.
+
+### Imágenes e instrumentos
+
+- Personajes: no sobrescribir; crear variante (`*_sin_ropa`, `*_sin_extremidades`, etc.) y apuntar el `src`.
+- Instrumentos/marcas médicas: foto real o archivo del usuario. No inventar con IA un Olympus / equipo concreto.
+- Diagramas con flechas/labels: preferir base limpia + overlay (PIL/HTML) para nudges milimétricos.
+
 ## Fase 3: exportación y cierre
 
 Después del OK:
@@ -66,6 +82,7 @@ Después del OK:
 4. Actualizar [07_Status_Publicaciones.md](07_Status_Publicaciones.md).
 5. Para efemérides, actualizar también [10_Captions_Efemerides.md](10_Captions_Efemerides.md) y [09_Calendario_Efemerides.md](09_Calendario_Efemerides.md).
 6. Informar los archivos generados en `ig_posts/exports/` o `ig_posts/exports_video/`.
+7. Si el usuario pide commit: branch `instagram` (exports/previews siguen gitignored).
 
 ## Reglas de diseño
 

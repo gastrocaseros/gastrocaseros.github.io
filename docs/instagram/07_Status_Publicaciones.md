@@ -19,6 +19,7 @@ Se ha consolidado el sistema de diseño y la numeración de archivos está 100% 
 - **Post 11:** Preguntas Frecuentes. Maquetado en `post11.html`. ✅
 - **Carrusel IMO (M. smithii):** Carrusel de 5 slides. Maquetado en `post_smithii_s1.html` a `post_smithii_s5.html`. ✅
 - **Carrusel H. Pylori (Test de Aire Espirado):** Carrusel de 6 slides. Maquetado en `post_hpylori_s1.html` a `post_hpylori_s6.html`. ✅
+- **Carrusel H. pylori / cáncer gástrico (Noviembre):** Carrusel de 6 slides. `post_pylori_prevencion_s1.html` a `s6.html`. Exportado el 13/11/2026. ✅ Listo para publicar (revisión médica de la Dra. recomendada). Caption en `08_Archivo_de_Captions.md`.
 - **Post Turnos Sábado:** Promo de agenda en `post_turno_sabado.html`. Actualizado a "Hoy sábado" y reexportado el 10/10/2026. ✅ Listo para publicar.
 - **Post Turnos Sábado 17/10:** Promo de agenda en `post_turno_sabado_10_17.html`. Exportado el 14/10/2026. ✅ Listo para publicar.
 
@@ -46,7 +47,7 @@ La numeración de historias ahora sigue el orden de publicación y los highlight
 ## 🚀 Próximos Pasos Inmediatos
 1. **Perfil IG:** bio H₂/CH₄ ✅ (nov 2026). **Nombre** pendiente celular. Highlights: Turnos → **H. pylori** → SIBO/IMO.
 2. **Insights 90d:** checklist `docs/exposicion-web/11-checklist-insights-ig.md`.
-3. **Plata — Carrusel pylori conversión** (`12_Plan_Carrusel_Pylori_Conversion.md`): control de erradicación → turno. Confirmar antes si `post_hpylori_s1`–`s6` ya está publicado.
+3. **Plata — Carrusel pylori nov** (`post_pylori_prevencion_s1`–`s6`): ✅ exportado 13/11/2026 — publicar en Meta Business Suite + highlight H. pylori.
 4. **28/11:** efeméride Cáncer gástrico / H. pylori (`efemeride_11_28`) — refuerza el mismo producto.
 5. **SEO — Carrusel SIBO profundo:** en hueco que no pise pylori / 28/11.
 6. **Cola exportada (si sigue pendiente):** efemérides 10-30 y 07-28.

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>H. pylori prevención nov - Hook</title>
+    <style>
+        .hook-tag {
+            display: inline-block;
+            background: var(--green);
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 10px 28px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+        }
+        .hook-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: var(--navy);
+            line-height: 1.08;
+            font-weight: 800;
+            letter-spacing: -1px;
+            max-width: 820px;
+            margin-bottom: 0;
+        }
+        .hook-title em,
+        .hook-title span {
+            font-style: italic;
+            color: var(--green);
+        }
+        .hook-sub {
+            font-size: 28px;
+            color: var(--navy);
+            opacity: 0.75;
+            margin-top: 14px;
+            line-height: 1.4;
+            max-width: 760px;
+            margin-bottom: 0;
+        }
+        .post-container.compact {
+            padding-top: 72px;
+            padding-bottom: 88px;
+        }
+        .diagram-wrap {
+            margin-top: 8px;
+            width: 840px;
+            height: 640px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 32px rgba(17, 34, 51, 0.12);
+            background: #f4f1eb;
+            position: relative;
+            z-index: 5;
+            flex-shrink: 0;
+        }
+        .diagram-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+            display: block;
+        }
+        .footer-info.footer-swipe {
+            bottom: 28px;
+            left: auto;
+            right: 48px;
+            width: auto;
+            padding-top: 10px;
+            border-top: none;
+            z-index: 8;
+            text-align: right;
+        }
+        .footer-info.footer-swipe span {
+            font-size: 26px;
+            margin-bottom: 0;
+            opacity: 0.65;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container compact">
+        <div class="sidebar">
+            <img src="logo.png" class="brand-logo" alt="Logo de GastroCaseros">
+            <div class="sidebar-name">GastroCaseros</div>
+        </div>
+        <div class="top-accent"></div>
+
+        <div style="margin-top: 8px;">
+            <div class="hook-tag">Noviembre · Concientización</div>
+            <h1 class="hook-title"><em>Helicobacter pylori</em> y cáncer de <span>estómago</span></h1>
+            <p class="hook-sub">Mes de concientización del cáncer gástrico. Se puede <strong>detectar y tratar</strong>.</p>
+        </div>
+
+        <div class="diagram-wrap">
+            <img src="cancer_gastrico_hpylori_lupa.png" alt="Esquema: adenocarcinoma gástrico y Helicobacter pylori bajo lupa">
+        </div>
+
+        <div class="footer-info footer-swipe">
+            <span>Deslizá para saber más 👉</span>
+        </div>
+        <div class="bottom-accent"></div>
+    </div>
+</body>
+</html>

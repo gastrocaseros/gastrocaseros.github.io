@@ -45,6 +45,12 @@ const path = require('path');
     { name: 'post_turno_sabado_10_17', type: 'feed' },
     { name: 'efemeride_10_30_s1', type: 'feed' },
     { name: 'efemeride_10_30_s3', type: 'feed' },
+    { name: 'post_pylori_prevencion_s1', type: 'feed' },
+    { name: 'post_pylori_prevencion_s2', type: 'feed' },
+    { name: 'post_pylori_prevencion_s3', type: 'feed' },
+    { name: 'post_pylori_prevencion_s4', type: 'feed' },
+    { name: 'post_pylori_prevencion_s5', type: 'feed' },
+    { name: 'post_pylori_prevencion_s6', type: 'feed' },
     // IG_NEW_EXPORT
   ];
 

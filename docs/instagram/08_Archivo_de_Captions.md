@@ -554,6 +554,37 @@ Revisión final: Dra. Erika Pest.
 
 ---
 
+### Carrusel — H. pylori y cáncer de estómago (Noviembre / concientización) (`post_pylori_prevencion_s1` a `s6`)
+**Formato:** Carrusel de 6 slides.
+**Imágenes a subir:** `post_pylori_prevencion_s1.png` a `post_pylori_prevencion_s6.png` (desde `ig_posts/exports/`).
+**Publicación:** Meta Business Suite (Facebook + Instagram). Highlight sugerido: H. pylori.
+**Texto Alternativo (Accesibilidad):** Carrusel de 6 slides: H. pylori y cáncer de estómago (noviembre); síntomas de alarma y endoscopía; ~80% y OMS carcinógeno tipo I; test UBT ~15 min; control de erradicación; CTA WhatsApp 11 2457-3240 en Caseros.
+**Caption:**
+Noviembre · Concientización del cáncer gástrico 🩺
+
+El Helicobacter pylori se asocia a ~80% de los casos de cáncer de estómago. La buena noticia: se puede detectar y tratar.
+
+Deslizá 👉
+• Señales de alarma → consultá (la endoscopía es clave ante síntomas de riesgo)
+• La OMS lo clasifica como carcinógeno tipo I
+• Test de aire espirado (UBT): no invasivo, ~15 minutos
+• Después del tratamiento: confirmá la erradicación (no alcanza con que “ya no te duela”)
+
+En GastroCaseros hacemos el test de H. pylori en Caseros, Tres de Febrero.
+La indicación y la interpretación siempre las define tu gastroenterólogo/a.
+
+👉 Turnos y consultas: Link en nuestra biografía.
+📲 WhatsApp: 11 2457-3240
+📍 Justo José de Urquiza 4530, Caseros
+🌐 gastrocaseros.com.ar/test-aire-espirado-helicobacter-pylori.html
+
+Fuente (caption): clasificación OMS de carcinógeno tipo I; manejo clínico según consenso Maastricht VI (revisión Dra. Erika Pest).
+
+**Hashtags:**
+#HelicobacterPylori #CancerGastrico #TestDeAireEspirado #Prevencion #SaludDigestiva #GastroCaseros #Caseros #TresDeFebrero
+
+---
+
 ## 🟢 BLOQUE: Frase canónica (uso, no post suelto)
 
 **No publicar** una placa SEO aislada con la frase canónica.  
